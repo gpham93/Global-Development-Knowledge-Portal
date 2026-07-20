@@ -1,24 +1,48 @@
 {
   "columns": [
     "countryName",
-    "projectName",
-    "sectorName"
+    "projectCount"
   ],
   "data": [
     {
-      "countryName": "Tuvalu",
-      "projectName": "Additional Financing for Maritime Investment in Climate Resilient Operations II",
-      "sectorName": "Ports/Waterways"
+      "countryName": "India",
+      "projectCount": 95
+    },
+    {
+      "countryName": "Bangladesh",
+      "projectCount": 63
+    },
+    {
+      "countryName": "Pakistan",
+      "projectCount": 62
+    },
+    {
+      "countryName": "Ethiopia",
+      "projectCount": 57
     },
     {
       "countryName": "Western and Central Africa",
-      "projectName": "Additional Financing for Regional Sahel Pastoralism Support Project II Burkina Faso",
-      "sectorName": "Other Water Supply, Sanitation and Waste Management"
+      "projectCount": 54
     },
     {
-      "countryName": "Western and Central Africa",
-      "projectName": "West Africa Coastal Areas Resilience Investment Project AF CI",
-      "sectorName": "Other Water Supply, Sanitation and Waste Management"
+      "countryName": "Turkiye",
+      "projectCount": 51
+    },
+    {
+      "countryName": "Eastern and Southern Africa",
+      "projectCount": 50
+    },
+    {
+      "countryName": "Indonesia",
+      "projectCount": 45
+    },
+    {
+      "countryName": "Mozambique",
+      "projectCount": 44
+    },
+    {
+      "countryName": "Brazil",
+      "projectCount": 44
     }
   ]
 }

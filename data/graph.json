@@ -1,78 +1,28 @@
 {
   "nodes": [
     {
-      "id": "http://enterprise.org/ontology/wb#Project_P181369",
-      "name": "Cabo Verde Resilient Tourism and Blue Economy Development Second AF",
+      "id": "http://enterprise.org/ontology/wb#Project_P000256",
+      "name": "RAILWAYS",
       "type": "Project"
     },
     {
-      "id": "http://enterprise.org/ontology/wb#Country_Cabo_Verde",
-      "name": "Cabo Verde",
+      "id": "http://enterprise.org/ontology/wb#Country_Burkina_Faso",
+      "name": "Burkina Faso",
       "type": "Country"
     },
     {
-      "id": "http://enterprise.org/ontology/wb#Sector_Fisheries",
-      "name": "Fisheries",
+      "id": "http://enterprise.org/ontology/wb#Sector_Railways",
+      "name": "Railways",
       "type": "Sector"
     },
     {
-      "id": "http://enterprise.org/ontology/wb#Sector_Public_Administration_-_Industry%2C_Trade_and_Services",
-      "name": "Public Administration - Industry, Trade and Services",
-      "type": "Sector"
-    },
-    {
-      "id": "http://enterprise.org/ontology/wb#Sector_Tourism",
-      "name": "Tourism",
-      "type": "Sector"
-    },
-    {
-      "id": "http://enterprise.org/ontology/wb#Project_P181423",
-      "name": "Second Additional Financing for Dasu Hydropower Stage I Project",
+      "id": "http://enterprise.org/ontology/wb#Project_P000952",
+      "name": "SAC II",
       "type": "Project"
     },
     {
-      "id": "http://enterprise.org/ontology/wb#Country_Pakistan",
-      "name": "Pakistan",
-      "type": "Country"
-    },
-    {
-      "id": "http://enterprise.org/ontology/wb#Sector_Other_Energy_and_Extractives",
-      "name": "Other Energy and Extractives",
-      "type": "Sector"
-    },
-    {
-      "id": "http://enterprise.org/ontology/wb#Sector_Other_Public_Administration",
-      "name": "Other Public Administration",
-      "type": "Sector"
-    },
-    {
-      "id": "http://enterprise.org/ontology/wb#Sector_Public_Administration_-_Energy_and_Extractives",
-      "name": "Public Administration - Energy and Extractives",
-      "type": "Sector"
-    },
-    {
-      "id": "http://enterprise.org/ontology/wb#Sector_Renewable_Energy_Hydro",
-      "name": "Renewable Energy Hydro",
-      "type": "Sector"
-    },
-    {
-      "id": "http://enterprise.org/ontology/wb#Project_P181493",
-      "name": "Unleashing the Blue Economy of the Caribbean Additional Financing",
-      "type": "Project"
-    },
-    {
-      "id": "http://enterprise.org/ontology/wb#Country_OECS_Countries",
-      "name": "OECS Countries",
-      "type": "Country"
-    },
-    {
-      "id": "http://enterprise.org/ontology/wb#Project_P181533",
-      "name": "Additional Financing for Regional Sahel Pastoralism Support Project II Burkina Faso",
-      "type": "Project"
-    },
-    {
-      "id": "http://enterprise.org/ontology/wb#Country_Western_and_Central_Africa",
-      "name": "Western and Central Africa",
+      "id": "http://enterprise.org/ontology/wb#Country_Ghana",
+      "name": "Ghana",
       "type": "Country"
     },
     {
@@ -81,28 +31,43 @@
       "type": "Sector"
     },
     {
-      "id": "http://enterprise.org/ontology/wb#Sector_Livestock",
-      "name": "Livestock",
+      "id": "http://enterprise.org/ontology/wb#Sector_Central_Government_%28Central_Agencies%29",
+      "name": "Central Government (Central Agencies)",
       "type": "Sector"
     },
     {
-      "id": "http://enterprise.org/ontology/wb#Sector_Other_Water_Supply%2C_Sanitation_and_Waste_Management",
-      "name": "Other Water Supply, Sanitation and Waste Management",
+      "id": "http://enterprise.org/ontology/wb#Sector_Crops",
+      "name": "Crops",
       "type": "Sector"
     },
     {
-      "id": "http://enterprise.org/ontology/wb#Sector_Public_Administration_-_Agriculture%2C_Fishing_%26_Forestry",
-      "name": "Public Administration - Agriculture, Fishing & Forestry",
+      "id": "http://enterprise.org/ontology/wb#Sector_Other_Industry%2C_Trade_and_Services",
+      "name": "Other Industry, Trade and Services",
       "type": "Sector"
     },
     {
-      "id": "http://enterprise.org/ontology/wb#Project_P181595",
-      "name": "Additional Financing for Maritime Investment in Climate Resilient Operations II",
+      "id": "http://enterprise.org/ontology/wb#Project_P001086",
+      "name": "SAL II",
       "type": "Project"
     },
     {
-      "id": "http://enterprise.org/ontology/wb#Country_Tuvalu",
-      "name": "Tuvalu",
+      "id": "http://enterprise.org/ontology/wb#Country_Guinea",
+      "name": "Guinea",
+      "type": "Country"
+    },
+    {
+      "id": "http://enterprise.org/ontology/wb#Sector_Banking_Institutions",
+      "name": "Banking Institutions",
+      "type": "Sector"
+    },
+    {
+      "id": "http://enterprise.org/ontology/wb#Project_P001165",
+      "name": "Economic Recovery Credit Project",
+      "type": "Project"
+    },
+    {
+      "id": "http://enterprise.org/ontology/wb#Country_Cote_d%27Ivoire",
+      "name": "Cote d'Ivoire",
       "type": "Country"
     },
     {
@@ -111,14 +76,329 @@
       "type": "Sector"
     },
     {
-      "id": "http://enterprise.org/ontology/wb#Sector_Public_Administration_-_Transportation",
-      "name": "Public Administration - Transportation",
+      "id": "http://enterprise.org/ontology/wb#Sector_Power",
+      "name": "Power",
       "type": "Sector"
     },
     {
-      "id": "http://enterprise.org/ontology/wb#Project_P181632",
-      "name": "Additional Financing to Togo for the Gulf of Guinea Northern Regions Social Cohesion Project",
+      "id": "http://enterprise.org/ontology/wb#Project_P001557",
+      "name": "PUBLIC SEC ADJ",
       "type": "Project"
+    },
+    {
+      "id": "http://enterprise.org/ontology/wb#Country_Madagascar",
+      "name": "Madagascar",
+      "type": "Country"
+    },
+    {
+      "id": "http://enterprise.org/ontology/wb#Sector_Trade",
+      "name": "Trade",
+      "type": "Sector"
+    },
+    {
+      "id": "http://enterprise.org/ontology/wb#Project_P001678",
+      "name": "AGRIC SECTOR ADJ",
+      "type": "Project"
+    },
+    {
+      "id": "http://enterprise.org/ontology/wb#Country_Malawi",
+      "name": "Malawi",
+      "type": "Country"
+    },
+    {
+      "id": "http://enterprise.org/ontology/wb#Sector_Other_Agriculture%2C_Fishing_and_Forestry",
+      "name": "Other Agriculture, Fishing and Forestry",
+      "type": "Sector"
+    },
+    {
+      "id": "http://enterprise.org/ontology/wb#Project_P001694",
+      "name": "MOPTI RICE SUPPLEMEN",
+      "type": "Project"
+    },
+    {
+      "id": "http://enterprise.org/ontology/wb#Country_Mali",
+      "name": "Mali",
+      "type": "Country"
+    },
+    {
+      "id": "http://enterprise.org/ontology/wb#Sector_%28Historic%29Perennial_crops",
+      "name": "(Historic)Perennial crops",
+      "type": "Sector"
+    },
+    {
+      "id": "http://enterprise.org/ontology/wb#Project_P001695",
+      "name": "HIGHWAYS SUPPLEMENT",
+      "type": "Project"
+    },
+    {
+      "id": "http://enterprise.org/ontology/wb#Sector_%28Historic%29Highways",
+      "name": "(Historic)Highways",
+      "type": "Sector"
+    },
+    {
+      "id": "http://enterprise.org/ontology/wb#Project_P001758",
+      "name": "DEBT",
+      "type": "Project"
+    },
+    {
+      "id": "http://enterprise.org/ontology/wb#Country_Mozambique",
+      "name": "Mozambique",
+      "type": "Country"
+    },
+    {
+      "id": "http://enterprise.org/ontology/wb#Sector_%28Historic%29Macro/non-trade",
+      "name": "(Historic)Macro/non-trade",
+      "type": "Sector"
+    },
+    {
+      "id": "http://enterprise.org/ontology/wb#Project_P002353",
+      "name": "SAL II",
+      "type": "Project"
+    },
+    {
+      "id": "http://enterprise.org/ontology/wb#Country_Senegal",
+      "name": "Senegal",
+      "type": "Country"
+    },
+    {
+      "id": "http://enterprise.org/ontology/wb#Sector_%28Historic%29Economic_management",
+      "name": "(Historic)Economic management",
+      "type": "Sector"
+    },
+    {
+      "id": "http://enterprise.org/ontology/wb#Project_P002361",
+      "name": "SAL III",
+      "type": "Project"
+    },
+    {
+      "id": "http://enterprise.org/ontology/wb#Sector_Agro-industry",
+      "name": "Agro-industry",
+      "type": "Sector"
+    },
+    {
+      "id": "http://enterprise.org/ontology/wb#Project_P002368",
+      "name": "SAL IV",
+      "type": "Project"
+    },
+    {
+      "id": "http://enterprise.org/ontology/wb#Sector_Oil_and_Gas",
+      "name": "Oil and Gas",
+      "type": "Sector"
+    },
+    {
+      "id": "http://enterprise.org/ontology/wb#Sector_Other_Education",
+      "name": "Other Education",
+      "type": "Sector"
+    },
+    {
+      "id": "http://enterprise.org/ontology/wb#Project_P002370",
+      "name": "SAL IV",
+      "type": "Project"
+    },
+    {
+      "id": "http://enterprise.org/ontology/wb#Project_P002374",
+      "name": "SAL IV",
+      "type": "Project"
+    },
+    {
+      "id": "http://enterprise.org/ontology/wb#Project_P002794",
+      "name": "IND TRADE ADJ",
+      "type": "Project"
+    },
+    {
+      "id": "http://enterprise.org/ontology/wb#Country_Tanzania",
+      "name": "Tanzania",
+      "type": "Country"
+    },
+    {
+      "id": "http://enterprise.org/ontology/wb#Project_P002818",
+      "name": "AGRIC ADJUSTMENT",
+      "type": "Project"
+    },
+    {
+      "id": "http://enterprise.org/ontology/wb#Sector_Agricultural_Extension%2C_Research%2C_and_Other_Support_Activities",
+      "name": "Agricultural Extension, Research, and Other Support Activities",
+      "type": "Sector"
+    },
+    {
+      "id": "http://enterprise.org/ontology/wb#Project_P002881",
+      "name": "SAL III",
+      "type": "Project"
+    },
+    {
+      "id": "http://enterprise.org/ontology/wb#Country_Togo",
+      "name": "Togo",
+      "type": "Country"
+    },
+    {
+      "id": "http://enterprise.org/ontology/wb#Project_P002885",
+      "name": "SAL III",
+      "type": "Project"
+    },
+    {
+      "id": "http://enterprise.org/ontology/wb#Project_P002990",
+      "name": "ECON RECOVERY II",
+      "type": "Project"
+    },
+    {
+      "id": "http://enterprise.org/ontology/wb#Country_Uganda",
+      "name": "Uganda",
+      "type": "Country"
+    },
+    {
+      "id": "http://enterprise.org/ontology/wb#Project_P004325",
+      "name": "IND'L RESTRUCT.(RE-C",
+      "type": "Project"
+    },
+    {
+      "id": "http://enterprise.org/ontology/wb#Country_Malaysia",
+      "name": "Malaysia",
+      "type": "Country"
+    },
+    {
+      "id": "http://enterprise.org/ontology/wb#Sector_Micro-_and_SME_finance",
+      "name": "Micro- and SME finance",
+      "type": "Sector"
+    },
+    {
+      "id": "http://enterprise.org/ontology/wb#Project_P004868",
+      "name": "AFULILO HYDRO POWER-",
+      "type": "Project"
+    },
+    {
+      "id": "http://enterprise.org/ontology/wb#Country_Samoa",
+      "name": "Samoa",
+      "type": "Country"
+    },
+    {
+      "id": "http://enterprise.org/ontology/wb#Project_P006187",
+      "name": "FIN SCTR",
+      "type": "Project"
+    },
+    {
+      "id": "http://enterprise.org/ontology/wb#Country_Bolivia",
+      "name": "Bolivia",
+      "type": "Country"
+    },
+    {
+      "id": "http://enterprise.org/ontology/wb#Sector_Other_Non-bank_Financial_Institutions",
+      "name": "Other Non-bank Financial Institutions",
+      "type": "Sector"
+    },
+    {
+      "id": "http://enterprise.org/ontology/wb#Project_P006192",
+      "name": "FIN SEC ADJ SUPLM III",
+      "type": "Project"
+    },
+    {
+      "id": "http://enterprise.org/ontology/wb#Project_P007255",
+      "name": "SAC SUPPLM",
+      "type": "Project"
+    },
+    {
+      "id": "http://enterprise.org/ontology/wb#Country_Guyana",
+      "name": "Guyana",
+      "type": "Country"
+    },
+    {
+      "id": "http://enterprise.org/ontology/wb#Project_P007261",
+      "name": "SAC SUPPLM II",
+      "type": "Project"
+    },
+    {
+      "id": "http://enterprise.org/ontology/wb#Project_P007262",
+      "name": "SAC SUPPLM II",
+      "type": "Project"
+    },
+    {
+      "id": "http://enterprise.org/ontology/wb#Project_P007265",
+      "name": "SAC SUPLM II (IDA REFLOW)",
+      "type": "Project"
+    },
+    {
+      "id": "http://enterprise.org/ontology/wb#Project_P007267",
+      "name": "SAC (IDA REF2)",
+      "type": "Project"
+    },
+    {
+      "id": "http://enterprise.org/ontology/wb#Project_P009027",
+      "name": "BLOAN KAYRAKTEPE POW",
+      "type": "Project"
+    },
+    {
+      "id": "http://enterprise.org/ontology/wb#Country_Turkiye",
+      "name": "Turkiye",
+      "type": "Country"
+    },
+    {
+      "id": "http://enterprise.org/ontology/wb#Sector_Roads_and_highways",
+      "name": "Roads and highways",
+      "type": "Sector"
+    },
+    {
+      "id": "http://enterprise.org/ontology/wb#Project_P009041",
+      "name": "B-LOAN FSAL",
+      "type": "Project"
+    },
+    {
+      "id": "http://enterprise.org/ontology/wb#Sector_Capital_Markets",
+      "name": "Capital Markets",
+      "type": "Sector"
+    },
+    {
+      "id": "http://enterprise.org/ontology/wb#Project_P009043",
+      "name": "B-LOAN (FSAL)",
+      "type": "Project"
+    },
+    {
+      "id": "http://enterprise.org/ontology/wb#Project_P009060",
+      "name": "EGY.SEC LOAN -B LOAN",
+      "type": "Project"
+    },
+    {
+      "id": "http://enterprise.org/ontology/wb#Sector_Other_Energy_and_Extractives",
+      "name": "Other Energy and Extractives",
+      "type": "Sector"
+    },
+    {
+      "id": "http://enterprise.org/ontology/wb#Project_P009069",
+      "name": "II FIN.ADJ.BLOAN",
+      "type": "Project"
+    },
+    {
+      "id": "http://enterprise.org/ontology/wb#Project_P009551",
+      "name": "EGY SEC ADJ CREDIT SUPPLEMENT",
+      "type": "Project"
+    },
+    {
+      "id": "http://enterprise.org/ontology/wb#Country_Bangladesh",
+      "name": "Bangladesh",
+      "type": "Country"
+    },
+    {
+      "id": "http://enterprise.org/ontology/wb#Sector_Renewable_Energy_Biomass",
+      "name": "Renewable Energy Biomass",
+      "type": "Sector"
+    },
+    {
+      "id": "http://enterprise.org/ontology/wb#Project_P009561",
+      "name": "FINAN SECTOR ADJ SUP",
+      "type": "Project"
+    },
+    {
+      "id": "http://enterprise.org/ontology/wb#Project_P010388",
+      "name": "ECON. RESTRUCT. SUPPLEMENTAL",
+      "type": "Project"
+    },
+    {
+      "id": "http://enterprise.org/ontology/wb#Country_Sri_Lanka",
+      "name": "Sri Lanka",
+      "type": "Country"
+    },
+    {
+      "id": "http://enterprise.org/ontology/wb#Sector_Other_Transportation",
+      "name": "Other Transportation",
+      "type": "Sector"
     },
     {
       "id": "http://enterprise.org/ontology/wb#Sector_Public_Administration_-_Social_Protection",
@@ -131,18 +411,248 @@
       "type": "Sector"
     },
     {
-      "id": "http://enterprise.org/ontology/wb#Project_P181648",
-      "name": "West Africa Coastal Areas Resilience Investment Project AF CI",
+      "id": "http://enterprise.org/ontology/wb#Project_P010412",
+      "name": "PUBLIC MAN.ENT.ADJ(SECAL)/SUPP",
       "type": "Project"
     },
     {
-      "id": "http://enterprise.org/ontology/wb#Project_P181659",
-      "name": "Third AF to The Gambia Essential Health Services Strengthening Project",
+      "id": "http://enterprise.org/ontology/wb#Sector_Forestry",
+      "name": "Forestry",
+      "type": "Sector"
+    },
+    {
+      "id": "http://enterprise.org/ontology/wb#Project_P010573",
+      "name": "T.A. (RE-CYCLE)",
       "type": "Project"
     },
     {
-      "id": "http://enterprise.org/ontology/wb#Country_Gambia%2C_The",
-      "name": "Gambia, The",
+      "id": "http://enterprise.org/ontology/wb#Sector_%28Historic%29Education_adjustment",
+      "name": "(Historic)Education adjustment",
+      "type": "Sector"
+    },
+    {
+      "id": "http://enterprise.org/ontology/wb#Project_P034194",
+      "name": "FORESTRY & CONSERVAT",
+      "type": "Project"
+    },
+    {
+      "id": "http://enterprise.org/ontology/wb#Country_Iran%2C_Islamic_Republic_of",
+      "name": "Iran, Islamic Republic of",
+      "type": "Country"
+    },
+    {
+      "id": "http://enterprise.org/ontology/wb#Project_P034215",
+      "name": "WATERSHED CONSERVATI",
+      "type": "Project"
+    },
+    {
+      "id": "http://enterprise.org/ontology/wb#Sector_Irrigation_and_Drainage",
+      "name": "Irrigation and Drainage",
+      "type": "Sector"
+    },
+    {
+      "id": "http://enterprise.org/ontology/wb#Project_P035311",
+      "name": "Institutional Capacity Building for Protected Areas Management and Sustainable Use Project",
+      "type": "Project"
+    },
+    {
+      "id": "http://enterprise.org/ontology/wb#Sector_Workforce_Development_and_Vocational_Education",
+      "name": "Workforce Development and Vocational Education",
+      "type": "Sector"
+    },
+    {
+      "id": "http://enterprise.org/ontology/wb#Project_P039027",
+      "name": "RF Science Centers - Emergency Assistance Project",
+      "type": "Project"
+    },
+    {
+      "id": "http://enterprise.org/ontology/wb#Country_Brazil",
+      "name": "Brazil",
+      "type": "Country"
+    },
+    {
+      "id": "http://enterprise.org/ontology/wb#Project_P051572",
+      "name": "DEBT&DEBT REDUCTION",
+      "type": "Project"
+    },
+    {
+      "id": "http://enterprise.org/ontology/wb#Sector_%28Historic%29Public_financial_management",
+      "name": "(Historic)Public financial management",
+      "type": "Sector"
+    },
+    {
+      "id": "http://enterprise.org/ontology/wb#Project_P053094",
+      "name": "Debt Reduction Operation Project",
+      "type": "Project"
+    },
+    {
+      "id": "http://enterprise.org/ontology/wb#Sector_%28Historic%29Other_finance",
+      "name": "(Historic)Other finance",
+      "type": "Sector"
+    },
+    {
+      "id": "http://enterprise.org/ontology/wb#Project_P068898",
+      "name": "PHRD GRANT - PH PRIVATE SECTOR INFRASTRUCTURE",
+      "type": "Project"
+    },
+    {
+      "id": "http://enterprise.org/ontology/wb#Country_Philippines",
+      "name": "Philippines",
+      "type": "Country"
+    },
+    {
+      "id": "http://enterprise.org/ontology/wb#Project_P073588",
+      "name": "CGAP-Nepal Nirdhan II",
+      "type": "Project"
+    },
+    {
+      "id": "http://enterprise.org/ontology/wb#Country_Nepal",
+      "name": "Nepal",
+      "type": "Country"
+    },
+    {
+      "id": "http://enterprise.org/ontology/wb#Project_P073882",
+      "name": "RF 2nd Amazon Fire Prevention and Mobilization",
+      "type": "Project"
+    },
+    {
+      "id": "http://enterprise.org/ontology/wb#Project_P075941",
+      "name": "AFR RI-Regional Rusumo Falls Hydroelectric Project",
+      "type": "Project"
+    },
+    {
+      "id": "http://enterprise.org/ontology/wb#Country_Eastern_and_Southern_Africa",
+      "name": "Eastern and Southern Africa",
+      "type": "Country"
+    },
+    {
+      "id": "http://enterprise.org/ontology/wb#Sector_Renewable_Energy_Hydro",
+      "name": "Renewable Energy Hydro",
+      "type": "Sector"
+    },
+    {
+      "id": "http://enterprise.org/ontology/wb#Project_P077416",
+      "name": "Burundi AID Coordination Project (MDTF)",
+      "type": "Project"
+    },
+    {
+      "id": "http://enterprise.org/ontology/wb#Country_Burundi",
+      "name": "Burundi",
+      "type": "Country"
+    },
+    {
+      "id": "http://enterprise.org/ontology/wb#Project_P078452",
+      "name": "CGAP Microfinance Framework for Afghanistan",
+      "type": "Project"
+    },
+    {
+      "id": "http://enterprise.org/ontology/wb#Country_Afghanistan",
+      "name": "Afghanistan",
+      "type": "Country"
+    },
+    {
+      "id": "http://enterprise.org/ontology/wb#Project_P082519",
+      "name": "Sudan Nuba Mountain Post Conflict Fund",
+      "type": "Project"
+    },
+    {
+      "id": "http://enterprise.org/ontology/wb#Country_Sudan",
+      "name": "Sudan",
+      "type": "Country"
+    },
+    {
+      "id": "http://enterprise.org/ontology/wb#Sector_Sub-National_Government",
+      "name": "Sub-National Government",
+      "type": "Sector"
+    },
+    {
+      "id": "http://enterprise.org/ontology/wb#Project_P082566",
+      "name": "FSD CIDR East Africa Initiative",
+      "type": "Project"
+    },
+    {
+      "id": "http://enterprise.org/ontology/wb#Project_P085766",
+      "name": "AID Review of UNDP Portfolio",
+      "type": "Project"
+    },
+    {
+      "id": "http://enterprise.org/ontology/wb#Country_World",
+      "name": "World",
+      "type": "Country"
+    },
+    {
+      "id": "http://enterprise.org/ontology/wb#Project_P086592",
+      "name": "Second Irrigation and Drainage Improvement Project",
+      "type": "Project"
+    },
+    {
+      "id": "http://enterprise.org/ontology/wb#Country_Kazakhstan",
+      "name": "Kazakhstan",
+      "type": "Country"
+    },
+    {
+      "id": "http://enterprise.org/ontology/wb#Project_P094411",
+      "name": "Debt Buy-Back Operation for Sierra Leone",
+      "type": "Project"
+    },
+    {
+      "id": "http://enterprise.org/ontology/wb#Country_Sierra_Leone",
+      "name": "Sierra Leone",
+      "type": "Country"
+    },
+    {
+      "id": "http://enterprise.org/ontology/wb#Sector_Other_Public_Administration",
+      "name": "Other Public Administration",
+      "type": "Sector"
+    },
+    {
+      "id": "http://enterprise.org/ontology/wb#Project_P094795",
+      "name": "China-PCF-CDCF Hubei Guangrun Hydropower",
+      "type": "Project"
+    },
+    {
+      "id": "http://enterprise.org/ontology/wb#Country_China",
+      "name": "China",
+      "type": "Country"
+    },
+    {
+      "id": "http://enterprise.org/ontology/wb#Project_P096124",
+      "name": "Vishnugad Pipalkoti Hydro Electric Project",
+      "type": "Project"
+    },
+    {
+      "id": "http://enterprise.org/ontology/wb#Country_India",
+      "name": "India",
+      "type": "Country"
+    },
+    {
+      "id": "http://enterprise.org/ontology/wb#Sector_Other_Water_Supply%2C_Sanitation_and_Waste_Management",
+      "name": "Other Water Supply, Sanitation and Waste Management",
+      "type": "Sector"
+    },
+    {
+      "id": "http://enterprise.org/ontology/wb#Project_P096469",
+      "name": "Chile Santiago Composting Project",
+      "type": "Project"
+    },
+    {
+      "id": "http://enterprise.org/ontology/wb#Country_Chile",
+      "name": "Chile",
+      "type": "Country"
+    },
+    {
+      "id": "http://enterprise.org/ontology/wb#Sector_Waste_Management",
+      "name": "Waste Management",
+      "type": "Sector"
+    },
+    {
+      "id": "http://enterprise.org/ontology/wb#Project_P098266",
+      "name": "Community Empowerment Project",
+      "type": "Project"
+    },
+    {
+      "id": "http://enterprise.org/ontology/wb#Country_Liberia",
+      "name": "Liberia",
       "type": "Country"
     },
     {
@@ -151,210 +661,3455 @@
       "type": "Sector"
     },
     {
-      "id": "http://enterprise.org/ontology/wb#Sector_Public_Administration_-_Health",
-      "name": "Public Administration - Health",
+      "id": "http://enterprise.org/ontology/wb#Sector_Primary_Education",
+      "name": "Primary Education",
       "type": "Sector"
+    },
+    {
+      "id": "http://enterprise.org/ontology/wb#Project_P098268",
+      "name": "ML-BioCarbon Fund MASPP & Biomass (FY06)",
+      "type": "Project"
+    },
+    {
+      "id": "http://enterprise.org/ontology/wb#Project_P098572",
+      "name": "Northern Negros Geothermal Power Project",
+      "type": "Project"
+    },
+    {
+      "id": "http://enterprise.org/ontology/wb#Sector_Renewable_energy",
+      "name": "Renewable energy",
+      "type": "Sector"
+    },
+    {
+      "id": "http://enterprise.org/ontology/wb#Project_P099270",
+      "name": "SOUTH-WEST ROADS:  WESTERN EUROPE-WESTERN CHINA INTERNATIONAL TRANSIT CORRIDOR (CAREC 1B & 6B)",
+      "type": "Project"
+    },
+    {
+      "id": "http://enterprise.org/ontology/wb#Sector_Public_Administration_-_Transportation",
+      "name": "Public Administration - Transportation",
+      "type": "Sector"
+    },
+    {
+      "id": "http://enterprise.org/ontology/wb#Sector_Rural_and_Inter-Urban_Roads",
+      "name": "Rural and Inter-Urban Roads",
+      "type": "Sector"
+    },
+    {
+      "id": "http://enterprise.org/ontology/wb#Project_P099628",
+      "name": "BioCF Kenya Greenbelt Movement",
+      "type": "Project"
+    },
+    {
+      "id": "http://enterprise.org/ontology/wb#Country_Kenya",
+      "name": "Kenya",
+      "type": "Country"
+    },
+    {
+      "id": "http://enterprise.org/ontology/wb#Project_P101068",
+      "name": "AGAIB Maritime - LICUS Ref. No. 18 C, TF056809",
+      "type": "Project"
+    },
+    {
+      "id": "http://enterprise.org/ontology/wb#Sector_Sanitation",
+      "name": "Sanitation",
+      "type": "Sector"
+    },
+    {
+      "id": "http://enterprise.org/ontology/wb#Project_P102904",
+      "name": "Liberia Judicial System Reform",
+      "type": "Project"
+    },
+    {
+      "id": "http://enterprise.org/ontology/wb#Sector_Law_and_Justice",
+      "name": "Law and Justice",
+      "type": "Sector"
+    },
+    {
+      "id": "http://enterprise.org/ontology/wb#Project_P103063",
+      "name": "LB- GREATER BEIRUT WATER SUPPLY",
+      "type": "Project"
+    },
+    {
+      "id": "http://enterprise.org/ontology/wb#Country_Lebanon",
+      "name": "Lebanon",
+      "type": "Country"
+    },
+    {
+      "id": "http://enterprise.org/ontology/wb#Sector_Public_Administration_-_Water%2C_Sanitation_and_Waste_Management",
+      "name": "Public Administration - Water, Sanitation and Waste Management",
+      "type": "Sector"
+    },
+    {
+      "id": "http://enterprise.org/ontology/wb#Sector_Water_Supply",
+      "name": "Water Supply",
+      "type": "Sector"
+    },
+    {
+      "id": "http://enterprise.org/ontology/wb#Project_P103467",
+      "name": "Mauritius Sugar Cogen (Carbon)",
+      "type": "Project"
+    },
+    {
+      "id": "http://enterprise.org/ontology/wb#Country_Mauritius",
+      "name": "Mauritius",
+      "type": "Country"
+    },
+    {
+      "id": "http://enterprise.org/ontology/wb#Project_P104543",
+      "name": "NI Debt Reduction Facility  -  Debt Buy-Back",
+      "type": "Project"
+    },
+    {
+      "id": "http://enterprise.org/ontology/wb#Country_Nicaragua",
+      "name": "Nicaragua",
+      "type": "Country"
+    },
+    {
+      "id": "http://enterprise.org/ontology/wb#Project_P105680",
+      "name": "Matanza-Riachuelo Basin Sustainable Development Project",
+      "type": "Project"
+    },
+    {
+      "id": "http://enterprise.org/ontology/wb#Country_Argentina",
+      "name": "Argentina",
+      "type": "Country"
+    },
+    {
+      "id": "http://enterprise.org/ontology/wb#Project_P106636",
+      "name": "CF Kengen, Sondu Miriu, Kipevu",
+      "type": "Project"
+    },
+    {
+      "id": "http://enterprise.org/ontology/wb#Project_P108916",
+      "name": "EPPR - Consolidation Phase - Savanes GA#090492",
+      "type": "Project"
+    },
+    {
+      "id": "http://enterprise.org/ontology/wb#Project_P112301",
+      "name": "MONASH UNIVERSITY CHINA SEAT BELT STUDY",
+      "type": "Project"
+    },
+    {
+      "id": "http://enterprise.org/ontology/wb#Project_P112302",
+      "name": "GLOBAL FORUM FOR HEALTH RESEARCH",
+      "type": "Project"
+    },
+    {
+      "id": "http://enterprise.org/ontology/wb#Project_P114133",
+      "name": "iRAP Vietnam Staff Costs",
+      "type": "Project"
+    },
+    {
+      "id": "http://enterprise.org/ontology/wb#Country_Vietnam",
+      "name": "Vietnam",
+      "type": "Country"
+    },
+    {
+      "id": "http://enterprise.org/ontology/wb#Project_P114323",
+      "name": "KG: Implementation of Statistical Master Plan",
+      "type": "Project"
+    },
+    {
+      "id": "http://enterprise.org/ontology/wb#Country_Kyrgyz_Republic",
+      "name": "Kyrgyz Republic",
+      "type": "Country"
+    },
+    {
+      "id": "http://enterprise.org/ontology/wb#Project_P115893",
+      "name": "Tarbela Fourth Extension Hydropower Project",
+      "type": "Project"
+    },
+    {
+      "id": "http://enterprise.org/ontology/wb#Country_Pakistan",
+      "name": "Pakistan",
+      "type": "Country"
+    },
+    {
+      "id": "http://enterprise.org/ontology/wb#Sector_Energy_Transmission_and_Distribution",
+      "name": "Energy Transmission and Distribution",
+      "type": "Sector"
+    },
+    {
+      "id": "http://enterprise.org/ontology/wb#Project_P117074",
+      "name": "Public Financial Management (PFM) Capacity Building for Somalia",
+      "type": "Project"
+    },
+    {
+      "id": "http://enterprise.org/ontology/wb#Country_Somalia",
+      "name": "Somalia",
+      "type": "Country"
+    },
+    {
+      "id": "http://enterprise.org/ontology/wb#Sector_Public_Administration_-_Financial_Sector",
+      "name": "Public Administration - Financial Sector",
+      "type": "Sector"
+    },
+    {
+      "id": "http://enterprise.org/ontology/wb#Project_P117635",
+      "name": "Kenya Water Security and Climate Resilience Project",
+      "type": "Project"
+    },
+    {
+      "id": "http://enterprise.org/ontology/wb#Project_P118518",
+      "name": "Moldova Agriculture Competitiveness Project",
+      "type": "Project"
+    },
+    {
+      "id": "http://enterprise.org/ontology/wb#Country_Moldova",
+      "name": "Moldova",
+      "type": "Country"
+    },
+    {
+      "id": "http://enterprise.org/ontology/wb#Sector_Public_Administration_-_Agriculture%2C_Fishing_%26_Forestry",
+      "name": "Public Administration - Agriculture, Fishing & Forestry",
+      "type": "Sector"
+    },
+    {
+      "id": "http://enterprise.org/ontology/wb#Project_P119063",
+      "name": "Ghana Greater Accra Metropolitan Area Sanitation and Water Project",
+      "type": "Project"
+    },
+    {
+      "id": "http://enterprise.org/ontology/wb#Project_P119343",
+      "name": "Cebu Bus Rapid Transit (BRT) Project",
+      "type": "Project"
+    },
+    {
+      "id": "http://enterprise.org/ontology/wb#Sector_Urban_Transport",
+      "name": "Urban Transport",
+      "type": "Sector"
+    },
+    {
+      "id": "http://enterprise.org/ontology/wb#Project_P119893",
+      "name": "Electricity Network Reinforcement and Expansion Project (ENREP)",
+      "type": "Project"
+    },
+    {
+      "id": "http://enterprise.org/ontology/wb#Country_Ethiopia",
+      "name": "Ethiopia",
+      "type": "Country"
+    },
+    {
+      "id": "http://enterprise.org/ontology/wb#Sector_Public_Administration_-_Energy_and_Extractives",
+      "name": "Public Administration - Energy and Extractives",
+      "type": "Sector"
+    },
+    {
+      "id": "http://enterprise.org/ontology/wb#Sector_Renewable_Energy_Solar",
+      "name": "Renewable Energy Solar",
+      "type": "Sector"
+    },
+    {
+      "id": "http://enterprise.org/ontology/wb#Project_P120583",
+      "name": "Bangladesh Modern Food Storage Facilities Project",
+      "type": "Project"
+    },
+    {
+      "id": "http://enterprise.org/ontology/wb#Project_P121034",
+      "name": "PREPARATION OF STATE OF THE CITIES REPORT, NIGERIA",
+      "type": "Project"
+    },
+    {
+      "id": "http://enterprise.org/ontology/wb#Country_Nigeria",
+      "name": "Nigeria",
+      "type": "Country"
+    },
+    {
+      "id": "http://enterprise.org/ontology/wb#Project_P121507",
+      "name": "Dasu Hydropower Stage I Project",
+      "type": "Project"
+    },
+    {
+      "id": "http://enterprise.org/ontology/wb#Project_P121986",
+      "name": "Zambia Pilot Program for Climate Resilience - Phase I",
+      "type": "Project"
+    },
+    {
+      "id": "http://enterprise.org/ontology/wb#Country_Zambia",
+      "name": "Zambia",
+      "type": "Country"
+    },
+    {
+      "id": "http://enterprise.org/ontology/wb#Project_P122111",
+      "name": "CR Port regional'ion & hinterland access",
+      "type": "Project"
+    },
+    {
+      "id": "http://enterprise.org/ontology/wb#Country_Costa_Rica",
+      "name": "Costa Rica",
+      "type": "Country"
+    },
+    {
+      "id": "http://enterprise.org/ontology/wb#Project_P122235",
+      "name": "AF Irrigation Restoration and Development Project",
+      "type": "Project"
+    },
+    {
+      "id": "http://enterprise.org/ontology/wb#Project_P122387",
+      "name": "DFID TF III Supervision and Fiduciary Costs",
+      "type": "Project"
+    },
+    {
+      "id": "http://enterprise.org/ontology/wb#Project_P122764",
+      "name": "Ethiopia Women Entrepreneurship Development Project",
+      "type": "Project"
+    },
+    {
+      "id": "http://enterprise.org/ontology/wb#Project_P122975",
+      "name": "KH Strategic Program for Climate Resilience-Phase 1",
+      "type": "Project"
+    },
+    {
+      "id": "http://enterprise.org/ontology/wb#Country_Cambodia",
+      "name": "Cambodia",
+      "type": "Country"
+    },
+    {
+      "id": "http://enterprise.org/ontology/wb#Project_P123112",
+      "name": "Transforming Irrigation Management in Nigeria",
+      "type": "Project"
+    },
+    {
+      "id": "http://enterprise.org/ontology/wb#Project_P124583",
+      "name": "Indonesia-FCPF REDD Readiness",
+      "type": "Project"
+    },
+    {
+      "id": "http://enterprise.org/ontology/wb#Country_Indonesia",
+      "name": "Indonesia",
+      "type": "Country"
+    },
+    {
+      "id": "http://enterprise.org/ontology/wb#Project_P125590",
+      "name": "Uganda North-Eastern Road Corridor Asset Management Project (NERAMP)",
+      "type": "Project"
+    },
+    {
+      "id": "http://enterprise.org/ontology/wb#Project_P125597",
+      "name": "Kabul Municipal Development Program",
+      "type": "Project"
+    },
+    {
+      "id": "http://enterprise.org/ontology/wb#Project_P126057",
+      "name": "AFR3 Implementation of a business incubator in Mozambique",
+      "type": "Project"
+    },
+    {
+      "id": "http://enterprise.org/ontology/wb#Project_P126328",
+      "name": "Somalia Knowledge for Operations and Political Economy Program",
+      "type": "Project"
+    },
+    {
+      "id": "http://enterprise.org/ontology/wb#Project_P126498",
+      "name": "Rwanda Feeder Roads Development Project",
+      "type": "Project"
+    },
+    {
+      "id": "http://enterprise.org/ontology/wb#Country_Rwanda",
+      "name": "Rwanda",
+      "type": "Country"
+    },
+    {
+      "id": "http://enterprise.org/ontology/wb#Project_P127096",
+      "name": "Virtual Incubation Pilot Program in East Africa",
+      "type": "Project"
+    },
+    {
+      "id": "http://enterprise.org/ontology/wb#Sector_ICT_Services",
+      "name": "ICT Services",
+      "type": "Sector"
+    },
+    {
+      "id": "http://enterprise.org/ontology/wb#Sector_Other_Information_and_Communications_Technologies",
+      "name": "Other Information and Communications Technologies",
+      "type": "Sector"
+    },
+    {
+      "id": "http://enterprise.org/ontology/wb#Sector_Public_Administration_-_Information_and_Communications_Technologies",
+      "name": "Public Administration - Information and Communications Technologies",
+      "type": "Sector"
+    },
+    {
+      "id": "http://enterprise.org/ontology/wb#Project_P127115",
+      "name": "Mozambique Phase II: EITI Implementation",
+      "type": "Project"
+    },
+    {
+      "id": "http://enterprise.org/ontology/wb#Sector_Mining",
+      "name": "Mining",
+      "type": "Sector"
+    },
+    {
+      "id": "http://enterprise.org/ontology/wb#Project_P127125",
+      "name": "MOLDOVA AGRICULTURE COMPETITIVENESS PROJECT (GEF)",
+      "type": "Project"
+    },
+    {
+      "id": "http://enterprise.org/ontology/wb#Project_P127484",
+      "name": "Libya Transition Assistance SPF",
+      "type": "Project"
+    },
+    {
+      "id": "http://enterprise.org/ontology/wb#Country_Libya",
+      "name": "Libya",
+      "type": "Country"
+    },
+    {
+      "id": "http://enterprise.org/ontology/wb#Project_P127725",
+      "name": "Bihar Kosi Basin Development Project",
+      "type": "Project"
+    },
+    {
+      "id": "http://enterprise.org/ontology/wb#Project_P127741",
+      "name": "Philippines National Community Driven Development Program",
+      "type": "Project"
+    },
+    {
+      "id": "http://enterprise.org/ontology/wb#Project_P128050",
+      "name": "East-West Roads Project (Almaty-Korgos Section): Western Europe - Western China International Transit Corridor (CAREC - 1b)",
+      "type": "Project"
+    },
+    {
+      "id": "http://enterprise.org/ontology/wb#Project_P128068",
+      "name": "Caribbean Regional MSME Seed  Fund",
+      "type": "Project"
+    },
+    {
+      "id": "http://enterprise.org/ontology/wb#Country_Caribbean",
+      "name": "Caribbean",
+      "type": "Country"
+    },
+    {
+      "id": "http://enterprise.org/ontology/wb#Project_P128344",
+      "name": "Social Safety Nets Modernization Project",
+      "type": "Project"
+    },
+    {
+      "id": "http://enterprise.org/ontology/wb#Country_Ukraine",
+      "name": "Ukraine",
+      "type": "Country"
+    },
+    {
+      "id": "http://enterprise.org/ontology/wb#Project_P128605",
+      "name": "SUSTAINABLE CITIES",
+      "type": "Project"
+    },
+    {
+      "id": "http://enterprise.org/ontology/wb#Project_P128921",
+      "name": "Partial Risk Sharing Facility in Energy Efficiency",
+      "type": "Project"
+    },
+    {
+      "id": "http://enterprise.org/ontology/wb#Project_P128950",
+      "name": "REAL ESTATE REGISTRATION PROJECT",
+      "type": "Project"
+    },
+    {
+      "id": "http://enterprise.org/ontology/wb#Country_Bosnia_and_Herzegovina",
+      "name": "Bosnia and Herzegovina",
+      "type": "Country"
     }
   ],
   "links": [
     {
-      "source": "http://enterprise.org/ontology/wb#Project_P181369",
-      "target": "http://enterprise.org/ontology/wb#Country_Cabo_Verde",
+      "source": "http://enterprise.org/ontology/wb#Project_P000256",
+      "target": "http://enterprise.org/ontology/wb#Country_Burkina_Faso",
       "label": "locatedIn"
     },
     {
-      "source": "http://enterprise.org/ontology/wb#Project_P181369",
-      "target": "http://enterprise.org/ontology/wb#Sector_Fisheries",
+      "source": "http://enterprise.org/ontology/wb#Project_P000256",
+      "target": "http://enterprise.org/ontology/wb#Sector_Railways",
       "label": "hasSector"
     },
     {
-      "source": "http://enterprise.org/ontology/wb#Project_P181369",
-      "target": "http://enterprise.org/ontology/wb#Country_Cabo_Verde",
+      "source": "http://enterprise.org/ontology/wb#Project_P000952",
+      "target": "http://enterprise.org/ontology/wb#Country_Ghana",
       "label": "locatedIn"
     },
     {
-      "source": "http://enterprise.org/ontology/wb#Project_P181369",
-      "target": "http://enterprise.org/ontology/wb#Sector_Public_Administration_-_Industry%2C_Trade_and_Services",
-      "label": "hasSector"
-    },
-    {
-      "source": "http://enterprise.org/ontology/wb#Project_P181369",
-      "target": "http://enterprise.org/ontology/wb#Country_Cabo_Verde",
-      "label": "locatedIn"
-    },
-    {
-      "source": "http://enterprise.org/ontology/wb#Project_P181369",
-      "target": "http://enterprise.org/ontology/wb#Sector_Tourism",
-      "label": "hasSector"
-    },
-    {
-      "source": "http://enterprise.org/ontology/wb#Project_P181423",
-      "target": "http://enterprise.org/ontology/wb#Country_Pakistan",
-      "label": "locatedIn"
-    },
-    {
-      "source": "http://enterprise.org/ontology/wb#Project_P181423",
-      "target": "http://enterprise.org/ontology/wb#Sector_Other_Energy_and_Extractives",
-      "label": "hasSector"
-    },
-    {
-      "source": "http://enterprise.org/ontology/wb#Project_P181423",
-      "target": "http://enterprise.org/ontology/wb#Country_Pakistan",
-      "label": "locatedIn"
-    },
-    {
-      "source": "http://enterprise.org/ontology/wb#Project_P181423",
-      "target": "http://enterprise.org/ontology/wb#Sector_Other_Public_Administration",
-      "label": "hasSector"
-    },
-    {
-      "source": "http://enterprise.org/ontology/wb#Project_P181423",
-      "target": "http://enterprise.org/ontology/wb#Country_Pakistan",
-      "label": "locatedIn"
-    },
-    {
-      "source": "http://enterprise.org/ontology/wb#Project_P181423",
-      "target": "http://enterprise.org/ontology/wb#Sector_Public_Administration_-_Energy_and_Extractives",
-      "label": "hasSector"
-    },
-    {
-      "source": "http://enterprise.org/ontology/wb#Project_P181423",
-      "target": "http://enterprise.org/ontology/wb#Country_Pakistan",
-      "label": "locatedIn"
-    },
-    {
-      "source": "http://enterprise.org/ontology/wb#Project_P181423",
-      "target": "http://enterprise.org/ontology/wb#Sector_Renewable_Energy_Hydro",
-      "label": "hasSector"
-    },
-    {
-      "source": "http://enterprise.org/ontology/wb#Project_P181493",
-      "target": "http://enterprise.org/ontology/wb#Country_OECS_Countries",
-      "label": "locatedIn"
-    },
-    {
-      "source": "http://enterprise.org/ontology/wb#Project_P181493",
-      "target": "http://enterprise.org/ontology/wb#Sector_Other_Public_Administration",
-      "label": "hasSector"
-    },
-    {
-      "source": "http://enterprise.org/ontology/wb#Project_P181533",
-      "target": "http://enterprise.org/ontology/wb#Country_Western_and_Central_Africa",
-      "label": "locatedIn"
-    },
-    {
-      "source": "http://enterprise.org/ontology/wb#Project_P181533",
+      "source": "http://enterprise.org/ontology/wb#Project_P000952",
       "target": "http://enterprise.org/ontology/wb#Sector_Agricultural_markets%2C_commercialization_and_agri-business",
       "label": "hasSector"
     },
     {
-      "source": "http://enterprise.org/ontology/wb#Project_P181533",
-      "target": "http://enterprise.org/ontology/wb#Country_Western_and_Central_Africa",
+      "source": "http://enterprise.org/ontology/wb#Project_P000952",
+      "target": "http://enterprise.org/ontology/wb#Country_Ghana",
       "label": "locatedIn"
     },
     {
-      "source": "http://enterprise.org/ontology/wb#Project_P181533",
-      "target": "http://enterprise.org/ontology/wb#Sector_Livestock",
+      "source": "http://enterprise.org/ontology/wb#Project_P000952",
+      "target": "http://enterprise.org/ontology/wb#Sector_Central_Government_%28Central_Agencies%29",
       "label": "hasSector"
     },
     {
-      "source": "http://enterprise.org/ontology/wb#Project_P181533",
-      "target": "http://enterprise.org/ontology/wb#Country_Western_and_Central_Africa",
+      "source": "http://enterprise.org/ontology/wb#Project_P000952",
+      "target": "http://enterprise.org/ontology/wb#Country_Ghana",
       "label": "locatedIn"
     },
     {
-      "source": "http://enterprise.org/ontology/wb#Project_P181533",
-      "target": "http://enterprise.org/ontology/wb#Sector_Other_Water_Supply%2C_Sanitation_and_Waste_Management",
+      "source": "http://enterprise.org/ontology/wb#Project_P000952",
+      "target": "http://enterprise.org/ontology/wb#Sector_Crops",
       "label": "hasSector"
     },
     {
-      "source": "http://enterprise.org/ontology/wb#Project_P181533",
-      "target": "http://enterprise.org/ontology/wb#Country_Western_and_Central_Africa",
+      "source": "http://enterprise.org/ontology/wb#Project_P000952",
+      "target": "http://enterprise.org/ontology/wb#Country_Ghana",
       "label": "locatedIn"
     },
     {
-      "source": "http://enterprise.org/ontology/wb#Project_P181533",
-      "target": "http://enterprise.org/ontology/wb#Sector_Public_Administration_-_Agriculture%2C_Fishing_%26_Forestry",
+      "source": "http://enterprise.org/ontology/wb#Project_P000952",
+      "target": "http://enterprise.org/ontology/wb#Sector_Other_Industry%2C_Trade_and_Services",
       "label": "hasSector"
     },
     {
-      "source": "http://enterprise.org/ontology/wb#Project_P181595",
-      "target": "http://enterprise.org/ontology/wb#Country_Tuvalu",
+      "source": "http://enterprise.org/ontology/wb#Project_P001086",
+      "target": "http://enterprise.org/ontology/wb#Country_Guinea",
       "label": "locatedIn"
     },
     {
-      "source": "http://enterprise.org/ontology/wb#Project_P181595",
+      "source": "http://enterprise.org/ontology/wb#Project_P001086",
+      "target": "http://enterprise.org/ontology/wb#Sector_Banking_Institutions",
+      "label": "hasSector"
+    },
+    {
+      "source": "http://enterprise.org/ontology/wb#Project_P001086",
+      "target": "http://enterprise.org/ontology/wb#Country_Guinea",
+      "label": "locatedIn"
+    },
+    {
+      "source": "http://enterprise.org/ontology/wb#Project_P001086",
+      "target": "http://enterprise.org/ontology/wb#Sector_Central_Government_%28Central_Agencies%29",
+      "label": "hasSector"
+    },
+    {
+      "source": "http://enterprise.org/ontology/wb#Project_P001086",
+      "target": "http://enterprise.org/ontology/wb#Country_Guinea",
+      "label": "locatedIn"
+    },
+    {
+      "source": "http://enterprise.org/ontology/wb#Project_P001086",
+      "target": "http://enterprise.org/ontology/wb#Sector_Crops",
+      "label": "hasSector"
+    },
+    {
+      "source": "http://enterprise.org/ontology/wb#Project_P001086",
+      "target": "http://enterprise.org/ontology/wb#Country_Guinea",
+      "label": "locatedIn"
+    },
+    {
+      "source": "http://enterprise.org/ontology/wb#Project_P001086",
+      "target": "http://enterprise.org/ontology/wb#Sector_Other_Industry%2C_Trade_and_Services",
+      "label": "hasSector"
+    },
+    {
+      "source": "http://enterprise.org/ontology/wb#Project_P001165",
+      "target": "http://enterprise.org/ontology/wb#Country_Cote_d%27Ivoire",
+      "label": "locatedIn"
+    },
+    {
+      "source": "http://enterprise.org/ontology/wb#Project_P001165",
+      "target": "http://enterprise.org/ontology/wb#Sector_Agricultural_markets%2C_commercialization_and_agri-business",
+      "label": "hasSector"
+    },
+    {
+      "source": "http://enterprise.org/ontology/wb#Project_P001165",
+      "target": "http://enterprise.org/ontology/wb#Country_Cote_d%27Ivoire",
+      "label": "locatedIn"
+    },
+    {
+      "source": "http://enterprise.org/ontology/wb#Project_P001165",
+      "target": "http://enterprise.org/ontology/wb#Sector_Other_Industry%2C_Trade_and_Services",
+      "label": "hasSector"
+    },
+    {
+      "source": "http://enterprise.org/ontology/wb#Project_P001165",
+      "target": "http://enterprise.org/ontology/wb#Country_Cote_d%27Ivoire",
+      "label": "locatedIn"
+    },
+    {
+      "source": "http://enterprise.org/ontology/wb#Project_P001165",
       "target": "http://enterprise.org/ontology/wb#Sector_Ports/Waterways",
       "label": "hasSector"
     },
     {
-      "source": "http://enterprise.org/ontology/wb#Project_P181595",
-      "target": "http://enterprise.org/ontology/wb#Country_Tuvalu",
+      "source": "http://enterprise.org/ontology/wb#Project_P001165",
+      "target": "http://enterprise.org/ontology/wb#Country_Cote_d%27Ivoire",
       "label": "locatedIn"
     },
     {
-      "source": "http://enterprise.org/ontology/wb#Project_P181595",
-      "target": "http://enterprise.org/ontology/wb#Sector_Public_Administration_-_Transportation",
+      "source": "http://enterprise.org/ontology/wb#Project_P001165",
+      "target": "http://enterprise.org/ontology/wb#Sector_Power",
       "label": "hasSector"
     },
     {
-      "source": "http://enterprise.org/ontology/wb#Project_P181632",
-      "target": "http://enterprise.org/ontology/wb#Country_Western_and_Central_Africa",
+      "source": "http://enterprise.org/ontology/wb#Project_P001557",
+      "target": "http://enterprise.org/ontology/wb#Country_Madagascar",
       "label": "locatedIn"
     },
     {
-      "source": "http://enterprise.org/ontology/wb#Project_P181632",
+      "source": "http://enterprise.org/ontology/wb#Project_P001557",
+      "target": "http://enterprise.org/ontology/wb#Sector_Agricultural_markets%2C_commercialization_and_agri-business",
+      "label": "hasSector"
+    },
+    {
+      "source": "http://enterprise.org/ontology/wb#Project_P001557",
+      "target": "http://enterprise.org/ontology/wb#Country_Madagascar",
+      "label": "locatedIn"
+    },
+    {
+      "source": "http://enterprise.org/ontology/wb#Project_P001557",
+      "target": "http://enterprise.org/ontology/wb#Sector_Banking_Institutions",
+      "label": "hasSector"
+    },
+    {
+      "source": "http://enterprise.org/ontology/wb#Project_P001557",
+      "target": "http://enterprise.org/ontology/wb#Country_Madagascar",
+      "label": "locatedIn"
+    },
+    {
+      "source": "http://enterprise.org/ontology/wb#Project_P001557",
+      "target": "http://enterprise.org/ontology/wb#Sector_Central_Government_%28Central_Agencies%29",
+      "label": "hasSector"
+    },
+    {
+      "source": "http://enterprise.org/ontology/wb#Project_P001557",
+      "target": "http://enterprise.org/ontology/wb#Country_Madagascar",
+      "label": "locatedIn"
+    },
+    {
+      "source": "http://enterprise.org/ontology/wb#Project_P001557",
+      "target": "http://enterprise.org/ontology/wb#Sector_Other_Industry%2C_Trade_and_Services",
+      "label": "hasSector"
+    },
+    {
+      "source": "http://enterprise.org/ontology/wb#Project_P001557",
+      "target": "http://enterprise.org/ontology/wb#Country_Madagascar",
+      "label": "locatedIn"
+    },
+    {
+      "source": "http://enterprise.org/ontology/wb#Project_P001557",
+      "target": "http://enterprise.org/ontology/wb#Sector_Trade",
+      "label": "hasSector"
+    },
+    {
+      "source": "http://enterprise.org/ontology/wb#Project_P001678",
+      "target": "http://enterprise.org/ontology/wb#Country_Malawi",
+      "label": "locatedIn"
+    },
+    {
+      "source": "http://enterprise.org/ontology/wb#Project_P001678",
+      "target": "http://enterprise.org/ontology/wb#Sector_Banking_Institutions",
+      "label": "hasSector"
+    },
+    {
+      "source": "http://enterprise.org/ontology/wb#Project_P001678",
+      "target": "http://enterprise.org/ontology/wb#Country_Malawi",
+      "label": "locatedIn"
+    },
+    {
+      "source": "http://enterprise.org/ontology/wb#Project_P001678",
+      "target": "http://enterprise.org/ontology/wb#Sector_Central_Government_%28Central_Agencies%29",
+      "label": "hasSector"
+    },
+    {
+      "source": "http://enterprise.org/ontology/wb#Project_P001678",
+      "target": "http://enterprise.org/ontology/wb#Country_Malawi",
+      "label": "locatedIn"
+    },
+    {
+      "source": "http://enterprise.org/ontology/wb#Project_P001678",
+      "target": "http://enterprise.org/ontology/wb#Sector_Crops",
+      "label": "hasSector"
+    },
+    {
+      "source": "http://enterprise.org/ontology/wb#Project_P001678",
+      "target": "http://enterprise.org/ontology/wb#Country_Malawi",
+      "label": "locatedIn"
+    },
+    {
+      "source": "http://enterprise.org/ontology/wb#Project_P001678",
+      "target": "http://enterprise.org/ontology/wb#Sector_Other_Agriculture%2C_Fishing_and_Forestry",
+      "label": "hasSector"
+    },
+    {
+      "source": "http://enterprise.org/ontology/wb#Project_P001678",
+      "target": "http://enterprise.org/ontology/wb#Country_Malawi",
+      "label": "locatedIn"
+    },
+    {
+      "source": "http://enterprise.org/ontology/wb#Project_P001678",
+      "target": "http://enterprise.org/ontology/wb#Sector_Other_Industry%2C_Trade_and_Services",
+      "label": "hasSector"
+    },
+    {
+      "source": "http://enterprise.org/ontology/wb#Project_P001694",
+      "target": "http://enterprise.org/ontology/wb#Country_Mali",
+      "label": "locatedIn"
+    },
+    {
+      "source": "http://enterprise.org/ontology/wb#Project_P001694",
+      "target": "http://enterprise.org/ontology/wb#Sector_%28Historic%29Perennial_crops",
+      "label": "hasSector"
+    },
+    {
+      "source": "http://enterprise.org/ontology/wb#Project_P001695",
+      "target": "http://enterprise.org/ontology/wb#Country_Mali",
+      "label": "locatedIn"
+    },
+    {
+      "source": "http://enterprise.org/ontology/wb#Project_P001695",
+      "target": "http://enterprise.org/ontology/wb#Sector_%28Historic%29Highways",
+      "label": "hasSector"
+    },
+    {
+      "source": "http://enterprise.org/ontology/wb#Project_P001758",
+      "target": "http://enterprise.org/ontology/wb#Country_Mozambique",
+      "label": "locatedIn"
+    },
+    {
+      "source": "http://enterprise.org/ontology/wb#Project_P001758",
+      "target": "http://enterprise.org/ontology/wb#Sector_%28Historic%29Macro/non-trade",
+      "label": "hasSector"
+    },
+    {
+      "source": "http://enterprise.org/ontology/wb#Project_P002353",
+      "target": "http://enterprise.org/ontology/wb#Country_Senegal",
+      "label": "locatedIn"
+    },
+    {
+      "source": "http://enterprise.org/ontology/wb#Project_P002353",
+      "target": "http://enterprise.org/ontology/wb#Sector_%28Historic%29Economic_management",
+      "label": "hasSector"
+    },
+    {
+      "source": "http://enterprise.org/ontology/wb#Project_P002361",
+      "target": "http://enterprise.org/ontology/wb#Country_Senegal",
+      "label": "locatedIn"
+    },
+    {
+      "source": "http://enterprise.org/ontology/wb#Project_P002361",
+      "target": "http://enterprise.org/ontology/wb#Sector_Agricultural_markets%2C_commercialization_and_agri-business",
+      "label": "hasSector"
+    },
+    {
+      "source": "http://enterprise.org/ontology/wb#Project_P002361",
+      "target": "http://enterprise.org/ontology/wb#Country_Senegal",
+      "label": "locatedIn"
+    },
+    {
+      "source": "http://enterprise.org/ontology/wb#Project_P002361",
+      "target": "http://enterprise.org/ontology/wb#Sector_Agro-industry",
+      "label": "hasSector"
+    },
+    {
+      "source": "http://enterprise.org/ontology/wb#Project_P002361",
+      "target": "http://enterprise.org/ontology/wb#Country_Senegal",
+      "label": "locatedIn"
+    },
+    {
+      "source": "http://enterprise.org/ontology/wb#Project_P002361",
+      "target": "http://enterprise.org/ontology/wb#Sector_Banking_Institutions",
+      "label": "hasSector"
+    },
+    {
+      "source": "http://enterprise.org/ontology/wb#Project_P002361",
+      "target": "http://enterprise.org/ontology/wb#Country_Senegal",
+      "label": "locatedIn"
+    },
+    {
+      "source": "http://enterprise.org/ontology/wb#Project_P002361",
+      "target": "http://enterprise.org/ontology/wb#Sector_Central_Government_%28Central_Agencies%29",
+      "label": "hasSector"
+    },
+    {
+      "source": "http://enterprise.org/ontology/wb#Project_P002361",
+      "target": "http://enterprise.org/ontology/wb#Country_Senegal",
+      "label": "locatedIn"
+    },
+    {
+      "source": "http://enterprise.org/ontology/wb#Project_P002361",
+      "target": "http://enterprise.org/ontology/wb#Sector_Other_Industry%2C_Trade_and_Services",
+      "label": "hasSector"
+    },
+    {
+      "source": "http://enterprise.org/ontology/wb#Project_P002368",
+      "target": "http://enterprise.org/ontology/wb#Country_Senegal",
+      "label": "locatedIn"
+    },
+    {
+      "source": "http://enterprise.org/ontology/wb#Project_P002368",
+      "target": "http://enterprise.org/ontology/wb#Sector_Central_Government_%28Central_Agencies%29",
+      "label": "hasSector"
+    },
+    {
+      "source": "http://enterprise.org/ontology/wb#Project_P002368",
+      "target": "http://enterprise.org/ontology/wb#Country_Senegal",
+      "label": "locatedIn"
+    },
+    {
+      "source": "http://enterprise.org/ontology/wb#Project_P002368",
+      "target": "http://enterprise.org/ontology/wb#Sector_Oil_and_Gas",
+      "label": "hasSector"
+    },
+    {
+      "source": "http://enterprise.org/ontology/wb#Project_P002368",
+      "target": "http://enterprise.org/ontology/wb#Country_Senegal",
+      "label": "locatedIn"
+    },
+    {
+      "source": "http://enterprise.org/ontology/wb#Project_P002368",
+      "target": "http://enterprise.org/ontology/wb#Sector_Other_Education",
+      "label": "hasSector"
+    },
+    {
+      "source": "http://enterprise.org/ontology/wb#Project_P002368",
+      "target": "http://enterprise.org/ontology/wb#Country_Senegal",
+      "label": "locatedIn"
+    },
+    {
+      "source": "http://enterprise.org/ontology/wb#Project_P002368",
+      "target": "http://enterprise.org/ontology/wb#Sector_Other_Industry%2C_Trade_and_Services",
+      "label": "hasSector"
+    },
+    {
+      "source": "http://enterprise.org/ontology/wb#Project_P002370",
+      "target": "http://enterprise.org/ontology/wb#Country_Senegal",
+      "label": "locatedIn"
+    },
+    {
+      "source": "http://enterprise.org/ontology/wb#Project_P002370",
+      "target": "http://enterprise.org/ontology/wb#Sector_Central_Government_%28Central_Agencies%29",
+      "label": "hasSector"
+    },
+    {
+      "source": "http://enterprise.org/ontology/wb#Project_P002370",
+      "target": "http://enterprise.org/ontology/wb#Country_Senegal",
+      "label": "locatedIn"
+    },
+    {
+      "source": "http://enterprise.org/ontology/wb#Project_P002370",
+      "target": "http://enterprise.org/ontology/wb#Sector_Oil_and_Gas",
+      "label": "hasSector"
+    },
+    {
+      "source": "http://enterprise.org/ontology/wb#Project_P002370",
+      "target": "http://enterprise.org/ontology/wb#Country_Senegal",
+      "label": "locatedIn"
+    },
+    {
+      "source": "http://enterprise.org/ontology/wb#Project_P002370",
+      "target": "http://enterprise.org/ontology/wb#Sector_Other_Education",
+      "label": "hasSector"
+    },
+    {
+      "source": "http://enterprise.org/ontology/wb#Project_P002370",
+      "target": "http://enterprise.org/ontology/wb#Country_Senegal",
+      "label": "locatedIn"
+    },
+    {
+      "source": "http://enterprise.org/ontology/wb#Project_P002370",
+      "target": "http://enterprise.org/ontology/wb#Sector_Other_Industry%2C_Trade_and_Services",
+      "label": "hasSector"
+    },
+    {
+      "source": "http://enterprise.org/ontology/wb#Project_P002374",
+      "target": "http://enterprise.org/ontology/wb#Country_Senegal",
+      "label": "locatedIn"
+    },
+    {
+      "source": "http://enterprise.org/ontology/wb#Project_P002374",
+      "target": "http://enterprise.org/ontology/wb#Sector_Central_Government_%28Central_Agencies%29",
+      "label": "hasSector"
+    },
+    {
+      "source": "http://enterprise.org/ontology/wb#Project_P002374",
+      "target": "http://enterprise.org/ontology/wb#Country_Senegal",
+      "label": "locatedIn"
+    },
+    {
+      "source": "http://enterprise.org/ontology/wb#Project_P002374",
+      "target": "http://enterprise.org/ontology/wb#Sector_Oil_and_Gas",
+      "label": "hasSector"
+    },
+    {
+      "source": "http://enterprise.org/ontology/wb#Project_P002374",
+      "target": "http://enterprise.org/ontology/wb#Country_Senegal",
+      "label": "locatedIn"
+    },
+    {
+      "source": "http://enterprise.org/ontology/wb#Project_P002374",
+      "target": "http://enterprise.org/ontology/wb#Sector_Other_Education",
+      "label": "hasSector"
+    },
+    {
+      "source": "http://enterprise.org/ontology/wb#Project_P002374",
+      "target": "http://enterprise.org/ontology/wb#Country_Senegal",
+      "label": "locatedIn"
+    },
+    {
+      "source": "http://enterprise.org/ontology/wb#Project_P002374",
+      "target": "http://enterprise.org/ontology/wb#Sector_Other_Industry%2C_Trade_and_Services",
+      "label": "hasSector"
+    },
+    {
+      "source": "http://enterprise.org/ontology/wb#Project_P002794",
+      "target": "http://enterprise.org/ontology/wb#Country_Tanzania",
+      "label": "locatedIn"
+    },
+    {
+      "source": "http://enterprise.org/ontology/wb#Project_P002794",
+      "target": "http://enterprise.org/ontology/wb#Sector_Agro-industry",
+      "label": "hasSector"
+    },
+    {
+      "source": "http://enterprise.org/ontology/wb#Project_P002794",
+      "target": "http://enterprise.org/ontology/wb#Country_Tanzania",
+      "label": "locatedIn"
+    },
+    {
+      "source": "http://enterprise.org/ontology/wb#Project_P002794",
+      "target": "http://enterprise.org/ontology/wb#Sector_Banking_Institutions",
+      "label": "hasSector"
+    },
+    {
+      "source": "http://enterprise.org/ontology/wb#Project_P002794",
+      "target": "http://enterprise.org/ontology/wb#Country_Tanzania",
+      "label": "locatedIn"
+    },
+    {
+      "source": "http://enterprise.org/ontology/wb#Project_P002794",
+      "target": "http://enterprise.org/ontology/wb#Sector_Central_Government_%28Central_Agencies%29",
+      "label": "hasSector"
+    },
+    {
+      "source": "http://enterprise.org/ontology/wb#Project_P002794",
+      "target": "http://enterprise.org/ontology/wb#Country_Tanzania",
+      "label": "locatedIn"
+    },
+    {
+      "source": "http://enterprise.org/ontology/wb#Project_P002794",
+      "target": "http://enterprise.org/ontology/wb#Sector_Other_Industry%2C_Trade_and_Services",
+      "label": "hasSector"
+    },
+    {
+      "source": "http://enterprise.org/ontology/wb#Project_P002794",
+      "target": "http://enterprise.org/ontology/wb#Country_Tanzania",
+      "label": "locatedIn"
+    },
+    {
+      "source": "http://enterprise.org/ontology/wb#Project_P002794",
+      "target": "http://enterprise.org/ontology/wb#Sector_Trade",
+      "label": "hasSector"
+    },
+    {
+      "source": "http://enterprise.org/ontology/wb#Project_P002818",
+      "target": "http://enterprise.org/ontology/wb#Country_Tanzania",
+      "label": "locatedIn"
+    },
+    {
+      "source": "http://enterprise.org/ontology/wb#Project_P002818",
+      "target": "http://enterprise.org/ontology/wb#Sector_Agricultural_Extension%2C_Research%2C_and_Other_Support_Activities",
+      "label": "hasSector"
+    },
+    {
+      "source": "http://enterprise.org/ontology/wb#Project_P002818",
+      "target": "http://enterprise.org/ontology/wb#Country_Tanzania",
+      "label": "locatedIn"
+    },
+    {
+      "source": "http://enterprise.org/ontology/wb#Project_P002818",
+      "target": "http://enterprise.org/ontology/wb#Sector_Agricultural_markets%2C_commercialization_and_agri-business",
+      "label": "hasSector"
+    },
+    {
+      "source": "http://enterprise.org/ontology/wb#Project_P002818",
+      "target": "http://enterprise.org/ontology/wb#Country_Tanzania",
+      "label": "locatedIn"
+    },
+    {
+      "source": "http://enterprise.org/ontology/wb#Project_P002818",
+      "target": "http://enterprise.org/ontology/wb#Sector_Agro-industry",
+      "label": "hasSector"
+    },
+    {
+      "source": "http://enterprise.org/ontology/wb#Project_P002818",
+      "target": "http://enterprise.org/ontology/wb#Country_Tanzania",
+      "label": "locatedIn"
+    },
+    {
+      "source": "http://enterprise.org/ontology/wb#Project_P002818",
+      "target": "http://enterprise.org/ontology/wb#Sector_Central_Government_%28Central_Agencies%29",
+      "label": "hasSector"
+    },
+    {
+      "source": "http://enterprise.org/ontology/wb#Project_P002818",
+      "target": "http://enterprise.org/ontology/wb#Country_Tanzania",
+      "label": "locatedIn"
+    },
+    {
+      "source": "http://enterprise.org/ontology/wb#Project_P002818",
+      "target": "http://enterprise.org/ontology/wb#Sector_Other_Agriculture%2C_Fishing_and_Forestry",
+      "label": "hasSector"
+    },
+    {
+      "source": "http://enterprise.org/ontology/wb#Project_P002881",
+      "target": "http://enterprise.org/ontology/wb#Country_Togo",
+      "label": "locatedIn"
+    },
+    {
+      "source": "http://enterprise.org/ontology/wb#Project_P002881",
+      "target": "http://enterprise.org/ontology/wb#Sector_Agricultural_markets%2C_commercialization_and_agri-business",
+      "label": "hasSector"
+    },
+    {
+      "source": "http://enterprise.org/ontology/wb#Project_P002881",
+      "target": "http://enterprise.org/ontology/wb#Country_Togo",
+      "label": "locatedIn"
+    },
+    {
+      "source": "http://enterprise.org/ontology/wb#Project_P002881",
+      "target": "http://enterprise.org/ontology/wb#Sector_Central_Government_%28Central_Agencies%29",
+      "label": "hasSector"
+    },
+    {
+      "source": "http://enterprise.org/ontology/wb#Project_P002881",
+      "target": "http://enterprise.org/ontology/wb#Country_Togo",
+      "label": "locatedIn"
+    },
+    {
+      "source": "http://enterprise.org/ontology/wb#Project_P002881",
+      "target": "http://enterprise.org/ontology/wb#Sector_Other_Industry%2C_Trade_and_Services",
+      "label": "hasSector"
+    },
+    {
+      "source": "http://enterprise.org/ontology/wb#Project_P002885",
+      "target": "http://enterprise.org/ontology/wb#Country_Togo",
+      "label": "locatedIn"
+    },
+    {
+      "source": "http://enterprise.org/ontology/wb#Project_P002885",
+      "target": "http://enterprise.org/ontology/wb#Sector_Agricultural_markets%2C_commercialization_and_agri-business",
+      "label": "hasSector"
+    },
+    {
+      "source": "http://enterprise.org/ontology/wb#Project_P002885",
+      "target": "http://enterprise.org/ontology/wb#Country_Togo",
+      "label": "locatedIn"
+    },
+    {
+      "source": "http://enterprise.org/ontology/wb#Project_P002885",
+      "target": "http://enterprise.org/ontology/wb#Sector_Central_Government_%28Central_Agencies%29",
+      "label": "hasSector"
+    },
+    {
+      "source": "http://enterprise.org/ontology/wb#Project_P002885",
+      "target": "http://enterprise.org/ontology/wb#Country_Togo",
+      "label": "locatedIn"
+    },
+    {
+      "source": "http://enterprise.org/ontology/wb#Project_P002885",
+      "target": "http://enterprise.org/ontology/wb#Sector_Other_Industry%2C_Trade_and_Services",
+      "label": "hasSector"
+    },
+    {
+      "source": "http://enterprise.org/ontology/wb#Project_P002990",
+      "target": "http://enterprise.org/ontology/wb#Country_Uganda",
+      "label": "locatedIn"
+    },
+    {
+      "source": "http://enterprise.org/ontology/wb#Project_P002990",
+      "target": "http://enterprise.org/ontology/wb#Sector_Agricultural_markets%2C_commercialization_and_agri-business",
+      "label": "hasSector"
+    },
+    {
+      "source": "http://enterprise.org/ontology/wb#Project_P002990",
+      "target": "http://enterprise.org/ontology/wb#Country_Uganda",
+      "label": "locatedIn"
+    },
+    {
+      "source": "http://enterprise.org/ontology/wb#Project_P002990",
+      "target": "http://enterprise.org/ontology/wb#Sector_Banking_Institutions",
+      "label": "hasSector"
+    },
+    {
+      "source": "http://enterprise.org/ontology/wb#Project_P002990",
+      "target": "http://enterprise.org/ontology/wb#Country_Uganda",
+      "label": "locatedIn"
+    },
+    {
+      "source": "http://enterprise.org/ontology/wb#Project_P002990",
+      "target": "http://enterprise.org/ontology/wb#Sector_Central_Government_%28Central_Agencies%29",
+      "label": "hasSector"
+    },
+    {
+      "source": "http://enterprise.org/ontology/wb#Project_P002990",
+      "target": "http://enterprise.org/ontology/wb#Country_Uganda",
+      "label": "locatedIn"
+    },
+    {
+      "source": "http://enterprise.org/ontology/wb#Project_P002990",
+      "target": "http://enterprise.org/ontology/wb#Sector_Crops",
+      "label": "hasSector"
+    },
+    {
+      "source": "http://enterprise.org/ontology/wb#Project_P002990",
+      "target": "http://enterprise.org/ontology/wb#Country_Uganda",
+      "label": "locatedIn"
+    },
+    {
+      "source": "http://enterprise.org/ontology/wb#Project_P002990",
+      "target": "http://enterprise.org/ontology/wb#Sector_Other_Industry%2C_Trade_and_Services",
+      "label": "hasSector"
+    },
+    {
+      "source": "http://enterprise.org/ontology/wb#Project_P004325",
+      "target": "http://enterprise.org/ontology/wb#Country_Malaysia",
+      "label": "locatedIn"
+    },
+    {
+      "source": "http://enterprise.org/ontology/wb#Project_P004325",
+      "target": "http://enterprise.org/ontology/wb#Sector_Micro-_and_SME_finance",
+      "label": "hasSector"
+    },
+    {
+      "source": "http://enterprise.org/ontology/wb#Project_P004325",
+      "target": "http://enterprise.org/ontology/wb#Country_Malaysia",
+      "label": "locatedIn"
+    },
+    {
+      "source": "http://enterprise.org/ontology/wb#Project_P004325",
+      "target": "http://enterprise.org/ontology/wb#Sector_Other_Industry%2C_Trade_and_Services",
+      "label": "hasSector"
+    },
+    {
+      "source": "http://enterprise.org/ontology/wb#Project_P004868",
+      "target": "http://enterprise.org/ontology/wb#Country_Samoa",
+      "label": "locatedIn"
+    },
+    {
+      "source": "http://enterprise.org/ontology/wb#Project_P004868",
+      "target": "http://enterprise.org/ontology/wb#Sector_Power",
+      "label": "hasSector"
+    },
+    {
+      "source": "http://enterprise.org/ontology/wb#Project_P006187",
+      "target": "http://enterprise.org/ontology/wb#Country_Bolivia",
+      "label": "locatedIn"
+    },
+    {
+      "source": "http://enterprise.org/ontology/wb#Project_P006187",
+      "target": "http://enterprise.org/ontology/wb#Sector_Banking_Institutions",
+      "label": "hasSector"
+    },
+    {
+      "source": "http://enterprise.org/ontology/wb#Project_P006187",
+      "target": "http://enterprise.org/ontology/wb#Country_Bolivia",
+      "label": "locatedIn"
+    },
+    {
+      "source": "http://enterprise.org/ontology/wb#Project_P006187",
+      "target": "http://enterprise.org/ontology/wb#Sector_Central_Government_%28Central_Agencies%29",
+      "label": "hasSector"
+    },
+    {
+      "source": "http://enterprise.org/ontology/wb#Project_P006187",
+      "target": "http://enterprise.org/ontology/wb#Country_Bolivia",
+      "label": "locatedIn"
+    },
+    {
+      "source": "http://enterprise.org/ontology/wb#Project_P006187",
+      "target": "http://enterprise.org/ontology/wb#Sector_Other_Non-bank_Financial_Institutions",
+      "label": "hasSector"
+    },
+    {
+      "source": "http://enterprise.org/ontology/wb#Project_P006192",
+      "target": "http://enterprise.org/ontology/wb#Country_Bolivia",
+      "label": "locatedIn"
+    },
+    {
+      "source": "http://enterprise.org/ontology/wb#Project_P006192",
+      "target": "http://enterprise.org/ontology/wb#Sector_Banking_Institutions",
+      "label": "hasSector"
+    },
+    {
+      "source": "http://enterprise.org/ontology/wb#Project_P006192",
+      "target": "http://enterprise.org/ontology/wb#Country_Bolivia",
+      "label": "locatedIn"
+    },
+    {
+      "source": "http://enterprise.org/ontology/wb#Project_P006192",
+      "target": "http://enterprise.org/ontology/wb#Sector_Central_Government_%28Central_Agencies%29",
+      "label": "hasSector"
+    },
+    {
+      "source": "http://enterprise.org/ontology/wb#Project_P006192",
+      "target": "http://enterprise.org/ontology/wb#Country_Bolivia",
+      "label": "locatedIn"
+    },
+    {
+      "source": "http://enterprise.org/ontology/wb#Project_P006192",
+      "target": "http://enterprise.org/ontology/wb#Sector_Other_Non-bank_Financial_Institutions",
+      "label": "hasSector"
+    },
+    {
+      "source": "http://enterprise.org/ontology/wb#Project_P007255",
+      "target": "http://enterprise.org/ontology/wb#Country_Guyana",
+      "label": "locatedIn"
+    },
+    {
+      "source": "http://enterprise.org/ontology/wb#Project_P007255",
+      "target": "http://enterprise.org/ontology/wb#Sector_Central_Government_%28Central_Agencies%29",
+      "label": "hasSector"
+    },
+    {
+      "source": "http://enterprise.org/ontology/wb#Project_P007255",
+      "target": "http://enterprise.org/ontology/wb#Country_Guyana",
+      "label": "locatedIn"
+    },
+    {
+      "source": "http://enterprise.org/ontology/wb#Project_P007255",
+      "target": "http://enterprise.org/ontology/wb#Sector_Crops",
+      "label": "hasSector"
+    },
+    {
+      "source": "http://enterprise.org/ontology/wb#Project_P007255",
+      "target": "http://enterprise.org/ontology/wb#Country_Guyana",
+      "label": "locatedIn"
+    },
+    {
+      "source": "http://enterprise.org/ontology/wb#Project_P007255",
+      "target": "http://enterprise.org/ontology/wb#Sector_Other_Agriculture%2C_Fishing_and_Forestry",
+      "label": "hasSector"
+    },
+    {
+      "source": "http://enterprise.org/ontology/wb#Project_P007255",
+      "target": "http://enterprise.org/ontology/wb#Country_Guyana",
+      "label": "locatedIn"
+    },
+    {
+      "source": "http://enterprise.org/ontology/wb#Project_P007255",
+      "target": "http://enterprise.org/ontology/wb#Sector_Other_Industry%2C_Trade_and_Services",
+      "label": "hasSector"
+    },
+    {
+      "source": "http://enterprise.org/ontology/wb#Project_P007255",
+      "target": "http://enterprise.org/ontology/wb#Country_Guyana",
+      "label": "locatedIn"
+    },
+    {
+      "source": "http://enterprise.org/ontology/wb#Project_P007255",
+      "target": "http://enterprise.org/ontology/wb#Sector_Power",
+      "label": "hasSector"
+    },
+    {
+      "source": "http://enterprise.org/ontology/wb#Project_P007261",
+      "target": "http://enterprise.org/ontology/wb#Country_Guyana",
+      "label": "locatedIn"
+    },
+    {
+      "source": "http://enterprise.org/ontology/wb#Project_P007261",
+      "target": "http://enterprise.org/ontology/wb#Sector_Central_Government_%28Central_Agencies%29",
+      "label": "hasSector"
+    },
+    {
+      "source": "http://enterprise.org/ontology/wb#Project_P007261",
+      "target": "http://enterprise.org/ontology/wb#Country_Guyana",
+      "label": "locatedIn"
+    },
+    {
+      "source": "http://enterprise.org/ontology/wb#Project_P007261",
+      "target": "http://enterprise.org/ontology/wb#Sector_Crops",
+      "label": "hasSector"
+    },
+    {
+      "source": "http://enterprise.org/ontology/wb#Project_P007261",
+      "target": "http://enterprise.org/ontology/wb#Country_Guyana",
+      "label": "locatedIn"
+    },
+    {
+      "source": "http://enterprise.org/ontology/wb#Project_P007261",
+      "target": "http://enterprise.org/ontology/wb#Sector_Other_Agriculture%2C_Fishing_and_Forestry",
+      "label": "hasSector"
+    },
+    {
+      "source": "http://enterprise.org/ontology/wb#Project_P007261",
+      "target": "http://enterprise.org/ontology/wb#Country_Guyana",
+      "label": "locatedIn"
+    },
+    {
+      "source": "http://enterprise.org/ontology/wb#Project_P007261",
+      "target": "http://enterprise.org/ontology/wb#Sector_Other_Industry%2C_Trade_and_Services",
+      "label": "hasSector"
+    },
+    {
+      "source": "http://enterprise.org/ontology/wb#Project_P007261",
+      "target": "http://enterprise.org/ontology/wb#Country_Guyana",
+      "label": "locatedIn"
+    },
+    {
+      "source": "http://enterprise.org/ontology/wb#Project_P007261",
+      "target": "http://enterprise.org/ontology/wb#Sector_Power",
+      "label": "hasSector"
+    },
+    {
+      "source": "http://enterprise.org/ontology/wb#Project_P007262",
+      "target": "http://enterprise.org/ontology/wb#Country_Guyana",
+      "label": "locatedIn"
+    },
+    {
+      "source": "http://enterprise.org/ontology/wb#Project_P007262",
+      "target": "http://enterprise.org/ontology/wb#Sector_Central_Government_%28Central_Agencies%29",
+      "label": "hasSector"
+    },
+    {
+      "source": "http://enterprise.org/ontology/wb#Project_P007262",
+      "target": "http://enterprise.org/ontology/wb#Country_Guyana",
+      "label": "locatedIn"
+    },
+    {
+      "source": "http://enterprise.org/ontology/wb#Project_P007262",
+      "target": "http://enterprise.org/ontology/wb#Sector_Crops",
+      "label": "hasSector"
+    },
+    {
+      "source": "http://enterprise.org/ontology/wb#Project_P007262",
+      "target": "http://enterprise.org/ontology/wb#Country_Guyana",
+      "label": "locatedIn"
+    },
+    {
+      "source": "http://enterprise.org/ontology/wb#Project_P007262",
+      "target": "http://enterprise.org/ontology/wb#Sector_Other_Agriculture%2C_Fishing_and_Forestry",
+      "label": "hasSector"
+    },
+    {
+      "source": "http://enterprise.org/ontology/wb#Project_P007262",
+      "target": "http://enterprise.org/ontology/wb#Country_Guyana",
+      "label": "locatedIn"
+    },
+    {
+      "source": "http://enterprise.org/ontology/wb#Project_P007262",
+      "target": "http://enterprise.org/ontology/wb#Sector_Other_Industry%2C_Trade_and_Services",
+      "label": "hasSector"
+    },
+    {
+      "source": "http://enterprise.org/ontology/wb#Project_P007262",
+      "target": "http://enterprise.org/ontology/wb#Country_Guyana",
+      "label": "locatedIn"
+    },
+    {
+      "source": "http://enterprise.org/ontology/wb#Project_P007262",
+      "target": "http://enterprise.org/ontology/wb#Sector_Power",
+      "label": "hasSector"
+    },
+    {
+      "source": "http://enterprise.org/ontology/wb#Project_P007265",
+      "target": "http://enterprise.org/ontology/wb#Country_Guyana",
+      "label": "locatedIn"
+    },
+    {
+      "source": "http://enterprise.org/ontology/wb#Project_P007265",
+      "target": "http://enterprise.org/ontology/wb#Sector_Central_Government_%28Central_Agencies%29",
+      "label": "hasSector"
+    },
+    {
+      "source": "http://enterprise.org/ontology/wb#Project_P007265",
+      "target": "http://enterprise.org/ontology/wb#Country_Guyana",
+      "label": "locatedIn"
+    },
+    {
+      "source": "http://enterprise.org/ontology/wb#Project_P007265",
+      "target": "http://enterprise.org/ontology/wb#Sector_Crops",
+      "label": "hasSector"
+    },
+    {
+      "source": "http://enterprise.org/ontology/wb#Project_P007265",
+      "target": "http://enterprise.org/ontology/wb#Country_Guyana",
+      "label": "locatedIn"
+    },
+    {
+      "source": "http://enterprise.org/ontology/wb#Project_P007265",
+      "target": "http://enterprise.org/ontology/wb#Sector_Other_Agriculture%2C_Fishing_and_Forestry",
+      "label": "hasSector"
+    },
+    {
+      "source": "http://enterprise.org/ontology/wb#Project_P007265",
+      "target": "http://enterprise.org/ontology/wb#Country_Guyana",
+      "label": "locatedIn"
+    },
+    {
+      "source": "http://enterprise.org/ontology/wb#Project_P007265",
+      "target": "http://enterprise.org/ontology/wb#Sector_Other_Industry%2C_Trade_and_Services",
+      "label": "hasSector"
+    },
+    {
+      "source": "http://enterprise.org/ontology/wb#Project_P007265",
+      "target": "http://enterprise.org/ontology/wb#Country_Guyana",
+      "label": "locatedIn"
+    },
+    {
+      "source": "http://enterprise.org/ontology/wb#Project_P007265",
+      "target": "http://enterprise.org/ontology/wb#Sector_Power",
+      "label": "hasSector"
+    },
+    {
+      "source": "http://enterprise.org/ontology/wb#Project_P007267",
+      "target": "http://enterprise.org/ontology/wb#Country_Guyana",
+      "label": "locatedIn"
+    },
+    {
+      "source": "http://enterprise.org/ontology/wb#Project_P007267",
+      "target": "http://enterprise.org/ontology/wb#Sector_Central_Government_%28Central_Agencies%29",
+      "label": "hasSector"
+    },
+    {
+      "source": "http://enterprise.org/ontology/wb#Project_P007267",
+      "target": "http://enterprise.org/ontology/wb#Country_Guyana",
+      "label": "locatedIn"
+    },
+    {
+      "source": "http://enterprise.org/ontology/wb#Project_P007267",
+      "target": "http://enterprise.org/ontology/wb#Sector_Crops",
+      "label": "hasSector"
+    },
+    {
+      "source": "http://enterprise.org/ontology/wb#Project_P007267",
+      "target": "http://enterprise.org/ontology/wb#Country_Guyana",
+      "label": "locatedIn"
+    },
+    {
+      "source": "http://enterprise.org/ontology/wb#Project_P007267",
+      "target": "http://enterprise.org/ontology/wb#Sector_Other_Agriculture%2C_Fishing_and_Forestry",
+      "label": "hasSector"
+    },
+    {
+      "source": "http://enterprise.org/ontology/wb#Project_P007267",
+      "target": "http://enterprise.org/ontology/wb#Country_Guyana",
+      "label": "locatedIn"
+    },
+    {
+      "source": "http://enterprise.org/ontology/wb#Project_P007267",
+      "target": "http://enterprise.org/ontology/wb#Sector_Other_Industry%2C_Trade_and_Services",
+      "label": "hasSector"
+    },
+    {
+      "source": "http://enterprise.org/ontology/wb#Project_P007267",
+      "target": "http://enterprise.org/ontology/wb#Country_Guyana",
+      "label": "locatedIn"
+    },
+    {
+      "source": "http://enterprise.org/ontology/wb#Project_P007267",
+      "target": "http://enterprise.org/ontology/wb#Sector_Power",
+      "label": "hasSector"
+    },
+    {
+      "source": "http://enterprise.org/ontology/wb#Project_P009027",
+      "target": "http://enterprise.org/ontology/wb#Country_Turkiye",
+      "label": "locatedIn"
+    },
+    {
+      "source": "http://enterprise.org/ontology/wb#Project_P009027",
+      "target": "http://enterprise.org/ontology/wb#Sector_Central_Government_%28Central_Agencies%29",
+      "label": "hasSector"
+    },
+    {
+      "source": "http://enterprise.org/ontology/wb#Project_P009027",
+      "target": "http://enterprise.org/ontology/wb#Country_Turkiye",
+      "label": "locatedIn"
+    },
+    {
+      "source": "http://enterprise.org/ontology/wb#Project_P009027",
+      "target": "http://enterprise.org/ontology/wb#Sector_Power",
+      "label": "hasSector"
+    },
+    {
+      "source": "http://enterprise.org/ontology/wb#Project_P009027",
+      "target": "http://enterprise.org/ontology/wb#Country_Turkiye",
+      "label": "locatedIn"
+    },
+    {
+      "source": "http://enterprise.org/ontology/wb#Project_P009027",
+      "target": "http://enterprise.org/ontology/wb#Sector_Roads_and_highways",
+      "label": "hasSector"
+    },
+    {
+      "source": "http://enterprise.org/ontology/wb#Project_P009041",
+      "target": "http://enterprise.org/ontology/wb#Country_Turkiye",
+      "label": "locatedIn"
+    },
+    {
+      "source": "http://enterprise.org/ontology/wb#Project_P009041",
+      "target": "http://enterprise.org/ontology/wb#Sector_Banking_Institutions",
+      "label": "hasSector"
+    },
+    {
+      "source": "http://enterprise.org/ontology/wb#Project_P009041",
+      "target": "http://enterprise.org/ontology/wb#Country_Turkiye",
+      "label": "locatedIn"
+    },
+    {
+      "source": "http://enterprise.org/ontology/wb#Project_P009041",
+      "target": "http://enterprise.org/ontology/wb#Sector_Capital_Markets",
+      "label": "hasSector"
+    },
+    {
+      "source": "http://enterprise.org/ontology/wb#Project_P009041",
+      "target": "http://enterprise.org/ontology/wb#Country_Turkiye",
+      "label": "locatedIn"
+    },
+    {
+      "source": "http://enterprise.org/ontology/wb#Project_P009041",
+      "target": "http://enterprise.org/ontology/wb#Sector_Central_Government_%28Central_Agencies%29",
+      "label": "hasSector"
+    },
+    {
+      "source": "http://enterprise.org/ontology/wb#Project_P009041",
+      "target": "http://enterprise.org/ontology/wb#Country_Turkiye",
+      "label": "locatedIn"
+    },
+    {
+      "source": "http://enterprise.org/ontology/wb#Project_P009041",
+      "target": "http://enterprise.org/ontology/wb#Sector_Other_Industry%2C_Trade_and_Services",
+      "label": "hasSector"
+    },
+    {
+      "source": "http://enterprise.org/ontology/wb#Project_P009041",
+      "target": "http://enterprise.org/ontology/wb#Country_Turkiye",
+      "label": "locatedIn"
+    },
+    {
+      "source": "http://enterprise.org/ontology/wb#Project_P009041",
+      "target": "http://enterprise.org/ontology/wb#Sector_Other_Non-bank_Financial_Institutions",
+      "label": "hasSector"
+    },
+    {
+      "source": "http://enterprise.org/ontology/wb#Project_P009043",
+      "target": "http://enterprise.org/ontology/wb#Country_Turkiye",
+      "label": "locatedIn"
+    },
+    {
+      "source": "http://enterprise.org/ontology/wb#Project_P009043",
+      "target": "http://enterprise.org/ontology/wb#Sector_Banking_Institutions",
+      "label": "hasSector"
+    },
+    {
+      "source": "http://enterprise.org/ontology/wb#Project_P009043",
+      "target": "http://enterprise.org/ontology/wb#Country_Turkiye",
+      "label": "locatedIn"
+    },
+    {
+      "source": "http://enterprise.org/ontology/wb#Project_P009043",
+      "target": "http://enterprise.org/ontology/wb#Sector_Capital_Markets",
+      "label": "hasSector"
+    },
+    {
+      "source": "http://enterprise.org/ontology/wb#Project_P009043",
+      "target": "http://enterprise.org/ontology/wb#Country_Turkiye",
+      "label": "locatedIn"
+    },
+    {
+      "source": "http://enterprise.org/ontology/wb#Project_P009043",
+      "target": "http://enterprise.org/ontology/wb#Sector_Central_Government_%28Central_Agencies%29",
+      "label": "hasSector"
+    },
+    {
+      "source": "http://enterprise.org/ontology/wb#Project_P009043",
+      "target": "http://enterprise.org/ontology/wb#Country_Turkiye",
+      "label": "locatedIn"
+    },
+    {
+      "source": "http://enterprise.org/ontology/wb#Project_P009043",
+      "target": "http://enterprise.org/ontology/wb#Sector_Other_Industry%2C_Trade_and_Services",
+      "label": "hasSector"
+    },
+    {
+      "source": "http://enterprise.org/ontology/wb#Project_P009043",
+      "target": "http://enterprise.org/ontology/wb#Country_Turkiye",
+      "label": "locatedIn"
+    },
+    {
+      "source": "http://enterprise.org/ontology/wb#Project_P009043",
+      "target": "http://enterprise.org/ontology/wb#Sector_Other_Non-bank_Financial_Institutions",
+      "label": "hasSector"
+    },
+    {
+      "source": "http://enterprise.org/ontology/wb#Project_P009060",
+      "target": "http://enterprise.org/ontology/wb#Country_Turkiye",
+      "label": "locatedIn"
+    },
+    {
+      "source": "http://enterprise.org/ontology/wb#Project_P009060",
+      "target": "http://enterprise.org/ontology/wb#Sector_Central_Government_%28Central_Agencies%29",
+      "label": "hasSector"
+    },
+    {
+      "source": "http://enterprise.org/ontology/wb#Project_P009060",
+      "target": "http://enterprise.org/ontology/wb#Country_Turkiye",
+      "label": "locatedIn"
+    },
+    {
+      "source": "http://enterprise.org/ontology/wb#Project_P009060",
+      "target": "http://enterprise.org/ontology/wb#Sector_Oil_and_Gas",
+      "label": "hasSector"
+    },
+    {
+      "source": "http://enterprise.org/ontology/wb#Project_P009060",
+      "target": "http://enterprise.org/ontology/wb#Country_Turkiye",
+      "label": "locatedIn"
+    },
+    {
+      "source": "http://enterprise.org/ontology/wb#Project_P009060",
+      "target": "http://enterprise.org/ontology/wb#Sector_Other_Energy_and_Extractives",
+      "label": "hasSector"
+    },
+    {
+      "source": "http://enterprise.org/ontology/wb#Project_P009060",
+      "target": "http://enterprise.org/ontology/wb#Country_Turkiye",
+      "label": "locatedIn"
+    },
+    {
+      "source": "http://enterprise.org/ontology/wb#Project_P009060",
+      "target": "http://enterprise.org/ontology/wb#Sector_Power",
+      "label": "hasSector"
+    },
+    {
+      "source": "http://enterprise.org/ontology/wb#Project_P009069",
+      "target": "http://enterprise.org/ontology/wb#Country_Turkiye",
+      "label": "locatedIn"
+    },
+    {
+      "source": "http://enterprise.org/ontology/wb#Project_P009069",
+      "target": "http://enterprise.org/ontology/wb#Sector_Banking_Institutions",
+      "label": "hasSector"
+    },
+    {
+      "source": "http://enterprise.org/ontology/wb#Project_P009069",
+      "target": "http://enterprise.org/ontology/wb#Country_Turkiye",
+      "label": "locatedIn"
+    },
+    {
+      "source": "http://enterprise.org/ontology/wb#Project_P009069",
+      "target": "http://enterprise.org/ontology/wb#Sector_Capital_Markets",
+      "label": "hasSector"
+    },
+    {
+      "source": "http://enterprise.org/ontology/wb#Project_P009069",
+      "target": "http://enterprise.org/ontology/wb#Country_Turkiye",
+      "label": "locatedIn"
+    },
+    {
+      "source": "http://enterprise.org/ontology/wb#Project_P009069",
+      "target": "http://enterprise.org/ontology/wb#Sector_Central_Government_%28Central_Agencies%29",
+      "label": "hasSector"
+    },
+    {
+      "source": "http://enterprise.org/ontology/wb#Project_P009069",
+      "target": "http://enterprise.org/ontology/wb#Country_Turkiye",
+      "label": "locatedIn"
+    },
+    {
+      "source": "http://enterprise.org/ontology/wb#Project_P009069",
+      "target": "http://enterprise.org/ontology/wb#Sector_Other_Non-bank_Financial_Institutions",
+      "label": "hasSector"
+    },
+    {
+      "source": "http://enterprise.org/ontology/wb#Project_P009551",
+      "target": "http://enterprise.org/ontology/wb#Country_Bangladesh",
+      "label": "locatedIn"
+    },
+    {
+      "source": "http://enterprise.org/ontology/wb#Project_P009551",
+      "target": "http://enterprise.org/ontology/wb#Sector_Oil_and_Gas",
+      "label": "hasSector"
+    },
+    {
+      "source": "http://enterprise.org/ontology/wb#Project_P009551",
+      "target": "http://enterprise.org/ontology/wb#Country_Bangladesh",
+      "label": "locatedIn"
+    },
+    {
+      "source": "http://enterprise.org/ontology/wb#Project_P009551",
+      "target": "http://enterprise.org/ontology/wb#Sector_Other_Energy_and_Extractives",
+      "label": "hasSector"
+    },
+    {
+      "source": "http://enterprise.org/ontology/wb#Project_P009551",
+      "target": "http://enterprise.org/ontology/wb#Country_Bangladesh",
+      "label": "locatedIn"
+    },
+    {
+      "source": "http://enterprise.org/ontology/wb#Project_P009551",
+      "target": "http://enterprise.org/ontology/wb#Sector_Other_Industry%2C_Trade_and_Services",
+      "label": "hasSector"
+    },
+    {
+      "source": "http://enterprise.org/ontology/wb#Project_P009551",
+      "target": "http://enterprise.org/ontology/wb#Country_Bangladesh",
+      "label": "locatedIn"
+    },
+    {
+      "source": "http://enterprise.org/ontology/wb#Project_P009551",
+      "target": "http://enterprise.org/ontology/wb#Sector_Power",
+      "label": "hasSector"
+    },
+    {
+      "source": "http://enterprise.org/ontology/wb#Project_P009551",
+      "target": "http://enterprise.org/ontology/wb#Country_Bangladesh",
+      "label": "locatedIn"
+    },
+    {
+      "source": "http://enterprise.org/ontology/wb#Project_P009551",
+      "target": "http://enterprise.org/ontology/wb#Sector_Renewable_Energy_Biomass",
+      "label": "hasSector"
+    },
+    {
+      "source": "http://enterprise.org/ontology/wb#Project_P009561",
+      "target": "http://enterprise.org/ontology/wb#Country_Bangladesh",
+      "label": "locatedIn"
+    },
+    {
+      "source": "http://enterprise.org/ontology/wb#Project_P009561",
+      "target": "http://enterprise.org/ontology/wb#Sector_Banking_Institutions",
+      "label": "hasSector"
+    },
+    {
+      "source": "http://enterprise.org/ontology/wb#Project_P009561",
+      "target": "http://enterprise.org/ontology/wb#Country_Bangladesh",
+      "label": "locatedIn"
+    },
+    {
+      "source": "http://enterprise.org/ontology/wb#Project_P009561",
+      "target": "http://enterprise.org/ontology/wb#Sector_Capital_Markets",
+      "label": "hasSector"
+    },
+    {
+      "source": "http://enterprise.org/ontology/wb#Project_P009561",
+      "target": "http://enterprise.org/ontology/wb#Country_Bangladesh",
+      "label": "locatedIn"
+    },
+    {
+      "source": "http://enterprise.org/ontology/wb#Project_P009561",
+      "target": "http://enterprise.org/ontology/wb#Sector_Central_Government_%28Central_Agencies%29",
+      "label": "hasSector"
+    },
+    {
+      "source": "http://enterprise.org/ontology/wb#Project_P009561",
+      "target": "http://enterprise.org/ontology/wb#Country_Bangladesh",
+      "label": "locatedIn"
+    },
+    {
+      "source": "http://enterprise.org/ontology/wb#Project_P009561",
+      "target": "http://enterprise.org/ontology/wb#Sector_Other_Industry%2C_Trade_and_Services",
+      "label": "hasSector"
+    },
+    {
+      "source": "http://enterprise.org/ontology/wb#Project_P009561",
+      "target": "http://enterprise.org/ontology/wb#Country_Bangladesh",
+      "label": "locatedIn"
+    },
+    {
+      "source": "http://enterprise.org/ontology/wb#Project_P009561",
+      "target": "http://enterprise.org/ontology/wb#Sector_Other_Non-bank_Financial_Institutions",
+      "label": "hasSector"
+    },
+    {
+      "source": "http://enterprise.org/ontology/wb#Project_P010388",
+      "target": "http://enterprise.org/ontology/wb#Country_Sri_Lanka",
+      "label": "locatedIn"
+    },
+    {
+      "source": "http://enterprise.org/ontology/wb#Project_P010388",
+      "target": "http://enterprise.org/ontology/wb#Sector_Central_Government_%28Central_Agencies%29",
+      "label": "hasSector"
+    },
+    {
+      "source": "http://enterprise.org/ontology/wb#Project_P010388",
+      "target": "http://enterprise.org/ontology/wb#Country_Sri_Lanka",
+      "label": "locatedIn"
+    },
+    {
+      "source": "http://enterprise.org/ontology/wb#Project_P010388",
+      "target": "http://enterprise.org/ontology/wb#Sector_Other_Industry%2C_Trade_and_Services",
+      "label": "hasSector"
+    },
+    {
+      "source": "http://enterprise.org/ontology/wb#Project_P010388",
+      "target": "http://enterprise.org/ontology/wb#Country_Sri_Lanka",
+      "label": "locatedIn"
+    },
+    {
+      "source": "http://enterprise.org/ontology/wb#Project_P010388",
+      "target": "http://enterprise.org/ontology/wb#Sector_Other_Transportation",
+      "label": "hasSector"
+    },
+    {
+      "source": "http://enterprise.org/ontology/wb#Project_P010388",
+      "target": "http://enterprise.org/ontology/wb#Country_Sri_Lanka",
+      "label": "locatedIn"
+    },
+    {
+      "source": "http://enterprise.org/ontology/wb#Project_P010388",
       "target": "http://enterprise.org/ontology/wb#Sector_Public_Administration_-_Social_Protection",
       "label": "hasSector"
     },
     {
-      "source": "http://enterprise.org/ontology/wb#Project_P181632",
-      "target": "http://enterprise.org/ontology/wb#Country_Western_and_Central_Africa",
+      "source": "http://enterprise.org/ontology/wb#Project_P010388",
+      "target": "http://enterprise.org/ontology/wb#Country_Sri_Lanka",
       "label": "locatedIn"
     },
     {
-      "source": "http://enterprise.org/ontology/wb#Project_P181632",
+      "source": "http://enterprise.org/ontology/wb#Project_P010388",
       "target": "http://enterprise.org/ontology/wb#Sector_Social_Protection",
       "label": "hasSector"
     },
     {
-      "source": "http://enterprise.org/ontology/wb#Project_P181648",
-      "target": "http://enterprise.org/ontology/wb#Country_Western_and_Central_Africa",
+      "source": "http://enterprise.org/ontology/wb#Project_P010412",
+      "target": "http://enterprise.org/ontology/wb#Country_Sri_Lanka",
       "label": "locatedIn"
     },
     {
-      "source": "http://enterprise.org/ontology/wb#Project_P181648",
+      "source": "http://enterprise.org/ontology/wb#Project_P010412",
+      "target": "http://enterprise.org/ontology/wb#Sector_Central_Government_%28Central_Agencies%29",
+      "label": "hasSector"
+    },
+    {
+      "source": "http://enterprise.org/ontology/wb#Project_P010412",
+      "target": "http://enterprise.org/ontology/wb#Country_Sri_Lanka",
+      "label": "locatedIn"
+    },
+    {
+      "source": "http://enterprise.org/ontology/wb#Project_P010412",
+      "target": "http://enterprise.org/ontology/wb#Sector_Forestry",
+      "label": "hasSector"
+    },
+    {
+      "source": "http://enterprise.org/ontology/wb#Project_P010412",
+      "target": "http://enterprise.org/ontology/wb#Country_Sri_Lanka",
+      "label": "locatedIn"
+    },
+    {
+      "source": "http://enterprise.org/ontology/wb#Project_P010412",
+      "target": "http://enterprise.org/ontology/wb#Sector_Other_Industry%2C_Trade_and_Services",
+      "label": "hasSector"
+    },
+    {
+      "source": "http://enterprise.org/ontology/wb#Project_P010412",
+      "target": "http://enterprise.org/ontology/wb#Country_Sri_Lanka",
+      "label": "locatedIn"
+    },
+    {
+      "source": "http://enterprise.org/ontology/wb#Project_P010412",
+      "target": "http://enterprise.org/ontology/wb#Sector_Power",
+      "label": "hasSector"
+    },
+    {
+      "source": "http://enterprise.org/ontology/wb#Project_P010573",
+      "target": "http://enterprise.org/ontology/wb#Country_Sri_Lanka",
+      "label": "locatedIn"
+    },
+    {
+      "source": "http://enterprise.org/ontology/wb#Project_P010573",
+      "target": "http://enterprise.org/ontology/wb#Sector_%28Historic%29Education_adjustment",
+      "label": "hasSector"
+    },
+    {
+      "source": "http://enterprise.org/ontology/wb#Project_P034194",
+      "target": "http://enterprise.org/ontology/wb#Country_Iran%2C_Islamic_Republic_of",
+      "label": "locatedIn"
+    },
+    {
+      "source": "http://enterprise.org/ontology/wb#Project_P034194",
+      "target": "http://enterprise.org/ontology/wb#Sector_Forestry",
+      "label": "hasSector"
+    },
+    {
+      "source": "http://enterprise.org/ontology/wb#Project_P034215",
+      "target": "http://enterprise.org/ontology/wb#Country_Iran%2C_Islamic_Republic_of",
+      "label": "locatedIn"
+    },
+    {
+      "source": "http://enterprise.org/ontology/wb#Project_P034215",
+      "target": "http://enterprise.org/ontology/wb#Sector_Irrigation_and_Drainage",
+      "label": "hasSector"
+    },
+    {
+      "source": "http://enterprise.org/ontology/wb#Project_P035311",
+      "target": "http://enterprise.org/ontology/wb#Country_Uganda",
+      "label": "locatedIn"
+    },
+    {
+      "source": "http://enterprise.org/ontology/wb#Project_P035311",
+      "target": "http://enterprise.org/ontology/wb#Sector_Central_Government_%28Central_Agencies%29",
+      "label": "hasSector"
+    },
+    {
+      "source": "http://enterprise.org/ontology/wb#Project_P035311",
+      "target": "http://enterprise.org/ontology/wb#Country_Uganda",
+      "label": "locatedIn"
+    },
+    {
+      "source": "http://enterprise.org/ontology/wb#Project_P035311",
+      "target": "http://enterprise.org/ontology/wb#Sector_Social_Protection",
+      "label": "hasSector"
+    },
+    {
+      "source": "http://enterprise.org/ontology/wb#Project_P035311",
+      "target": "http://enterprise.org/ontology/wb#Country_Uganda",
+      "label": "locatedIn"
+    },
+    {
+      "source": "http://enterprise.org/ontology/wb#Project_P035311",
+      "target": "http://enterprise.org/ontology/wb#Sector_Trade",
+      "label": "hasSector"
+    },
+    {
+      "source": "http://enterprise.org/ontology/wb#Project_P035311",
+      "target": "http://enterprise.org/ontology/wb#Country_Uganda",
+      "label": "locatedIn"
+    },
+    {
+      "source": "http://enterprise.org/ontology/wb#Project_P035311",
+      "target": "http://enterprise.org/ontology/wb#Sector_Workforce_Development_and_Vocational_Education",
+      "label": "hasSector"
+    },
+    {
+      "source": "http://enterprise.org/ontology/wb#Project_P039027",
+      "target": "http://enterprise.org/ontology/wb#Country_Brazil",
+      "label": "locatedIn"
+    },
+    {
+      "source": "http://enterprise.org/ontology/wb#Project_P039027",
+      "target": "http://enterprise.org/ontology/wb#Sector_Central_Government_%28Central_Agencies%29",
+      "label": "hasSector"
+    },
+    {
+      "source": "http://enterprise.org/ontology/wb#Project_P051572",
+      "target": "http://enterprise.org/ontology/wb#Country_Cote_d%27Ivoire",
+      "label": "locatedIn"
+    },
+    {
+      "source": "http://enterprise.org/ontology/wb#Project_P051572",
+      "target": "http://enterprise.org/ontology/wb#Sector_%28Historic%29Public_financial_management",
+      "label": "hasSector"
+    },
+    {
+      "source": "http://enterprise.org/ontology/wb#Project_P053094",
+      "target": "http://enterprise.org/ontology/wb#Country_Guyana",
+      "label": "locatedIn"
+    },
+    {
+      "source": "http://enterprise.org/ontology/wb#Project_P053094",
+      "target": "http://enterprise.org/ontology/wb#Sector_%28Historic%29Other_finance",
+      "label": "hasSector"
+    },
+    {
+      "source": "http://enterprise.org/ontology/wb#Project_P068898",
+      "target": "http://enterprise.org/ontology/wb#Country_Philippines",
+      "label": "locatedIn"
+    },
+    {
+      "source": "http://enterprise.org/ontology/wb#Project_P068898",
+      "target": "http://enterprise.org/ontology/wb#Sector_Other_Non-bank_Financial_Institutions",
+      "label": "hasSector"
+    },
+    {
+      "source": "http://enterprise.org/ontology/wb#Project_P073588",
+      "target": "http://enterprise.org/ontology/wb#Country_Nepal",
+      "label": "locatedIn"
+    },
+    {
+      "source": "http://enterprise.org/ontology/wb#Project_P073588",
+      "target": "http://enterprise.org/ontology/wb#Sector_Micro-_and_SME_finance",
+      "label": "hasSector"
+    },
+    {
+      "source": "http://enterprise.org/ontology/wb#Project_P073882",
+      "target": "http://enterprise.org/ontology/wb#Country_Brazil",
+      "label": "locatedIn"
+    },
+    {
+      "source": "http://enterprise.org/ontology/wb#Project_P073882",
+      "target": "http://enterprise.org/ontology/wb#Sector_Forestry",
+      "label": "hasSector"
+    },
+    {
+      "source": "http://enterprise.org/ontology/wb#Project_P075941",
+      "target": "http://enterprise.org/ontology/wb#Country_Eastern_and_Southern_Africa",
+      "label": "locatedIn"
+    },
+    {
+      "source": "http://enterprise.org/ontology/wb#Project_P075941",
+      "target": "http://enterprise.org/ontology/wb#Sector_Renewable_Energy_Hydro",
+      "label": "hasSector"
+    },
+    {
+      "source": "http://enterprise.org/ontology/wb#Project_P075941",
+      "target": "http://enterprise.org/ontology/wb#Country_Eastern_and_Southern_Africa",
+      "label": "locatedIn"
+    },
+    {
+      "source": "http://enterprise.org/ontology/wb#Project_P075941",
+      "target": "http://enterprise.org/ontology/wb#Sector_Social_Protection",
+      "label": "hasSector"
+    },
+    {
+      "source": "http://enterprise.org/ontology/wb#Project_P077416",
+      "target": "http://enterprise.org/ontology/wb#Country_Burundi",
+      "label": "locatedIn"
+    },
+    {
+      "source": "http://enterprise.org/ontology/wb#Project_P077416",
+      "target": "http://enterprise.org/ontology/wb#Sector_Central_Government_%28Central_Agencies%29",
+      "label": "hasSector"
+    },
+    {
+      "source": "http://enterprise.org/ontology/wb#Project_P078452",
+      "target": "http://enterprise.org/ontology/wb#Country_Afghanistan",
+      "label": "locatedIn"
+    },
+    {
+      "source": "http://enterprise.org/ontology/wb#Project_P078452",
+      "target": "http://enterprise.org/ontology/wb#Sector_Micro-_and_SME_finance",
+      "label": "hasSector"
+    },
+    {
+      "source": "http://enterprise.org/ontology/wb#Project_P082519",
+      "target": "http://enterprise.org/ontology/wb#Country_Sudan",
+      "label": "locatedIn"
+    },
+    {
+      "source": "http://enterprise.org/ontology/wb#Project_P082519",
+      "target": "http://enterprise.org/ontology/wb#Sector_Social_Protection",
+      "label": "hasSector"
+    },
+    {
+      "source": "http://enterprise.org/ontology/wb#Project_P082519",
+      "target": "http://enterprise.org/ontology/wb#Country_Sudan",
+      "label": "locatedIn"
+    },
+    {
+      "source": "http://enterprise.org/ontology/wb#Project_P082519",
+      "target": "http://enterprise.org/ontology/wb#Sector_Sub-National_Government",
+      "label": "hasSector"
+    },
+    {
+      "source": "http://enterprise.org/ontology/wb#Project_P082566",
+      "target": "http://enterprise.org/ontology/wb#Country_Eastern_and_Southern_Africa",
+      "label": "locatedIn"
+    },
+    {
+      "source": "http://enterprise.org/ontology/wb#Project_P082566",
+      "target": "http://enterprise.org/ontology/wb#Sector_Micro-_and_SME_finance",
+      "label": "hasSector"
+    },
+    {
+      "source": "http://enterprise.org/ontology/wb#Project_P085766",
+      "target": "http://enterprise.org/ontology/wb#Country_World",
+      "label": "locatedIn"
+    },
+    {
+      "source": "http://enterprise.org/ontology/wb#Project_P085766",
+      "target": "http://enterprise.org/ontology/wb#Sector_Other_Non-bank_Financial_Institutions",
+      "label": "hasSector"
+    },
+    {
+      "source": "http://enterprise.org/ontology/wb#Project_P086592",
+      "target": "http://enterprise.org/ontology/wb#Country_Kazakhstan",
+      "label": "locatedIn"
+    },
+    {
+      "source": "http://enterprise.org/ontology/wb#Project_P086592",
+      "target": "http://enterprise.org/ontology/wb#Sector_Agricultural_Extension%2C_Research%2C_and_Other_Support_Activities",
+      "label": "hasSector"
+    },
+    {
+      "source": "http://enterprise.org/ontology/wb#Project_P086592",
+      "target": "http://enterprise.org/ontology/wb#Country_Kazakhstan",
+      "label": "locatedIn"
+    },
+    {
+      "source": "http://enterprise.org/ontology/wb#Project_P086592",
+      "target": "http://enterprise.org/ontology/wb#Sector_Central_Government_%28Central_Agencies%29",
+      "label": "hasSector"
+    },
+    {
+      "source": "http://enterprise.org/ontology/wb#Project_P086592",
+      "target": "http://enterprise.org/ontology/wb#Country_Kazakhstan",
+      "label": "locatedIn"
+    },
+    {
+      "source": "http://enterprise.org/ontology/wb#Project_P086592",
+      "target": "http://enterprise.org/ontology/wb#Sector_Irrigation_and_Drainage",
+      "label": "hasSector"
+    },
+    {
+      "source": "http://enterprise.org/ontology/wb#Project_P086592",
+      "target": "http://enterprise.org/ontology/wb#Country_Kazakhstan",
+      "label": "locatedIn"
+    },
+    {
+      "source": "http://enterprise.org/ontology/wb#Project_P086592",
+      "target": "http://enterprise.org/ontology/wb#Sector_Other_Agriculture%2C_Fishing_and_Forestry",
+      "label": "hasSector"
+    },
+    {
+      "source": "http://enterprise.org/ontology/wb#Project_P094411",
+      "target": "http://enterprise.org/ontology/wb#Country_Sierra_Leone",
+      "label": "locatedIn"
+    },
+    {
+      "source": "http://enterprise.org/ontology/wb#Project_P094411",
+      "target": "http://enterprise.org/ontology/wb#Sector_Other_Public_Administration",
+      "label": "hasSector"
+    },
+    {
+      "source": "http://enterprise.org/ontology/wb#Project_P094795",
+      "target": "http://enterprise.org/ontology/wb#Country_China",
+      "label": "locatedIn"
+    },
+    {
+      "source": "http://enterprise.org/ontology/wb#Project_P094795",
+      "target": "http://enterprise.org/ontology/wb#Sector_Renewable_Energy_Hydro",
+      "label": "hasSector"
+    },
+    {
+      "source": "http://enterprise.org/ontology/wb#Project_P096124",
+      "target": "http://enterprise.org/ontology/wb#Country_India",
+      "label": "locatedIn"
+    },
+    {
+      "source": "http://enterprise.org/ontology/wb#Project_P096124",
       "target": "http://enterprise.org/ontology/wb#Sector_Other_Water_Supply%2C_Sanitation_and_Waste_Management",
       "label": "hasSector"
     },
     {
-      "source": "http://enterprise.org/ontology/wb#Project_P181648",
-      "target": "http://enterprise.org/ontology/wb#Country_Western_and_Central_Africa",
+      "source": "http://enterprise.org/ontology/wb#Project_P096124",
+      "target": "http://enterprise.org/ontology/wb#Country_India",
       "label": "locatedIn"
     },
     {
-      "source": "http://enterprise.org/ontology/wb#Project_P181648",
+      "source": "http://enterprise.org/ontology/wb#Project_P096124",
+      "target": "http://enterprise.org/ontology/wb#Sector_Renewable_Energy_Hydro",
+      "label": "hasSector"
+    },
+    {
+      "source": "http://enterprise.org/ontology/wb#Project_P096124",
+      "target": "http://enterprise.org/ontology/wb#Country_India",
+      "label": "locatedIn"
+    },
+    {
+      "source": "http://enterprise.org/ontology/wb#Project_P096124",
       "target": "http://enterprise.org/ontology/wb#Sector_Social_Protection",
       "label": "hasSector"
     },
     {
-      "source": "http://enterprise.org/ontology/wb#Project_P181659",
-      "target": "http://enterprise.org/ontology/wb#Country_Gambia%2C_The",
+      "source": "http://enterprise.org/ontology/wb#Project_P096469",
+      "target": "http://enterprise.org/ontology/wb#Country_Chile",
       "label": "locatedIn"
     },
     {
-      "source": "http://enterprise.org/ontology/wb#Project_P181659",
+      "source": "http://enterprise.org/ontology/wb#Project_P096469",
+      "target": "http://enterprise.org/ontology/wb#Sector_Waste_Management",
+      "label": "hasSector"
+    },
+    {
+      "source": "http://enterprise.org/ontology/wb#Project_P098266",
+      "target": "http://enterprise.org/ontology/wb#Country_Liberia",
+      "label": "locatedIn"
+    },
+    {
+      "source": "http://enterprise.org/ontology/wb#Project_P098266",
       "target": "http://enterprise.org/ontology/wb#Sector_Health",
       "label": "hasSector"
     },
     {
-      "source": "http://enterprise.org/ontology/wb#Project_P181659",
-      "target": "http://enterprise.org/ontology/wb#Country_Gambia%2C_The",
+      "source": "http://enterprise.org/ontology/wb#Project_P098266",
+      "target": "http://enterprise.org/ontology/wb#Country_Liberia",
       "label": "locatedIn"
     },
     {
-      "source": "http://enterprise.org/ontology/wb#Project_P181659",
-      "target": "http://enterprise.org/ontology/wb#Sector_Public_Administration_-_Health",
+      "source": "http://enterprise.org/ontology/wb#Project_P098266",
+      "target": "http://enterprise.org/ontology/wb#Sector_Primary_Education",
+      "label": "hasSector"
+    },
+    {
+      "source": "http://enterprise.org/ontology/wb#Project_P098266",
+      "target": "http://enterprise.org/ontology/wb#Country_Liberia",
+      "label": "locatedIn"
+    },
+    {
+      "source": "http://enterprise.org/ontology/wb#Project_P098266",
+      "target": "http://enterprise.org/ontology/wb#Sector_Social_Protection",
+      "label": "hasSector"
+    },
+    {
+      "source": "http://enterprise.org/ontology/wb#Project_P098268",
+      "target": "http://enterprise.org/ontology/wb#Country_Mali",
+      "label": "locatedIn"
+    },
+    {
+      "source": "http://enterprise.org/ontology/wb#Project_P098268",
+      "target": "http://enterprise.org/ontology/wb#Sector_Agricultural_Extension%2C_Research%2C_and_Other_Support_Activities",
+      "label": "hasSector"
+    },
+    {
+      "source": "http://enterprise.org/ontology/wb#Project_P098268",
+      "target": "http://enterprise.org/ontology/wb#Country_Mali",
+      "label": "locatedIn"
+    },
+    {
+      "source": "http://enterprise.org/ontology/wb#Project_P098268",
+      "target": "http://enterprise.org/ontology/wb#Sector_Crops",
+      "label": "hasSector"
+    },
+    {
+      "source": "http://enterprise.org/ontology/wb#Project_P098572",
+      "target": "http://enterprise.org/ontology/wb#Country_Philippines",
+      "label": "locatedIn"
+    },
+    {
+      "source": "http://enterprise.org/ontology/wb#Project_P098572",
+      "target": "http://enterprise.org/ontology/wb#Sector_Renewable_energy",
+      "label": "hasSector"
+    },
+    {
+      "source": "http://enterprise.org/ontology/wb#Project_P099270",
+      "target": "http://enterprise.org/ontology/wb#Country_Kazakhstan",
+      "label": "locatedIn"
+    },
+    {
+      "source": "http://enterprise.org/ontology/wb#Project_P099270",
+      "target": "http://enterprise.org/ontology/wb#Sector_Public_Administration_-_Transportation",
+      "label": "hasSector"
+    },
+    {
+      "source": "http://enterprise.org/ontology/wb#Project_P099270",
+      "target": "http://enterprise.org/ontology/wb#Country_Kazakhstan",
+      "label": "locatedIn"
+    },
+    {
+      "source": "http://enterprise.org/ontology/wb#Project_P099270",
+      "target": "http://enterprise.org/ontology/wb#Sector_Rural_and_Inter-Urban_Roads",
+      "label": "hasSector"
+    },
+    {
+      "source": "http://enterprise.org/ontology/wb#Project_P099628",
+      "target": "http://enterprise.org/ontology/wb#Country_Kenya",
+      "label": "locatedIn"
+    },
+    {
+      "source": "http://enterprise.org/ontology/wb#Project_P099628",
+      "target": "http://enterprise.org/ontology/wb#Sector_Forestry",
+      "label": "hasSector"
+    },
+    {
+      "source": "http://enterprise.org/ontology/wb#Project_P101068",
+      "target": "http://enterprise.org/ontology/wb#Country_Togo",
+      "label": "locatedIn"
+    },
+    {
+      "source": "http://enterprise.org/ontology/wb#Project_P101068",
+      "target": "http://enterprise.org/ontology/wb#Sector_Health",
+      "label": "hasSector"
+    },
+    {
+      "source": "http://enterprise.org/ontology/wb#Project_P101068",
+      "target": "http://enterprise.org/ontology/wb#Country_Togo",
+      "label": "locatedIn"
+    },
+    {
+      "source": "http://enterprise.org/ontology/wb#Project_P101068",
+      "target": "http://enterprise.org/ontology/wb#Sector_Primary_Education",
+      "label": "hasSector"
+    },
+    {
+      "source": "http://enterprise.org/ontology/wb#Project_P101068",
+      "target": "http://enterprise.org/ontology/wb#Country_Togo",
+      "label": "locatedIn"
+    },
+    {
+      "source": "http://enterprise.org/ontology/wb#Project_P101068",
+      "target": "http://enterprise.org/ontology/wb#Sector_Sanitation",
+      "label": "hasSector"
+    },
+    {
+      "source": "http://enterprise.org/ontology/wb#Project_P101068",
+      "target": "http://enterprise.org/ontology/wb#Country_Togo",
+      "label": "locatedIn"
+    },
+    {
+      "source": "http://enterprise.org/ontology/wb#Project_P101068",
+      "target": "http://enterprise.org/ontology/wb#Sector_Social_Protection",
+      "label": "hasSector"
+    },
+    {
+      "source": "http://enterprise.org/ontology/wb#Project_P102904",
+      "target": "http://enterprise.org/ontology/wb#Country_Liberia",
+      "label": "locatedIn"
+    },
+    {
+      "source": "http://enterprise.org/ontology/wb#Project_P102904",
+      "target": "http://enterprise.org/ontology/wb#Sector_Law_and_Justice",
+      "label": "hasSector"
+    },
+    {
+      "source": "http://enterprise.org/ontology/wb#Project_P103063",
+      "target": "http://enterprise.org/ontology/wb#Country_Lebanon",
+      "label": "locatedIn"
+    },
+    {
+      "source": "http://enterprise.org/ontology/wb#Project_P103063",
+      "target": "http://enterprise.org/ontology/wb#Sector_Public_Administration_-_Water%2C_Sanitation_and_Waste_Management",
+      "label": "hasSector"
+    },
+    {
+      "source": "http://enterprise.org/ontology/wb#Project_P103063",
+      "target": "http://enterprise.org/ontology/wb#Country_Lebanon",
+      "label": "locatedIn"
+    },
+    {
+      "source": "http://enterprise.org/ontology/wb#Project_P103063",
+      "target": "http://enterprise.org/ontology/wb#Sector_Water_Supply",
+      "label": "hasSector"
+    },
+    {
+      "source": "http://enterprise.org/ontology/wb#Project_P103467",
+      "target": "http://enterprise.org/ontology/wb#Country_Mauritius",
+      "label": "locatedIn"
+    },
+    {
+      "source": "http://enterprise.org/ontology/wb#Project_P103467",
+      "target": "http://enterprise.org/ontology/wb#Sector_Renewable_energy",
+      "label": "hasSector"
+    },
+    {
+      "source": "http://enterprise.org/ontology/wb#Project_P104543",
+      "target": "http://enterprise.org/ontology/wb#Country_Nicaragua",
+      "label": "locatedIn"
+    },
+    {
+      "source": "http://enterprise.org/ontology/wb#Project_P104543",
+      "target": "http://enterprise.org/ontology/wb#Sector_Other_Non-bank_Financial_Institutions",
+      "label": "hasSector"
+    },
+    {
+      "source": "http://enterprise.org/ontology/wb#Project_P105680",
+      "target": "http://enterprise.org/ontology/wb#Country_Argentina",
+      "label": "locatedIn"
+    },
+    {
+      "source": "http://enterprise.org/ontology/wb#Project_P105680",
+      "target": "http://enterprise.org/ontology/wb#Sector_Other_Water_Supply%2C_Sanitation_and_Waste_Management",
+      "label": "hasSector"
+    },
+    {
+      "source": "http://enterprise.org/ontology/wb#Project_P105680",
+      "target": "http://enterprise.org/ontology/wb#Country_Argentina",
+      "label": "locatedIn"
+    },
+    {
+      "source": "http://enterprise.org/ontology/wb#Project_P105680",
+      "target": "http://enterprise.org/ontology/wb#Sector_Public_Administration_-_Water%2C_Sanitation_and_Waste_Management",
+      "label": "hasSector"
+    },
+    {
+      "source": "http://enterprise.org/ontology/wb#Project_P105680",
+      "target": "http://enterprise.org/ontology/wb#Country_Argentina",
+      "label": "locatedIn"
+    },
+    {
+      "source": "http://enterprise.org/ontology/wb#Project_P105680",
+      "target": "http://enterprise.org/ontology/wb#Sector_Sanitation",
+      "label": "hasSector"
+    },
+    {
+      "source": "http://enterprise.org/ontology/wb#Project_P105680",
+      "target": "http://enterprise.org/ontology/wb#Country_Argentina",
+      "label": "locatedIn"
+    },
+    {
+      "source": "http://enterprise.org/ontology/wb#Project_P105680",
+      "target": "http://enterprise.org/ontology/wb#Sector_Water_Supply",
+      "label": "hasSector"
+    },
+    {
+      "source": "http://enterprise.org/ontology/wb#Project_P106636",
+      "target": "http://enterprise.org/ontology/wb#Country_Kenya",
+      "label": "locatedIn"
+    },
+    {
+      "source": "http://enterprise.org/ontology/wb#Project_P106636",
+      "target": "http://enterprise.org/ontology/wb#Sector_Power",
+      "label": "hasSector"
+    },
+    {
+      "source": "http://enterprise.org/ontology/wb#Project_P106636",
+      "target": "http://enterprise.org/ontology/wb#Country_Kenya",
+      "label": "locatedIn"
+    },
+    {
+      "source": "http://enterprise.org/ontology/wb#Project_P106636",
+      "target": "http://enterprise.org/ontology/wb#Sector_Renewable_energy",
+      "label": "hasSector"
+    },
+    {
+      "source": "http://enterprise.org/ontology/wb#Project_P108916",
+      "target": "http://enterprise.org/ontology/wb#Country_Togo",
+      "label": "locatedIn"
+    },
+    {
+      "source": "http://enterprise.org/ontology/wb#Project_P108916",
+      "target": "http://enterprise.org/ontology/wb#Sector_Health",
+      "label": "hasSector"
+    },
+    {
+      "source": "http://enterprise.org/ontology/wb#Project_P108916",
+      "target": "http://enterprise.org/ontology/wb#Country_Togo",
+      "label": "locatedIn"
+    },
+    {
+      "source": "http://enterprise.org/ontology/wb#Project_P108916",
+      "target": "http://enterprise.org/ontology/wb#Sector_Primary_Education",
+      "label": "hasSector"
+    },
+    {
+      "source": "http://enterprise.org/ontology/wb#Project_P108916",
+      "target": "http://enterprise.org/ontology/wb#Country_Togo",
+      "label": "locatedIn"
+    },
+    {
+      "source": "http://enterprise.org/ontology/wb#Project_P108916",
+      "target": "http://enterprise.org/ontology/wb#Sector_Sanitation",
+      "label": "hasSector"
+    },
+    {
+      "source": "http://enterprise.org/ontology/wb#Project_P108916",
+      "target": "http://enterprise.org/ontology/wb#Country_Togo",
+      "label": "locatedIn"
+    },
+    {
+      "source": "http://enterprise.org/ontology/wb#Project_P108916",
+      "target": "http://enterprise.org/ontology/wb#Sector_Social_Protection",
+      "label": "hasSector"
+    },
+    {
+      "source": "http://enterprise.org/ontology/wb#Project_P112301",
+      "target": "http://enterprise.org/ontology/wb#Country_World",
+      "label": "locatedIn"
+    },
+    {
+      "source": "http://enterprise.org/ontology/wb#Project_P112301",
+      "target": "http://enterprise.org/ontology/wb#Sector_Central_Government_%28Central_Agencies%29",
+      "label": "hasSector"
+    },
+    {
+      "source": "http://enterprise.org/ontology/wb#Project_P112301",
+      "target": "http://enterprise.org/ontology/wb#Country_World",
+      "label": "locatedIn"
+    },
+    {
+      "source": "http://enterprise.org/ontology/wb#Project_P112301",
+      "target": "http://enterprise.org/ontology/wb#Sector_Roads_and_highways",
+      "label": "hasSector"
+    },
+    {
+      "source": "http://enterprise.org/ontology/wb#Project_P112302",
+      "target": "http://enterprise.org/ontology/wb#Country_World",
+      "label": "locatedIn"
+    },
+    {
+      "source": "http://enterprise.org/ontology/wb#Project_P112302",
+      "target": "http://enterprise.org/ontology/wb#Sector_Central_Government_%28Central_Agencies%29",
+      "label": "hasSector"
+    },
+    {
+      "source": "http://enterprise.org/ontology/wb#Project_P112302",
+      "target": "http://enterprise.org/ontology/wb#Country_World",
+      "label": "locatedIn"
+    },
+    {
+      "source": "http://enterprise.org/ontology/wb#Project_P112302",
+      "target": "http://enterprise.org/ontology/wb#Sector_Roads_and_highways",
+      "label": "hasSector"
+    },
+    {
+      "source": "http://enterprise.org/ontology/wb#Project_P114133",
+      "target": "http://enterprise.org/ontology/wb#Country_Vietnam",
+      "label": "locatedIn"
+    },
+    {
+      "source": "http://enterprise.org/ontology/wb#Project_P114133",
+      "target": "http://enterprise.org/ontology/wb#Sector_Roads_and_highways",
+      "label": "hasSector"
+    },
+    {
+      "source": "http://enterprise.org/ontology/wb#Project_P114323",
+      "target": "http://enterprise.org/ontology/wb#Country_Kyrgyz_Republic",
+      "label": "locatedIn"
+    },
+    {
+      "source": "http://enterprise.org/ontology/wb#Project_P114323",
+      "target": "http://enterprise.org/ontology/wb#Sector_Other_Public_Administration",
+      "label": "hasSector"
+    },
+    {
+      "source": "http://enterprise.org/ontology/wb#Project_P115893",
+      "target": "http://enterprise.org/ontology/wb#Country_Pakistan",
+      "label": "locatedIn"
+    },
+    {
+      "source": "http://enterprise.org/ontology/wb#Project_P115893",
+      "target": "http://enterprise.org/ontology/wb#Sector_Energy_Transmission_and_Distribution",
+      "label": "hasSector"
+    },
+    {
+      "source": "http://enterprise.org/ontology/wb#Project_P115893",
+      "target": "http://enterprise.org/ontology/wb#Country_Pakistan",
+      "label": "locatedIn"
+    },
+    {
+      "source": "http://enterprise.org/ontology/wb#Project_P115893",
+      "target": "http://enterprise.org/ontology/wb#Sector_Other_Energy_and_Extractives",
+      "label": "hasSector"
+    },
+    {
+      "source": "http://enterprise.org/ontology/wb#Project_P115893",
+      "target": "http://enterprise.org/ontology/wb#Country_Pakistan",
+      "label": "locatedIn"
+    },
+    {
+      "source": "http://enterprise.org/ontology/wb#Project_P115893",
+      "target": "http://enterprise.org/ontology/wb#Sector_Other_Public_Administration",
+      "label": "hasSector"
+    },
+    {
+      "source": "http://enterprise.org/ontology/wb#Project_P115893",
+      "target": "http://enterprise.org/ontology/wb#Country_Pakistan",
+      "label": "locatedIn"
+    },
+    {
+      "source": "http://enterprise.org/ontology/wb#Project_P115893",
+      "target": "http://enterprise.org/ontology/wb#Sector_Renewable_Energy_Hydro",
+      "label": "hasSector"
+    },
+    {
+      "source": "http://enterprise.org/ontology/wb#Project_P115893",
+      "target": "http://enterprise.org/ontology/wb#Country_Pakistan",
+      "label": "locatedIn"
+    },
+    {
+      "source": "http://enterprise.org/ontology/wb#Project_P115893",
+      "target": "http://enterprise.org/ontology/wb#Sector_Social_Protection",
+      "label": "hasSector"
+    },
+    {
+      "source": "http://enterprise.org/ontology/wb#Project_P117074",
+      "target": "http://enterprise.org/ontology/wb#Country_Somalia",
+      "label": "locatedIn"
+    },
+    {
+      "source": "http://enterprise.org/ontology/wb#Project_P117074",
+      "target": "http://enterprise.org/ontology/wb#Sector_Public_Administration_-_Financial_Sector",
+      "label": "hasSector"
+    },
+    {
+      "source": "http://enterprise.org/ontology/wb#Project_P117635",
+      "target": "http://enterprise.org/ontology/wb#Country_Kenya",
+      "label": "locatedIn"
+    },
+    {
+      "source": "http://enterprise.org/ontology/wb#Project_P117635",
+      "target": "http://enterprise.org/ontology/wb#Sector_Agricultural_markets%2C_commercialization_and_agri-business",
+      "label": "hasSector"
+    },
+    {
+      "source": "http://enterprise.org/ontology/wb#Project_P117635",
+      "target": "http://enterprise.org/ontology/wb#Country_Kenya",
+      "label": "locatedIn"
+    },
+    {
+      "source": "http://enterprise.org/ontology/wb#Project_P117635",
+      "target": "http://enterprise.org/ontology/wb#Sector_Irrigation_and_Drainage",
+      "label": "hasSector"
+    },
+    {
+      "source": "http://enterprise.org/ontology/wb#Project_P117635",
+      "target": "http://enterprise.org/ontology/wb#Country_Kenya",
+      "label": "locatedIn"
+    },
+    {
+      "source": "http://enterprise.org/ontology/wb#Project_P117635",
+      "target": "http://enterprise.org/ontology/wb#Sector_Other_Water_Supply%2C_Sanitation_and_Waste_Management",
+      "label": "hasSector"
+    },
+    {
+      "source": "http://enterprise.org/ontology/wb#Project_P117635",
+      "target": "http://enterprise.org/ontology/wb#Country_Kenya",
+      "label": "locatedIn"
+    },
+    {
+      "source": "http://enterprise.org/ontology/wb#Project_P117635",
+      "target": "http://enterprise.org/ontology/wb#Sector_Public_Administration_-_Water%2C_Sanitation_and_Waste_Management",
+      "label": "hasSector"
+    },
+    {
+      "source": "http://enterprise.org/ontology/wb#Project_P117635",
+      "target": "http://enterprise.org/ontology/wb#Country_Kenya",
+      "label": "locatedIn"
+    },
+    {
+      "source": "http://enterprise.org/ontology/wb#Project_P117635",
+      "target": "http://enterprise.org/ontology/wb#Sector_Water_Supply",
+      "label": "hasSector"
+    },
+    {
+      "source": "http://enterprise.org/ontology/wb#Project_P118518",
+      "target": "http://enterprise.org/ontology/wb#Country_Moldova",
+      "label": "locatedIn"
+    },
+    {
+      "source": "http://enterprise.org/ontology/wb#Project_P118518",
+      "target": "http://enterprise.org/ontology/wb#Sector_Agricultural_Extension%2C_Research%2C_and_Other_Support_Activities",
+      "label": "hasSector"
+    },
+    {
+      "source": "http://enterprise.org/ontology/wb#Project_P118518",
+      "target": "http://enterprise.org/ontology/wb#Country_Moldova",
+      "label": "locatedIn"
+    },
+    {
+      "source": "http://enterprise.org/ontology/wb#Project_P118518",
+      "target": "http://enterprise.org/ontology/wb#Sector_Agricultural_markets%2C_commercialization_and_agri-business",
+      "label": "hasSector"
+    },
+    {
+      "source": "http://enterprise.org/ontology/wb#Project_P118518",
+      "target": "http://enterprise.org/ontology/wb#Country_Moldova",
+      "label": "locatedIn"
+    },
+    {
+      "source": "http://enterprise.org/ontology/wb#Project_P118518",
+      "target": "http://enterprise.org/ontology/wb#Sector_Public_Administration_-_Agriculture%2C_Fishing_%26_Forestry",
+      "label": "hasSector"
+    },
+    {
+      "source": "http://enterprise.org/ontology/wb#Project_P119063",
+      "target": "http://enterprise.org/ontology/wb#Country_Ghana",
+      "label": "locatedIn"
+    },
+    {
+      "source": "http://enterprise.org/ontology/wb#Project_P119063",
+      "target": "http://enterprise.org/ontology/wb#Sector_Public_Administration_-_Water%2C_Sanitation_and_Waste_Management",
+      "label": "hasSector"
+    },
+    {
+      "source": "http://enterprise.org/ontology/wb#Project_P119063",
+      "target": "http://enterprise.org/ontology/wb#Country_Ghana",
+      "label": "locatedIn"
+    },
+    {
+      "source": "http://enterprise.org/ontology/wb#Project_P119063",
+      "target": "http://enterprise.org/ontology/wb#Sector_Sanitation",
+      "label": "hasSector"
+    },
+    {
+      "source": "http://enterprise.org/ontology/wb#Project_P119063",
+      "target": "http://enterprise.org/ontology/wb#Country_Ghana",
+      "label": "locatedIn"
+    },
+    {
+      "source": "http://enterprise.org/ontology/wb#Project_P119063",
+      "target": "http://enterprise.org/ontology/wb#Sector_Waste_Management",
+      "label": "hasSector"
+    },
+    {
+      "source": "http://enterprise.org/ontology/wb#Project_P119063",
+      "target": "http://enterprise.org/ontology/wb#Country_Ghana",
+      "label": "locatedIn"
+    },
+    {
+      "source": "http://enterprise.org/ontology/wb#Project_P119063",
+      "target": "http://enterprise.org/ontology/wb#Sector_Water_Supply",
+      "label": "hasSector"
+    },
+    {
+      "source": "http://enterprise.org/ontology/wb#Project_P119343",
+      "target": "http://enterprise.org/ontology/wb#Country_Philippines",
+      "label": "locatedIn"
+    },
+    {
+      "source": "http://enterprise.org/ontology/wb#Project_P119343",
+      "target": "http://enterprise.org/ontology/wb#Sector_Other_Transportation",
+      "label": "hasSector"
+    },
+    {
+      "source": "http://enterprise.org/ontology/wb#Project_P119343",
+      "target": "http://enterprise.org/ontology/wb#Country_Philippines",
+      "label": "locatedIn"
+    },
+    {
+      "source": "http://enterprise.org/ontology/wb#Project_P119343",
+      "target": "http://enterprise.org/ontology/wb#Sector_Public_Administration_-_Transportation",
+      "label": "hasSector"
+    },
+    {
+      "source": "http://enterprise.org/ontology/wb#Project_P119343",
+      "target": "http://enterprise.org/ontology/wb#Country_Philippines",
+      "label": "locatedIn"
+    },
+    {
+      "source": "http://enterprise.org/ontology/wb#Project_P119343",
+      "target": "http://enterprise.org/ontology/wb#Sector_Urban_Transport",
+      "label": "hasSector"
+    },
+    {
+      "source": "http://enterprise.org/ontology/wb#Project_P119893",
+      "target": "http://enterprise.org/ontology/wb#Country_Ethiopia",
+      "label": "locatedIn"
+    },
+    {
+      "source": "http://enterprise.org/ontology/wb#Project_P119893",
+      "target": "http://enterprise.org/ontology/wb#Sector_Energy_Transmission_and_Distribution",
+      "label": "hasSector"
+    },
+    {
+      "source": "http://enterprise.org/ontology/wb#Project_P119893",
+      "target": "http://enterprise.org/ontology/wb#Country_Ethiopia",
+      "label": "locatedIn"
+    },
+    {
+      "source": "http://enterprise.org/ontology/wb#Project_P119893",
+      "target": "http://enterprise.org/ontology/wb#Sector_Public_Administration_-_Energy_and_Extractives",
+      "label": "hasSector"
+    },
+    {
+      "source": "http://enterprise.org/ontology/wb#Project_P119893",
+      "target": "http://enterprise.org/ontology/wb#Country_Ethiopia",
+      "label": "locatedIn"
+    },
+    {
+      "source": "http://enterprise.org/ontology/wb#Project_P119893",
+      "target": "http://enterprise.org/ontology/wb#Sector_Renewable_Energy_Solar",
+      "label": "hasSector"
+    },
+    {
+      "source": "http://enterprise.org/ontology/wb#Project_P120583",
+      "target": "http://enterprise.org/ontology/wb#Country_Bangladesh",
+      "label": "locatedIn"
+    },
+    {
+      "source": "http://enterprise.org/ontology/wb#Project_P120583",
+      "target": "http://enterprise.org/ontology/wb#Sector_Crops",
+      "label": "hasSector"
+    },
+    {
+      "source": "http://enterprise.org/ontology/wb#Project_P120583",
+      "target": "http://enterprise.org/ontology/wb#Country_Bangladesh",
+      "label": "locatedIn"
+    },
+    {
+      "source": "http://enterprise.org/ontology/wb#Project_P120583",
+      "target": "http://enterprise.org/ontology/wb#Sector_Public_Administration_-_Agriculture%2C_Fishing_%26_Forestry",
+      "label": "hasSector"
+    },
+    {
+      "source": "http://enterprise.org/ontology/wb#Project_P120583",
+      "target": "http://enterprise.org/ontology/wb#Country_Bangladesh",
+      "label": "locatedIn"
+    },
+    {
+      "source": "http://enterprise.org/ontology/wb#Project_P120583",
+      "target": "http://enterprise.org/ontology/wb#Sector_Social_Protection",
+      "label": "hasSector"
+    },
+    {
+      "source": "http://enterprise.org/ontology/wb#Project_P121034",
+      "target": "http://enterprise.org/ontology/wb#Country_Nigeria",
+      "label": "locatedIn"
+    },
+    {
+      "source": "http://enterprise.org/ontology/wb#Project_P121034",
+      "target": "http://enterprise.org/ontology/wb#Sector_Central_Government_%28Central_Agencies%29",
+      "label": "hasSector"
+    },
+    {
+      "source": "http://enterprise.org/ontology/wb#Project_P121507",
+      "target": "http://enterprise.org/ontology/wb#Country_Pakistan",
+      "label": "locatedIn"
+    },
+    {
+      "source": "http://enterprise.org/ontology/wb#Project_P121507",
+      "target": "http://enterprise.org/ontology/wb#Sector_Energy_Transmission_and_Distribution",
+      "label": "hasSector"
+    },
+    {
+      "source": "http://enterprise.org/ontology/wb#Project_P121507",
+      "target": "http://enterprise.org/ontology/wb#Country_Pakistan",
+      "label": "locatedIn"
+    },
+    {
+      "source": "http://enterprise.org/ontology/wb#Project_P121507",
+      "target": "http://enterprise.org/ontology/wb#Sector_Other_Water_Supply%2C_Sanitation_and_Waste_Management",
+      "label": "hasSector"
+    },
+    {
+      "source": "http://enterprise.org/ontology/wb#Project_P121507",
+      "target": "http://enterprise.org/ontology/wb#Country_Pakistan",
+      "label": "locatedIn"
+    },
+    {
+      "source": "http://enterprise.org/ontology/wb#Project_P121507",
+      "target": "http://enterprise.org/ontology/wb#Sector_Public_Administration_-_Water%2C_Sanitation_and_Waste_Management",
+      "label": "hasSector"
+    },
+    {
+      "source": "http://enterprise.org/ontology/wb#Project_P121507",
+      "target": "http://enterprise.org/ontology/wb#Country_Pakistan",
+      "label": "locatedIn"
+    },
+    {
+      "source": "http://enterprise.org/ontology/wb#Project_P121507",
+      "target": "http://enterprise.org/ontology/wb#Sector_Renewable_Energy_Hydro",
+      "label": "hasSector"
+    },
+    {
+      "source": "http://enterprise.org/ontology/wb#Project_P121507",
+      "target": "http://enterprise.org/ontology/wb#Country_Pakistan",
+      "label": "locatedIn"
+    },
+    {
+      "source": "http://enterprise.org/ontology/wb#Project_P121507",
+      "target": "http://enterprise.org/ontology/wb#Sector_Social_Protection",
+      "label": "hasSector"
+    },
+    {
+      "source": "http://enterprise.org/ontology/wb#Project_P121986",
+      "target": "http://enterprise.org/ontology/wb#Country_Zambia",
+      "label": "locatedIn"
+    },
+    {
+      "source": "http://enterprise.org/ontology/wb#Project_P121986",
+      "target": "http://enterprise.org/ontology/wb#Sector_Other_Agriculture%2C_Fishing_and_Forestry",
+      "label": "hasSector"
+    },
+    {
+      "source": "http://enterprise.org/ontology/wb#Project_P121986",
+      "target": "http://enterprise.org/ontology/wb#Country_Zambia",
+      "label": "locatedIn"
+    },
+    {
+      "source": "http://enterprise.org/ontology/wb#Project_P121986",
+      "target": "http://enterprise.org/ontology/wb#Sector_Other_Transportation",
+      "label": "hasSector"
+    },
+    {
+      "source": "http://enterprise.org/ontology/wb#Project_P121986",
+      "target": "http://enterprise.org/ontology/wb#Country_Zambia",
+      "label": "locatedIn"
+    },
+    {
+      "source": "http://enterprise.org/ontology/wb#Project_P121986",
+      "target": "http://enterprise.org/ontology/wb#Sector_Other_Water_Supply%2C_Sanitation_and_Waste_Management",
+      "label": "hasSector"
+    },
+    {
+      "source": "http://enterprise.org/ontology/wb#Project_P122111",
+      "target": "http://enterprise.org/ontology/wb#Country_Costa_Rica",
+      "label": "locatedIn"
+    },
+    {
+      "source": "http://enterprise.org/ontology/wb#Project_P122111",
+      "target": "http://enterprise.org/ontology/wb#Sector_Other_Public_Administration",
+      "label": "hasSector"
+    },
+    {
+      "source": "http://enterprise.org/ontology/wb#Project_P122111",
+      "target": "http://enterprise.org/ontology/wb#Country_Costa_Rica",
+      "label": "locatedIn"
+    },
+    {
+      "source": "http://enterprise.org/ontology/wb#Project_P122111",
+      "target": "http://enterprise.org/ontology/wb#Sector_Other_Transportation",
+      "label": "hasSector"
+    },
+    {
+      "source": "http://enterprise.org/ontology/wb#Project_P122111",
+      "target": "http://enterprise.org/ontology/wb#Country_Costa_Rica",
+      "label": "locatedIn"
+    },
+    {
+      "source": "http://enterprise.org/ontology/wb#Project_P122111",
+      "target": "http://enterprise.org/ontology/wb#Sector_Ports/Waterways",
+      "label": "hasSector"
+    },
+    {
+      "source": "http://enterprise.org/ontology/wb#Project_P122111",
+      "target": "http://enterprise.org/ontology/wb#Country_Costa_Rica",
+      "label": "locatedIn"
+    },
+    {
+      "source": "http://enterprise.org/ontology/wb#Project_P122111",
+      "target": "http://enterprise.org/ontology/wb#Sector_Sub-National_Government",
+      "label": "hasSector"
+    },
+    {
+      "source": "http://enterprise.org/ontology/wb#Project_P122111",
+      "target": "http://enterprise.org/ontology/wb#Country_Costa_Rica",
+      "label": "locatedIn"
+    },
+    {
+      "source": "http://enterprise.org/ontology/wb#Project_P122111",
+      "target": "http://enterprise.org/ontology/wb#Sector_Trade",
+      "label": "hasSector"
+    },
+    {
+      "source": "http://enterprise.org/ontology/wb#Project_P122235",
+      "target": "http://enterprise.org/ontology/wb#Country_Afghanistan",
+      "label": "locatedIn"
+    },
+    {
+      "source": "http://enterprise.org/ontology/wb#Project_P122235",
+      "target": "http://enterprise.org/ontology/wb#Sector_Irrigation_and_Drainage",
+      "label": "hasSector"
+    },
+    {
+      "source": "http://enterprise.org/ontology/wb#Project_P122235",
+      "target": "http://enterprise.org/ontology/wb#Country_Afghanistan",
+      "label": "locatedIn"
+    },
+    {
+      "source": "http://enterprise.org/ontology/wb#Project_P122235",
+      "target": "http://enterprise.org/ontology/wb#Sector_Public_Administration_-_Agriculture%2C_Fishing_%26_Forestry",
+      "label": "hasSector"
+    },
+    {
+      "source": "http://enterprise.org/ontology/wb#Project_P122387",
+      "target": "http://enterprise.org/ontology/wb#Country_India",
+      "label": "locatedIn"
+    },
+    {
+      "source": "http://enterprise.org/ontology/wb#Project_P122387",
+      "target": "http://enterprise.org/ontology/wb#Sector_Central_Government_%28Central_Agencies%29",
+      "label": "hasSector"
+    },
+    {
+      "source": "http://enterprise.org/ontology/wb#Project_P122387",
+      "target": "http://enterprise.org/ontology/wb#Country_India",
+      "label": "locatedIn"
+    },
+    {
+      "source": "http://enterprise.org/ontology/wb#Project_P122387",
+      "target": "http://enterprise.org/ontology/wb#Sector_Sub-National_Government",
+      "label": "hasSector"
+    },
+    {
+      "source": "http://enterprise.org/ontology/wb#Project_P122764",
+      "target": "http://enterprise.org/ontology/wb#Country_Ethiopia",
+      "label": "locatedIn"
+    },
+    {
+      "source": "http://enterprise.org/ontology/wb#Project_P122764",
+      "target": "http://enterprise.org/ontology/wb#Sector_Banking_Institutions",
+      "label": "hasSector"
+    },
+    {
+      "source": "http://enterprise.org/ontology/wb#Project_P122764",
+      "target": "http://enterprise.org/ontology/wb#Country_Ethiopia",
+      "label": "locatedIn"
+    },
+    {
+      "source": "http://enterprise.org/ontology/wb#Project_P122764",
+      "target": "http://enterprise.org/ontology/wb#Sector_Other_Non-bank_Financial_Institutions",
+      "label": "hasSector"
+    },
+    {
+      "source": "http://enterprise.org/ontology/wb#Project_P122764",
+      "target": "http://enterprise.org/ontology/wb#Country_Ethiopia",
+      "label": "locatedIn"
+    },
+    {
+      "source": "http://enterprise.org/ontology/wb#Project_P122764",
+      "target": "http://enterprise.org/ontology/wb#Sector_Public_Administration_-_Financial_Sector",
+      "label": "hasSector"
+    },
+    {
+      "source": "http://enterprise.org/ontology/wb#Project_P122764",
+      "target": "http://enterprise.org/ontology/wb#Country_Ethiopia",
+      "label": "locatedIn"
+    },
+    {
+      "source": "http://enterprise.org/ontology/wb#Project_P122764",
+      "target": "http://enterprise.org/ontology/wb#Sector_Workforce_Development_and_Vocational_Education",
+      "label": "hasSector"
+    },
+    {
+      "source": "http://enterprise.org/ontology/wb#Project_P122975",
+      "target": "http://enterprise.org/ontology/wb#Country_Cambodia",
+      "label": "locatedIn"
+    },
+    {
+      "source": "http://enterprise.org/ontology/wb#Project_P122975",
+      "target": "http://enterprise.org/ontology/wb#Sector_Other_Agriculture%2C_Fishing_and_Forestry",
+      "label": "hasSector"
+    },
+    {
+      "source": "http://enterprise.org/ontology/wb#Project_P123112",
+      "target": "http://enterprise.org/ontology/wb#Country_Nigeria",
+      "label": "locatedIn"
+    },
+    {
+      "source": "http://enterprise.org/ontology/wb#Project_P123112",
+      "target": "http://enterprise.org/ontology/wb#Sector_Irrigation_and_Drainage",
+      "label": "hasSector"
+    },
+    {
+      "source": "http://enterprise.org/ontology/wb#Project_P123112",
+      "target": "http://enterprise.org/ontology/wb#Country_Nigeria",
+      "label": "locatedIn"
+    },
+    {
+      "source": "http://enterprise.org/ontology/wb#Project_P123112",
+      "target": "http://enterprise.org/ontology/wb#Sector_Other_Agriculture%2C_Fishing_and_Forestry",
+      "label": "hasSector"
+    },
+    {
+      "source": "http://enterprise.org/ontology/wb#Project_P123112",
+      "target": "http://enterprise.org/ontology/wb#Country_Nigeria",
+      "label": "locatedIn"
+    },
+    {
+      "source": "http://enterprise.org/ontology/wb#Project_P123112",
+      "target": "http://enterprise.org/ontology/wb#Sector_Other_Water_Supply%2C_Sanitation_and_Waste_Management",
+      "label": "hasSector"
+    },
+    {
+      "source": "http://enterprise.org/ontology/wb#Project_P124583",
+      "target": "http://enterprise.org/ontology/wb#Country_Indonesia",
+      "label": "locatedIn"
+    },
+    {
+      "source": "http://enterprise.org/ontology/wb#Project_P124583",
+      "target": "http://enterprise.org/ontology/wb#Sector_Forestry",
+      "label": "hasSector"
+    },
+    {
+      "source": "http://enterprise.org/ontology/wb#Project_P125590",
+      "target": "http://enterprise.org/ontology/wb#Country_Uganda",
+      "label": "locatedIn"
+    },
+    {
+      "source": "http://enterprise.org/ontology/wb#Project_P125590",
+      "target": "http://enterprise.org/ontology/wb#Sector_Public_Administration_-_Transportation",
+      "label": "hasSector"
+    },
+    {
+      "source": "http://enterprise.org/ontology/wb#Project_P125590",
+      "target": "http://enterprise.org/ontology/wb#Country_Uganda",
+      "label": "locatedIn"
+    },
+    {
+      "source": "http://enterprise.org/ontology/wb#Project_P125590",
+      "target": "http://enterprise.org/ontology/wb#Sector_Rural_and_Inter-Urban_Roads",
+      "label": "hasSector"
+    },
+    {
+      "source": "http://enterprise.org/ontology/wb#Project_P125597",
+      "target": "http://enterprise.org/ontology/wb#Country_Afghanistan",
+      "label": "locatedIn"
+    },
+    {
+      "source": "http://enterprise.org/ontology/wb#Project_P125597",
+      "target": "http://enterprise.org/ontology/wb#Sector_Other_Public_Administration",
+      "label": "hasSector"
+    },
+    {
+      "source": "http://enterprise.org/ontology/wb#Project_P125597",
+      "target": "http://enterprise.org/ontology/wb#Country_Afghanistan",
+      "label": "locatedIn"
+    },
+    {
+      "source": "http://enterprise.org/ontology/wb#Project_P125597",
+      "target": "http://enterprise.org/ontology/wb#Sector_Other_Transportation",
+      "label": "hasSector"
+    },
+    {
+      "source": "http://enterprise.org/ontology/wb#Project_P125597",
+      "target": "http://enterprise.org/ontology/wb#Country_Afghanistan",
+      "label": "locatedIn"
+    },
+    {
+      "source": "http://enterprise.org/ontology/wb#Project_P125597",
+      "target": "http://enterprise.org/ontology/wb#Sector_Other_Water_Supply%2C_Sanitation_and_Waste_Management",
+      "label": "hasSector"
+    },
+    {
+      "source": "http://enterprise.org/ontology/wb#Project_P125597",
+      "target": "http://enterprise.org/ontology/wb#Country_Afghanistan",
+      "label": "locatedIn"
+    },
+    {
+      "source": "http://enterprise.org/ontology/wb#Project_P125597",
+      "target": "http://enterprise.org/ontology/wb#Sector_Sanitation",
+      "label": "hasSector"
+    },
+    {
+      "source": "http://enterprise.org/ontology/wb#Project_P125597",
+      "target": "http://enterprise.org/ontology/wb#Country_Afghanistan",
+      "label": "locatedIn"
+    },
+    {
+      "source": "http://enterprise.org/ontology/wb#Project_P125597",
+      "target": "http://enterprise.org/ontology/wb#Sector_Sub-National_Government",
+      "label": "hasSector"
+    },
+    {
+      "source": "http://enterprise.org/ontology/wb#Project_P126057",
+      "target": "http://enterprise.org/ontology/wb#Country_Mozambique",
+      "label": "locatedIn"
+    },
+    {
+      "source": "http://enterprise.org/ontology/wb#Project_P126057",
+      "target": "http://enterprise.org/ontology/wb#Sector_Micro-_and_SME_finance",
+      "label": "hasSector"
+    },
+    {
+      "source": "http://enterprise.org/ontology/wb#Project_P126328",
+      "target": "http://enterprise.org/ontology/wb#Country_Somalia",
+      "label": "locatedIn"
+    },
+    {
+      "source": "http://enterprise.org/ontology/wb#Project_P126328",
+      "target": "http://enterprise.org/ontology/wb#Sector_Other_Public_Administration",
+      "label": "hasSector"
+    },
+    {
+      "source": "http://enterprise.org/ontology/wb#Project_P126498",
+      "target": "http://enterprise.org/ontology/wb#Country_Rwanda",
+      "label": "locatedIn"
+    },
+    {
+      "source": "http://enterprise.org/ontology/wb#Project_P126498",
+      "target": "http://enterprise.org/ontology/wb#Sector_Central_Government_%28Central_Agencies%29",
+      "label": "hasSector"
+    },
+    {
+      "source": "http://enterprise.org/ontology/wb#Project_P126498",
+      "target": "http://enterprise.org/ontology/wb#Country_Rwanda",
+      "label": "locatedIn"
+    },
+    {
+      "source": "http://enterprise.org/ontology/wb#Project_P126498",
+      "target": "http://enterprise.org/ontology/wb#Sector_Rural_and_Inter-Urban_Roads",
+      "label": "hasSector"
+    },
+    {
+      "source": "http://enterprise.org/ontology/wb#Project_P126498",
+      "target": "http://enterprise.org/ontology/wb#Country_Rwanda",
+      "label": "locatedIn"
+    },
+    {
+      "source": "http://enterprise.org/ontology/wb#Project_P126498",
+      "target": "http://enterprise.org/ontology/wb#Sector_Sub-National_Government",
+      "label": "hasSector"
+    },
+    {
+      "source": "http://enterprise.org/ontology/wb#Project_P127096",
+      "target": "http://enterprise.org/ontology/wb#Country_Eastern_and_Southern_Africa",
+      "label": "locatedIn"
+    },
+    {
+      "source": "http://enterprise.org/ontology/wb#Project_P127096",
+      "target": "http://enterprise.org/ontology/wb#Sector_ICT_Services",
+      "label": "hasSector"
+    },
+    {
+      "source": "http://enterprise.org/ontology/wb#Project_P127096",
+      "target": "http://enterprise.org/ontology/wb#Country_Eastern_and_Southern_Africa",
+      "label": "locatedIn"
+    },
+    {
+      "source": "http://enterprise.org/ontology/wb#Project_P127096",
+      "target": "http://enterprise.org/ontology/wb#Sector_Other_Information_and_Communications_Technologies",
+      "label": "hasSector"
+    },
+    {
+      "source": "http://enterprise.org/ontology/wb#Project_P127096",
+      "target": "http://enterprise.org/ontology/wb#Country_Eastern_and_Southern_Africa",
+      "label": "locatedIn"
+    },
+    {
+      "source": "http://enterprise.org/ontology/wb#Project_P127096",
+      "target": "http://enterprise.org/ontology/wb#Sector_Public_Administration_-_Information_and_Communications_Technologies",
+      "label": "hasSector"
+    },
+    {
+      "source": "http://enterprise.org/ontology/wb#Project_P127115",
+      "target": "http://enterprise.org/ontology/wb#Country_Mozambique",
+      "label": "locatedIn"
+    },
+    {
+      "source": "http://enterprise.org/ontology/wb#Project_P127115",
+      "target": "http://enterprise.org/ontology/wb#Sector_Mining",
+      "label": "hasSector"
+    },
+    {
+      "source": "http://enterprise.org/ontology/wb#Project_P127115",
+      "target": "http://enterprise.org/ontology/wb#Country_Mozambique",
+      "label": "locatedIn"
+    },
+    {
+      "source": "http://enterprise.org/ontology/wb#Project_P127115",
+      "target": "http://enterprise.org/ontology/wb#Sector_Oil_and_Gas",
+      "label": "hasSector"
+    },
+    {
+      "source": "http://enterprise.org/ontology/wb#Project_P127125",
+      "target": "http://enterprise.org/ontology/wb#Country_Moldova",
+      "label": "locatedIn"
+    },
+    {
+      "source": "http://enterprise.org/ontology/wb#Project_P127125",
+      "target": "http://enterprise.org/ontology/wb#Sector_Agricultural_Extension%2C_Research%2C_and_Other_Support_Activities",
+      "label": "hasSector"
+    },
+    {
+      "source": "http://enterprise.org/ontology/wb#Project_P127125",
+      "target": "http://enterprise.org/ontology/wb#Country_Moldova",
+      "label": "locatedIn"
+    },
+    {
+      "source": "http://enterprise.org/ontology/wb#Project_P127125",
+      "target": "http://enterprise.org/ontology/wb#Sector_Agricultural_markets%2C_commercialization_and_agri-business",
+      "label": "hasSector"
+    },
+    {
+      "source": "http://enterprise.org/ontology/wb#Project_P127125",
+      "target": "http://enterprise.org/ontology/wb#Country_Moldova",
+      "label": "locatedIn"
+    },
+    {
+      "source": "http://enterprise.org/ontology/wb#Project_P127125",
+      "target": "http://enterprise.org/ontology/wb#Sector_Public_Administration_-_Agriculture%2C_Fishing_%26_Forestry",
+      "label": "hasSector"
+    },
+    {
+      "source": "http://enterprise.org/ontology/wb#Project_P127484",
+      "target": "http://enterprise.org/ontology/wb#Country_Libya",
+      "label": "locatedIn"
+    },
+    {
+      "source": "http://enterprise.org/ontology/wb#Project_P127484",
+      "target": "http://enterprise.org/ontology/wb#Sector_Social_Protection",
+      "label": "hasSector"
+    },
+    {
+      "source": "http://enterprise.org/ontology/wb#Project_P127725",
+      "target": "http://enterprise.org/ontology/wb#Country_India",
+      "label": "locatedIn"
+    },
+    {
+      "source": "http://enterprise.org/ontology/wb#Project_P127725",
+      "target": "http://enterprise.org/ontology/wb#Sector_Other_Agriculture%2C_Fishing_and_Forestry",
+      "label": "hasSector"
+    },
+    {
+      "source": "http://enterprise.org/ontology/wb#Project_P127725",
+      "target": "http://enterprise.org/ontology/wb#Country_India",
+      "label": "locatedIn"
+    },
+    {
+      "source": "http://enterprise.org/ontology/wb#Project_P127725",
+      "target": "http://enterprise.org/ontology/wb#Sector_Other_Public_Administration",
+      "label": "hasSector"
+    },
+    {
+      "source": "http://enterprise.org/ontology/wb#Project_P127725",
+      "target": "http://enterprise.org/ontology/wb#Country_India",
+      "label": "locatedIn"
+    },
+    {
+      "source": "http://enterprise.org/ontology/wb#Project_P127725",
+      "target": "http://enterprise.org/ontology/wb#Sector_Other_Transportation",
+      "label": "hasSector"
+    },
+    {
+      "source": "http://enterprise.org/ontology/wb#Project_P127725",
+      "target": "http://enterprise.org/ontology/wb#Country_India",
+      "label": "locatedIn"
+    },
+    {
+      "source": "http://enterprise.org/ontology/wb#Project_P127725",
+      "target": "http://enterprise.org/ontology/wb#Sector_Other_Water_Supply%2C_Sanitation_and_Waste_Management",
+      "label": "hasSector"
+    },
+    {
+      "source": "http://enterprise.org/ontology/wb#Project_P127725",
+      "target": "http://enterprise.org/ontology/wb#Country_India",
+      "label": "locatedIn"
+    },
+    {
+      "source": "http://enterprise.org/ontology/wb#Project_P127725",
+      "target": "http://enterprise.org/ontology/wb#Sector_Rural_and_Inter-Urban_Roads",
+      "label": "hasSector"
+    },
+    {
+      "source": "http://enterprise.org/ontology/wb#Project_P127741",
+      "target": "http://enterprise.org/ontology/wb#Country_Philippines",
+      "label": "locatedIn"
+    },
+    {
+      "source": "http://enterprise.org/ontology/wb#Project_P127741",
+      "target": "http://enterprise.org/ontology/wb#Sector_Health",
+      "label": "hasSector"
+    },
+    {
+      "source": "http://enterprise.org/ontology/wb#Project_P127741",
+      "target": "http://enterprise.org/ontology/wb#Country_Philippines",
+      "label": "locatedIn"
+    },
+    {
+      "source": "http://enterprise.org/ontology/wb#Project_P127741",
+      "target": "http://enterprise.org/ontology/wb#Sector_Other_Agriculture%2C_Fishing_and_Forestry",
+      "label": "hasSector"
+    },
+    {
+      "source": "http://enterprise.org/ontology/wb#Project_P127741",
+      "target": "http://enterprise.org/ontology/wb#Country_Philippines",
+      "label": "locatedIn"
+    },
+    {
+      "source": "http://enterprise.org/ontology/wb#Project_P127741",
+      "target": "http://enterprise.org/ontology/wb#Sector_Rural_and_Inter-Urban_Roads",
+      "label": "hasSector"
+    },
+    {
+      "source": "http://enterprise.org/ontology/wb#Project_P127741",
+      "target": "http://enterprise.org/ontology/wb#Country_Philippines",
+      "label": "locatedIn"
+    },
+    {
+      "source": "http://enterprise.org/ontology/wb#Project_P127741",
+      "target": "http://enterprise.org/ontology/wb#Sector_Sub-National_Government",
+      "label": "hasSector"
+    },
+    {
+      "source": "http://enterprise.org/ontology/wb#Project_P127741",
+      "target": "http://enterprise.org/ontology/wb#Country_Philippines",
+      "label": "locatedIn"
+    },
+    {
+      "source": "http://enterprise.org/ontology/wb#Project_P127741",
+      "target": "http://enterprise.org/ontology/wb#Sector_Water_Supply",
+      "label": "hasSector"
+    },
+    {
+      "source": "http://enterprise.org/ontology/wb#Project_P128050",
+      "target": "http://enterprise.org/ontology/wb#Country_Kazakhstan",
+      "label": "locatedIn"
+    },
+    {
+      "source": "http://enterprise.org/ontology/wb#Project_P128050",
+      "target": "http://enterprise.org/ontology/wb#Sector_Public_Administration_-_Transportation",
+      "label": "hasSector"
+    },
+    {
+      "source": "http://enterprise.org/ontology/wb#Project_P128050",
+      "target": "http://enterprise.org/ontology/wb#Country_Kazakhstan",
+      "label": "locatedIn"
+    },
+    {
+      "source": "http://enterprise.org/ontology/wb#Project_P128050",
+      "target": "http://enterprise.org/ontology/wb#Sector_Rural_and_Inter-Urban_Roads",
+      "label": "hasSector"
+    },
+    {
+      "source": "http://enterprise.org/ontology/wb#Project_P128068",
+      "target": "http://enterprise.org/ontology/wb#Country_Caribbean",
+      "label": "locatedIn"
+    },
+    {
+      "source": "http://enterprise.org/ontology/wb#Project_P128068",
+      "target": "http://enterprise.org/ontology/wb#Sector_Other_Industry%2C_Trade_and_Services",
+      "label": "hasSector"
+    },
+    {
+      "source": "http://enterprise.org/ontology/wb#Project_P128344",
+      "target": "http://enterprise.org/ontology/wb#Country_Ukraine",
+      "label": "locatedIn"
+    },
+    {
+      "source": "http://enterprise.org/ontology/wb#Project_P128344",
+      "target": "http://enterprise.org/ontology/wb#Sector_Public_Administration_-_Social_Protection",
+      "label": "hasSector"
+    },
+    {
+      "source": "http://enterprise.org/ontology/wb#Project_P128344",
+      "target": "http://enterprise.org/ontology/wb#Country_Ukraine",
+      "label": "locatedIn"
+    },
+    {
+      "source": "http://enterprise.org/ontology/wb#Project_P128344",
+      "target": "http://enterprise.org/ontology/wb#Sector_Social_Protection",
+      "label": "hasSector"
+    },
+    {
+      "source": "http://enterprise.org/ontology/wb#Project_P128605",
+      "target": "http://enterprise.org/ontology/wb#Country_Turkiye",
+      "label": "locatedIn"
+    },
+    {
+      "source": "http://enterprise.org/ontology/wb#Project_P128605",
+      "target": "http://enterprise.org/ontology/wb#Sector_Other_Energy_and_Extractives",
+      "label": "hasSector"
+    },
+    {
+      "source": "http://enterprise.org/ontology/wb#Project_P128605",
+      "target": "http://enterprise.org/ontology/wb#Country_Turkiye",
+      "label": "locatedIn"
+    },
+    {
+      "source": "http://enterprise.org/ontology/wb#Project_P128605",
+      "target": "http://enterprise.org/ontology/wb#Sector_Other_Water_Supply%2C_Sanitation_and_Waste_Management",
+      "label": "hasSector"
+    },
+    {
+      "source": "http://enterprise.org/ontology/wb#Project_P128605",
+      "target": "http://enterprise.org/ontology/wb#Country_Turkiye",
+      "label": "locatedIn"
+    },
+    {
+      "source": "http://enterprise.org/ontology/wb#Project_P128605",
+      "target": "http://enterprise.org/ontology/wb#Sector_Sub-National_Government",
+      "label": "hasSector"
+    },
+    {
+      "source": "http://enterprise.org/ontology/wb#Project_P128605",
+      "target": "http://enterprise.org/ontology/wb#Country_Turkiye",
+      "label": "locatedIn"
+    },
+    {
+      "source": "http://enterprise.org/ontology/wb#Project_P128605",
+      "target": "http://enterprise.org/ontology/wb#Sector_Urban_Transport",
+      "label": "hasSector"
+    },
+    {
+      "source": "http://enterprise.org/ontology/wb#Project_P128921",
+      "target": "http://enterprise.org/ontology/wb#Country_India",
+      "label": "locatedIn"
+    },
+    {
+      "source": "http://enterprise.org/ontology/wb#Project_P128921",
+      "target": "http://enterprise.org/ontology/wb#Sector_Other_Energy_and_Extractives",
+      "label": "hasSector"
+    },
+    {
+      "source": "http://enterprise.org/ontology/wb#Project_P128950",
+      "target": "http://enterprise.org/ontology/wb#Country_Bosnia_and_Herzegovina",
+      "label": "locatedIn"
+    },
+    {
+      "source": "http://enterprise.org/ontology/wb#Project_P128950",
+      "target": "http://enterprise.org/ontology/wb#Sector_ICT_Services",
       "label": "hasSector"
     }
   ]

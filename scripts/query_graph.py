@@ -14,50 +14,36 @@ if not os.path.exists(input_path):
 
 print(f"Loading Knowledge Graph from {input_path}...")
 g.parse(input_path, format="turtle")
-print(f"Loaded graph with {len(g)} triples.\n")
+print(f"Loaded master graph with {len(g):,} triples.\n")
 
-# 2. SPARQL Query to find countries with active projects in Water, sanitation and flood protection related sectors
-query = """
+# 2. Aggregation SPARQL Query: Top 10 Countries by Active Project Volume
+query_top_countries = """
 PREFIX wb: <http://enterprise.org/ontology/wb#>
 PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
 
-SELECT DISTINCT ?countryName ?projectName ?sectorName
+SELECT ?countryName (COUNT(DISTINCT ?project) AS ?projectCount)
 WHERE {
     ?project a wb:Project ;
-             rdfs:label ?projectName ;
-             wb:locatedIn ?country ;
-             wb:hasSector ?sector .
+             wb:locatedIn ?country .
     ?country rdfs:label ?countryName .
-    ?sector rdfs:label ?sectorName .
-    
-    FILTER (
-        CONTAINS(LCASE(?sectorName), "water") ||
-        CONTAINS(LCASE(?sectorName), "sanitation") ||
-        CONTAINS(LCASE(?sectorName), "flood protection")
-    )
 }
-ORDER BY ?countryName ?projectName
+GROUP BY ?countryName
+ORDER BY DESC(?projectCount)
+LIMIT 10
 """
 
-results = g.query(query)
+results = g.query(query_top_countries)
 
-print("=== Business Question ===")
-print("Which countries have active projects operating in the 'Water, sanitation and flood protection' sector?\n")
+print("=== Top 10 Countries by Volume of Active Projects ===")
+print(f"{'Rank':<5} | {'Country':<40} | {'Active Projects':<15}")
+print("-" * 65)
 
-print(f"{'Country':<30} | {'Project Name':<50} | {'Sector Name':<35}")
-print("-" * 120)
-
-count = 0
+rank = 1
 for row in results:
-    count += 1
     c_name = str(row.countryName)
-    p_name = str(row.projectName)
-    s_name = str(row.sectorName)
-    if len(p_name) > 47:
-        p_name = p_name[:44] + "..."
-    if len(s_name) > 33:
-        s_name = s_name[:30] + "..."
-    print(f"{c_name:<30} | {p_name:<50} | {s_name:<35}")
+    p_count = int(row.projectCount)
+    print(f"{rank:<5} | {c_name:<40} | {p_count:<15}")
+    rank += 1
 
-print("-" * 120)
-print(f"Total matching records found: {count}\n")
+print("-" * 65)
+print(f"Aggregation complete over {len(g):,} triples.\n")

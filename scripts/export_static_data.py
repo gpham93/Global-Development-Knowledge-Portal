@@ -17,7 +17,7 @@ if not os.path.exists(DATA_PATH):
     print(f"Error: {DATA_PATH} not found.")
     exit(1)
 
-print(f"Loading RDF Graph from {DATA_PATH}...")
+print(f"Exporting static JSON data from master graph {DATA_PATH}...")
 g.parse(DATA_PATH, format="turtle")
 
 # 1. Stats
@@ -36,7 +36,7 @@ stats_data = {
     "sectors": sector_cnt
 }
 
-# 2. Graph Nodes & Links
+# 2. Graph Nodes & Links (sample subset for smooth visualizer performance)
 graph_query = """
 PREFIX wb: <http://enterprise.org/ontology/wb#>
 PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
@@ -50,6 +50,7 @@ WHERE {
     ?country rdfs:label ?countryName .
     ?sector rdfs:label ?sectorName .
 }
+LIMIT 300
 """
 results = g.query(graph_query)
 nodes_dict = {}
@@ -78,7 +79,27 @@ graph_data = {
     "links": links
 }
 
-# 3. Sectors List
+# 3. Top Countries Aggregation
+top_countries_query = """
+PREFIX wb: <http://enterprise.org/ontology/wb#>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+
+SELECT ?countryName (COUNT(DISTINCT ?project) AS ?projectCount)
+WHERE {
+    ?project a wb:Project ; wb:locatedIn ?country .
+    ?country rdfs:label ?countryName .
+}
+GROUP BY ?countryName
+ORDER BY DESC(?projectCount)
+LIMIT 10
+"""
+top_c_results = g.query(top_countries_query)
+top_countries_data = {
+    "columns": ["countryName", "projectCount"],
+    "data": [{"countryName": str(r.countryName), "projectCount": int(r.projectCount)} for r in top_c_results]
+}
+
+# 4. Sectors List
 sectors_query = """
 PREFIX wb: <http://enterprise.org/ontology/wb#>
 PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
@@ -90,37 +111,10 @@ WHERE {
 }
 GROUP BY ?sectorName
 ORDER BY DESC(?projectCount)
+LIMIT 24
 """
 sector_results = g.query(sectors_query)
 sectors_data = {"sectors": [{"name": str(row.sectorName), "count": int(row.projectCount)} for row in sector_results]}
-
-# 4. Water & Sanitation Query Results
-water_query = """
-PREFIX wb: <http://enterprise.org/ontology/wb#>
-PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
-
-SELECT DISTINCT ?countryName ?projectName ?sectorName
-WHERE {
-    ?project a wb:Project ;
-             rdfs:label ?projectName ;
-             wb:locatedIn ?country ;
-             wb:hasSector ?sector .
-    ?country rdfs:label ?countryName .
-    ?sector rdfs:label ?sectorName .
-    
-    FILTER (
-        CONTAINS(LCASE(?sectorName), "water") ||
-        CONTAINS(LCASE(?sectorName), "sanitation") ||
-        CONTAINS(LCASE(?sectorName), "flood protection")
-    )
-}
-ORDER BY ?countryName ?projectName
-"""
-water_results = g.query(water_query)
-water_data = {
-    "columns": ["countryName", "projectName", "sectorName"],
-    "data": [{"countryName": str(r.countryName), "projectName": str(r.projectName), "sectorName": str(r.sectorName)} for r in water_results]
-}
 
 # Write output files
 def save_json(path, data):
@@ -130,12 +124,11 @@ def save_json(path, data):
 save_json(os.path.join(OUTPUT_DIR, "stats.json"), stats_data)
 save_json(os.path.join(OUTPUT_DIR, "graph.json"), graph_data)
 save_json(os.path.join(OUTPUT_DIR, "sectors.json"), sectors_data)
-save_json(os.path.join(OUTPUT_DIR, "water_projects.json"), water_data)
+save_json(os.path.join(OUTPUT_DIR, "water_projects.json"), top_countries_data)
 
-# Also save copy in root data directory
 save_json(os.path.join(ROOT_DATA_DIR, "graph.json"), graph_data)
 save_json(os.path.join(ROOT_DATA_DIR, "stats.json"), stats_data)
 save_json(os.path.join(ROOT_DATA_DIR, "sectors.json"), sectors_data)
-save_json(os.path.join(ROOT_DATA_DIR, "water_projects.json"), water_data)
+save_json(os.path.join(ROOT_DATA_DIR, "water_projects.json"), top_countries_data)
 
-print("Static data files exported successfully for GitHub Pages hosting!")
+print("Master static data exported successfully!")
