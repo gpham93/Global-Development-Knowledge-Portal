@@ -2,35 +2,31 @@
   "sectors": [
     {
       "name": "Social Protection",
-      "count": 347
+      "count": 350
     },
     {
       "name": "Health",
-      "count": 304
+      "count": 298
     },
     {
       "name": "Public Administration - Agriculture, Fishing & Forestry",
-      "count": 242
+      "count": 243
     },
     {
       "name": "Sub-National Government",
-      "count": 231
+      "count": 228
     },
     {
       "name": "Public Administration - Health",
-      "count": 217
+      "count": 213
     },
     {
       "name": "Other Public Administration",
-      "count": 214
-    },
-    {
-      "name": "Central Government (Central Agencies)",
       "count": 208
     },
     {
-      "name": "Public Administration - Education",
-      "count": 181
+      "name": "Central Government (Central Agencies)",
+      "count": 207
     },
     {
       "name": "Public Administration - Social Protection",
@@ -38,11 +34,15 @@
     },
     {
       "name": "Agricultural markets, commercialization and agri-business",
-      "count": 173
+      "count": 177
+    },
+    {
+      "name": "Public Administration - Education",
+      "count": 176
     },
     {
       "name": "Public Administration - Water, Sanitation and Waste Management",
-      "count": 165
+      "count": 163
     },
     {
       "name": "Rural and Inter-Urban Roads",
@@ -50,19 +50,19 @@
     },
     {
       "name": "Public Administration - Transportation",
-      "count": 156
-    },
-    {
-      "name": "Health Facilities and Construction",
-      "count": 155
+      "count": 154
     },
     {
       "name": "Public Administration - Energy and Extractives",
       "count": 153
     },
     {
+      "name": "Health Facilities and Construction",
+      "count": 152
+    },
+    {
       "name": "Agricultural Extension, Research, and Other Support Activities",
-      "count": 151
+      "count": 150
     },
     {
       "name": "Water Supply",
@@ -70,19 +70,19 @@
     },
     {
       "name": "ICT Services",
-      "count": 138
-    },
-    {
-      "name": "Energy Transmission and Distribution",
       "count": 136
     },
     {
-      "name": "Sanitation",
-      "count": 132
+      "name": "Energy Transmission and Distribution",
+      "count": 135
     },
     {
       "name": "Other Water Supply, Sanitation and Waste Management",
-      "count": 131
+      "count": 130
+    },
+    {
+      "name": "Sanitation",
+      "count": 130
     },
     {
       "name": "ICT Infrastructure",
@@ -90,11 +90,11 @@
     },
     {
       "name": "Other Agriculture, Fishing and Forestry",
-      "count": 105
+      "count": 106
     },
     {
-      "name": "Renewable Energy Solar",
-      "count": 103
+      "name": "Irrigation and Drainage",
+      "count": 100
     }
   ]
 }

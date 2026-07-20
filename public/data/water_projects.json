@@ -6,11 +6,11 @@
   "data": [
     {
       "countryName": "India",
-      "projectCount": 95
+      "projectCount": 96
     },
     {
       "countryName": "Bangladesh",
-      "projectCount": 63
+      "projectCount": 62
     },
     {
       "countryName": "Pakistan",
@@ -22,7 +22,7 @@
     },
     {
       "countryName": "Western and Central Africa",
-      "projectCount": 54
+      "projectCount": 56
     },
     {
       "countryName": "Turkiye",
@@ -30,11 +30,7 @@
     },
     {
       "countryName": "Eastern and Southern Africa",
-      "projectCount": 50
-    },
-    {
-      "countryName": "Indonesia",
-      "projectCount": 45
+      "projectCount": 47
     },
     {
       "countryName": "Mozambique",
@@ -43,6 +39,10 @@
     {
       "countryName": "Brazil",
       "projectCount": 44
+    },
+    {
+      "countryName": "Indonesia",
+      "projectCount": 43
     }
   ]
 }

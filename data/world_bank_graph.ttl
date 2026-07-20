@@ -13,6 +13,11 @@ wb:Project_P000256 a wb:Project ;
     wb:hasSector wb:Sector_Railways ;
     wb:locatedIn wb:Country_Burkina_Faso .
 
+wb:Project_P000851 a wb:Project ;
+    rdfs:label "INDUSTRY II CIMAO" ;
+    wb:hasSector wb:Sector_%28Historic%29Small_scale_enterprise ;
+    wb:locatedIn wb:Country_Ghana .
+
 wb:Project_P000952 a wb:Project ;
     rdfs:label "SAC II" ;
     wb:hasSector wb:Sector_Agricultural_markets%2C_commercialization_and_agri-business,
@@ -159,6 +164,10 @@ wb:Project_P004325 a wb:Project ;
         wb:Sector_Other_Industry%2C_Trade_and_Services ;
     wb:locatedIn wb:Country_Malaysia .
 
+wb:Project_P004449 a wb:Project ;
+    rdfs:label "Jalaur Multipurpose Irrigation Project" ;
+    wb:locatedIn wb:Country_Philippines .
+
 wb:Project_P004868 a wb:Project ;
     rdfs:label "AFULILO HYDRO POWER-" ;
     wb:hasSector wb:Sector_Power ;
@@ -286,6 +295,11 @@ wb:Project_P009561 a wb:Project ;
         wb:Sector_Other_Non-bank_Financial_Institutions ;
     wb:locatedIn wb:Country_Bangladesh .
 
+wb:Project_P009585 a wb:Project ;
+    rdfs:label "ODS I" ;
+    wb:hasSector wb:Sector_Central_Government_%28Central_Agencies%29 ;
+    wb:locatedIn wb:Country_India .
+
 wb:Project_P010388 a wb:Project ;
     rdfs:label "ECON. RESTRUCT. SUPPLEMENTAL" ;
     wb:hasSector wb:Sector_Central_Government_%28Central_Agencies%29,
@@ -307,11 +321,6 @@ wb:Project_P010573 a wb:Project ;
     rdfs:label "T.A. (RE-CYCLE)" ;
     wb:hasSector wb:Sector_%28Historic%29Education_adjustment ;
     wb:locatedIn wb:Country_Sri_Lanka .
-
-wb:Project_P034194 a wb:Project ;
-    rdfs:label "FORESTRY & CONSERVAT" ;
-    wb:hasSector wb:Sector_Forestry ;
-    wb:locatedIn wb:Country_Iran%2C_Islamic_Republic_of .
 
 wb:Project_P034215 a wb:Project ;
     rdfs:label "WATERSHED CONSERVATI" ;
@@ -350,15 +359,24 @@ wb:Project_P068898 a wb:Project ;
     wb:hasSector wb:Sector_Other_Non-bank_Financial_Institutions ;
     wb:locatedIn wb:Country_Philippines .
 
-wb:Project_P073588 a wb:Project ;
-    rdfs:label "CGAP-Nepal Nirdhan II" ;
+wb:Project_P073324 a wb:Project ;
+    rdfs:label "CGAP-Pilot for Fund to Finance MFI Ratings" ;
     wb:hasSector wb:Sector_Micro-_and_SME_finance ;
-    wb:locatedIn wb:Country_Nepal .
+    wb:locatedIn wb:Country_World .
 
-wb:Project_P073882 a wb:Project ;
-    rdfs:label "RF 2nd Amazon Fire Prevention and Mobilization" ;
-    wb:hasSector wb:Sector_Forestry ;
-    wb:locatedIn wb:Country_Brazil .
+wb:Project_P073538 a wb:Project ;
+    rdfs:label "Emergency Response Program" ;
+    wb:hasSector wb:Sector_Health,
+        wb:Sector_Other_Education,
+        wb:Sector_Other_Water_Supply%2C_Sanitation_and_Waste_Management,
+        wb:Sector_Roads_and_highways,
+        wb:Sector_Social_Protection ;
+    wb:locatedIn wb:Country_West_Bank_and_Gaza .
+
+wb:Project_P074453 a wb:Project ;
+    rdfs:label "WWB Facility for Affiliate Capitalization" ;
+    wb:hasSector wb:Sector_Micro-_and_SME_finance ;
+    wb:locatedIn wb:Country_World .
 
 wb:Project_P075941 a wb:Project ;
     rdfs:label "AFR RI-Regional Rusumo Falls Hydroelectric Project" ;
@@ -371,10 +389,10 @@ wb:Project_P077416 a wb:Project ;
     wb:hasSector wb:Sector_Central_Government_%28Central_Agencies%29 ;
     wb:locatedIn wb:Country_Burundi .
 
-wb:Project_P078452 a wb:Project ;
-    rdfs:label "CGAP Microfinance Framework for Afghanistan" ;
+wb:Project_P077491 a wb:Project ;
+    rdfs:label "CGAP grant to Fondation Zakoura" ;
     wb:hasSector wb:Sector_Micro-_and_SME_finance ;
-    wb:locatedIn wb:Country_Afghanistan .
+    wb:locatedIn wb:Country_Morocco .
 
 wb:Project_P082519 a wb:Project ;
     rdfs:label "Sudan Nuba Mountain Post Conflict Fund" ;
@@ -382,15 +400,15 @@ wb:Project_P082519 a wb:Project ;
         wb:Sector_Sub-National_Government ;
     wb:locatedIn wb:Country_Sudan .
 
-wb:Project_P082566 a wb:Project ;
-    rdfs:label "FSD CIDR East Africa Initiative" ;
-    wb:hasSector wb:Sector_Micro-_and_SME_finance ;
-    wb:locatedIn wb:Country_Eastern_and_Southern_Africa .
-
-wb:Project_P085766 a wb:Project ;
-    rdfs:label "AID Review of UNDP Portfolio" ;
-    wb:hasSector wb:Sector_Other_Non-bank_Financial_Institutions ;
+wb:Project_P085350 a wb:Project ;
+    rdfs:label "ILO Labour Market Indicators Library" ;
+    wb:hasSector wb:Sector_Social_Protection ;
     wb:locatedIn wb:Country_World .
+
+wb:Project_P086242 a wb:Project ;
+    rdfs:label "TRN MicroSave Africa III" ;
+    wb:hasSector wb:Sector_Micro-_and_SME_finance ;
+    wb:locatedIn wb:Country_Africa .
 
 wb:Project_P086592 a wb:Project ;
     rdfs:label "Second Irrigation and Drainage Improvement Project" ;
@@ -480,6 +498,12 @@ wb:Project_P104543 a wb:Project ;
     wb:hasSector wb:Sector_Other_Non-bank_Financial_Institutions ;
     wb:locatedIn wb:Country_Nicaragua .
 
+wb:Project_P104670 a wb:Project ;
+    rdfs:label "TIEN SHAN ECOSYSTEM DEVELOPMENT PROJECT" ;
+    wb:hasSector wb:Sector_Forestry,
+        wb:Sector_Public_Administration_-_Agriculture%2C_Fishing_%26_Forestry ;
+    wb:locatedIn wb:Country_Central_Asia .
+
 wb:Project_P105680 a wb:Project ;
     rdfs:label "Matanza-Riachuelo Basin Sustainable Development Project" ;
     wb:hasSector wb:Sector_Other_Water_Supply%2C_Sanitation_and_Waste_Management,
@@ -508,21 +532,10 @@ wb:Project_P112301 a wb:Project ;
         wb:Sector_Roads_and_highways ;
     wb:locatedIn wb:Country_World .
 
-wb:Project_P112302 a wb:Project ;
-    rdfs:label "GLOBAL FORUM FOR HEALTH RESEARCH" ;
-    wb:hasSector wb:Sector_Central_Government_%28Central_Agencies%29,
-        wb:Sector_Roads_and_highways ;
-    wb:locatedIn wb:Country_World .
-
 wb:Project_P114133 a wb:Project ;
     rdfs:label "iRAP Vietnam Staff Costs" ;
     wb:hasSector wb:Sector_Roads_and_highways ;
     wb:locatedIn wb:Country_Vietnam .
-
-wb:Project_P114323 a wb:Project ;
-    rdfs:label "KG: Implementation of Statistical Master Plan" ;
-    wb:hasSector wb:Sector_Other_Public_Administration ;
-    wb:locatedIn wb:Country_Kyrgyz_Republic .
 
 wb:Project_P115893 a wb:Project ;
     rdfs:label "Tarbela Fourth Extension Hydropower Project" ;
@@ -583,11 +596,6 @@ wb:Project_P120583 a wb:Project ;
         wb:Sector_Social_Protection ;
     wb:locatedIn wb:Country_Bangladesh .
 
-wb:Project_P121034 a wb:Project ;
-    rdfs:label "PREPARATION OF STATE OF THE CITIES REPORT, NIGERIA" ;
-    wb:hasSector wb:Sector_Central_Government_%28Central_Agencies%29 ;
-    wb:locatedIn wb:Country_Nigeria .
-
 wb:Project_P121507 a wb:Project ;
     rdfs:label "Dasu Hydropower Stage I Project" ;
     wb:hasSector wb:Sector_Energy_Transmission_and_Distribution,
@@ -603,15 +611,6 @@ wb:Project_P121986 a wb:Project ;
         wb:Sector_Other_Transportation,
         wb:Sector_Other_Water_Supply%2C_Sanitation_and_Waste_Management ;
     wb:locatedIn wb:Country_Zambia .
-
-wb:Project_P122111 a wb:Project ;
-    rdfs:label "CR Port regional'ion & hinterland access" ;
-    wb:hasSector wb:Sector_Other_Public_Administration,
-        wb:Sector_Other_Transportation,
-        <http://enterprise.org/ontology/wb#Sector_Ports/Waterways>,
-        wb:Sector_Sub-National_Government,
-        wb:Sector_Trade ;
-    wb:locatedIn wb:Country_Costa_Rica .
 
 wb:Project_P122235 a wb:Project ;
     rdfs:label "AF Irrigation Restoration and Development Project" ;
@@ -645,10 +644,10 @@ wb:Project_P123112 a wb:Project ;
         wb:Sector_Other_Water_Supply%2C_Sanitation_and_Waste_Management ;
     wb:locatedIn wb:Country_Nigeria .
 
-wb:Project_P124583 a wb:Project ;
-    rdfs:label "Indonesia-FCPF REDD Readiness" ;
-    wb:hasSector wb:Sector_Forestry ;
-    wb:locatedIn wb:Country_Indonesia .
+wb:Project_P124807 a wb:Project ;
+    rdfs:label "Samoa Pilot Programme for Climate Resilience" ;
+    wb:hasSector wb:Sector_Other_Agriculture%2C_Fishing_and_Forestry ;
+    wb:locatedIn wb:Country_Samoa .
 
 wb:Project_P125590 a wb:Project ;
     rdfs:label "Uganda North-Eastern Road Corridor Asset Management Project (NERAMP)" ;
@@ -670,24 +669,12 @@ wb:Project_P126057 a wb:Project ;
     wb:hasSector wb:Sector_Micro-_and_SME_finance ;
     wb:locatedIn wb:Country_Mozambique .
 
-wb:Project_P126328 a wb:Project ;
-    rdfs:label "Somalia Knowledge for Operations and Political Economy Program" ;
-    wb:hasSector wb:Sector_Other_Public_Administration ;
-    wb:locatedIn wb:Country_Somalia .
-
 wb:Project_P126498 a wb:Project ;
     rdfs:label "Rwanda Feeder Roads Development Project" ;
     wb:hasSector wb:Sector_Central_Government_%28Central_Agencies%29,
         wb:Sector_Rural_and_Inter-Urban_Roads,
         wb:Sector_Sub-National_Government ;
     wb:locatedIn wb:Country_Rwanda .
-
-wb:Project_P127096 a wb:Project ;
-    rdfs:label "Virtual Incubation Pilot Program in East Africa" ;
-    wb:hasSector wb:Sector_ICT_Services,
-        wb:Sector_Other_Information_and_Communications_Technologies,
-        wb:Sector_Public_Administration_-_Information_and_Communications_Technologies ;
-    wb:locatedIn wb:Country_Eastern_and_Southern_Africa .
 
 wb:Project_P127115 a wb:Project ;
     rdfs:label "Mozambique Phase II: EITI Implementation" ;
@@ -823,14 +810,6 @@ wb:Project_P131324 a wb:Project ;
         wb:Sector_Public_Administration_-_Water%2C_Sanitation_and_Waste_Management ;
     wb:locatedIn wb:Country_Pakistan .
 
-wb:Project_P131818 a wb:Project ;
-    rdfs:label "Preparation of a Grid Code, Feed-in-Tariffs & Model Energy Supply Purchase Agreements for Renewable Energy Systems Greater than 50kW" ;
-    wb:hasSector wb:Sector_Renewable_Energy_Biomass,
-        wb:Sector_Renewable_Energy_Geothermal,
-        wb:Sector_Renewable_Energy_Solar,
-        wb:Sector_Renewable_Energy_Wind ;
-    wb:locatedIn wb:Country_Mauritius .
-
 wb:Project_P132317 a wb:Project ;
     rdfs:label "Philippine Rural Development Project" ;
     wb:hasSector wb:Sector_Agricultural_markets%2C_commercialization_and_agri-business,
@@ -848,6 +827,13 @@ wb:Project_P132386 a wb:Project ;
         wb:Sector_Waste_Management,
         wb:Sector_Water_Supply ;
     wb:locatedIn wb:Country_Ukraine .
+
+wb:Project_P132424 a wb:Project ;
+    rdfs:label "Philippine Rural Development Project" ;
+    wb:hasSector wb:Sector_Agricultural_markets%2C_commercialization_and_agri-business,
+        wb:Sector_Fisheries,
+        wb:Sector_Livestock ;
+    wb:locatedIn wb:Country_Philippines .
 
 wb:Project_P132620 a wb:Project ;
     rdfs:label "Partial Risk Sharing Facility in Energy Efficiency" ;
@@ -1167,6 +1153,14 @@ wb:Project_P148585 a wb:Project ;
         wb:Sector_Tertiary_Education ;
     wb:locatedIn wb:Country_Romania .
 
+wb:Project_P148737 a wb:Project ;
+    rdfs:label "Corredor Seco Food Security Project" ;
+    wb:hasSector wb:Sector_Agricultural_markets%2C_commercialization_and_agri-business,
+        wb:Sector_Health,
+        wb:Sector_Irrigation_and_Drainage,
+        wb:Sector_Other_Agriculture%2C_Fishing_and_Forestry ;
+    wb:locatedIn wb:Country_Honduras .
+
 wb:Project_P148775 a wb:Project ;
     rdfs:label "Capacity Augmentation of the National Waterway- 1 (JAL MARG VIKAS)  Project" ;
     wb:hasSector wb:Sector_ICT_Services,
@@ -1222,6 +1216,14 @@ wb:Project_P149377 a wb:Project ;
     wb:hasSector wb:Sector_Public_Administration_-_Water%2C_Sanitation_and_Waste_Management,
         wb:Sector_Water_Supply ;
     wb:locatedIn wb:Country_Mozambique .
+
+wb:Project_P149410 a wb:Project ;
+    rdfs:label "CASA-1000 Community Support Program (P149410)" ;
+    wb:hasSector wb:Sector_Energy_Transmission_and_Distribution,
+        wb:Sector_Irrigation_and_Drainage,
+        wb:Sector_Social_Protection,
+        wb:Sector_Water_Supply ;
+    wb:locatedIn wb:Country_Afghanistan .
 
 wb:Project_P149528 a wb:Project ;
     rdfs:label "CH-Second Gansu Cultural and Natural Heritage Protection and Development Project" ;
@@ -1455,6 +1457,12 @@ wb:Project_P152281 a wb:Project ;
         wb:Sector_Rural_and_Inter-Urban_Roads ;
     wb:locatedIn wb:Country_Bolivia .
 
+wb:Project_P152285 a wb:Project ;
+    rdfs:label "Brazil Investment Plan Coordination Project" ;
+    wb:hasSector wb:Sector_Forestry,
+        wb:Sector_Public_Administration_-_Agriculture%2C_Fishing_%26_Forestry ;
+    wb:locatedIn wb:Country_Brazil .
+
 wb:Project_P152698 a wb:Project ;
     rdfs:label "National Hydrology Project" ;
     wb:hasSector wb:Sector_ICT_Services,
@@ -1473,6 +1481,12 @@ wb:Project_P152755 a wb:Project ;
     wb:hasSector wb:Sector_Energy_Transmission_and_Distribution,
         wb:Sector_Public_Administration_-_Energy_and_Extractives ;
     wb:locatedIn wb:Country_Cameroon .
+
+wb:Project_P152806 a wb:Project ;
+    rdfs:label "Guatemala EITI Post-Compliance I" ;
+    wb:hasSector wb:Sector_Mining,
+        wb:Sector_Public_Administration_-_Energy_and_Extractives ;
+    wb:locatedIn wb:Country_Guatemala .
 
 wb:Project_P152892 a wb:Project ;
     rdfs:label "AF Additional Financing: Irrigation Restoration and Development" ;
@@ -1500,6 +1514,14 @@ wb:Project_P153173 a wb:Project ;
     wb:hasSector wb:Sector_Public_Administration_-_Transportation,
         wb:Sector_Rural_and_Inter-Urban_Roads ;
     wb:locatedIn wb:Country_China .
+
+wb:Project_P153425 a wb:Project ;
+    rdfs:label "ET Clean Cooking Energy Program" ;
+    wb:hasSector wb:Sector_Renewable_Energy_Biomass,
+        wb:Sector_Renewable_Energy_Geothermal,
+        wb:Sector_Renewable_Energy_Solar,
+        wb:Sector_Renewable_Energy_Wind ;
+    wb:locatedIn wb:Country_Ethiopia .
 
 wb:Project_P153437 a wb:Project ;
     rdfs:label "Smallholder Commercialization and Agribusiness Development Project" ;
@@ -1664,6 +1686,11 @@ wb:Project_P155007 a wb:Project ;
     wb:hasSector wb:Sector_Renewable_Energy_Solar ;
     wb:locatedIn wb:Country_India .
 
+wb:Project_P155047 a wb:Project ;
+    rdfs:label "ID-Geothermal Energy Upstream Development" ;
+    wb:hasSector wb:Sector_Renewable_Energy_Geothermal ;
+    wb:locatedIn wb:Country_Indonesia .
+
 wb:Project_P155087 a wb:Project ;
     rdfs:label "Water Supply and Sanitation Development Project" ;
     wb:hasSector wb:Sector_Public_Administration_-_Water%2C_Sanitation_and_Waste_Management,
@@ -1745,11 +1772,14 @@ wb:Project_P155759 a wb:Project ;
         wb:Sector_Public_Administration_-_Information_and_Communications_Technologies ;
     wb:locatedIn wb:Country_Tanzania .
 
-wb:Project_P155859 a wb:Project ;
-    rdfs:label "ENREP- Carbon Finance Programme of Activities" ;
-    wb:hasSector wb:Sector_Other_Public_Administration,
-        wb:Sector_Renewable_Energy_Biomass ;
-    wb:locatedIn wb:Country_Ethiopia .
+wb:Project_P155827 a wb:Project ;
+    rdfs:label "EASTERN PROVINCE JURISDICTIONAL SUSTAINABLE LANDSCAPE PROGRAM - EMISSIONS REDUCTION PROJECT" ;
+    wb:hasSector wb:Sector_Agricultural_Extension%2C_Research%2C_and_Other_Support_Activities,
+        wb:Sector_Crops,
+        wb:Sector_Forestry,
+        wb:Sector_Other_Agriculture%2C_Fishing_and_Forestry,
+        wb:Sector_Public_Administration_-_Agriculture%2C_Fishing_%26_Forestry ;
+    wb:locatedIn wb:Country_Zambia .
 
 wb:Project_P155875 a wb:Project ;
     rdfs:label "Project for Integrated Urban and Tourism Development (PIUTD)" ;
@@ -1819,12 +1849,6 @@ wb:Project_P156334 a wb:Project ;
         wb:Sector_Public_Administration_-_Water%2C_Sanitation_and_Waste_Management ;
     wb:locatedIn wb:Country_Tonga .
 
-wb:Project_P156397 a wb:Project ;
-    rdfs:label "China HCFC Phaseout Project Stage II" ;
-    wb:hasSector wb:Sector_Other_Industry%2C_Trade_and_Services,
-        wb:Sector_Other_Public_Administration ;
-    wb:locatedIn wb:Country_China .
-
 wb:Project_P156413 a wb:Project ;
     rdfs:label "BF - Support to the National Biodigester Program" ;
     wb:hasSector wb:Sector_Banking_Institutions,
@@ -1855,6 +1879,13 @@ wb:Project_P156634 a wb:Project ;
         wb:Sector_Sanitation,
         wb:Sector_Water_Supply ;
     wb:locatedIn wb:Country_Kenya .
+
+wb:Project_P156719 a wb:Project ;
+    rdfs:label "Haiti: Renewable Energy for All" ;
+    wb:hasSector wb:Sector_Energy_Transmission_and_Distribution,
+        wb:Sector_Public_Administration_-_Energy_and_Extractives,
+        wb:Sector_Renewable_Energy_Solar ;
+    wb:locatedIn wb:Country_Haiti .
 
 wb:Project_P156869 a wb:Project ;
     rdfs:label "Strengthening Public Financial Management in Rajasthan" ;
@@ -2257,14 +2288,6 @@ wb:Project_P159330 a wb:Project ;
         wb:Sector_Rural_and_Inter-Urban_Roads ;
     wb:locatedIn wb:Country_Zambia .
 
-wb:Project_P159337 a wb:Project ;
-    rdfs:label "Finance for Jobs II" ;
-    wb:hasSector wb:Sector_Other_Industry%2C_Trade_and_Services,
-        wb:Sector_Public_Administration_-_Industry%2C_Trade_and_Services,
-        wb:Sector_Renewable_Energy_Solar,
-        wb:Sector_Workforce_Development_and_Vocational_Education ;
-    wb:locatedIn wb:Country_West_Bank_and_Gaza .
-
 wb:Project_P159378 a wb:Project ;
     rdfs:label "EQRA" ;
     wb:hasSector wb:Sector_Primary_Education,
@@ -2399,15 +2422,6 @@ wb:Project_P159974 a wb:Project ;
         wb:Sector_Renewable_Energy_Solar ;
     wb:locatedIn wb:Country_Bangladesh .
 
-wb:Project_P159976 a wb:Project ;
-    rdfs:label "GEF Mekong Delta Integrated Climate Resilience and Sustainable Livelihoods Project" ;
-    wb:hasSector wb:Sector_Agricultural_Extension%2C_Research%2C_and_Other_Support_Activities,
-        wb:Sector_Agricultural_markets%2C_commercialization_and_agri-business,
-        wb:Sector_Fisheries,
-        wb:Sector_Other_Water_Supply%2C_Sanitation_and_Waste_Management,
-        wb:Sector_Public_Administration_-_Agriculture%2C_Fishing_%26_Forestry ;
-    wb:locatedIn wb:Country_Vietnam .
-
 wb:Project_P160005 a wb:Project ;
     rdfs:label "Climate Resilience Multi-Phase Programmatic Approach" ;
     wb:hasSector wb:Sector_ICT_Infrastructure,
@@ -2488,12 +2502,6 @@ wb:Project_P160250 a wb:Project ;
         wb:Sector_Sub-National_Government ;
     wb:locatedIn wb:Country_Uganda .
 
-wb:Project_P160277 a wb:Project ;
-    rdfs:label "Chile REDD+ Emissions Reductions Program" ;
-    wb:hasSector wb:Sector_Forestry,
-        wb:Sector_Public_Administration_-_Agriculture%2C_Fishing_%26_Forestry ;
-    wb:locatedIn wb:Country_Chile .
-
 wb:Project_P160279 a wb:Project ;
     rdfs:label "Ethiopia: National Quality Infrastructure Development Project" ;
     wb:hasSector wb:Sector_Agricultural_markets%2C_commercialization_and_agri-business,
@@ -2502,10 +2510,15 @@ wb:Project_P160279 a wb:Project ;
         wb:Sector_Trade ;
     wb:locatedIn wb:Country_Ethiopia .
 
-wb:Project_P160320 a wb:Project ;
-    rdfs:label "Purchase / Sale of Emission Reductions (ER) to be generated under the Mai Ndombe ER Program" ;
+wb:Project_P160339 a wb:Project ;
+    rdfs:label "Ghana Emissions Reductions Program" ;
     wb:hasSector wb:Sector_Forestry ;
-    wb:locatedIn wb:Country_Congo%2C_Democratic_Republic_of .
+    wb:locatedIn wb:Country_Ghana .
+
+wb:Project_P160368 a wb:Project ;
+    rdfs:label "Costa Rica REDD+ Emission Reductions Program" ;
+    wb:hasSector wb:Sector_Forestry ;
+    wb:locatedIn wb:Country_Costa_Rica .
 
 wb:Project_P160379 a wb:Project ;
     rdfs:label "Innovation in Solar Power and Hybrid Technologies" ;
@@ -2612,12 +2625,6 @@ wb:Project_P160696 a wb:Project ;
     wb:hasSector wb:Sector_Public_Administration_-_Social_Protection,
         wb:Sector_Social_Protection ;
     wb:locatedIn wb:Country_Nepal .
-
-wb:Project_P160699 a wb:Project ;
-    rdfs:label "Renewable Energy Fund" ;
-    wb:hasSector wb:Sector_Public_Administration_-_Energy_and_Extractives,
-        wb:Sector_Renewable_Energy_Solar ;
-    wb:locatedIn wb:Country_Rwanda .
 
 wb:Project_P160708 a wb:Project ;
     rdfs:label "Regional Off-Grid Electricity Access Project" ;
@@ -3152,6 +3159,14 @@ wb:Project_P162149 a wb:Project ;
     wb:hasSector wb:Sector_Renewable_Energy_Geothermal ;
     wb:locatedIn wb:Country_Dominica .
 
+wb:Project_P162172 a wb:Project ;
+    rdfs:label "Women's Voices in the Monitoring and Improvement of Indonesia's Universal Health Care Insurance Services" ;
+    wb:hasSector wb:Sector_Health,
+        wb:Sector_Public_Administration_-_Health,
+        wb:Sector_Public_Administration_-_Social_Protection,
+        wb:Sector_Social_Protection ;
+    wb:locatedIn wb:Country_Indonesia .
+
 wb:Project_P162178 a wb:Project ;
     rdfs:label "China Food Safety Improvement Project" ;
     wb:hasSector wb:Sector_Crops,
@@ -3403,12 +3418,6 @@ wb:Project_P163023 a wb:Project ;
         wb:Sector_Public_Administration_-_Agriculture%2C_Fishing_%26_Forestry ;
     wb:locatedIn wb:Country_Peru .
 
-wb:Project_P163035 a wb:Project ;
-    rdfs:label "Improved Livelihood Opportunities and Accessibility for underserved urban communities in Meru, Kenya" ;
-    wb:hasSector wb:Sector_Central_Government_%28Central_Agencies%29,
-        wb:Sector_Public_Administration_-_Transportation ;
-    wb:locatedIn wb:Country_Kenya .
-
 wb:Project_P163050 a wb:Project ;
     rdfs:label "Ethiopia General Education Quality Improvement Program for Equity" ;
     wb:hasSector wb:Sector_Early_Childhood_Education,
@@ -3563,10 +3572,6 @@ wb:Project_P163533 a wb:Project ;
         wb:Sector_Public_Administration_-_Agriculture%2C_Fishing_%26_Forestry ;
     wb:locatedIn wb:Country_India .
 
-wb:Project_P163538 a wb:Project ;
-    rdfs:label "Kenya Solar Lighting Program" ;
-    wb:locatedIn wb:Country_Kenya .
-
 wb:Project_P163540 a wb:Project ;
     rdfs:label "THE  FISCAL GOVERNANCE AND INSTITUTIONS PROJECT" ;
     wb:hasSector wb:Sector_Central_Government_%28Central_Agencies%29 ;
@@ -3718,12 +3723,6 @@ wb:Project_P163836 a wb:Project ;
         wb:Sector_Irrigation_and_Drainage,
         wb:Sector_Public_Administration_-_Agriculture%2C_Fishing_%26_Forestry ;
     wb:locatedIn wb:Country_Uganda .
-
-wb:Project_P163845 a wb:Project ;
-    rdfs:label "Additional Financing for the Higher Education Development Project" ;
-    wb:hasSector wb:Sector_Public_Administration_-_Education,
-        wb:Sector_Tertiary_Education ;
-    wb:locatedIn wb:Country_Afghanistan .
 
 wb:Project_P163868 a wb:Project ;
     rdfs:label "Support to Upper Secondary Reform in Brazil Operation" ;
@@ -4123,12 +4122,6 @@ wb:Project_P164602 a wb:Project ;
         wb:Sector_Public_Administration_-_Agriculture%2C_Fishing_%26_Forestry ;
     wb:locatedIn wb:Country_Brazil .
 
-wb:Project_P164625 a wb:Project ;
-    rdfs:label "Tunisia-Italy Power Interconnector - Project Preparation TA" ;
-    wb:hasSector wb:Sector_Energy_Transmission_and_Distribution,
-        wb:Sector_Public_Administration_-_Energy_and_Extractives ;
-    wb:locatedIn wb:Country_Tunisia .
-
 wb:Project_P164654 a wb:Project ;
     rdfs:label "Kenya Social and Economic Inclusion Project" ;
     wb:hasSector wb:Sector_Health,
@@ -4284,6 +4277,13 @@ wb:Project_P164932 a wb:Project ;
         wb:Sector_Secondary_Education ;
     wb:locatedIn wb:Country_Liberia .
 
+wb:Project_P164938 a wb:Project ;
+    rdfs:label "Vietnam Scaling Up Energy Efficiency Project" ;
+    wb:hasSector wb:Sector_Capital_Markets,
+        wb:Sector_Other_Industry%2C_Trade_and_Services,
+        wb:Sector_Public_Administration_-_Energy_and_Extractives ;
+    wb:locatedIn wb:Country_Vietnam .
+
 wb:Project_P164941 a wb:Project ;
     rdfs:label "Tonga: Pathway to Sustainable Oceans" ;
     wb:hasSector wb:Sector_Agricultural_markets%2C_commercialization_and_agri-business,
@@ -4387,12 +4387,6 @@ wb:Project_P165300 a wb:Project ;
         wb:Sector_Urban_Transport ;
     wb:locatedIn wb:Country_Colombia .
 
-wb:Project_P165310 a wb:Project ;
-    rdfs:label "Entrepreneurship-focused socioemotional skills for the most vulnerable youth in rural Mongolia" ;
-    wb:hasSector wb:Sector_Public_Administration_-_Education,
-        wb:Sector_Workforce_Development_and_Vocational_Education ;
-    wb:locatedIn wb:Country_Mongolia .
-
 wb:Project_P165313 a wb:Project ;
     rdfs:label "CASA1000 Community Support Project for Tajikistan" ;
     wb:hasSector wb:Sector_Energy_Transmission_and_Distribution,
@@ -4408,6 +4402,12 @@ wb:Project_P165344 a wb:Project ;
         wb:Sector_Rural_and_Inter-Urban_Roads,
         wb:Sector_Tourism ;
     wb:locatedIn wb:Country_Cambodia .
+
+wb:Project_P165375 a wb:Project ;
+    rdfs:label "Nepal Emission Reductions Program in the Terai Arc Landscape" ;
+    wb:hasSector wb:Sector_Forestry,
+        wb:Sector_Public_Administration_-_Agriculture%2C_Fishing_%26_Forestry ;
+    wb:locatedIn wb:Country_Nepal .
 
 wb:Project_P165388 a wb:Project ;
     rdfs:label "Punjab Green Development Program" ;
@@ -4530,13 +4530,6 @@ wb:Project_P165742 a wb:Project ;
         wb:Sector_Forestry,
         wb:Sector_Public_Administration_-_Agriculture%2C_Fishing_%26_Forestry ;
     wb:locatedIn wb:Country_Indonesia .
-
-wb:Project_P165751 a wb:Project ;
-    rdfs:label "FCPF Carbon Fund: Lao PDR Northern Laos Emission Reductions Payments Project" ;
-    wb:hasSector wb:Sector_Agricultural_Extension%2C_Research%2C_and_Other_Support_Activities,
-        wb:Sector_Forestry,
-        wb:Sector_Public_Administration_-_Agriculture%2C_Fishing_%26_Forestry ;
-    wb:locatedIn wb:Country_Lao_People%27s_Democratic_Republic .
 
 wb:Project_P165782 a wb:Project ;
     rdfs:label "Samoa Climate Resilient Transport Project" ;
@@ -5045,10 +5038,6 @@ wb:Project_P167054 a wb:Project ;
         wb:Sector_Workforce_Development_and_Vocational_Education ;
     wb:locatedIn wb:Country_Mozambique .
 
-wb:Project_P167065 a wb:Project ;
-    rdfs:label "FCPF REDD+ Readiness in Gabon" ;
-    wb:locatedIn wb:Country_Gabon .
-
 wb:Project_P167132 a wb:Project ;
     rdfs:label "Guatemala Emissions Reduction Program" ;
     wb:hasSector wb:Sector_Forestry ;
@@ -5107,6 +5096,14 @@ wb:Project_P167328 a wb:Project ;
         wb:Sector_Water_Supply ;
     wb:locatedIn wb:Country_Mauritania .
 
+wb:Project_P167339 a wb:Project ;
+    rdfs:label "Sint Maarten Emergency Recovery Project I" ;
+    wb:hasSector wb:Sector_Housing_Construction,
+        wb:Sector_Other_Energy_and_Extractives,
+        wb:Sector_Other_Public_Administration,
+        wb:Sector_Other_Water_Supply%2C_Sanitation_and_Waste_Management ;
+    wb:locatedIn wb:Country_St_Maarten .
+
 wb:Project_P167347 a wb:Project ;
     rdfs:label "Sint Maarten Emergency Debris Management Project" ;
     wb:hasSector wb:Sector_Public_Administration_-_Water%2C_Sanitation_and_Waste_Management,
@@ -5137,12 +5134,6 @@ wb:Project_P167380 a wb:Project ;
     wb:hasSector wb:Sector_Other_Industry%2C_Trade_and_Services,
         wb:Sector_Public_Administration_-_Industry%2C_Trade_and_Services ;
     wb:locatedIn wb:Country_Tunisia .
-
-wb:Project_P167381 a wb:Project ;
-    rdfs:label "GEF Electricity Access and Renewable Energy Expansion Project" ;
-    wb:hasSector wb:Sector_Energy_Transmission_and_Distribution,
-        wb:Sector_Renewable_Energy_Solar ;
-    wb:locatedIn wb:Country_Solomon_Islands .
 
 wb:Project_P167382 a wb:Project ;
     rdfs:label "Vanuatu Climate Resilient Transport Project" ;
@@ -5205,6 +5196,12 @@ wb:Project_P167523 a wb:Project ;
         wb:Sector_ICT_Services,
         wb:Sector_Public_Administration_-_Health ;
     wb:locatedIn wb:Country_India .
+
+wb:Project_P167532 a wb:Project ;
+    rdfs:label "Sint Maarten Hospital Resiliency & Preparedness Project" ;
+    wb:hasSector wb:Sector_Health_Facilities_and_Construction,
+        wb:Sector_Public_Administration_-_Health ;
+    wb:locatedIn wb:Country_St_Maarten .
 
 wb:Project_P167534 a wb:Project ;
     rdfs:label "Enhancing Public Finance Management through Information and Communication Technology and Skills (E-FITS) Project" ;
@@ -5796,12 +5793,6 @@ wb:Project_P168699 a wb:Project ;
         wb:Sector_Secondary_Education ;
     wb:locatedIn wb:Country_Angola .
 
-wb:Project_P168739 a wb:Project ;
-    rdfs:label "Water Security Development - Gaza Central Desalination Program – Associated Works Phase I Project" ;
-    wb:hasSector wb:Sector_Public_Administration_-_Water%2C_Sanitation_and_Waste_Management,
-        wb:Sector_Water_Supply ;
-    wb:locatedIn wb:Country_West_Bank_and_Gaza .
-
 wb:Project_P168756 a wb:Project ;
     rdfs:label "DRC Multisectoral Nutrition and Health Project" ;
     wb:hasSector wb:Sector_Health,
@@ -5856,6 +5847,13 @@ wb:Project_P168862 a wb:Project ;
         <http://enterprise.org/ontology/wb#Sector_Ports/Waterways>,
         wb:Sector_Public_Administration_-_Water%2C_Sanitation_and_Waste_Management ;
     wb:locatedIn wb:Country_Western_Balkans .
+
+wb:Project_P168908 a wb:Project ;
+    rdfs:label "Additional grant for West Africa Coastal  Area  Resilience Investment Project" ;
+    wb:hasSector wb:Sector_Other_Agriculture%2C_Fishing_and_Forestry,
+        wb:Sector_Other_Public_Administration,
+        wb:Sector_Social_Protection ;
+    wb:locatedIn wb:Country_Western_and_Central_Africa .
 
 wb:Project_P168911 a wb:Project ;
     rdfs:label "Improving Inclusion in Secondary and Higher Education" ;
@@ -6047,12 +6045,6 @@ wb:Project_P169222 a wb:Project ;
         wb:Sector_Public_Administration_-_Education,
         wb:Sector_Secondary_Education ;
     wb:locatedIn wb:Country_Sao_Tome_and_Principe .
-
-wb:Project_P169259 a wb:Project ;
-    rdfs:label "Indonesia Sustainable Least-cost Electrification Technical Assistance (ISLE TA)" ;
-    wb:hasSector wb:Sector_Energy_Transmission_and_Distribution,
-        wb:Sector_Renewable_Energy_Solar ;
-    wb:locatedIn wb:Country_Indonesia .
 
 wb:Project_P169265 a wb:Project ;
     rdfs:label "Harmonizing and Improving Statistics in West Africa" ;
@@ -6367,14 +6359,6 @@ wb:Project_P170206 a wb:Project ;
         wb:Sector_Public_Administration_-_Industry%2C_Trade_and_Services ;
     wb:locatedIn wb:Country_Uzbekistan .
 
-wb:Project_P170213 a wb:Project ;
-    rdfs:label "Catalyzing Financing and Capacity for the Biodiversity Economy around Protected Areas Project" ;
-    wb:hasSector wb:Sector_Agricultural_markets%2C_commercialization_and_agri-business,
-        wb:Sector_Forestry,
-        wb:Sector_Livestock,
-        wb:Sector_Public_Administration_-_Agriculture%2C_Fishing_%26_Forestry ;
-    wb:locatedIn wb:Country_South_Africa .
-
 wb:Project_P170215 a wb:Project ;
     rdfs:label "Rural Enterprise and Economic Development Project" ;
     wb:hasSector wb:Sector_Agricultural_markets%2C_commercialization_and_agri-business,
@@ -6427,20 +6411,17 @@ wb:Project_P170343 a wb:Project ;
         wb:Sector_Social_Protection ;
     wb:locatedIn wb:Country_North_Macedonia .
 
-wb:Project_P170376 a wb:Project ;
-    rdfs:label "Kigali Environmental Management and Climate Compatible Development Program" ;
-    wb:hasSector wb:Sector_Public_Administration_-_Water%2C_Sanitation_and_Waste_Management,
-        wb:Sector_Sanitation,
-        wb:Sector_Sub-National_Government,
-        wb:Sector_Urban_Transport,
-        wb:Sector_Water_Supply ;
-    wb:locatedIn wb:Country_Rwanda .
-
 wb:Project_P170384 a wb:Project ;
     rdfs:label "ETHIOPIA CLIMATE ACTION THROUGH LANDSCAPE MANAGEMENT PROGRAM FOR RESULTS" ;
     wb:hasSector wb:Sector_Other_Agriculture%2C_Fishing_and_Forestry,
         wb:Sector_Public_Administration_-_Agriculture%2C_Fishing_%26_Forestry ;
     wb:locatedIn wb:Country_Ethiopia .
+
+wb:Project_P170391 a wb:Project ;
+    rdfs:label "Guatemala Dedicated Grant Mechanism for Indigenous Peoples and Local Communities Project" ;
+    wb:hasSector wb:Sector_Forestry,
+        wb:Sector_Public_Administration_-_Agriculture%2C_Fishing_%26_Forestry ;
+    wb:locatedIn wb:Country_Guatemala .
 
 wb:Project_P170397 a wb:Project ;
     rdfs:label "Temane Regional Electricity Project" ;
@@ -6665,13 +6646,6 @@ wb:Project_P170734 a wb:Project ;
         wb:Sector_Water_Supply ;
     wb:locatedIn wb:Country_Nigeria .
 
-wb:Project_P170798 a wb:Project ;
-    rdfs:label "Forests for Prosperity Project" ;
-    wb:hasSector wb:Sector_Agricultural_markets%2C_commercialization_and_agri-business,
-        wb:Sector_Forestry,
-        wb:Sector_Public_Administration_-_Agriculture%2C_Fishing_%26_Forestry ;
-    wb:locatedIn wb:Country_Nepal .
-
 wb:Project_P170811 a wb:Project ;
     rdfs:label "Punjab Municipal Services Improvement Project" ;
     wb:hasSector wb:Sector_Sub-National_Government,
@@ -6781,13 +6755,6 @@ wb:Project_P170922 a wb:Project ;
     wb:hasSector wb:Sector_Sub-National_Government ;
     wb:locatedIn wb:Country_Somalia .
 
-wb:Project_P170928 a wb:Project ;
-    rdfs:label "Advancing Sustainability in Performance, Infrastructure, and Reliability of the Energy Sector in the West Bank and Gaza" ;
-    wb:hasSector wb:Sector_Energy_Transmission_and_Distribution,
-        wb:Sector_Public_Administration_-_Energy_and_Extractives,
-        wb:Sector_Renewable_Energy_Solar ;
-    wb:locatedIn wb:Country_West_Bank_and_Gaza .
-
 wb:Project_P170941 a wb:Project ;
     rdfs:label "Kenya Digital Economy Acceleration Project" ;
     wb:hasSector wb:Sector_ICT_Infrastructure,
@@ -6832,13 +6799,6 @@ wb:Project_P170996 a wb:Project ;
     wb:hasSector wb:Sector_Other_Energy_and_Extractives,
         wb:Sector_Public_Administration_-_Energy_and_Extractives ;
     wb:locatedIn wb:Country_Belarus .
-
-wb:Project_P171030 a wb:Project ;
-    rdfs:label "Reducing Income- and Health-Related Vulnerability of Older Persons in Vietnam" ;
-    wb:hasSector wb:Sector_Health,
-        wb:Sector_Public_Administration_-_Health,
-        wb:Sector_Social_Protection ;
-    wb:locatedIn wb:Country_Vietnam .
 
 wb:Project_P171034 a wb:Project ;
     rdfs:label "Ethiopia Digital Foundations Project" ;
@@ -6977,6 +6937,12 @@ wb:Project_P171197 a wb:Project ;
         wb:Sector_Water_Supply ;
     wb:locatedIn wb:Country_Argentina .
 
+wb:Project_P171227 a wb:Project ;
+    rdfs:label "Second Additional Financing for the Forest Conservation and Sustainability in the Heart of the Colombian Amazon Project" ;
+    wb:hasSector wb:Sector_Forestry,
+        wb:Sector_Public_Administration_-_Agriculture%2C_Fishing_%26_Forestry ;
+    wb:locatedIn wb:Country_Colombia .
+
 wb:Project_P171250 a wb:Project ;
     rdfs:label "Employment Support Project" ;
     wb:hasSector wb:Sector_Other_Industry%2C_Trade_and_Services,
@@ -7062,10 +7028,6 @@ wb:Project_P171361 a wb:Project ;
         wb:Sector_Other_Public_Administration,
         wb:Sector_Sub-National_Government ;
     wb:locatedIn wb:Country_Comoros .
-
-wb:Project_P171362 a wb:Project ;
-    rdfs:label "Early Childhood Development Program in Atlántida Communities in Honduras" ;
-    wb:locatedIn wb:Country_Honduras .
 
 wb:Project_P171377 a wb:Project ;
     rdfs:label "Statistical Innovation and Capacity Building in Tonga" ;
@@ -7189,13 +7151,6 @@ wb:Project_P171528 a wb:Project ;
         wb:Sector_Public_Administration_-_Information_and_Communications_Technologies ;
     wb:locatedIn wb:Country_Caribbean .
 
-wb:Project_P171543 a wb:Project ;
-    rdfs:label "Agricultural Employment Support for Refugees and Turkish Citizens through Enhanced Market Linkages" ;
-    wb:hasSector wb:Sector_Crops,
-        wb:Sector_Public_Administration_-_Social_Protection,
-        wb:Sector_Social_Protection ;
-    wb:locatedIn wb:Country_Turkiye .
-
 wb:Project_P171577 a wb:Project ;
     rdfs:label "Kazakhstan Resilient Landscapes Restoration Project" ;
     wb:hasSector wb:Sector_Forestry,
@@ -7231,11 +7186,6 @@ wb:Project_P171620 a wb:Project ;
         wb:Sector_Water_Supply ;
     wb:locatedIn wb:Country_Ghana .
 
-wb:Project_P171636 a wb:Project ;
-    rdfs:label "Additional Financing for Deployment of State Resources for Better Service Delivery  and Local COVID-19 Response Project" ;
-    wb:hasSector wb:Sector_Sub-National_Government ;
-    wb:locatedIn wb:Country_Mali .
-
 wb:Project_P171644 a wb:Project ;
     rdfs:label "Yangtze River Protection and Ecological Restoration Program" ;
     wb:hasSector wb:Sector_Other_Agriculture%2C_Fishing_and_Forestry,
@@ -7249,15 +7199,6 @@ wb:Project_P171645 a wb:Project ;
         wb:Sector_Public_Administration_-_Industry%2C_Trade_and_Services,
         wb:Sector_Waste_Management ;
     wb:locatedIn wb:Country_Turkiye .
-
-wb:Project_P171646 a wb:Project ;
-    rdfs:label "Chad Local Development and Adaptation Project" ;
-    wb:hasSector wb:Sector_Forestry,
-        wb:Sector_Other_Water_Supply%2C_Sanitation_and_Waste_Management,
-        wb:Sector_Public_Administration_-_Agriculture%2C_Fishing_%26_Forestry,
-        wb:Sector_Sanitation,
-        wb:Sector_Sub-National_Government ;
-    wb:locatedIn wb:Country_Chad .
 
 wb:Project_P171648 a wb:Project ;
     rdfs:label "Health and Gender Support Project for Cox’s Bazar district" ;
@@ -7309,12 +7250,6 @@ wb:Project_P171700 a wb:Project ;
         wb:Sector_Sub-National_Government,
         wb:Sector_Urban_Transport ;
     wb:locatedIn wb:Country_Vietnam .
-
-wb:Project_P171720 a wb:Project ;
-    rdfs:label "Dedicated Grant Mechanism for Indigenous Peoples and Local Communities in Nepal" ;
-    wb:hasSector wb:Sector_Forestry,
-        wb:Sector_Public_Administration_-_Agriculture%2C_Fishing_%26_Forestry ;
-    wb:locatedIn wb:Country_Nepal .
 
 wb:Project_P171723 a wb:Project ;
     rdfs:label "Additional Financing for the Natural Resources Governance Project" ;
@@ -7461,6 +7396,12 @@ wb:Project_P171933 a wb:Project ;
         wb:Sector_Mining,
         wb:Sector_Public_Administration_-_Agriculture%2C_Fishing_%26_Forestry ;
     wb:locatedIn wb:Country_Ghana .
+
+wb:Project_P171934 a wb:Project ;
+    rdfs:label "Additional Financing to Heat Supply Improvement Project" ;
+    wb:hasSector wb:Sector_Other_Energy_and_Extractives,
+        wb:Sector_Public_Administration_-_Energy_and_Extractives ;
+    wb:locatedIn wb:Country_Kyrgyz_Republic .
 
 wb:Project_P171965 a wb:Project ;
     rdfs:label "Strengthening Reform Management in Jordan" ;
@@ -7677,15 +7618,6 @@ wb:Project_P172352 a wb:Project ;
         wb:Sector_Trade ;
     wb:locatedIn wb:Country_Costa_Rica .
 
-wb:Project_P172386 a wb:Project ;
-    rdfs:label "Landscape Restoration and Ecosystem Management for Sustainable Food Systems Project  GE" ;
-    wb:hasSector wb:Sector_Agricultural_Extension%2C_Research%2C_and_Other_Support_Activities,
-        wb:Sector_Forestry,
-        wb:Sector_Other_Agriculture%2C_Fishing_and_Forestry,
-        wb:Sector_Public_Administration_-_Agriculture%2C_Fishing_%26_Forestry,
-        wb:Sector_Public_Administration_-_Energy_and_Extractives ;
-    wb:locatedIn wb:Country_Ghana .
-
 wb:Project_P172388 a wb:Project ;
     rdfs:label "Low Carbon Transition of Urban Mobility in Yichang (Hubei)" ;
     wb:locatedIn wb:Country_China .
@@ -7694,13 +7626,6 @@ wb:Project_P172392 a wb:Project ;
     rdfs:label "GPSA Ukraine: Empowering Civil Society and Journalists in Oversight and Promotion of Effective Anti-corruption Environment Project" ;
     wb:hasSector wb:Sector_Central_Government_%28Central_Agencies%29 ;
     wb:locatedIn wb:Country_Ukraine .
-
-wb:Project_P172393 a wb:Project ;
-    rdfs:label "GPSA MADAGASCAR: STRENGTHENING COMMUNITY AND MUNICIPALITY CO- ENGAGEMENT FOR BETTER BASIC HEALTH SERVICES PROJECT" ;
-    wb:hasSector wb:Sector_Health,
-        wb:Sector_Public_Administration_-_Health,
-        wb:Sector_Social_Protection ;
-    wb:locatedIn wb:Country_Madagascar .
 
 wb:Project_P172399 a wb:Project ;
     rdfs:label "Support to Parcelization of Lands for Individual Titling (SPLIT) Project" ;
@@ -7911,12 +7836,6 @@ wb:Project_P172648 a wb:Project ;
         wb:Sector_Other_Energy_and_Extractives ;
     wb:locatedIn wb:Country_Pakistan .
 
-wb:Project_P172654 a wb:Project ;
-    rdfs:label "AF - Liberia: Public Financial Management Reforms for Institutional Strengthening" ;
-    wb:hasSector wb:Sector_Central_Government_%28Central_Agencies%29,
-        wb:Sector_ICT_Services ;
-    wb:locatedIn wb:Country_Liberia .
-
 wb:Project_P172657 a wb:Project ;
     rdfs:label "Improving Learning and Empowering Girls in Mozambique" ;
     wb:hasSector wb:Sector_Other_Education,
@@ -7980,6 +7899,12 @@ wb:Project_P172769 a wb:Project ;
         wb:Sector_Other_Industry%2C_Trade_and_Services,
         wb:Sector_Public_Administration_-_Agriculture%2C_Fishing_%26_Forestry ;
     wb:locatedIn wb:Country_Western_and_Central_Africa .
+
+wb:Project_P172770 a wb:Project ;
+    rdfs:label "Reduction of Unintentional POPs through Waste Management in a Circular Economy" ;
+    wb:hasSector wb:Sector_Public_Administration_-_Water%2C_Sanitation_and_Waste_Management,
+        wb:Sector_Waste_Management ;
+    wb:locatedIn wb:Country_Lebanon .
 
 wb:Project_P172774 a wb:Project ;
     rdfs:label "Lao PDR Priority Skills for Growth" ;
@@ -8071,13 +7996,6 @@ wb:Project_P172891 a wb:Project ;
         wb:Sector_Public_Administration_-_Energy_and_Extractives ;
     wb:locatedIn wb:Country_Nigeria .
 
-wb:Project_P172893 a wb:Project ;
-    rdfs:label "Integrated watershed management of the Putumayo-Içá river basin" ;
-    wb:hasSector wb:Sector_Fisheries,
-        wb:Sector_Forestry,
-        wb:Sector_Public_Administration_-_Agriculture%2C_Fishing_%26_Forestry ;
-    wb:locatedIn wb:Country_Latin_America .
-
 wb:Project_P172899 a wb:Project ;
     rdfs:label "Promoting Access to Finance for Productive Purposes for MSMEs" ;
     wb:hasSector wb:Sector_Capital_Markets,
@@ -8128,17 +8046,17 @@ wb:Project_P172972 a wb:Project ;
         wb:Sector_Other_Public_Administration ;
     wb:locatedIn wb:Country_Colombia .
 
-wb:Project_P172974 a wb:Project ;
-    rdfs:label "Vietnam Solar Transition Accelerator (VISTA)" ;
-    wb:hasSector wb:Sector_Public_Administration_-_Energy_and_Extractives,
-        wb:Sector_Renewable_Energy_Solar ;
-    wb:locatedIn wb:Country_Vietnam .
-
 wb:Project_P172979 a wb:Project ;
     rdfs:label "Djibouti Integrated Slum Upgrading Project - Additional Financing" ;
     wb:hasSector wb:Sector_Social_Protection,
         wb:Sector_Sub-National_Government ;
     wb:locatedIn wb:Country_Djibouti .
+
+wb:Project_P172980 a wb:Project ;
+    rdfs:label "Coastal and Marine Ecosystems Management Strengthening Project" ;
+    wb:hasSector wb:Sector_Fisheries,
+        wb:Sector_Public_Administration_-_Agriculture%2C_Fishing_%26_Forestry ;
+    wb:locatedIn wb:Country_St._Vincent_and_the_Grenadines .
 
 wb:Project_P172988 a wb:Project ;
     rdfs:label "Burundi Transport Resilience Project" ;
@@ -8246,14 +8164,6 @@ wb:Project_P173091 a wb:Project ;
         wb:Sector_Secondary_Education ;
     wb:locatedIn wb:Country_Jordan .
 
-wb:Project_P173103 a wb:Project ;
-    rdfs:label "Central African Republic - Education Sector Plan Support Project" ;
-    wb:hasSector wb:Sector_Early_Childhood_Education,
-        wb:Sector_Primary_Education,
-        wb:Sector_Public_Administration_-_Education,
-        wb:Sector_Workforce_Development_and_Vocational_Education ;
-    wb:locatedIn wb:Country_Central_African_Republic .
-
 wb:Project_P173104 a wb:Project ;
     rdfs:label "Additional Financing for MCRP" ;
     wb:hasSector wb:Sector_Agricultural_Extension%2C_Research%2C_and_Other_Support_Activities,
@@ -8349,14 +8259,13 @@ wb:Project_P173240 a wb:Project ;
         wb:Sector_Public_Administration_-_Information_and_Communications_Technologies ;
     wb:locatedIn wb:Country_Cameroon .
 
+wb:Project_P173247 a wb:Project ;
+    rdfs:label "Turkiye EU-IPA Energy Sector Program Phase III Project" ;
+    wb:locatedIn wb:Country_Turkiye .
+
 wb:Project_P173249 a wb:Project ;
     rdfs:label "Indonesia Disaster Risk Finance & Insurance" ;
     wb:hasSector wb:Sector_Other_Public_Administration ;
-    wb:locatedIn wb:Country_Indonesia .
-
-wb:Project_P173251 a wb:Project ;
-    rdfs:label "Additional Financing Integrated Infrastructure Development for National Tourism Strategic Areas (Tourism Development Project)" ;
-    wb:hasSector wb:Sector_Tourism ;
     wb:locatedIn wb:Country_Indonesia .
 
 wb:Project_P173258 a wb:Project ;
@@ -8413,13 +8322,6 @@ wb:Project_P173296 a wb:Project ;
         wb:Sector_Public_Administration_-_Agriculture%2C_Fishing_%26_Forestry ;
     wb:locatedIn wb:Country_Uganda .
 
-wb:Project_P173297 a wb:Project ;
-    rdfs:label "Sri Lanka Agriculture Sector Modernization Project Additional Financing" ;
-    wb:hasSector wb:Sector_Agricultural_Extension%2C_Research%2C_and_Other_Support_Activities,
-        wb:Sector_Irrigation_and_Drainage,
-        wb:Sector_Public_Administration_-_Agriculture%2C_Fishing_%26_Forestry ;
-    wb:locatedIn wb:Country_Sri_Lanka .
-
 wb:Project_P173309 a wb:Project ;
     rdfs:label "Better Education Service Delivery for All Operation Additional Financing" ;
     wb:hasSector wb:Sector_Primary_Education,
@@ -8431,6 +8333,13 @@ wb:Project_P173312 a wb:Project ;
     wb:hasSector wb:Sector_Other_Public_Administration ;
     wb:locatedIn wb:Country_Bangladesh .
 
+wb:Project_P173314 a wb:Project ;
+    rdfs:label "EQRA Additional Financing" ;
+    wb:hasSector wb:Sector_Primary_Education,
+        wb:Sector_Public_Administration_-_Education,
+        wb:Sector_Secondary_Education ;
+    wb:locatedIn wb:Country_Afghanistan .
+
 wb:Project_P173315 a wb:Project ;
     rdfs:label "Somalia Crisis Recovery Project" ;
     wb:hasSector wb:Sector_Health_Facilities_and_Construction,
@@ -8439,6 +8348,11 @@ wb:Project_P173315 a wb:Project ;
         wb:Sector_Public_Administration_-_Social_Protection,
         wb:Sector_Social_Protection ;
     wb:locatedIn wb:Country_Somalia .
+
+wb:Project_P173316 a wb:Project ;
+    rdfs:label "GEF7: Green and Carbon Neutral Cities" ;
+    wb:hasSector wb:Sector_Sub-National_Government ;
+    wb:locatedIn wb:Country_China .
 
 wb:Project_P173318 a wb:Project ;
     rdfs:label "Armenia Education Improvement Project Additional Financing" ;
@@ -8511,13 +8425,6 @@ wb:Project_P173416 a wb:Project ;
         wb:Sector_Renewable_Energy_Solar ;
     wb:locatedIn wb:Country_Liberia .
 
-wb:Project_P173429 a wb:Project ;
-    rdfs:label "The PFM MDTF III Support to Government of Indonesia" ;
-    wb:hasSector wb:Sector_Central_Government_%28Central_Agencies%29,
-        wb:Sector_ICT_Services,
-        wb:Sector_Sub-National_Government ;
-    wb:locatedIn wb:Country_Indonesia .
-
 wb:Project_P173446 a wb:Project ;
     rdfs:label "Global Environment Facility Indonesia Sustainable Cities Impact Project" ;
     wb:hasSector wb:Sector_Sub-National_Government,
@@ -8530,10 +8437,13 @@ wb:Project_P173450 a wb:Project ;
         wb:Sector_ICT_Infrastructure ;
     wb:locatedIn wb:Country_Uzbekistan .
 
-wb:Project_P173464 a wb:Project ;
-    rdfs:label "Critical Ecosystem Partnership Fund – Caribbean Hotspot Project" ;
-    wb:hasSector wb:Sector_Other_Public_Administration ;
-    wb:locatedIn wb:Country_Jamaica .
+wb:Project_P173472 a wb:Project ;
+    rdfs:label "Zambia: Voice and Accountability: Community Empowerment for Improved Local Service Delivery Project" ;
+    wb:hasSector wb:Sector_Primary_Education,
+        wb:Sector_Public_Administration_-_Education,
+        wb:Sector_Secondary_Education,
+        wb:Sector_Sub-National_Government ;
+    wb:locatedIn wb:Country_Zambia .
 
 wb:Project_P173487 a wb:Project ;
     rdfs:label "Agriculture Value Chain Development Project (ICARE)" ;
@@ -8761,13 +8671,6 @@ wb:Project_P173789 a wb:Project ;
     rdfs:label "COVID-19 Strategic Preparedness and Response Program (SPRP)" ;
     wb:hasSector wb:Sector_Health ;
     wb:locatedIn wb:Country_World .
-
-wb:Project_P173800 a wb:Project ;
-    rdfs:label "West Bank and Gaza COVID-19 Emergency Response" ;
-    wb:hasSector wb:Sector_Health,
-        wb:Sector_Health_Facilities_and_Construction,
-        wb:Sector_Public_Administration_-_Health ;
-    wb:locatedIn wb:Country_West_Bank_and_Gaza .
 
 wb:Project_P173804 a wb:Project ;
     rdfs:label "Nurek Hydropower Rehabilitation Project Phase 2" ;
@@ -9085,18 +8988,6 @@ wb:Project_P174041 a wb:Project ;
         wb:Sector_Public_Administration_-_Health ;
     wb:locatedIn wb:Country_Uganda .
 
-wb:Project_P174046 a wb:Project ;
-    rdfs:label "Additional Financing to Rwanda Quality Basic Education for Human Capital Development Project" ;
-    wb:hasSector wb:Sector_Public_Administration_-_Education ;
-    wb:locatedIn wb:Country_Rwanda .
-
-wb:Project_P174047 a wb:Project ;
-    rdfs:label "Bangladesh: Additional Financing for Quality Learning for All Program" ;
-    wb:hasSector wb:Sector_Early_Childhood_Education,
-        wb:Sector_Primary_Education,
-        wb:Sector_Public_Administration_-_Education ;
-    wb:locatedIn wb:Country_Bangladesh .
-
 wb:Project_P174066 a wb:Project ;
     rdfs:label "Beneficiary FIRST Social Protection Project" ;
     wb:hasSector wb:Sector_Public_Administration_-_Social_Protection,
@@ -9137,6 +9028,13 @@ wb:Project_P174096 a wb:Project ;
     wb:hasSector wb:Sector_Health_Facilities_and_Construction,
         wb:Sector_Public_Administration_-_Health ;
     wb:locatedIn wb:Country_OECS_Countries .
+
+wb:Project_P174097 a wb:Project ;
+    rdfs:label "Wildlife Conservation Bond Operation" ;
+    wb:hasSector wb:Sector_Livestock,
+        wb:Sector_Public_Administration_-_Agriculture%2C_Fishing_%26_Forestry,
+        wb:Sector_Tourism ;
+    wb:locatedIn wb:Country_South_Africa .
 
 wb:Project_P174111 a wb:Project ;
     rdfs:label "Adaptive Social Protection for Increased Resilience Project" ;
@@ -9414,6 +9312,15 @@ wb:Project_P174379 a wb:Project ;
         wb:Sector_Rural_and_Inter-Urban_Roads ;
     wb:locatedIn wb:Country_Azerbaijan .
 
+wb:Project_P174385 a wb:Project ;
+    rdfs:label "Second Ethiopia Resilient Landscapes and Livelihoods Project" ;
+    wb:hasSector wb:Sector_Agricultural_Extension%2C_Research%2C_and_Other_Support_Activities,
+        wb:Sector_Agricultural_markets%2C_commercialization_and_agri-business,
+        wb:Sector_Forestry,
+        wb:Sector_Public_Administration_-_Agriculture%2C_Fishing_%26_Forestry,
+        wb:Sector_Sub-National_Government ;
+    wb:locatedIn wb:Country_Ethiopia .
+
 wb:Project_P174386 a wb:Project ;
     rdfs:label "Additional Financing to Myanmar COVID-19 Emergency Response Project" ;
     wb:hasSector wb:Sector_Public_Administration_-_Health ;
@@ -9426,6 +9333,13 @@ wb:Project_P174399 a wb:Project ;
         wb:Sector_Social_Protection,
         wb:Sector_Workforce_Development_and_Vocational_Education ;
     wb:locatedIn wb:Country_Bhutan .
+
+wb:Project_P174401 a wb:Project ;
+    rdfs:label "JSDF - Strengthening Preparedness and Response to COVID-19 at the Grassroots level in Vietnam" ;
+    wb:hasSector wb:Sector_Health,
+        wb:Sector_Health_Facilities_and_Construction,
+        wb:Sector_Public_Administration_-_Health ;
+    wb:locatedIn wb:Country_Vietnam .
 
 wb:Project_P174402 a wb:Project ;
     rdfs:label "Islamic Republic of Pakistan: Digital Economy Enhancement Project" ;
@@ -9566,11 +9480,6 @@ wb:Project_P174604 a wb:Project ;
         wb:Sector_Public_Administration_-_Financial_Sector ;
     wb:locatedIn wb:Country_Bosnia_and_Herzegovina .
 
-wb:Project_P174605 a wb:Project ;
-    rdfs:label "Additional Financing to Cambodia COVID-19 Emergency Response Project" ;
-    wb:hasSector wb:Sector_Health_Facilities_and_Construction ;
-    wb:locatedIn wb:Country_Cambodia .
-
 wb:Project_P174620 a wb:Project ;
     rdfs:label "CAR- Public Sector Digital Governance Project" ;
     wb:hasSector wb:Sector_Central_Government_%28Central_Agencies%29,
@@ -9632,12 +9541,6 @@ wb:Project_P174684 a wb:Project ;
         wb:Sector_Sub-National_Government,
         wb:Sector_Tourism ;
     wb:locatedIn wb:Country_Madagascar .
-
-wb:Project_P174707 a wb:Project ;
-    rdfs:label "Promoting a more Equitable, Sustainable and Safer Education" ;
-    wb:hasSector wb:Sector_Primary_Education,
-        wb:Sector_Public_Administration_-_Education ;
-    wb:locatedIn wb:Country_Haiti .
 
 wb:Project_P174708 a wb:Project ;
     rdfs:label "Phase 2 Advancing Sustainability in Performance, Infrastructure, and Reliability of the Energy Sector in the West Bank and Gaza" ;
@@ -9704,11 +9607,6 @@ wb:Project_P174778 a wb:Project ;
         wb:Sector_Social_Protection,
         wb:Sector_Sub-National_Government ;
     wb:locatedIn wb:Country_India .
-
-wb:Project_P174797 a wb:Project ;
-    rdfs:label "Second Additional Financing to the Saint Lucia Health System Strengthening Project" ;
-    wb:hasSector wb:Sector_Health ;
-    wb:locatedIn wb:Country_St._Lucia .
 
 wb:Project_P174798 a wb:Project ;
     rdfs:label "Fisheries Sector Prosperity Project" ;
@@ -9890,13 +9788,6 @@ wb:Project_P175045 a wb:Project ;
         wb:Sector_Capital_Markets,
         wb:Sector_Public_Administration_-_Financial_Sector ;
     wb:locatedIn wb:Country_Ethiopia .
-
-wb:Project_P175065 a wb:Project ;
-    rdfs:label "Lesotho Basic Education Strengthening Project (BESP)" ;
-    wb:hasSector wb:Sector_Early_Childhood_Education,
-        wb:Sector_Public_Administration_-_Education,
-        wb:Sector_Secondary_Education ;
-    wb:locatedIn wb:Country_Lesotho .
 
 wb:Project_P175072 a wb:Project ;
     rdfs:label "Malawi First Growth and Resilience DPO with a Catastrophe Deferred Drawdown Option" ;
@@ -10140,11 +10031,6 @@ wb:Project_P175382 a wb:Project ;
         wb:Sector_Sub-National_Government ;
     wb:locatedIn wb:Country_Burkina_Faso .
 
-wb:Project_P175385 a wb:Project ;
-    rdfs:label "Second Additional Financing to the OECS Regional Health Project" ;
-    wb:hasSector wb:Sector_Health ;
-    wb:locatedIn wb:Country_Caribbean .
-
 wb:Project_P175401 a wb:Project ;
     rdfs:label "Timor-Leste COVID-19 and Health Systems Strengthening Support Project" ;
     wb:hasSector wb:Sector_Health,
@@ -10152,15 +10038,17 @@ wb:Project_P175401 a wb:Project ;
         wb:Sector_Social_Protection ;
     wb:locatedIn wb:Country_Timor-Leste .
 
-wb:Project_P175404 a wb:Project ;
-    rdfs:label "AF St Maarten Debris Management Proj" ;
-    wb:hasSector wb:Sector_Public_Administration_-_Water%2C_Sanitation_and_Waste_Management,
-        wb:Sector_Waste_Management ;
-    wb:locatedIn wb:Country_St_Maarten .
-
 wb:Project_P175414 a wb:Project ;
     rdfs:label "Finance for Jobs II Second Additional Financing - COVID-19 Response" ;
     wb:hasSector wb:Sector_Other_Industry%2C_Trade_and_Services,
+        wb:Sector_Public_Administration_-_Industry%2C_Trade_and_Services ;
+    wb:locatedIn wb:Country_West_Bank_and_Gaza .
+
+wb:Project_P175417 a wb:Project ;
+    rdfs:label "Additional Financing for COVID-19 Response under the Innovative Private Sector Development Project" ;
+    wb:hasSector wb:Sector_Capital_Markets,
+        wb:Sector_ICT_Services,
+        wb:Sector_Other_Industry%2C_Trade_and_Services,
         wb:Sector_Public_Administration_-_Industry%2C_Trade_and_Services ;
     wb:locatedIn wb:Country_West_Bank_and_Gaza .
 
@@ -10211,12 +10099,6 @@ wb:Project_P175525 a wb:Project ;
     wb:hasSector wb:Sector_Other_Public_Administration ;
     wb:locatedIn wb:Country_Western_and_Central_Africa .
 
-wb:Project_P175583 a wb:Project ;
-    rdfs:label "Rwanda JSDF - Support to Community Health Workers Project" ;
-    wb:hasSector wb:Sector_Health_Facilities_and_Construction,
-        wb:Sector_Public_Administration_-_Health ;
-    wb:locatedIn wb:Country_Rwanda .
-
 wb:Project_P175587 a wb:Project ;
     rdfs:label "Second Regional Economic Development Project" ;
     wb:hasSector wb:Sector_Agricultural_Extension%2C_Research%2C_and_Other_Support_Activities,
@@ -10266,6 +10148,13 @@ wb:Project_P175641 a wb:Project ;
         wb:Sector_Public_Administration_-_Industry%2C_Trade_and_Services ;
     wb:locatedIn wb:Country_Tunisia .
 
+wb:Project_P175645 a wb:Project ;
+    rdfs:label "Support to Economic Recovery and Job Creation in the Agri-Food Sector and Rural South" ;
+    wb:hasSector wb:Sector_Agricultural_markets%2C_commercialization_and_agri-business,
+        wb:Sector_Other_Industry%2C_Trade_and_Services,
+        wb:Sector_Public_Administration_-_Industry%2C_Trade_and_Services ;
+    wb:locatedIn wb:Country_Tunisia .
+
 wb:Project_P175655 a wb:Project ;
     rdfs:label "Improving public financial management for the green transition" ;
     wb:hasSector wb:Sector_Central_Government_%28Central_Agencies%29,
@@ -10312,6 +10201,15 @@ wb:Project_P175676 a wb:Project ;
     rdfs:label "PHSPP: Transforming India’s Public Health Systems for Pandemic Preparedness Program" ;
     wb:hasSector wb:Sector_Health ;
     wb:locatedIn wb:Country_India .
+
+wb:Project_P175717 a wb:Project ;
+    rdfs:label "Additional Financing for Food Security and Agriculture Productivity Project" ;
+    wb:hasSector wb:Sector_Agricultural_Extension%2C_Research%2C_and_Other_Support_Activities,
+        wb:Sector_Agricultural_markets%2C_commercialization_and_agri-business,
+        wb:Sector_Crops,
+        wb:Sector_Irrigation_and_Drainage,
+        wb:Sector_Public_Administration_-_Agriculture%2C_Fishing_%26_Forestry ;
+    wb:locatedIn wb:Country_Bhutan .
 
 wb:Project_P175718 a wb:Project ;
     rdfs:label "Additional Financing to the Social Protection Integration Project" ;
@@ -10631,6 +10529,21 @@ wb:Project_P176017 a wb:Project ;
         wb:Sector_Public_Administration_-_Industry%2C_Trade_and_Services ;
     wb:locatedIn wb:Country_Uzbekistan .
 
+wb:Project_P176025 a wb:Project ;
+    rdfs:label "Water Security and Resilience Program" ;
+    wb:hasSector wb:Sector_Public_Administration_-_Water%2C_Sanitation_and_Waste_Management,
+        wb:Sector_Water_Supply ;
+    wb:locatedIn wb:Country_West_Bank_and_Gaza .
+
+wb:Project_P176032 a wb:Project ;
+    rdfs:label "Himachal Pradesh Power Sector Development Program" ;
+    wb:hasSector wb:Sector_Energy_Transmission_and_Distribution,
+        wb:Sector_Other_Energy_and_Extractives,
+        wb:Sector_Public_Administration_-_Energy_and_Extractives,
+        wb:Sector_Renewable_Energy_Hydro,
+        wb:Sector_Renewable_Energy_Solar ;
+    wb:locatedIn wb:Country_India .
+
 wb:Project_P176034 a wb:Project ;
     rdfs:label "Matanza-Riachuelo Basin Sustainable Development Project Second Additional Financing" ;
     wb:hasSector wb:Sector_Public_Administration_-_Water%2C_Sanitation_and_Waste_Management,
@@ -10663,12 +10576,6 @@ wb:Project_P176069 a wb:Project ;
         wb:Sector_Capital_Markets,
         wb:Sector_Public_Administration_-_Financial_Sector ;
     wb:locatedIn wb:Country_Serbia .
-
-wb:Project_P176084 a wb:Project ;
-    rdfs:label "Albania Strengthening Quality of Auditing and Reporting Project" ;
-    wb:hasSector wb:Sector_Law_and_Justice,
-        wb:Sector_Other_Public_Administration ;
-    wb:locatedIn wb:Country_Albania .
 
 wb:Project_P176088 a wb:Project ;
     rdfs:label "Southeast Asia Regional Economic Corridor and Connectivity Project" ;
@@ -10794,6 +10701,11 @@ wb:Project_P176208 a wb:Project ;
         wb:Sector_Urban_Transport ;
     wb:locatedIn wb:Country_Tonga .
 
+wb:Project_P176212 a wb:Project ;
+    rdfs:label "Additional Financing to Cambodia COVID-19 Emergency Response Project" ;
+    wb:hasSector wb:Sector_Health ;
+    wb:locatedIn wb:Country_Cambodia .
+
 wb:Project_P176232 a wb:Project ;
     rdfs:label "Uruguay Agro-Ecological and Climate Resilient Systems Project" ;
     wb:hasSector wb:Sector_Agricultural_Extension%2C_Research%2C_and_Other_Support_Activities,
@@ -10881,11 +10793,6 @@ wb:Project_P176313 a wb:Project ;
 wb:Project_P176317 a wb:Project ;
     rdfs:label "Philippines Digital Infrastructure Project" ;
     wb:locatedIn wb:Country_Philippines .
-
-wb:Project_P176323 a wb:Project ;
-    rdfs:label "Gulf of Fonseca Transboundary Management of Coastal Natural Resources" ;
-    wb:hasSector wb:Sector_Other_Public_Administration ;
-    wb:locatedIn wb:Country_Central_America .
 
 wb:Project_P176327 a wb:Project ;
     rdfs:label "Ethiopia Flood Management Project" ;
@@ -11223,13 +11130,6 @@ wb:Project_P176633 a wb:Project ;
         wb:Sector_Renewable_Energy_Solar ;
     wb:locatedIn wb:Country_Mali .
 
-wb:Project_P176635 a wb:Project ;
-    rdfs:label "Beirut Critical Environment Recovery, Restoration and Waste Management Program" ;
-    wb:hasSector wb:Sector_Other_Water_Supply%2C_Sanitation_and_Waste_Management,
-        wb:Sector_Public_Administration_-_Water%2C_Sanitation_and_Waste_Management,
-        wb:Sector_Waste_Management ;
-    wb:locatedIn wb:Country_Lebanon .
-
 wb:Project_P176650 a wb:Project ;
     rdfs:label "Third Disaster Risk Management Development Policy Loan with a Cat DDO" ;
     wb:hasSector wb:Sector_Forestry,
@@ -11266,11 +11166,6 @@ wb:Project_P176687 a wb:Project ;
         wb:Sector_Public_Administration_-_Water%2C_Sanitation_and_Waste_Management,
         wb:Sector_Water_Supply ;
     wb:locatedIn wb:Country_Timor-Leste .
-
-wb:Project_P176688 a wb:Project ;
-    rdfs:label "Improved Management of E-Waste and Healthcare Waste for Reduction of uPOPs Emissions" ;
-    wb:hasSector wb:Sector_Waste_Management ;
-    wb:locatedIn wb:Country_Egypt%2C_Arab_Republic_of .
 
 wb:Project_P176690 a wb:Project ;
     rdfs:label "Micro, Small and Medium Enterprises Business Development Services Project" ;
@@ -11353,11 +11248,6 @@ wb:Project_P176749 a wb:Project ;
     wb:hasSector wb:Sector_Primary_Education,
         wb:Sector_Public_Administration_-_Education ;
     wb:locatedIn wb:Country_Philippines .
-
-wb:Project_P176750 a wb:Project ;
-    rdfs:label "International Program for Development Evaluation Training (IPDET) M&E training program" ;
-    wb:hasSector wb:Sector_Other_Public_Administration ;
-    wb:locatedIn wb:Country_World .
 
 wb:Project_P176751 a wb:Project ;
     rdfs:label "Additional Financing for the Equity with Quality and Learning at Secondary" ;
@@ -11674,11 +11564,6 @@ wb:Project_P177005 a wb:Project ;
         wb:Sector_Workforce_Development_and_Vocational_Education ;
     wb:locatedIn wb:Country_Burkina_Faso .
 
-wb:Project_P177008 a wb:Project ;
-    rdfs:label "Second Additional Financing to Republic of Congo COVID-19 Emergency Response Project" ;
-    wb:hasSector wb:Sector_Health ;
-    wb:locatedIn wb:Country_Congo%2C_Republic_of .
-
 wb:Project_P177020 a wb:Project ;
     rdfs:label "Emergency Social Protection Enhancement and COVID-19 Response Project" ;
     wb:hasSector wb:Sector_Capital_Markets,
@@ -11869,13 +11754,6 @@ wb:Project_P177146 a wb:Project ;
     rdfs:label "Urban Resilience Emergency Project" ;
     wb:locatedIn wb:Country_Burundi .
 
-wb:Project_P177149 a wb:Project ;
-    rdfs:label "Corredor Seco Food Security Project Additional Financing" ;
-    wb:hasSector wb:Sector_Agricultural_Extension%2C_Research%2C_and_Other_Support_Activities,
-        wb:Sector_Other_Agriculture%2C_Fishing_and_Forestry,
-        wb:Sector_Public_Administration_-_Agriculture%2C_Fishing_%26_Forestry ;
-    wb:locatedIn wb:Country_Honduras .
-
 wb:Project_P177158 a wb:Project ;
     rdfs:label "Digital Sao Tome and Principe" ;
     wb:hasSector wb:Sector_ICT_Infrastructure,
@@ -11883,12 +11761,6 @@ wb:Project_P177158 a wb:Project ;
         wb:Sector_Other_Information_and_Communications_Technologies,
         wb:Sector_Public_Administration_-_Information_and_Communications_Technologies ;
     wb:locatedIn wb:Country_Sao_Tome_and_Principe .
-
-wb:Project_P177159 a wb:Project ;
-    rdfs:label "Monitoring and Evaluation capacity building in South Asia" ;
-    wb:hasSector wb:Sector_Other_Public_Administration,
-        wb:Sector_Sub-National_Government ;
-    wb:locatedIn wb:Country_India .
 
 wb:Project_P177163 a wb:Project ;
     rdfs:label "Chad Territorial Development and Resilience Project" ;
@@ -11942,6 +11814,11 @@ wb:Project_P177233 a wb:Project ;
     wb:hasSector wb:Sector_Public_Administration_-_Social_Protection,
         wb:Sector_Social_Protection ;
     wb:locatedIn wb:Country_Ethiopia .
+
+wb:Project_P177237 a wb:Project ;
+    rdfs:label "ENAP Global Action for Capacity-building in Monitoring and Evaluation" ;
+    wb:hasSector wb:Sector_Other_Public_Administration ;
+    wb:locatedIn wb:Country_World .
 
 wb:Project_P177239 a wb:Project ;
     rdfs:label "Solomon Islands: Pacific Islands Regional Oceanscape Program - Second Phase for Economic Resilience" ;
@@ -12023,12 +11900,6 @@ wb:Project_P177329 a wb:Project ;
         wb:Sector_Public_Administration_-_Health,
         wb:Sector_Social_Protection ;
     wb:locatedIn wb:Country_Marshall_Islands .
-
-wb:Project_P177370 a wb:Project ;
-    rdfs:label "Cambodia Nutrition Project II" ;
-    wb:hasSector wb:Sector_Health,
-        wb:Sector_Public_Administration_-_Health ;
-    wb:locatedIn wb:Country_Cambodia .
 
 wb:Project_P177371 a wb:Project ;
     rdfs:label "Additional Financing for the Growing Up and Learning Together: Comprehensive Early Childhood Development in El Salvador Project" ;
@@ -12243,6 +12114,11 @@ wb:Project_P177741 a wb:Project ;
         wb:Sector_Secondary_Education,
         wb:Sector_Workforce_Development_and_Vocational_Education ;
     wb:locatedIn wb:Country_Guyana .
+
+wb:Project_P177742 a wb:Project ;
+    rdfs:label "Public Financial Management Improvement Project Phase 2" ;
+    wb:hasSector wb:Sector_Central_Government_%28Central_Agencies%29 ;
+    wb:locatedIn wb:Country_West_Bank_and_Gaza .
 
 wb:Project_P177748 a wb:Project ;
     rdfs:label "Gambia First Boosting Resilience and Unlocking Productive Potential DPF with Cat DDO" ;
@@ -12707,6 +12583,12 @@ wb:Project_P178122 a wb:Project ;
         wb:Sector_Sub-National_Government ;
     wb:locatedIn wb:Country_Dominican_Republic .
 
+wb:Project_P178125 a wb:Project ;
+    rdfs:label "SPF: Improved Livelihoods for Internally Displaced Persons in Azerbaijan" ;
+    wb:hasSector wb:Sector_Social_Protection,
+        wb:Sector_Workforce_Development_and_Vocational_Education ;
+    wb:locatedIn wb:Country_Azerbaijan .
+
 wb:Project_P178132 a wb:Project ;
     rdfs:label "West Africa Food System Resilience Program (FSRP) Phase 2" ;
     wb:hasSector wb:Sector_Agricultural_Extension%2C_Research%2C_and_Other_Support_Activities,
@@ -12752,10 +12634,6 @@ wb:Project_P178157 a wb:Project ;
         wb:Sector_Public_Administration_-_Education,
         wb:Sector_Secondary_Education ;
     wb:locatedIn wb:Country_Tanzania .
-
-wb:Project_P178159 a wb:Project ;
-    rdfs:label "Horn of Africa Coordination Support Team Fiduciary Institution" ;
-    wb:locatedIn wb:Country_Eastern_and_Southern_Africa .
 
 wb:Project_P178161 a wb:Project ;
     rdfs:label "Volcanoes Community Resilience Project" ;
@@ -13076,6 +12954,11 @@ wb:Project_P178497 a wb:Project ;
         wb:Sector_Other_Public_Administration ;
     wb:locatedIn wb:Country_Western_and_Central_Africa .
 
+wb:Project_P178506 a wb:Project ;
+    rdfs:label "Evaluation Capacity Building in Francophone Africa - CLEAR FA" ;
+    wb:hasSector wb:Sector_Central_Government_%28Central_Agencies%29 ;
+    wb:locatedIn wb:Country_World .
+
 wb:Project_P178517 a wb:Project ;
     rdfs:label "Indonesia: Strengthening National Tuberculosis Response Program" ;
     wb:hasSector wb:Sector_Health,
@@ -13175,6 +13058,10 @@ wb:Project_P178581 a wb:Project ;
 wb:Project_P178582 a wb:Project ;
     rdfs:label "JAMAICA: SOCIAL PROTECTION FOR INCREASED RESILIENCE AND OPPORTUNITY (SPIRO)" ;
     wb:locatedIn wb:Country_Jamaica .
+
+wb:Project_P178583 a wb:Project ;
+    rdfs:label "Global Development Awards Competition, FY22-FY24" ;
+    wb:locatedIn wb:Country_World .
 
 wb:Project_P178587 a wb:Project ;
     rdfs:label "Strengthening Lebanon’s Covid-19 Response" ;
@@ -13558,13 +13445,6 @@ wb:Project_P178821 a wb:Project ;
         wb:Sector_Public_Administration_-_Health ;
     wb:locatedIn wb:Country_Ethiopia .
 
-wb:Project_P178822 a wb:Project ;
-    rdfs:label "Botswana Renewable Energy Scale Up Support" ;
-    wb:hasSector wb:Sector_Public_Administration_-_Energy_and_Extractives,
-        wb:Sector_Renewable_Energy_Solar,
-        wb:Sector_Renewable_Energy_Wind ;
-    wb:locatedIn wb:Country_Botswana .
-
 wb:Project_P178824 a wb:Project ;
     rdfs:label "Iraq Social Safety Net Enhancement Project" ;
     wb:hasSector wb:Sector_Public_Administration_-_Social_Protection,
@@ -13608,6 +13488,12 @@ wb:Project_P178849 a wb:Project ;
     rdfs:label "Additional Financing to the Tonga Safe and Resilient Schools Project" ;
     wb:hasSector wb:Sector_Public_Administration_-_Education ;
     wb:locatedIn wb:Country_Tonga .
+
+wb:Project_P178856 a wb:Project ;
+    rdfs:label "Primary Health Care Quality Improvement Program - Additional Financing" ;
+    wb:hasSector wb:Sector_Health,
+        wb:Sector_Public_Administration_-_Health ;
+    wb:locatedIn wb:Country_Kyrgyz_Republic .
 
 wb:Project_P178861 a wb:Project ;
     rdfs:label "Bolivia Resilient Water Management for Community and Household Irrigation Project" ;
@@ -13804,6 +13690,13 @@ wb:Project_P179006 a wb:Project ;
         wb:Sector_Primary_Education ;
     wb:locatedIn wb:Country_Cote_d%27Ivoire .
 
+wb:Project_P179008 a wb:Project ;
+    rdfs:label "PROGREEN Kazakhstan Resilient Landscapes Restoration Project" ;
+    wb:hasSector wb:Sector_Forestry,
+        wb:Sector_Public_Administration_-_Agriculture%2C_Fishing_%26_Forestry,
+        wb:Sector_Tourism ;
+    wb:locatedIn wb:Country_Kazakhstan .
+
 wb:Project_P179009 a wb:Project ;
     rdfs:label "GAS SECTOR EFFICIENCY IMPROVEMENT AND CARBON ABATEMENT PROJECT" ;
     wb:hasSector wb:Sector_Energy_Transmission_and_Distribution,
@@ -13872,12 +13765,6 @@ wb:Project_P179040 a wb:Project ;
         wb:Sector_Public_Administration_-_Information_and_Communications_Technologies ;
     wb:locatedIn wb:Country_Ethiopia .
 
-wb:Project_P179043 a wb:Project ;
-    rdfs:label "Ulaanbaatar Sustainable Urban Transport Project Additional Financing" ;
-    wb:hasSector wb:Sector_Public_Administration_-_Transportation,
-        wb:Sector_Urban_Transport ;
-    wb:locatedIn wb:Country_Mongolia .
-
 wb:Project_P179046 a wb:Project ;
     rdfs:label "Progestão Acre: Public Sector Management Efficiency" ;
     wb:hasSector wb:Sector_Central_Government_%28Central_Agencies%29,
@@ -13926,6 +13813,11 @@ wb:Project_P179077 a wb:Project ;
 wb:Project_P179078 a wb:Project ;
     rdfs:label "Health Security Program in Western and Central Africa" ;
     wb:locatedIn wb:Country_Western_and_Central_Africa .
+
+wb:Project_P179084 a wb:Project ;
+    rdfs:label "Kosovo Green Action" ;
+    wb:hasSector wb:Sector_Other_Public_Administration ;
+    wb:locatedIn wb:Country_Kosovo .
 
 wb:Project_P179088 a wb:Project ;
     rdfs:label "Progestão Tocantins: Public Sector Management Efficiency" ;
@@ -14334,6 +14226,11 @@ wb:Project_P179550 a wb:Project ;
         wb:Sector_Public_Administration_-_Health ;
     wb:locatedIn wb:Country_Cote_d%27Ivoire .
 
+wb:Project_P179554 a wb:Project ;
+    rdfs:label "Public Information and Awareness Services for Vulnerable Communities in Kosovo" ;
+    wb:hasSector wb:Sector_Central_Government_%28Central_Agencies%29 ;
+    wb:locatedIn wb:Country_Kosovo .
+
 wb:Project_P179558 a wb:Project ;
     rdfs:label "Mauritania Health System Support Project" ;
     wb:locatedIn wb:Country_Mauritania .
@@ -14461,6 +14358,10 @@ wb:Project_P179751 a wb:Project ;
     wb:hasSector wb:Sector_Public_Administration_-_Social_Protection,
         wb:Sector_Social_Protection ;
     wb:locatedIn wb:Country_Dominican_Republic .
+
+wb:Project_P179771 a wb:Project ;
+    rdfs:label "Panama Partnership for Market Implementation" ;
+    wb:locatedIn wb:Country_Panama .
 
 wb:Project_P179775 a wb:Project ;
     rdfs:label "Somalia Urban Resilience Project Phase II Second Additional Financing" ;
@@ -14639,12 +14540,6 @@ wb:Project_P180027 a wb:Project ;
     rdfs:label "Bolivia Improving Sustainable Access to Electricity Project (IDTR III)" ;
     wb:locatedIn wb:Country_Bolivia .
 
-wb:Project_P180035 a wb:Project ;
-    rdfs:label "Sierra Leone Productive Social Safety Nets and Youth Employment Project Additional Financing" ;
-    wb:hasSector wb:Sector_Public_Administration_-_Social_Protection,
-        wb:Sector_Social_Protection ;
-    wb:locatedIn wb:Country_Sierra_Leone .
-
 wb:Project_P180039 a wb:Project ;
     rdfs:label "Additional Financing-Health System Performance Strengthening Project" ;
     wb:hasSector wb:Sector_Health,
@@ -14727,13 +14622,6 @@ wb:Project_P180153 a wb:Project ;
     rdfs:label "Moldova Rural Connectivity Project" ;
     wb:locatedIn wb:Country_Moldova .
 
-wb:Project_P180160 a wb:Project ;
-    rdfs:label "Zimbabwe COVID-19 Response and Essential Health Services Additional Financing" ;
-    wb:hasSector wb:Sector_Health,
-        wb:Sector_Health_Facilities_and_Construction,
-        wb:Sector_Public_Administration_-_Health ;
-    wb:locatedIn wb:Country_Zimbabwe .
-
 wb:Project_P180163 a wb:Project ;
     rdfs:label "Dominican Republic Emergency Response and Resilience Project" ;
     wb:hasSector wb:Sector_Other_Public_Administration ;
@@ -14813,12 +14701,6 @@ wb:Project_P180248 a wb:Project ;
     rdfs:label "Türkiye PMI Carbon Market Development Project" ;
     wb:hasSector wb:Sector_Other_Energy_and_Extractives ;
     wb:locatedIn wb:Country_Turkiye .
-
-wb:Project_P180263 a wb:Project ;
-    rdfs:label "Health System Efficiency and Resilience Project" ;
-    wb:hasSector wb:Sector_Health,
-        wb:Sector_Public_Administration_-_Health ;
-    wb:locatedIn wb:Country_West_Bank_and_Gaza .
 
 wb:Project_P180266 a wb:Project ;
     rdfs:label "Rodrigues Airport Project" ;
@@ -14997,6 +14879,12 @@ wb:Project_P180430 a wb:Project ;
     rdfs:label "Brazil: Pernambuco Rural Water and Sanitation Project (PROSAR)" ;
     wb:locatedIn wb:Country_Brazil .
 
+wb:Project_P180432 a wb:Project ;
+    rdfs:label "Innovative Carbon Resource Application For Energy Transition" ;
+    wb:hasSector wb:Sector_Other_Energy_and_Extractives,
+        wb:Sector_Public_Administration_-_Energy_and_Extractives ;
+    wb:locatedIn wb:Country_Uzbekistan .
+
 wb:Project_P180439 a wb:Project ;
     rdfs:label "Second Bangladesh Green and Climate Resilient Development Credit" ;
     wb:locatedIn wb:Country_Bangladesh .
@@ -15033,12 +14921,6 @@ wb:Project_P180470 a wb:Project ;
         wb:Sector_Forestry,
         wb:Sector_Railways ;
     wb:locatedIn wb:Country_Uzbekistan .
-
-wb:Project_P180475 a wb:Project ;
-    rdfs:label "Additional Financing for Honduras Restoring Essential Services for Health and Advancing Preparedness for Emergencies Project" ;
-    wb:hasSector wb:Sector_Health,
-        wb:Sector_Public_Administration_-_Health ;
-    wb:locatedIn wb:Country_Honduras .
 
 wb:Project_P180477 a wb:Project ;
     rdfs:label "Ecuador - Promoting Access to Finance for Productive Purposes for MSMEs - AF" ;
@@ -15207,11 +15089,6 @@ wb:Project_P180674 a wb:Project ;
         wb:Sector_Public_Administration_-_Transportation ;
     wb:locatedIn wb:Country_Tuvalu .
 
-wb:Project_P180680 a wb:Project ;
-    rdfs:label "Chad Health Emergency Preparedness and Response Additional Financing" ;
-    wb:hasSector wb:Sector_Livestock ;
-    wb:locatedIn wb:Country_Chad .
-
 wb:Project_P180688 a wb:Project ;
     rdfs:label "Strengthening the Resilience of Ecuadorian Schools Project" ;
     wb:locatedIn wb:Country_Ecuador .
@@ -15337,11 +15214,6 @@ wb:Project_P180849 a wb:Project ;
         wb:Sector_Sub-National_Government ;
     wb:locatedIn wb:Country_Turkiye .
 
-wb:Project_P180854 a wb:Project ;
-    rdfs:label "Second Additional Financing for the Sint Maarten Hospital Resiliency and Preparedness Project" ;
-    wb:hasSector wb:Sector_Health_Facilities_and_Construction ;
-    wb:locatedIn wb:Country_St_Maarten .
-
 wb:Project_P180860 a wb:Project ;
     rdfs:label "Integrated Land Administration and Spatial Planning Project" ;
     wb:locatedIn wb:Country_Indonesia .
@@ -15368,9 +15240,9 @@ wb:Project_P180875 a wb:Project ;
         wb:Sector_Public_Administration_-_Transportation ;
     wb:locatedIn wb:Country_Senegal .
 
-wb:Project_P180895 a wb:Project ;
-    rdfs:label "Sierra Leone Rice Systems Capacity Strengthening Project" ;
-    wb:locatedIn wb:Country_Sierra_Leone .
+wb:Project_P180904 a wb:Project ;
+    rdfs:label "Accelerating Maternal & Child Health Outcomes Project" ;
+    wb:locatedIn wb:Country_Bhutan .
 
 wb:Project_P180905 a wb:Project ;
     rdfs:label "Productive Economic Inclusion in Lebanon" ;
@@ -15431,9 +15303,12 @@ wb:Project_P180996 a wb:Project ;
         wb:Sector_Public_Administration_-_Agriculture%2C_Fishing_%26_Forestry ;
     wb:locatedIn wb:Country_Central_African_Republic .
 
-wb:Project_P181002 a wb:Project ;
-    rdfs:label "Additional Financing for Forests for Prosperity" ;
-    wb:locatedIn wb:Country_Nepal .
+wb:Project_P181004 a wb:Project ;
+    rdfs:label "Additional Financing (AF) to the Innovation for Rural Competitiveness Project (COMRURAL III) - GAFSP Financing" ;
+    wb:hasSector wb:Sector_Agricultural_markets%2C_commercialization_and_agri-business,
+        wb:Sector_Public_Administration_-_Social_Protection,
+        wb:Sector_Social_Protection ;
+    wb:locatedIn wb:Country_Honduras .
 
 wb:Project_P181011 a wb:Project ;
     rdfs:label "Zambia Second Macroeconomic Stability, Growth and Competitiveness DPF" ;
@@ -15563,6 +15438,15 @@ wb:Project_P181127 a wb:Project ;
 wb:Project_P181137 a wb:Project ;
     rdfs:label "Second Additional Financing EALCRP" ;
     wb:locatedIn wb:Country_Dominica .
+
+wb:Project_P181139 a wb:Project ;
+    rdfs:label "Additional Financing to West Africa Food Systems Resilience Program, Phase 1" ;
+    wb:hasSector wb:Sector_Agricultural_Extension%2C_Research%2C_and_Other_Support_Activities,
+        wb:Sector_Agricultural_markets%2C_commercialization_and_agri-business,
+        wb:Sector_Crops,
+        wb:Sector_Livestock,
+        wb:Sector_Public_Administration_-_Agriculture%2C_Fishing_%26_Forestry ;
+    wb:locatedIn wb:Country_Western_and_Central_Africa .
 
 wb:Project_P181141 a wb:Project ;
     rdfs:label "Fifth Additional Financing for Public Expenditures for Administrative Capacity Endurance (PEACE) in UKRAINE" ;
@@ -15696,11 +15580,6 @@ wb:Project_P181328 a wb:Project ;
     rdfs:label "Accelerating Sustainable and Clean Energy Access Transformation   - Regional Energy Access Financing Platform" ;
     wb:locatedIn wb:Country_Eastern_and_Southern_Africa .
 
-wb:Project_P181339 a wb:Project ;
-    rdfs:label "Additional Financing to Tunisia Emergency Food Security Response Project" ;
-    wb:hasSector wb:Sector_Other_Agriculture%2C_Fishing_and_Forestry ;
-    wb:locatedIn wb:Country_Tunisia .
-
 wb:Project_P181341 a wb:Project ;
     rdfs:label "Accelerating Sustainable and Clean Energy Access Transformation in SOMALIA" ;
     wb:locatedIn wb:Country_Somalia .
@@ -15724,13 +15603,6 @@ wb:Project_P181346 a wb:Project ;
 wb:Project_P181347 a wb:Project ;
     rdfs:label "Additional Financing  for Cambodia General Education Improvement Project" ;
     wb:locatedIn wb:Country_Cambodia .
-
-wb:Project_P181354 a wb:Project ;
-    rdfs:label "Innovative Private Sector Development II" ;
-    wb:hasSector wb:Sector_Capital_Markets,
-        wb:Sector_Other_Industry%2C_Trade_and_Services,
-        wb:Sector_Public_Administration_-_Industry%2C_Trade_and_Services ;
-    wb:locatedIn wb:Country_West_Bank_and_Gaza .
 
 wb:Project_P181359 a wb:Project ;
     rdfs:label "Lao Airlines Sustainable Development Project" ;
@@ -15764,11 +15636,6 @@ wb:Project_P181374 a wb:Project ;
         wb:Sector_Sub-National_Government,
         wb:Sector_Waste_Management ;
     wb:locatedIn wb:Country_Mozambique .
-
-wb:Project_P181378 a wb:Project ;
-    rdfs:label "Afghanistan Health Emergency Response (HER) Additional Financing" ;
-    wb:hasSector wb:Sector_Health ;
-    wb:locatedIn wb:Country_Afghanistan .
 
 wb:Project_P181380 a wb:Project ;
     rdfs:label "Additional Financing for Support to Regional Knowledge Capacity Project" ;
@@ -15813,11 +15680,6 @@ wb:Project_P181404 a wb:Project ;
 wb:Project_P181407 a wb:Project ;
     rdfs:label "Second Additional Financing for Somalia Recurrent Cost and Reform Financing Phase III" ;
     wb:locatedIn wb:Country_Somalia .
-
-wb:Project_P181409 a wb:Project ;
-    rdfs:label "AF-Ethiopia Program for Results (Hybrid) for Strengthening Primary Health Care Services" ;
-    wb:hasSector wb:Sector_Health ;
-    wb:locatedIn wb:Country_Ethiopia .
 
 wb:Project_P181410 a wb:Project ;
     rdfs:label "Additional Financing for the BI-Jiji and Mulembwe Hydropower" ;
@@ -16156,8 +16018,8 @@ wb:Project_P181659 a wb:Project ;
         wb:Sector_Public_Administration_-_Health ;
     wb:locatedIn wb:Country_Gambia%2C_The .
 
-wb:Project_P181660 a wb:Project ;
-    rdfs:label "COMMERCIALIZATION AND DE-RISKING FOR AGRICULTURAL TRANSFORMATION PROJECT-ADDITIONAL FINANCING" ;
+wb:Project_P181669 a wb:Project ;
+    rdfs:label "Second Additional Financing for the Socio-Economic Inclusion of Refugees and Host Communities in Rwanda Project" ;
     wb:locatedIn wb:Country_Rwanda .
 
 wb:Project_P181678 a wb:Project ;
@@ -16583,9 +16445,6 @@ wb:Country_Barbados a wb:Country ;
 wb:Country_Central_Africa a wb:Country ;
     rdfs:label "Central Africa" .
 
-wb:Country_Central_America a wb:Country ;
-    rdfs:label "Central America" .
-
 wb:Country_Israel a wb:Country ;
     rdfs:label "Israel" .
 
@@ -16603,6 +16462,9 @@ wb:Country_South_East_Asia a wb:Country ;
 
 wb:Country_West_Africa_II a wb:Country ;
     rdfs:label "West Africa II" .
+
+wb:Country_Zimbabwe a wb:Country ;
+    rdfs:label "Zimbabwe" .
 
 wb:Sector_%28Historic%29Economic_management a wb:Sector ;
     rdfs:label "(Historic)Economic management" .
@@ -16625,11 +16487,26 @@ wb:Sector_%28Historic%29Perennial_crops a wb:Sector ;
 wb:Sector_%28Historic%29Public_financial_management a wb:Sector ;
     rdfs:label "(Historic)Public financial management" .
 
+wb:Sector_%28Historic%29Small_scale_enterprise a wb:Sector ;
+    rdfs:label "(Historic)Small scale enterprise" .
+
 wb:Country_Belize a wb:Country ;
     rdfs:label "Belize" .
 
+wb:Country_Botswana a wb:Country ;
+    rdfs:label "Botswana" .
+
 wb:Country_East_Asia_and_Pacific a wb:Country ;
     rdfs:label "East Asia and Pacific" .
+
+wb:Country_Gabon a wb:Country ;
+    rdfs:label "Gabon" .
+
+wb:Country_Latin_America a wb:Country ;
+    rdfs:label "Latin America" .
+
+wb:Country_Mauritius a wb:Country ;
+    rdfs:label "Mauritius" .
 
 wb:Country_Namibia a wb:Country ;
     rdfs:label "Namibia" .
@@ -16640,47 +16517,26 @@ wb:Country_Poland a wb:Country ;
 wb:Country_Southern_Africa a wb:Country ;
     rdfs:label "Southern Africa" .
 
-wb:Country_St._Vincent_and_the_Grenadines a wb:Country ;
-    rdfs:label "St. Vincent and the Grenadines" .
-
 wb:Country_Suriname a wb:Country ;
     rdfs:label "Suriname" .
 
 wb:Country_Thailand a wb:Country ;
     rdfs:label "Thailand" .
 
-wb:Country_Zimbabwe a wb:Country ;
-    rdfs:label "Zimbabwe" .
-
-wb:Country_Africa a wb:Country ;
-    rdfs:label "Africa" .
-
-wb:Country_Azerbaijan a wb:Country ;
-    rdfs:label "Azerbaijan" .
-
-wb:Country_Botswana a wb:Country ;
-    rdfs:label "Botswana" .
-
 wb:Country_Europe_and_Central_Asia a wb:Country ;
     rdfs:label "Europe and Central Asia" .
 
-wb:Country_Gabon a wb:Country ;
-    rdfs:label "Gabon" .
-
-wb:Country_Guatemala a wb:Country ;
-    rdfs:label "Guatemala" .
-
-wb:Country_Latin_America a wb:Country ;
-    rdfs:label "Latin America" .
-
-wb:Country_Mauritius a wb:Country ;
-    rdfs:label "Mauritius" .
+wb:Country_Iran%2C_Islamic_Republic_of a wb:Country ;
+    rdfs:label "Iran, Islamic Republic of" .
 
 wb:Country_Myanmar a wb:Country ;
     rdfs:label "Myanmar" .
 
 wb:Country_Pacific_Islands a wb:Country ;
     rdfs:label "Pacific Islands" .
+
+wb:Country_St._Vincent_and_the_Grenadines a wb:Country ;
+    rdfs:label "St. Vincent and the Grenadines" .
 
 wb:Sector_Agro-industry a wb:Sector ;
     rdfs:label "Agro-industry" .
@@ -16691,8 +16547,17 @@ wb:Sector_Non-Renewable_Energy_Generation a wb:Sector ;
 wb:Sector_Renewable_energy a wb:Sector ;
     rdfs:label "Renewable energy" .
 
-wb:Country_Iran%2C_Islamic_Republic_of a wb:Country ;
-    rdfs:label "Iran, Islamic Republic of" .
+wb:Country_Africa a wb:Country ;
+    rdfs:label "Africa" .
+
+wb:Country_Azerbaijan a wb:Country ;
+    rdfs:label "Azerbaijan" .
+
+wb:Country_Caribbean a wb:Country ;
+    rdfs:label "Caribbean" .
+
+wb:Country_Jamaica a wb:Country ;
+    rdfs:label "Jamaica" .
 
 wb:Country_Seychelles a wb:Country ;
     rdfs:label "Seychelles" .
@@ -16712,14 +16577,14 @@ wb:Country_Western_Balkans a wb:Country ;
 wb:Sector_Roads_and_highways a wb:Sector ;
     rdfs:label "Roads and highways" .
 
-wb:Country_Caribbean a wb:Country ;
-    rdfs:label "Caribbean" .
+wb:Country_Chile a wb:Country ;
+    rdfs:label "Chile" .
 
 wb:Country_Grenada a wb:Country ;
     rdfs:label "Grenada" .
 
-wb:Country_Jamaica a wb:Country ;
-    rdfs:label "Jamaica" .
+wb:Country_Guatemala a wb:Country ;
+    rdfs:label "Guatemala" .
 
 wb:Country_OECS_Countries a wb:Country ;
     rdfs:label "OECS Countries" .
@@ -16730,20 +16595,11 @@ wb:Country_Paraguay a wb:Country ;
 wb:Country_Vanuatu a wb:Country ;
     rdfs:label "Vanuatu" .
 
-wb:Sector_Micro-_and_SME_finance a wb:Sector ;
-    rdfs:label "Micro- and SME finance" .
-
 wb:Sector_Services a wb:Sector ;
     rdfs:label "Services" .
 
 wb:Country_Belarus a wb:Country ;
     rdfs:label "Belarus" .
-
-wb:Country_Bhutan a wb:Country ;
-    rdfs:label "Bhutan" .
-
-wb:Country_Chile a wb:Country ;
-    rdfs:label "Chile" .
 
 wb:Country_Croatia a wb:Country ;
     rdfs:label "Croatia" .
@@ -16763,11 +16619,17 @@ wb:Country_Mexico a wb:Country ;
 wb:Country_Montenegro a wb:Country ;
     rdfs:label "Montenegro" .
 
+wb:Country_St._Lucia a wb:Country ;
+    rdfs:label "St. Lucia" .
+
 wb:Country_Sudan a wb:Country ;
     rdfs:label "Sudan" .
 
 wb:Sector_Manufacturing a wb:Sector ;
     rdfs:label "Manufacturing" .
+
+wb:Sector_Micro-_and_SME_finance a wb:Sector ;
+    rdfs:label "Micro- and SME finance" .
 
 wb:Country_Costa_Rica a wb:Country ;
     rdfs:label "Costa Rica" .
@@ -16778,8 +16640,8 @@ wb:Country_Iraq a wb:Country ;
 wb:Country_Nicaragua a wb:Country ;
     rdfs:label "Nicaragua" .
 
-wb:Country_St._Lucia a wb:Country ;
-    rdfs:label "St. Lucia" .
+wb:Country_Bhutan a wb:Country ;
+    rdfs:label "Bhutan" .
 
 wb:Country_Timor-Leste a wb:Country ;
     rdfs:label "Timor-Leste" .
@@ -16790,8 +16652,17 @@ wb:Country_Bolivia a wb:Country ;
 wb:Country_Guinea a wb:Country ;
     rdfs:label "Guinea" .
 
+wb:Country_Mongolia a wb:Country ;
+    rdfs:label "Mongolia" .
+
+wb:Country_El_Salvador a wb:Country ;
+    rdfs:label "El Salvador" .
+
 wb:Country_Kazakhstan a wb:Country ;
     rdfs:label "Kazakhstan" .
+
+wb:Country_Micronesia%2C_Federated_States_of a wb:Country ;
+    rdfs:label "Micronesia, Federated States of" .
 
 wb:Country_Panama a wb:Country ;
     rdfs:label "Panama" .
@@ -16799,35 +16670,26 @@ wb:Country_Panama a wb:Country ;
 wb:Country_Samoa a wb:Country ;
     rdfs:label "Samoa" .
 
-wb:Country_El_Salvador a wb:Country ;
-    rdfs:label "El Salvador" .
-
-wb:Country_Micronesia%2C_Federated_States_of a wb:Country ;
-    rdfs:label "Micronesia, Federated States of" .
-
 wb:Sector_Adult%2C_Basic_and_Continuing_Education a wb:Sector ;
     rdfs:label "Adult, Basic and Continuing Education" .
 
 wb:Sector_Insurance_and_Pension a wb:Sector ;
     rdfs:label "Insurance and Pension" .
 
-wb:Country_Central_Asia a wb:Country ;
-    rdfs:label "Central Asia" .
-
-wb:Country_Kosovo a wb:Country ;
-    rdfs:label "Kosovo" .
+wb:Country_Lesotho a wb:Country ;
+    rdfs:label "Lesotho" .
 
 wb:Country_Maldives a wb:Country ;
     rdfs:label "Maldives" .
 
-wb:Country_Mongolia a wb:Country ;
-    rdfs:label "Mongolia" .
-
 wb:Country_North_Macedonia a wb:Country ;
     rdfs:label "North Macedonia" .
 
-wb:Sector_Mining a wb:Sector ;
-    rdfs:label "Mining" .
+wb:Country_Albania a wb:Country ;
+    rdfs:label "Albania" .
+
+wb:Country_Central_Asia a wb:Country ;
+    rdfs:label "Central Asia" .
 
 wb:Country_Comoros a wb:Country ;
     rdfs:label "Comoros" .
@@ -16841,9 +16703,6 @@ wb:Country_Georgia a wb:Country ;
 wb:Country_Kiribati a wb:Country ;
     rdfs:label "Kiribati" .
 
-wb:Country_Lesotho a wb:Country ;
-    rdfs:label "Lesotho" .
-
 wb:Country_Marshall_Islands a wb:Country ;
     rdfs:label "Marshall Islands" .
 
@@ -16856,29 +16715,29 @@ wb:Country_Togo a wb:Country ;
 wb:Country_Tuvalu a wb:Country ;
     rdfs:label "Tuvalu" .
 
+wb:Sector_Law_and_Justice a wb:Sector ;
+    rdfs:label "Law and Justice" .
+
+wb:Sector_Mining a wb:Sector ;
+    rdfs:label "Mining" .
+
 wb:Sector_Power a wb:Sector ;
     rdfs:label "Power" .
-
-wb:Country_Albania a wb:Country ;
-    rdfs:label "Albania" .
 
 wb:Country_Bosnia_and_Herzegovina a wb:Country ;
     rdfs:label "Bosnia and Herzegovina" .
 
-wb:Sector_Law_and_Justice a wb:Sector ;
-    rdfs:label "Law and Justice" .
+wb:Country_Congo%2C_Republic_of a wb:Country ;
+    rdfs:label "Congo, Republic of" .
 
-wb:Sector_Renewable_Energy_Geothermal a wb:Sector ;
-    rdfs:label "Renewable Energy Geothermal" .
+wb:Country_Kosovo a wb:Country ;
+    rdfs:label "Kosovo" .
 
 wb:Country_Armenia a wb:Country ;
     rdfs:label "Armenia" .
 
 wb:Country_Cabo_Verde a wb:Country ;
     rdfs:label "Cabo Verde" .
-
-wb:Country_Congo%2C_Republic_of a wb:Country ;
-    rdfs:label "Congo, Republic of" .
 
 wb:Country_Ecuador a wb:Country ;
     rdfs:label "Ecuador" .
@@ -16889,8 +16748,14 @@ wb:Country_Guyana a wb:Country ;
 wb:Country_Peru a wb:Country ;
     rdfs:label "Peru" .
 
+wb:Sector_Renewable_Energy_Geothermal a wb:Sector ;
+    rdfs:label "Renewable Energy Geothermal" .
+
 wb:Country_Dominican_Republic a wb:Country ;
     rdfs:label "Dominican Republic" .
+
+wb:Country_Egypt%2C_Arab_Republic_of a wb:Country ;
+    rdfs:label "Egypt, Arab Republic of" .
 
 wb:Country_Gambia%2C_The a wb:Country ;
     rdfs:label "Gambia, The" .
@@ -16904,20 +16769,23 @@ wb:Country_Romania a wb:Country ;
 wb:Country_St_Maarten a wb:Country ;
     rdfs:label "St Maarten" .
 
-wb:Country_World a wb:Country ;
-    rdfs:label "World" .
+wb:Sector_Renewable_Energy_Biomass a wb:Sector ;
+    rdfs:label "Renewable Energy Biomass" .
 
-wb:Country_Egypt%2C_Arab_Republic_of a wb:Country ;
-    rdfs:label "Egypt, Arab Republic of" .
+wb:Country_Chad a wb:Country ;
+    rdfs:label "Chad" .
+
+wb:Country_Vietnam a wb:Country ;
+    rdfs:label "Vietnam" .
 
 wb:Sector_Oil_and_Gas a wb:Sector ;
     rdfs:label "Oil and Gas" .
 
-wb:Sector_Renewable_Energy_Biomass a wb:Sector ;
-    rdfs:label "Renewable Energy Biomass" .
+wb:Sector_Renewable_Energy_Wind a wb:Sector ;
+    rdfs:label "Renewable Energy Wind" .
 
-wb:Country_Colombia a wb:Country ;
-    rdfs:label "Colombia" .
+wb:Country_Mali a wb:Country ;
+    rdfs:label "Mali" .
 
 wb:Country_Serbia a wb:Country ;
     rdfs:label "Serbia" .
@@ -16925,32 +16793,35 @@ wb:Country_Serbia a wb:Country ;
 wb:Country_South_Sudan a wb:Country ;
     rdfs:label "South Sudan" .
 
+wb:Country_Sri_Lanka a wb:Country ;
+    rdfs:label "Sri Lanka" .
+
 wb:Country_Tonga a wb:Country ;
     rdfs:label "Tonga" .
-
-wb:Country_Vietnam a wb:Country ;
-    rdfs:label "Vietnam" .
 
 wb:Sector_Railways a wb:Sector ;
     rdfs:label "Railways" .
 
-wb:Sector_Renewable_Energy_Wind a wb:Sector ;
-    rdfs:label "Renewable Energy Wind" .
+wb:Country_Central_African_Republic a wb:Country ;
+    rdfs:label "Central African Republic" .
 
-wb:Country_Chad a wb:Country ;
-    rdfs:label "Chad" .
+wb:Country_Colombia a wb:Country ;
+    rdfs:label "Colombia" .
 
-wb:Country_Mali a wb:Country ;
-    rdfs:label "Mali" .
+wb:Country_Honduras a wb:Country ;
+    rdfs:label "Honduras" .
 
 wb:Country_Sao_Tome_and_Principe a wb:Country ;
     rdfs:label "Sao Tome and Principe" .
 
-wb:Country_Sri_Lanka a wb:Country ;
-    rdfs:label "Sri Lanka" .
+wb:Country_World a wb:Country ;
+    rdfs:label "World" .
 
 wb:Country_Yemen%2C_Republic_of a wb:Country ;
     rdfs:label "Yemen, Republic of" .
+
+wb:Sector_Other_Information_and_Communications_Technologies a wb:Sector ;
+    rdfs:label "Other Information and Communications Technologies" .
 
 wb:Country_Benin a wb:Country ;
     rdfs:label "Benin" .
@@ -16958,14 +16829,11 @@ wb:Country_Benin a wb:Country ;
 wb:Country_Cameroon a wb:Country ;
     rdfs:label "Cameroon" .
 
-wb:Country_Central_African_Republic a wb:Country ;
-    rdfs:label "Central African Republic" .
+wb:Country_Nepal a wb:Country ;
+    rdfs:label "Nepal" .
 
-wb:Country_Honduras a wb:Country ;
-    rdfs:label "Honduras" .
-
-wb:Sector_Other_Information_and_Communications_Technologies a wb:Sector ;
-    rdfs:label "Other Information and Communications Technologies" .
+wb:Country_Solomon_Islands a wb:Country ;
+    rdfs:label "Solomon Islands" .
 
 wb:Country_Angola a wb:Country ;
     rdfs:label "Angola" .
@@ -16975,9 +16843,6 @@ wb:Country_Lebanon a wb:Country ;
 
 wb:Country_Niger a wb:Country ;
     rdfs:label "Niger" .
-
-wb:Country_Solomon_Islands a wb:Country ;
-    rdfs:label "Solomon Islands" .
 
 wb:Country_Djibouti a wb:Country ;
     rdfs:label "Djibouti" .
@@ -16991,14 +16856,11 @@ wb:Country_Uganda a wb:Country ;
 wb:Sector_Aviation a wb:Sector ;
     rdfs:label "Aviation" .
 
-wb:Country_Nepal a wb:Country ;
-    rdfs:label "Nepal" .
+wb:Country_Congo%2C_Democratic_Republic_of a wb:Country ;
+    rdfs:label "Congo, Democratic Republic of" .
 
 wb:Country_Burkina_Faso a wb:Country ;
     rdfs:label "Burkina Faso" .
-
-wb:Country_Congo%2C_Democratic_Republic_of a wb:Country ;
-    rdfs:label "Congo, Democratic Republic of" .
 
 wb:Country_Jordan a wb:Country ;
     rdfs:label "Jordan" .
@@ -17012,15 +16874,6 @@ wb:Country_Sierra_Leone a wb:Country ;
 wb:Country_Tunisia a wb:Country ;
     rdfs:label "Tunisia" .
 
-wb:Country_Tajikistan a wb:Country ;
-    rdfs:label "Tajikistan" .
-
-wb:Country_Zambia a wb:Country ;
-    rdfs:label "Zambia" .
-
-wb:Country_Cote_d%27Ivoire a wb:Country ;
-    rdfs:label "Cote d'Ivoire" .
-
 wb:Country_Lao_People%27s_Democratic_Republic a wb:Country ;
     rdfs:label "Lao People's Democratic Republic" .
 
@@ -17030,68 +16883,77 @@ wb:Country_Liberia a wb:Country ;
 wb:Country_Madagascar a wb:Country ;
     rdfs:label "Madagascar" .
 
+wb:Country_Tajikistan a wb:Country ;
+    rdfs:label "Tajikistan" .
+
 <http://enterprise.org/ontology/wb#Sector_Ports/Waterways> a wb:Sector ;
     rdfs:label "Ports/Waterways" .
 
 wb:Country_Cambodia a wb:Country ;
     rdfs:label "Cambodia" .
 
-wb:Country_Haiti a wb:Country ;
-    rdfs:label "Haiti" .
-
-wb:Country_Philippines a wb:Country ;
-    rdfs:label "Philippines" .
-
-wb:Country_Uzbekistan a wb:Country ;
-    rdfs:label "Uzbekistan" .
+wb:Country_Cote_d%27Ivoire a wb:Country ;
+    rdfs:label "Cote d'Ivoire" .
 
 wb:Country_West_Bank_and_Gaza a wb:Country ;
     rdfs:label "West Bank and Gaza" .
 
+wb:Country_Zambia a wb:Country ;
+    rdfs:label "Zambia" .
+
 wb:Sector_Other_Non-bank_Financial_Institutions a wb:Sector ;
     rdfs:label "Other Non-bank Financial Institutions" .
 
-wb:Country_Kyrgyz_Republic a wb:Country ;
-    rdfs:label "Kyrgyz Republic" .
-
-wb:Country_Malawi a wb:Country ;
-    rdfs:label "Malawi" .
+wb:Country_Haiti a wb:Country ;
+    rdfs:label "Haiti" .
 
 wb:Country_Somalia a wb:Country ;
     rdfs:label "Somalia" .
 
-wb:Sector_Housing_Construction a wb:Sector ;
-    rdfs:label "Housing Construction" .
+wb:Country_Malawi a wb:Country ;
+    rdfs:label "Malawi" .
+
+wb:Country_Uzbekistan a wb:Country ;
+    rdfs:label "Uzbekistan" .
 
 wb:Country_Argentina a wb:Country ;
     rdfs:label "Argentina" .
 
-wb:Country_Ghana a wb:Country ;
-    rdfs:label "Ghana" .
+wb:Country_Kyrgyz_Republic a wb:Country ;
+    rdfs:label "Kyrgyz Republic" .
+
+wb:Country_Philippines a wb:Country ;
+    rdfs:label "Philippines" .
 
 wb:Country_Senegal a wb:Country ;
     rdfs:label "Senegal" .
 
+wb:Sector_Housing_Construction a wb:Sector ;
+    rdfs:label "Housing Construction" .
+
+wb:Country_Ghana a wb:Country ;
+    rdfs:label "Ghana" .
+
 wb:Country_Ukraine a wb:Country ;
     rdfs:label "Ukraine" .
-
-wb:Country_Morocco a wb:Country ;
-    rdfs:label "Morocco" .
 
 wb:Sector_Trade a wb:Sector ;
     rdfs:label "Trade" .
 
+wb:Country_Morocco a wb:Country ;
+    rdfs:label "Morocco" .
+
+wb:Country_Rwanda a wb:Country ;
+    rdfs:label "Rwanda" .
+
 wb:Country_China a wb:Country ;
     rdfs:label "China" .
-
-wb:Country_Tanzania a wb:Country ;
-    rdfs:label "Tanzania" .
 
 wb:Country_Nigeria a wb:Country ;
     rdfs:label "Nigeria" .
 
-wb:Country_Rwanda a wb:Country ;
-    rdfs:label "Rwanda" .
+wb:Country_Tanzania a wb:Country ;
+    rdfs:label "Tanzania" .
 
 wb:Country_Kenya a wb:Country ;
     rdfs:label "Kenya" .
@@ -17102,14 +16964,14 @@ wb:Country_Afghanistan a wb:Country ;
 wb:Sector_Other_Transportation a wb:Sector ;
     rdfs:label "Other Transportation" .
 
+wb:Country_Indonesia a wb:Country ;
+    rdfs:label "Indonesia" .
+
 wb:Country_Brazil a wb:Country ;
     rdfs:label "Brazil" .
 
 wb:Country_Mozambique a wb:Country ;
     rdfs:label "Mozambique" .
-
-wb:Country_Indonesia a wb:Country ;
-    rdfs:label "Indonesia" .
 
 wb:Sector_Tertiary_Education a wb:Sector ;
     rdfs:label "Tertiary Education" .
@@ -17117,32 +16979,32 @@ wb:Sector_Tertiary_Education a wb:Sector ;
 wb:Sector_Tourism a wb:Sector ;
     rdfs:label "Tourism" .
 
-wb:Sector_Renewable_Energy_Hydro a wb:Sector ;
-    rdfs:label "Renewable Energy Hydro" .
-
-wb:Sector_Crops a wb:Sector ;
-    rdfs:label "Crops" .
-
-wb:Sector_Public_Administration_-_Financial_Sector a wb:Sector ;
-    rdfs:label "Public Administration - Financial Sector" .
-
 wb:Country_Eastern_and_Southern_Africa a wb:Country ;
     rdfs:label "Eastern and Southern Africa" .
 
-wb:Sector_Fisheries a wb:Sector ;
-    rdfs:label "Fisheries" .
+wb:Sector_Renewable_Energy_Hydro a wb:Sector ;
+    rdfs:label "Renewable Energy Hydro" .
 
 wb:Sector_Waste_Management a wb:Sector ;
     rdfs:label "Waste Management" .
 
+wb:Sector_Public_Administration_-_Financial_Sector a wb:Sector ;
+    rdfs:label "Public Administration - Financial Sector" .
+
+wb:Sector_Fisheries a wb:Sector ;
+    rdfs:label "Fisheries" .
+
 wb:Country_Turkiye a wb:Country ;
     rdfs:label "Turkiye" .
 
-wb:Country_Western_and_Central_Africa a wb:Country ;
-    rdfs:label "Western and Central Africa" .
+wb:Sector_Crops a wb:Sector ;
+    rdfs:label "Crops" .
 
 wb:Sector_Capital_Markets a wb:Sector ;
     rdfs:label "Capital Markets" .
+
+wb:Country_Western_and_Central_Africa a wb:Country ;
+    rdfs:label "Western and Central Africa" .
 
 wb:Country_Ethiopia a wb:Country ;
     rdfs:label "Ethiopia" .
@@ -17150,20 +17012,20 @@ wb:Country_Ethiopia a wb:Country ;
 wb:Sector_Early_Childhood_Education a wb:Sector ;
     rdfs:label "Early Childhood Education" .
 
-wb:Country_Pakistan a wb:Country ;
-    rdfs:label "Pakistan" .
-
 wb:Sector_Urban_Transport a wb:Sector ;
     rdfs:label "Urban Transport" .
+
+wb:Sector_Workforce_Development_and_Vocational_Education a wb:Sector ;
+    rdfs:label "Workforce Development and Vocational Education" .
 
 wb:Country_Bangladesh a wb:Country ;
     rdfs:label "Bangladesh" .
 
+wb:Country_Pakistan a wb:Country ;
+    rdfs:label "Pakistan" .
+
 wb:Sector_Public_Administration_-_Information_and_Communications_Technologies a wb:Sector ;
     rdfs:label "Public Administration - Information and Communications Technologies" .
-
-wb:Sector_Workforce_Development_and_Vocational_Education a wb:Sector ;
-    rdfs:label "Workforce Development and Vocational Education" .
 
 wb:Sector_Livestock a wb:Sector ;
     rdfs:label "Livestock" .
@@ -17174,11 +17036,11 @@ wb:Sector_Banking_Institutions a wb:Sector ;
 wb:Sector_Other_Education a wb:Sector ;
     rdfs:label "Other Education" .
 
-wb:Sector_Other_Energy_and_Extractives a wb:Sector ;
-    rdfs:label "Other Energy and Extractives" .
-
 wb:Sector_Forestry a wb:Sector ;
     rdfs:label "Forestry" .
+
+wb:Sector_Other_Energy_and_Extractives a wb:Sector ;
+    rdfs:label "Other Energy and Extractives" .
 
 wb:Sector_Public_Administration_-_Industry%2C_Trade_and_Services a wb:Sector ;
     rdfs:label "Public Administration - Industry, Trade and Services" .
@@ -17192,14 +17054,14 @@ wb:Sector_Other_Industry%2C_Trade_and_Services a wb:Sector ;
 wb:Sector_Secondary_Education a wb:Sector ;
     rdfs:label "Secondary Education" .
 
-wb:Sector_Irrigation_and_Drainage a wb:Sector ;
-    rdfs:label "Irrigation and Drainage" .
+wb:Sector_Renewable_Energy_Solar a wb:Sector ;
+    rdfs:label "Renewable Energy Solar" .
 
 wb:Sector_Primary_Education a wb:Sector ;
     rdfs:label "Primary Education" .
 
-wb:Sector_Renewable_Energy_Solar a wb:Sector ;
-    rdfs:label "Renewable Energy Solar" .
+wb:Sector_Irrigation_and_Drainage a wb:Sector ;
+    rdfs:label "Irrigation and Drainage" .
 
 wb:Sector_Other_Agriculture%2C_Fishing_and_Forestry a wb:Sector ;
     rdfs:label "Other Agriculture, Fishing and Forestry" .
@@ -17225,11 +17087,11 @@ wb:Sector_Water_Supply a wb:Sector ;
 wb:Sector_Agricultural_Extension%2C_Research%2C_and_Other_Support_Activities a wb:Sector ;
     rdfs:label "Agricultural Extension, Research, and Other Support Activities" .
 
-wb:Sector_Public_Administration_-_Energy_and_Extractives a wb:Sector ;
-    rdfs:label "Public Administration - Energy and Extractives" .
-
 wb:Sector_Health_Facilities_and_Construction a wb:Sector ;
     rdfs:label "Health Facilities and Construction" .
+
+wb:Sector_Public_Administration_-_Energy_and_Extractives a wb:Sector ;
+    rdfs:label "Public Administration - Energy and Extractives" .
 
 wb:Sector_Public_Administration_-_Transportation a wb:Sector ;
     rdfs:label "Public Administration - Transportation" .
@@ -17240,14 +17102,14 @@ wb:Sector_Rural_and_Inter-Urban_Roads a wb:Sector ;
 wb:Sector_Public_Administration_-_Water%2C_Sanitation_and_Waste_Management a wb:Sector ;
     rdfs:label "Public Administration - Water, Sanitation and Waste Management" .
 
+wb:Sector_Public_Administration_-_Education a wb:Sector ;
+    rdfs:label "Public Administration - Education" .
+
 wb:Sector_Agricultural_markets%2C_commercialization_and_agri-business a wb:Sector ;
     rdfs:label "Agricultural markets, commercialization and agri-business" .
 
 wb:Sector_Public_Administration_-_Social_Protection a wb:Sector ;
     rdfs:label "Public Administration - Social Protection" .
-
-wb:Sector_Public_Administration_-_Education a wb:Sector ;
-    rdfs:label "Public Administration - Education" .
 
 wb:Sector_Central_Government_%28Central_Agencies%29 a wb:Sector ;
     rdfs:label "Central Government (Central Agencies)" .

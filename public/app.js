@@ -6,6 +6,11 @@ document.addEventListener("DOMContentLoaded", () => {
   fetchSectors();
 });
 
+// Helper to detect if running on GitHub Pages or static host
+function isStaticHost() {
+  return window.location.hostname.includes("github.io") || window.location.protocol === "file:";
+}
+
 // 1. Tab Navigation
 function initTabs() {
   const tabBtns = document.querySelectorAll(".tab-btn");
@@ -30,6 +35,10 @@ function initTabs() {
 
 // Helper to fetch with fallback
 async function fetchWithFallback(apiEndpoint, fallbackPath) {
+  if (isStaticHost()) {
+    const fallbackRes = await fetch(fallbackPath);
+    return await fallbackRes.json();
+  }
   try {
     const res = await fetch(apiEndpoint);
     if (res.ok) return await res.json();
@@ -259,6 +268,18 @@ function inspectNode(node) {
 
 // 4. SPARQL Workbench
 const PRESET_QUERIES = {
+  countries: `PREFIX wb: <http://enterprise.org/ontology/wb#>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+
+SELECT ?countryName (COUNT(DISTINCT ?project) AS ?projectCount)
+WHERE {
+    ?project a wb:Project ; wb:locatedIn ?country .
+    ?country rdfs:label ?countryName .
+}
+GROUP BY ?countryName
+ORDER BY DESC(?projectCount)
+LIMIT 10`,
+
   water: `PREFIX wb: <http://enterprise.org/ontology/wb#>
 PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
 
@@ -278,18 +299,6 @@ WHERE {
     )
 }
 ORDER BY ?countryName ?projectName`,
-
-  countries: `PREFIX wb: <http://enterprise.org/ontology/wb#>
-PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
-
-SELECT ?countryName (COUNT(DISTINCT ?project) AS ?projectCount)
-WHERE {
-    ?project a wb:Project ; wb:locatedIn ?country .
-    ?country rdfs:label ?countryName .
-}
-GROUP BY ?countryName
-ORDER BY DESC(?projectCount)
-LIMIT 15`,
 
   sectors: `PREFIX wb: <http://enterprise.org/ontology/wb#>
 PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
@@ -318,7 +327,7 @@ function initSparql() {
   const presetSelect = document.getElementById("preset-select");
   const runBtn = document.getElementById("btn-run-sparql");
 
-  input.value = PRESET_QUERIES.water;
+  input.value = PRESET_QUERIES.countries;
   executeSparql(input.value);
 
   presetSelect.addEventListener("change", (e) => {
@@ -339,6 +348,17 @@ async function executeSparql(queryStr) {
 
   bodyEl.innerHTML = `<tr><td colspan="10" style="text-align:center; padding: 2rem;">Executing SPARQL query...</td></tr>`;
 
+  // On GitHub Pages or static host, load compiled aggregation results
+  if (isStaticHost()) {
+    try {
+      const staticData = await fetch("data/water_projects.json").then(r => r.json());
+      renderResults(staticData);
+      return;
+    } catch (err) {
+      console.error("Static data fetch failed:", err);
+    }
+  }
+
   try {
     const res = await fetch("/api/query", {
       method: "POST",
@@ -351,10 +371,10 @@ async function executeSparql(queryStr) {
       return;
     }
   } catch (e) {
-    // API endpoint unavailable (e.g. GitHub Pages static hosting)
+    // API endpoint unavailable
   }
 
-  // Fallback to static result for presets on GitHub Pages
+  // Fallback to static result
   try {
     const staticData = await fetch("data/water_projects.json").then(r => r.json());
     renderResults(staticData);
@@ -393,7 +413,7 @@ function renderResults(result) {
   }
 
   bodyEl.innerHTML = result.data.map(row => {
-    const cells = result.columns.map(c => `<td>${escapeHtml(row[c] || "")}</td>`).join("");
+    const cells = result.columns.map(c => `<td>${escapeHtml(String(row[c] || ""))}</td>`).join("");
     return `<tr>${cells}</tr>`;
   }).join("");
 }
