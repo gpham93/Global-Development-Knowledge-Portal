@@ -1,0 +1,361 @@
+{
+  "nodes": [
+    {
+      "id": "http://enterprise.org/ontology/wb#Project_P181369",
+      "name": "Cabo Verde Resilient Tourism and Blue Economy Development Second AF",
+      "type": "Project"
+    },
+    {
+      "id": "http://enterprise.org/ontology/wb#Country_Cabo_Verde",
+      "name": "Cabo Verde",
+      "type": "Country"
+    },
+    {
+      "id": "http://enterprise.org/ontology/wb#Sector_Fisheries",
+      "name": "Fisheries",
+      "type": "Sector"
+    },
+    {
+      "id": "http://enterprise.org/ontology/wb#Sector_Public_Administration_-_Industry%2C_Trade_and_Services",
+      "name": "Public Administration - Industry, Trade and Services",
+      "type": "Sector"
+    },
+    {
+      "id": "http://enterprise.org/ontology/wb#Sector_Tourism",
+      "name": "Tourism",
+      "type": "Sector"
+    },
+    {
+      "id": "http://enterprise.org/ontology/wb#Project_P181423",
+      "name": "Second Additional Financing for Dasu Hydropower Stage I Project",
+      "type": "Project"
+    },
+    {
+      "id": "http://enterprise.org/ontology/wb#Country_Pakistan",
+      "name": "Pakistan",
+      "type": "Country"
+    },
+    {
+      "id": "http://enterprise.org/ontology/wb#Sector_Other_Energy_and_Extractives",
+      "name": "Other Energy and Extractives",
+      "type": "Sector"
+    },
+    {
+      "id": "http://enterprise.org/ontology/wb#Sector_Other_Public_Administration",
+      "name": "Other Public Administration",
+      "type": "Sector"
+    },
+    {
+      "id": "http://enterprise.org/ontology/wb#Sector_Public_Administration_-_Energy_and_Extractives",
+      "name": "Public Administration - Energy and Extractives",
+      "type": "Sector"
+    },
+    {
+      "id": "http://enterprise.org/ontology/wb#Sector_Renewable_Energy_Hydro",
+      "name": "Renewable Energy Hydro",
+      "type": "Sector"
+    },
+    {
+      "id": "http://enterprise.org/ontology/wb#Project_P181493",
+      "name": "Unleashing the Blue Economy of the Caribbean Additional Financing",
+      "type": "Project"
+    },
+    {
+      "id": "http://enterprise.org/ontology/wb#Country_OECS_Countries",
+      "name": "OECS Countries",
+      "type": "Country"
+    },
+    {
+      "id": "http://enterprise.org/ontology/wb#Project_P181533",
+      "name": "Additional Financing for Regional Sahel Pastoralism Support Project II Burkina Faso",
+      "type": "Project"
+    },
+    {
+      "id": "http://enterprise.org/ontology/wb#Country_Western_and_Central_Africa",
+      "name": "Western and Central Africa",
+      "type": "Country"
+    },
+    {
+      "id": "http://enterprise.org/ontology/wb#Sector_Agricultural_markets%2C_commercialization_and_agri-business",
+      "name": "Agricultural markets, commercialization and agri-business",
+      "type": "Sector"
+    },
+    {
+      "id": "http://enterprise.org/ontology/wb#Sector_Livestock",
+      "name": "Livestock",
+      "type": "Sector"
+    },
+    {
+      "id": "http://enterprise.org/ontology/wb#Sector_Other_Water_Supply%2C_Sanitation_and_Waste_Management",
+      "name": "Other Water Supply, Sanitation and Waste Management",
+      "type": "Sector"
+    },
+    {
+      "id": "http://enterprise.org/ontology/wb#Sector_Public_Administration_-_Agriculture%2C_Fishing_%26_Forestry",
+      "name": "Public Administration - Agriculture, Fishing & Forestry",
+      "type": "Sector"
+    },
+    {
+      "id": "http://enterprise.org/ontology/wb#Project_P181595",
+      "name": "Additional Financing for Maritime Investment in Climate Resilient Operations II",
+      "type": "Project"
+    },
+    {
+      "id": "http://enterprise.org/ontology/wb#Country_Tuvalu",
+      "name": "Tuvalu",
+      "type": "Country"
+    },
+    {
+      "id": "http://enterprise.org/ontology/wb#Sector_Ports/Waterways",
+      "name": "Ports/Waterways",
+      "type": "Sector"
+    },
+    {
+      "id": "http://enterprise.org/ontology/wb#Sector_Public_Administration_-_Transportation",
+      "name": "Public Administration - Transportation",
+      "type": "Sector"
+    },
+    {
+      "id": "http://enterprise.org/ontology/wb#Project_P181632",
+      "name": "Additional Financing to Togo for the Gulf of Guinea Northern Regions Social Cohesion Project",
+      "type": "Project"
+    },
+    {
+      "id": "http://enterprise.org/ontology/wb#Sector_Public_Administration_-_Social_Protection",
+      "name": "Public Administration - Social Protection",
+      "type": "Sector"
+    },
+    {
+      "id": "http://enterprise.org/ontology/wb#Sector_Social_Protection",
+      "name": "Social Protection",
+      "type": "Sector"
+    },
+    {
+      "id": "http://enterprise.org/ontology/wb#Project_P181648",
+      "name": "West Africa Coastal Areas Resilience Investment Project AF CI",
+      "type": "Project"
+    },
+    {
+      "id": "http://enterprise.org/ontology/wb#Project_P181659",
+      "name": "Third AF to The Gambia Essential Health Services Strengthening Project",
+      "type": "Project"
+    },
+    {
+      "id": "http://enterprise.org/ontology/wb#Country_Gambia%2C_The",
+      "name": "Gambia, The",
+      "type": "Country"
+    },
+    {
+      "id": "http://enterprise.org/ontology/wb#Sector_Health",
+      "name": "Health",
+      "type": "Sector"
+    },
+    {
+      "id": "http://enterprise.org/ontology/wb#Sector_Public_Administration_-_Health",
+      "name": "Public Administration - Health",
+      "type": "Sector"
+    }
+  ],
+  "links": [
+    {
+      "source": "http://enterprise.org/ontology/wb#Project_P181369",
+      "target": "http://enterprise.org/ontology/wb#Country_Cabo_Verde",
+      "label": "locatedIn"
+    },
+    {
+      "source": "http://enterprise.org/ontology/wb#Project_P181369",
+      "target": "http://enterprise.org/ontology/wb#Sector_Fisheries",
+      "label": "hasSector"
+    },
+    {
+      "source": "http://enterprise.org/ontology/wb#Project_P181369",
+      "target": "http://enterprise.org/ontology/wb#Country_Cabo_Verde",
+      "label": "locatedIn"
+    },
+    {
+      "source": "http://enterprise.org/ontology/wb#Project_P181369",
+      "target": "http://enterprise.org/ontology/wb#Sector_Public_Administration_-_Industry%2C_Trade_and_Services",
+      "label": "hasSector"
+    },
+    {
+      "source": "http://enterprise.org/ontology/wb#Project_P181369",
+      "target": "http://enterprise.org/ontology/wb#Country_Cabo_Verde",
+      "label": "locatedIn"
+    },
+    {
+      "source": "http://enterprise.org/ontology/wb#Project_P181369",
+      "target": "http://enterprise.org/ontology/wb#Sector_Tourism",
+      "label": "hasSector"
+    },
+    {
+      "source": "http://enterprise.org/ontology/wb#Project_P181423",
+      "target": "http://enterprise.org/ontology/wb#Country_Pakistan",
+      "label": "locatedIn"
+    },
+    {
+      "source": "http://enterprise.org/ontology/wb#Project_P181423",
+      "target": "http://enterprise.org/ontology/wb#Sector_Other_Energy_and_Extractives",
+      "label": "hasSector"
+    },
+    {
+      "source": "http://enterprise.org/ontology/wb#Project_P181423",
+      "target": "http://enterprise.org/ontology/wb#Country_Pakistan",
+      "label": "locatedIn"
+    },
+    {
+      "source": "http://enterprise.org/ontology/wb#Project_P181423",
+      "target": "http://enterprise.org/ontology/wb#Sector_Other_Public_Administration",
+      "label": "hasSector"
+    },
+    {
+      "source": "http://enterprise.org/ontology/wb#Project_P181423",
+      "target": "http://enterprise.org/ontology/wb#Country_Pakistan",
+      "label": "locatedIn"
+    },
+    {
+      "source": "http://enterprise.org/ontology/wb#Project_P181423",
+      "target": "http://enterprise.org/ontology/wb#Sector_Public_Administration_-_Energy_and_Extractives",
+      "label": "hasSector"
+    },
+    {
+      "source": "http://enterprise.org/ontology/wb#Project_P181423",
+      "target": "http://enterprise.org/ontology/wb#Country_Pakistan",
+      "label": "locatedIn"
+    },
+    {
+      "source": "http://enterprise.org/ontology/wb#Project_P181423",
+      "target": "http://enterprise.org/ontology/wb#Sector_Renewable_Energy_Hydro",
+      "label": "hasSector"
+    },
+    {
+      "source": "http://enterprise.org/ontology/wb#Project_P181493",
+      "target": "http://enterprise.org/ontology/wb#Country_OECS_Countries",
+      "label": "locatedIn"
+    },
+    {
+      "source": "http://enterprise.org/ontology/wb#Project_P181493",
+      "target": "http://enterprise.org/ontology/wb#Sector_Other_Public_Administration",
+      "label": "hasSector"
+    },
+    {
+      "source": "http://enterprise.org/ontology/wb#Project_P181533",
+      "target": "http://enterprise.org/ontology/wb#Country_Western_and_Central_Africa",
+      "label": "locatedIn"
+    },
+    {
+      "source": "http://enterprise.org/ontology/wb#Project_P181533",
+      "target": "http://enterprise.org/ontology/wb#Sector_Agricultural_markets%2C_commercialization_and_agri-business",
+      "label": "hasSector"
+    },
+    {
+      "source": "http://enterprise.org/ontology/wb#Project_P181533",
+      "target": "http://enterprise.org/ontology/wb#Country_Western_and_Central_Africa",
+      "label": "locatedIn"
+    },
+    {
+      "source": "http://enterprise.org/ontology/wb#Project_P181533",
+      "target": "http://enterprise.org/ontology/wb#Sector_Livestock",
+      "label": "hasSector"
+    },
+    {
+      "source": "http://enterprise.org/ontology/wb#Project_P181533",
+      "target": "http://enterprise.org/ontology/wb#Country_Western_and_Central_Africa",
+      "label": "locatedIn"
+    },
+    {
+      "source": "http://enterprise.org/ontology/wb#Project_P181533",
+      "target": "http://enterprise.org/ontology/wb#Sector_Other_Water_Supply%2C_Sanitation_and_Waste_Management",
+      "label": "hasSector"
+    },
+    {
+      "source": "http://enterprise.org/ontology/wb#Project_P181533",
+      "target": "http://enterprise.org/ontology/wb#Country_Western_and_Central_Africa",
+      "label": "locatedIn"
+    },
+    {
+      "source": "http://enterprise.org/ontology/wb#Project_P181533",
+      "target": "http://enterprise.org/ontology/wb#Sector_Public_Administration_-_Agriculture%2C_Fishing_%26_Forestry",
+      "label": "hasSector"
+    },
+    {
+      "source": "http://enterprise.org/ontology/wb#Project_P181595",
+      "target": "http://enterprise.org/ontology/wb#Country_Tuvalu",
+      "label": "locatedIn"
+    },
+    {
+      "source": "http://enterprise.org/ontology/wb#Project_P181595",
+      "target": "http://enterprise.org/ontology/wb#Sector_Ports/Waterways",
+      "label": "hasSector"
+    },
+    {
+      "source": "http://enterprise.org/ontology/wb#Project_P181595",
+      "target": "http://enterprise.org/ontology/wb#Country_Tuvalu",
+      "label": "locatedIn"
+    },
+    {
+      "source": "http://enterprise.org/ontology/wb#Project_P181595",
+      "target": "http://enterprise.org/ontology/wb#Sector_Public_Administration_-_Transportation",
+      "label": "hasSector"
+    },
+    {
+      "source": "http://enterprise.org/ontology/wb#Project_P181632",
+      "target": "http://enterprise.org/ontology/wb#Country_Western_and_Central_Africa",
+      "label": "locatedIn"
+    },
+    {
+      "source": "http://enterprise.org/ontology/wb#Project_P181632",
+      "target": "http://enterprise.org/ontology/wb#Sector_Public_Administration_-_Social_Protection",
+      "label": "hasSector"
+    },
+    {
+      "source": "http://enterprise.org/ontology/wb#Project_P181632",
+      "target": "http://enterprise.org/ontology/wb#Country_Western_and_Central_Africa",
+      "label": "locatedIn"
+    },
+    {
+      "source": "http://enterprise.org/ontology/wb#Project_P181632",
+      "target": "http://enterprise.org/ontology/wb#Sector_Social_Protection",
+      "label": "hasSector"
+    },
+    {
+      "source": "http://enterprise.org/ontology/wb#Project_P181648",
+      "target": "http://enterprise.org/ontology/wb#Country_Western_and_Central_Africa",
+      "label": "locatedIn"
+    },
+    {
+      "source": "http://enterprise.org/ontology/wb#Project_P181648",
+      "target": "http://enterprise.org/ontology/wb#Sector_Other_Water_Supply%2C_Sanitation_and_Waste_Management",
+      "label": "hasSector"
+    },
+    {
+      "source": "http://enterprise.org/ontology/wb#Project_P181648",
+      "target": "http://enterprise.org/ontology/wb#Country_Western_and_Central_Africa",
+      "label": "locatedIn"
+    },
+    {
+      "source": "http://enterprise.org/ontology/wb#Project_P181648",
+      "target": "http://enterprise.org/ontology/wb#Sector_Social_Protection",
+      "label": "hasSector"
+    },
+    {
+      "source": "http://enterprise.org/ontology/wb#Project_P181659",
+      "target": "http://enterprise.org/ontology/wb#Country_Gambia%2C_The",
+      "label": "locatedIn"
+    },
+    {
+      "source": "http://enterprise.org/ontology/wb#Project_P181659",
+      "target": "http://enterprise.org/ontology/wb#Sector_Health",
+      "label": "hasSector"
+    },
+    {
+      "source": "http://enterprise.org/ontology/wb#Project_P181659",
+      "target": "http://enterprise.org/ontology/wb#Country_Gambia%2C_The",
+      "label": "locatedIn"
+    },
+    {
+      "source": "http://enterprise.org/ontology/wb#Project_P181659",
+      "target": "http://enterprise.org/ontology/wb#Sector_Public_Administration_-_Health",
+      "label": "hasSector"
+    }
+  ]
+}

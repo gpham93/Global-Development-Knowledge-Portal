@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Global Development Knowledge Graph | Semantic Portal</title>
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Fira+Code:wght@400;500;600&display=swap" rel="stylesheet">
+  <!-- Font Awesome Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <!-- D3.js for Knowledge Graph visualization -->
+  <script src="https://d3js.org/d3.v7.min.js"></script>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="app-container">
+    <!-- Header -->
+    <header class="navbar">
+      <div class="brand">
+        <div class="logo-icon">
+          <i class="fa-solid fa-diagram-project"></i>
+        </div>
+        <div>
+          <h1 class="title">Global Development Knowledge Portal</h1>
+          <p class="subtitle">World Bank Live RDF/OWL Semantic Intelligence Engine</p>
+        </div>
+      </div>
+      
+      <!-- Metrics Bar -->
+      <div class="metrics-bar">
+        <div class="metric-badge">
+          <i class="fa-solid fa-cube"></i>
+          <span class="metric-label">Triples</span>
+          <span id="metric-triples" class="metric-value">--</span>
+        </div>
+        <div class="metric-badge">
+          <i class="fa-solid fa-folder-open"></i>
+          <span class="metric-label">Projects</span>
+          <span id="metric-projects" class="metric-value">--</span>
+        </div>
+        <div class="metric-badge">
+          <i class="fa-solid fa-earth-americas"></i>
+          <span class="metric-label">Countries</span>
+          <span id="metric-countries" class="metric-value">--</span>
+        </div>
+        <div class="metric-badge">
+          <i class="fa-solid fa-layer-group"></i>
+          <span class="metric-label">Sectors</span>
+          <span id="metric-sectors" class="metric-value">--</span>
+        </div>
+      </div>
+    </header>
+
+    <!-- Navigation Tabs -->
+    <nav class="nav-tabs">
+      <button class="tab-btn active" data-tab="tab-graph">
+        <i class="fa-solid fa-circle-nodes"></i> Knowledge Graph Explorer
+      </button>
+      <button class="tab-btn" data-tab="tab-sparql">
+        <i class="fa-solid fa-terminal"></i> SPARQL Workbench
+      </button>
+      <button class="tab-btn" data-tab="tab-sectors">
+        <i class="fa-solid fa-chart-pie"></i> Sector Analytics
+      </button>
+    </nav>
+
+    <!-- Main Content Area -->
+    <main class="main-content">
+      <!-- TAB 1: GRAPH EXPLORER -->
+      <section id="tab-graph" class="tab-content active">
+        <div class="graph-layout">
+          <!-- Canvas Container -->
+          <div class="graph-canvas-card">
+            <div class="canvas-header">
+              <div class="search-box">
+                <i class="fa-solid fa-magnifying-glass"></i>
+                <input type="text" id="graph-search" placeholder="Search projects, countries, sectors...">
+              </div>
+              <div class="legend">
+                <span class="legend-item"><span class="dot project-dot"></span> Project</span>
+                <span class="legend-item"><span class="dot country-dot"></span> Country</span>
+                <span class="legend-item"><span class="dot sector-dot"></span> Sector</span>
+              </div>
+              <div class="canvas-actions">
+                <button id="btn-reset-zoom" class="icon-btn" title="Reset View"><i class="fa-solid fa-compress"></i></button>
+              </div>
+            </div>
+            
+            <div id="graph-viz" class="viz-container"></div>
+          </div>
+
+          <!-- Node Inspector Panel -->
+          <aside class="inspector-card" id="inspector">
+            <div class="inspector-header">
+              <h3><i class="fa-solid fa-circle-info"></i> Node Inspector</h3>
+            </div>
+            <div id="inspector-body" class="inspector-body">
+              <div class="empty-state">
+                <i class="fa-solid fa-hand-pointer"></i>
+                <p>Click any node in the Knowledge Graph to inspect its RDF URI, labels, and multi-hop relationships.</p>
+              </div>
+            </div>
+          </aside>
+        </div>
+      </section>
+
+      <!-- TAB 2: SPARQL WORKBENCH -->
+      <section id="tab-sparql" class="tab-content">
+        <div class="sparql-layout">
+          <div class="sparql-editor-card">
+            <div class="editor-header">
+              <h3><i class="fa-solid fa-code"></i> SPARQL Query Console</h3>
+              <div class="query-presets">
+                <label>Preset Queries:</label>
+                <select id="preset-select">
+                  <option value="water">Water & Sanitation Sector Projects</option>
+                  <option value="countries">Active Projects by Country</option>
+                  <option value="sectors">Top Sectors Distribution</option>
+                  <option value="all">List All RDF Triples (Limit 50)</option>
+                </select>
+              </div>
+            </div>
+            
+            <textarea id="sparql-input" spellcheck="false"></textarea>
+            
+            <div class="editor-footer">
+              <button id="btn-run-sparql" class="btn btn-primary">
+                <i class="fa-solid fa-play"></i> Execute Query
+              </button>
+            </div>
+          </div>
+
+          <!-- Query Results Table -->
+          <div class="results-card">
+            <div class="results-header">
+              <h3><i class="fa-solid fa-table-list"></i> Query Results</h3>
+              <span id="results-count" class="badge">0 records</span>
+            </div>
+            <div class="table-wrapper">
+              <table id="results-table">
+                <thead>
+                  <tr id="results-head">
+                    <th>Execute a SPARQL query to view results</th>
+                  </tr>
+                </thead>
+                <tbody id="results-body">
+                </tbody>
+              </table>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- TAB 3: SECTOR ANALYTICS -->
+      <section id="tab-sectors" class="tab-content">
+        <div class="sectors-grid" id="sectors-container">
+          <!-- Populated dynamically -->
+        </div>
+      </section>
+    </main>
+  </div>
+
+  <script src="app.js"></script>
+</body>
+</html>

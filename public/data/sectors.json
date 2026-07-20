@@ -1,0 +1,72 @@
+{
+  "sectors": [
+    {
+      "name": "Other Public Administration",
+      "count": 2
+    },
+    {
+      "name": "Other Water Supply, Sanitation and Waste Management",
+      "count": 2
+    },
+    {
+      "name": "Social Protection",
+      "count": 2
+    },
+    {
+      "name": "Fisheries",
+      "count": 1
+    },
+    {
+      "name": "Public Administration - Industry, Trade and Services",
+      "count": 1
+    },
+    {
+      "name": "Tourism",
+      "count": 1
+    },
+    {
+      "name": "Other Energy and Extractives",
+      "count": 1
+    },
+    {
+      "name": "Public Administration - Energy and Extractives",
+      "count": 1
+    },
+    {
+      "name": "Renewable Energy Hydro",
+      "count": 1
+    },
+    {
+      "name": "Agricultural markets, commercialization and agri-business",
+      "count": 1
+    },
+    {
+      "name": "Livestock",
+      "count": 1
+    },
+    {
+      "name": "Public Administration - Agriculture, Fishing & Forestry",
+      "count": 1
+    },
+    {
+      "name": "Ports/Waterways",
+      "count": 1
+    },
+    {
+      "name": "Public Administration - Transportation",
+      "count": 1
+    },
+    {
+      "name": "Public Administration - Social Protection",
+      "count": 1
+    },
+    {
+      "name": "Health",
+      "count": 1
+    },
+    {
+      "name": "Public Administration - Health",
+      "count": 1
+    }
+  ]
+}
