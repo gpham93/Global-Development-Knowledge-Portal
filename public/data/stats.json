@@ -1,6 +1,8 @@
 {
-  "triples": 14297,
-  "projects": 2578,
+  "triples": 14571,
+  "projects": 2611,
   "countries": 153,
-  "sectors": 78
+  "sectors": 78,
+  "assets": 5,
+  "threats": 5
 }

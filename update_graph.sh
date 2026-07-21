@@ -1,26 +1,26 @@
 #!/usr/bin/env bash
 set -e
 
-echo "=== GLOBAL DEVELOPMENT KNOWLEDGE GRAPH AUTOMATION ==="
-echo "[1/4] Paginated Extraction of Active World Bank Projects..."
+echo "=== GLOBAL DEVELOPMENT & RISK KNOWLEDGE GRAPH BUILD PIPELINE ==="
+
+echo "[1/5] Ingesting World Bank Projects..."
 python3 scripts/build_wb_graph.py
 
 echo ""
-echo "[2/4] Executing Scaled SPARQL Aggregation Queries..."
+echo "[2/5] Ingesting Geopolitical Threat Feed & Enterprise Asset Layer..."
+python3 scripts/build_risk_graph.py
+
+echo ""
+echo "[3/5] Running World Bank Analytics Aggregation Query..."
 python3 scripts/query_graph.py
 
 echo ""
-echo "[3/4] Exporting Static Data for GitHub Pages Portal..."
+echo "[4/5] Running Executive Multi-Hop Geopolitical Risk Query..."
+python3 scripts/query_risk_graph.py
+
+echo ""
+echo "[5/5] Exporting Static Graph Assets for GitHub Pages Portal..."
 python3 scripts/export_static_data.py
 
 echo ""
-echo "[4/4] Building Website / Quarto Render..."
-if command -v quarto &> /dev/null; then
-    echo "Rendering site with Quarto..."
-    quarto render
-else
-    echo "Quarto CLI not detected. Static HTML assets and datasets ready in repository root."
-fi
-
-echo ""
-echo "=== BUILD AUTOMATION COMPLETE ==="
+echo "=== BUILD & PIPELINE AUTOMATION COMPLETE ==="

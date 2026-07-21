@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Global Development Knowledge Graph | Semantic Portal</title>
+  <title>Global Development & Geopolitical Risk Knowledge Graph | Semantic Portal</title>
   <!-- Google Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -20,11 +20,11 @@
     <header class="navbar">
       <div class="brand">
         <div class="logo-icon">
-          <i class="fa-solid fa-diagram-project"></i>
+          <i class="fa-solid fa-shield-halved"></i>
         </div>
         <div>
-          <h1 class="title">Global Development Knowledge Portal</h1>
-          <p class="subtitle">World Bank Live RDF/OWL Semantic Intelligence Engine</p>
+          <h1 class="title">Global Development & Risk Intelligence Portal</h1>
+          <p class="subtitle">World Bank Live RDF/OWL & Geopolitical Threat Event Graph</p>
         </div>
       </div>
       
@@ -41,14 +41,14 @@
           <span id="metric-projects" class="metric-value">--</span>
         </div>
         <div class="metric-badge">
-          <i class="fa-solid fa-earth-americas"></i>
-          <span class="metric-label">Countries</span>
-          <span id="metric-countries" class="metric-value">--</span>
+          <i class="fa-solid fa-building-user"></i>
+          <span class="metric-label">Assets</span>
+          <span id="metric-assets" class="metric-value">--</span>
         </div>
         <div class="metric-badge">
-          <i class="fa-solid fa-layer-group"></i>
-          <span class="metric-label">Sectors</span>
-          <span id="metric-sectors" class="metric-value">--</span>
+          <i class="fa-solid fa-triangle-exclamation"></i>
+          <span class="metric-label">Threats</span>
+          <span id="metric-threats" class="metric-value">--</span>
         </div>
       </div>
     </header>
@@ -59,7 +59,7 @@
         <i class="fa-solid fa-circle-nodes"></i> Knowledge Graph Explorer
       </button>
       <button class="tab-btn" data-tab="tab-sparql">
-        <i class="fa-solid fa-terminal"></i> Interactive SPARQL Workbench
+        <i class="fa-solid fa-terminal"></i> Interactive SPARQL Risk Workbench
       </button>
       <button class="tab-btn" data-tab="tab-sectors">
         <i class="fa-solid fa-chart-pie"></i> Sector Analytics
@@ -76,12 +76,13 @@
             <div class="canvas-header">
               <div class="search-box">
                 <i class="fa-solid fa-magnifying-glass"></i>
-                <input type="text" id="graph-search" placeholder="Search projects, countries, sectors...">
+                <input type="text" id="graph-search" placeholder="Search assets, threats, projects, routes...">
               </div>
               <div class="legend">
+                <span class="legend-item"><span class="dot threat-dot"></span> Threat</span>
+                <span class="legend-item"><span class="dot asset-dot"></span> Asset</span>
                 <span class="legend-item"><span class="dot project-dot"></span> Project</span>
                 <span class="legend-item"><span class="dot country-dot"></span> Country</span>
-                <span class="legend-item"><span class="dot sector-dot"></span> Sector</span>
               </div>
               <div class="canvas-actions">
                 <button id="btn-reset-zoom" class="icon-btn" title="Reset View"><i class="fa-solid fa-compress"></i></button>
@@ -99,7 +100,7 @@
             <div id="inspector-body" class="inspector-body">
               <div class="empty-state">
                 <i class="fa-solid fa-hand-pointer"></i>
-                <p>Click any node in the Knowledge Graph to inspect its RDF URI, labels, and multi-hop relationships.</p>
+                <p>Click any node in the Knowledge Graph to inspect its RDF URI, threat severity, and multi-hop relationships.</p>
               </div>
             </div>
           </aside>
@@ -115,6 +116,7 @@
               <div class="query-presets">
                 <label>Presets:</label>
                 <select id="preset-select">
+                  <option value="risk">⚠️ Geopolitical Risk Traversal (Asset → Route → Threat Event)</option>
                   <option value="countries">🏆 Top 10 Active Countries (Aggregation)</option>
                   <option value="water">💧 Water, Sanitation & Flood Protection</option>
                   <option value="energy">⚡ Energy & Infrastructure Projects</option>

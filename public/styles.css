@@ -11,6 +11,7 @@
   --accent-country: #34d399;
   --accent-sector: #fbbf24;
   --accent-purple: #a78bfa;
+  --accent-threat: #ef4444;
   --font-sans: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
   --font-mono: 'Fira Code', monospace;
 }
@@ -56,19 +57,19 @@ body {
   width: 44px;
   height: 44px;
   border-radius: 12px;
-  background: linear-gradient(135deg, #0284c7, #6366f1);
+  background: linear-gradient(135deg, #ef4444, #6366f1);
   display: flex;
   align-items: center;
   justify-content: center;
   font-size: 1.3rem;
   color: #fff;
-  box-shadow: 0 0 15px rgba(99, 102, 241, 0.4);
+  box-shadow: 0 0 15px rgba(239, 68, 68, 0.4);
 }
 
 .title {
   font-size: 1.25rem;
   font-weight: 700;
-  background: linear-gradient(90deg, #f8fafc, #93c5fd);
+  background: linear-gradient(90deg, #f8fafc, #fca5a5);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
@@ -230,6 +231,8 @@ body {
   display: inline-block;
 }
 
+.threat-dot { background: var(--accent-threat); box-shadow: 0 0 8px var(--accent-threat); }
+.asset-dot { background: var(--accent-purple); box-shadow: 0 0 8px var(--accent-purple); }
 .project-dot { background: var(--accent-project); box-shadow: 0 0 8px var(--accent-project); }
 .country-dot { background: var(--accent-country); box-shadow: 0 0 8px var(--accent-country); }
 .sector-dot { background: var(--accent-sector); box-shadow: 0 0 8px var(--accent-sector); }
@@ -309,6 +312,8 @@ body {
   margin-bottom: 0.5rem;
 }
 
+.node-title-badge.ThreatEvent { background: rgba(239, 68, 68, 0.2); color: var(--accent-threat); border: 1px solid var(--accent-threat); }
+.node-title-badge.Asset { background: rgba(167, 139, 250, 0.2); color: var(--accent-purple); border: 1px solid var(--accent-purple); }
 .node-title-badge.Project { background: rgba(56, 189, 248, 0.2); color: var(--accent-project); border: 1px solid var(--accent-project); }
 .node-title-badge.Country { background: rgba(52, 211, 153, 0.2); color: var(--accent-country); border: 1px solid var(--accent-country); }
 .node-title-badge.Sector { background: rgba(251, 191, 36, 0.2); color: var(--accent-sector); border: 1px solid var(--accent-sector); }
@@ -428,7 +433,7 @@ body {
 }
 
 .btn-primary {
-  background: linear-gradient(135deg, #0284c7, #6366f1);
+  background: linear-gradient(135deg, #ef4444, #6366f1);
   color: #fff;
   border: none;
   padding: 0.5rem 1.25rem;
@@ -444,7 +449,7 @@ body {
 
 .btn-primary:hover {
   opacity: 0.9;
-  box-shadow: 0 0 12px rgba(99, 102, 241, 0.4);
+  box-shadow: 0 0 12px rgba(239, 68, 68, 0.4);
 }
 
 .btn-secondary {

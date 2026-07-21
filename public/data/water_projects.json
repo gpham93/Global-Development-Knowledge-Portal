@@ -1,48 +1,46 @@
 {
   "columns": [
-    "countryName",
-    "projectCount"
+    "assetName",
+    "entityName",
+    "routeName",
+    "threatLabel",
+    "severity"
   ],
   "data": [
     {
-      "countryName": "India",
-      "projectCount": 96
+      "assetName": "Port Said Logistics Gateway",
+      "entityName": "Red Sea Energy & Maritime Co.",
+      "routeName": "Suez Canal Transit",
+      "threatLabel": "Suez Canal Traffic Control Cyber Incident",
+      "severity": "Medium"
     },
     {
-      "countryName": "Bangladesh",
-      "projectCount": 62
+      "assetName": "Singapore Strait Transshipment Facility",
+      "entityName": "Apex Supply Chains",
+      "routeName": "Strait of Malacca Corridor",
+      "threatLabel": "Strait of Malacca Coastal Armed Boarding Event",
+      "severity": "Medium"
     },
     {
-      "countryName": "Pakistan",
-      "projectCount": 62
+      "assetName": "Bab-el-Mandeb Oil & Container Terminal",
+      "entityName": "Global Logistics Corp",
+      "routeName": "Red Sea Shipping Lane",
+      "threatLabel": "Red Sea Anti-Ship Missile & Maritime Drone Attack",
+      "severity": "High"
     },
     {
-      "countryName": "Ethiopia",
-      "projectCount": 57
+      "assetName": "Fujairah LNG Bunkering Hub",
+      "entityName": "Indo-Pacific Commodities Ltd.",
+      "routeName": "Strait of Hormuz Route",
+      "threatLabel": "Strait of Hormuz Military Confrontation & Tanker Detainment",
+      "severity": "High"
     },
     {
-      "countryName": "Western and Central Africa",
-      "projectCount": 56
-    },
-    {
-      "countryName": "Turkiye",
-      "projectCount": 51
-    },
-    {
-      "countryName": "Eastern and Southern Africa",
-      "projectCount": 47
-    },
-    {
-      "countryName": "Mozambique",
-      "projectCount": 44
-    },
-    {
-      "countryName": "Brazil",
-      "projectCount": 44
-    },
-    {
-      "countryName": "Indonesia",
-      "projectCount": 43
+      "assetName": "Odesa Black Sea Grain Hub",
+      "entityName": "Levant Infrastructure Group",
+      "routeName": "Black Sea Maritime Route",
+      "threatLabel": "Black Sea Port Blockade & Floating Mine Hazard Alert",
+      "severity": "Critical"
     }
   ]
 }

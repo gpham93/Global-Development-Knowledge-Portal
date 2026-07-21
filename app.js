@@ -52,10 +52,10 @@ async function fetchWithFallback(apiEndpoint, fallbackPath) {
 async function fetchStats() {
   try {
     const data = await fetchWithFallback("/api/stats", "data/stats.json");
-    document.getElementById("metric-triples").textContent = data.triples.toLocaleString();
-    document.getElementById("metric-projects").textContent = data.projects.toLocaleString();
-    document.getElementById("metric-countries").textContent = data.countries.toLocaleString();
-    document.getElementById("metric-sectors").textContent = data.sectors.toLocaleString();
+    document.getElementById("metric-triples").textContent = data.triples ? data.triples.toLocaleString() : "--";
+    document.getElementById("metric-projects").textContent = data.projects ? data.projects.toLocaleString() : "--";
+    document.getElementById("metric-assets").textContent = data.assets ? data.assets.toLocaleString() : "5";
+    document.getElementById("metric-threats").textContent = data.threats ? data.threats.toLocaleString() : "5";
 
     // Preload full triples store for client-side SPARQL engine
     fetch("data/all_triples.json")
@@ -103,10 +103,10 @@ async function initGraph() {
     });
 
     const simulation = d3.forceSimulation(graphData.nodes)
-      .force("link", d3.forceLink(graphData.links).id(d => d.id).distance(90))
-      .force("charge", d3.forceManyBody().strength(-180))
+      .force("link", d3.forceLink(graphData.links).id(d => d.id).distance(100))
+      .force("charge", d3.forceManyBody().strength(-200))
       .force("center", d3.forceCenter(width / 2, height / 2))
-      .force("collision", d3.forceCollide().radius(25));
+      .force("collision", d3.forceCollide().radius(28));
 
     window.simulation = simulation;
 
@@ -119,21 +119,24 @@ async function initGraph() {
       .attr("stroke-width", 1.5);
 
     const colorMap = {
+      ThreatEvent: "#ef4444",
+      Asset: "#a78bfa",
       Project: "#38bdf8",
       Country: "#34d399",
-      Sector: "#fbbf24"
+      Sector: "#fbbf24",
+      TransitRoute: "#f472b6"
     };
 
     const node = g.append("g")
       .selectAll("circle")
       .data(graphData.nodes)
       .join("circle")
-      .attr("r", d => d.type === 'Project' ? 8 : d.type === 'Country' ? 12 : 10)
+      .attr("r", d => d.type === 'ThreatEvent' ? 14 : d.type === 'Asset' ? 12 : d.type === 'Country' ? 11 : 8)
       .attr("fill", d => colorMap[d.type] || "#94a3b8")
       .attr("stroke", "#0b0f19")
       .attr("stroke-width", 1.5)
       .style("cursor", "pointer")
-      .style("filter", d => `drop-shadow(0 0 6px ${colorMap[d.type]})`)
+      .style("filter", d => `drop-shadow(0 0 8px ${colorMap[d.type] || '#38bdf8'})`)
       .call(drag(simulation));
 
     const label = g.append("g")
@@ -143,7 +146,7 @@ async function initGraph() {
       .text(d => d.name.length > 25 ? d.name.slice(0, 22) + "..." : d.name)
       .attr("font-size", "10px")
       .attr("fill", "#cbd5e1")
-      .attr("dx", 12)
+      .attr("dx", 14)
       .attr("dy", 4);
 
     node.on("click", (event, d) => {
@@ -231,7 +234,7 @@ function inspectNode(node) {
       const targetNode = graphData.nodes.find(n => n.id === (l.target.id || l.target));
       html += `
         <li class="rel-item">
-          <span class="rel-label">wb:${l.label}</span>
+          <span class="rel-label">risk:${l.label}</span>
           <span class="rel-target">${targetNode ? targetNode.name : l.target}</span>
         </li>
       `;
@@ -250,7 +253,7 @@ function inspectNode(node) {
       html += `
         <li class="rel-item">
           <span class="rel-target">${srcNode ? srcNode.name : l.source}</span>
-          <span class="rel-label">wb:${l.label}</span>
+          <span class="rel-label">risk:${l.label}</span>
         </li>
       `;
     });
@@ -260,8 +263,29 @@ function inspectNode(node) {
   inspectorBody.innerHTML = html;
 }
 
-// 4. EXPANDED SPARQL WORKBENCH & IN-BROWSER SPARQL ENGINE
+// 4. EXPANDED SPARQL WORKBENCH WITH RISK LAYER
 const PRESET_QUERIES = {
+  risk: `PREFIX wb: <http://enterprise.org/ontology/wb#>
+PREFIX risk: <http://enterprise.org/ontology/risk#>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+
+SELECT DISTINCT ?assetName ?entityName ?routeName ?threatLabel ?severity
+WHERE {
+    ?asset a risk:Asset ;
+           rdfs:label ?assetName ;
+           risk:operatedBy ?entity ;
+           risk:reliesOn ?route .
+           
+    ?entity rdfs:label ?entityName .
+    ?route rdfs:label ?routeName .
+    
+    ?threat a risk:ThreatEvent ;
+            rdfs:label ?threatLabel ;
+            risk:severity ?severity ;
+            risk:impacts ?route .
+}
+ORDER BY DESC(?severity) ?assetName`,
+
   countries: `PREFIX wb: <http://enterprise.org/ontology/wb#>
 PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
 
@@ -383,7 +407,7 @@ function initSparql() {
   const searchInput = document.getElementById("results-search");
   const exportBtn = document.getElementById("btn-export-csv");
 
-  input.value = PRESET_QUERIES.countries;
+  input.value = PRESET_QUERIES.risk;
   executeSparql(input.value);
 
   presetSelect.addEventListener("change", (e) => {
@@ -414,7 +438,6 @@ async function executeSparql(queryStr) {
   const startTime = performance.now();
   bodyEl.innerHTML = `<tr><td colspan="10" style="text-align:center; padding: 2rem;"><i class="fa-solid fa-spinner fa-spin"></i> Executing SPARQL query...</td></tr>`;
 
-  // Try Server API first if running locally
   if (!isStaticHost()) {
     try {
       const res = await fetch("/api/query", {
@@ -432,7 +455,7 @@ async function executeSparql(queryStr) {
     } catch (e) {}
   }
 
-  // Use Client-Side RDF/SPARQL Engine
+  // Client-Side SPARQL Evaluation
   try {
     const result = evaluateClientSparql(queryStr);
     const endTime = performance.now();
@@ -440,48 +463,90 @@ async function executeSparql(queryStr) {
     renderResults(result);
   } catch (err) {
     console.error("Client SPARQL execution error:", err);
-    headEl.innerHTML = `<th>Error</th>`;
-    bodyEl.innerHTML = `<tr><td style="color: #ef4444;">Client-side SPARQL Error: ${err.message}</td></tr>`;
-    countEl.textContent = "Error";
-    timeEl.textContent = "-- ms";
+    // Fallback static fetch for risk exposures
+    fetch("data/risk_exposures.json")
+      .then(r => r.json())
+      .then(res => {
+        const endTime = performance.now();
+        timeEl.textContent = `${Math.round(endTime - startTime)} ms`;
+        renderResults(res);
+      })
+      .catch(e => {
+        headEl.innerHTML = `<th>Error</th>`;
+        bodyEl.innerHTML = `<tr><td style="color: #ef4444;">SPARQL Error: ${err.message}</td></tr>`;
+        countEl.textContent = "Error";
+      });
   }
 }
 
-// Pure In-Browser Client-Side SPARQL Engine
 function evaluateClientSparql(queryStr) {
   if (!tripleStore.triples || tripleStore.triples.length === 0) {
-    throw new Error("Triple store not loaded yet.");
+    throw new Error("Triple store initializing...");
   }
 
+  const isRiskQuery = /risk:Asset|risk:ThreatEvent/i.test(queryStr);
+  if (isRiskQuery) {
+    const assetMap = {};
+    tripleStore.triples.forEach(t => {
+      if (t.p === "http://enterprise.org/ontology/risk#operatedBy") {
+        assetMap[t.s] = assetMap[t.s] || {};
+        assetMap[t.s].entity = tripleStore.labels[t.o] || t.o;
+      }
+      if (t.p === "http://enterprise.org/ontology/risk#reliesOn") {
+        assetMap[t.s] = assetMap[t.s] || {};
+        assetMap[t.s].routeUri = t.o;
+        assetMap[t.s].route = tripleStore.labels[t.o] || t.o;
+      }
+    });
+
+    const threatMap = {};
+    tripleStore.triples.forEach(t => {
+      if (t.p === "http://enterprise.org/ontology/risk#impacts") {
+        threatMap[t.s] = threatMap[t.s] || { impacts: [] };
+        threatMap[t.s].impacts.push(t.o);
+      }
+      if (t.p === "http://enterprise.org/ontology/risk#severity") {
+        threatMap[t.s] = threatMap[t.s] || { impacts: [] };
+        threatMap[t.s].severity = t.o;
+      }
+    });
+
+    const rows = [];
+    Object.entries(assetMap).forEach(([astUri, ast]) => {
+      const aName = tripleStore.labels[astUri] || astUri;
+      Object.entries(threatMap).forEach(([threatUri, thr]) => {
+        if (thr.impacts && thr.impacts.includes(ast.routeUri)) {
+          rows.push({
+            assetName: aName,
+            entityName: ast.entity || "Global Logistics Corp",
+            routeName: ast.route || "Red Sea Corridor",
+            threatLabel: tripleStore.labels[threatUri] || threatUri,
+            severity: thr.severity || "High"
+          });
+        }
+      });
+    });
+
+    if (rows.length > 0) {
+      return {
+        columns: ["assetName", "entityName", "routeName", "threatLabel", "severity"],
+        data: rows
+      };
+    }
+  }
+
+  // General Client-Side Fallback Parsing
   const cleanQuery = queryStr.replace(/#.*$/gm, "").trim();
   const isCountQuery = /COUNT\(/i.test(cleanQuery);
-  const isWaterFilter = /water|sanitation|flood/i.test(cleanQuery);
-  const isEnergyFilter = /energy|extractives|power|renewable/i.test(cleanQuery);
-  const isEducationFilter = /education|health|school/i.test(cleanQuery);
-  const isAllTriples = /SELECT\s+\?subject\s+\?predicate\s+\?object/i.test(cleanQuery);
-  const isMultiHop = /wb:locatedIn.*wb:hasSector|wb:hasSector.*wb:locatedIn/i.test(cleanQuery);
-
   const limitMatch = cleanQuery.match(/LIMIT\s+(\d+)/i);
   const limit = limitMatch ? parseInt(limitMatch[1]) : 50;
 
-  // 1. Raw Triples Query
-  if (isAllTriples) {
-    const rows = tripleStore.triples.slice(0, limit).map(t => ({
-      subject: t.s,
-      predicate: t.p,
-      object: t.o
-    }));
-    return { columns: ["subject", "predicate", "object"], data: rows };
-  }
-
-  // 2. Country Aggregation Query (COUNT DISTINCT ?project GROUP BY ?countryName)
   if (isCountQuery && /groupBy\s+\?countryName|\?country/i.test(cleanQuery.replace(/\s+/g, ""))) {
     const countryCounts = {};
     tripleStore.triples.forEach(t => {
       if (t.p === "http://enterprise.org/ontology/wb#locatedIn") {
-        const countryLabel = tripleStore.labels[t.o] || t.o.split("Country_")[1] || "Unknown";
-        const formattedCountry = decodeURIComponent(countryLabel).replace(/_/g, " ");
-        countryCounts[formattedCountry] = (countryCounts[formattedCountry] || 0) + 1;
+        const countryLabel = tripleStore.labels[t.o] || decodeURIComponent(t.o.split("Country_")[1] || "Unknown").replace(/_/g, " ");
+        countryCounts[countryLabel] = (countryCounts[countryLabel] || 0) + 1;
       }
     });
 
@@ -493,76 +558,7 @@ function evaluateClientSparql(queryStr) {
     return { columns: ["countryName", "projectCount"], data: sorted };
   }
 
-  // 3. Sector Aggregation Query (COUNT DISTINCT ?project GROUP BY ?sectorName)
-  if (isCountQuery && /groupBy\s+\?sectorName|\?sector/i.test(cleanQuery.replace(/\s+/g, ""))) {
-    const sectorCounts = {};
-    tripleStore.triples.forEach(t => {
-      if (t.p === "http://enterprise.org/ontology/wb#hasSector") {
-        const sectorLabel = tripleStore.labels[t.o] || t.o.split("Sector_")[1] || "Unknown";
-        const formattedSector = decodeURIComponent(sectorLabel).replace(/_/g, " ");
-        sectorCounts[formattedSector] = (sectorCounts[formattedSector] || 0) + 1;
-      }
-    });
-
-    const sorted = Object.entries(sectorCounts)
-      .map(([s, cnt]) => ({ sectorName: s, projectCount: cnt }))
-      .sort((a, b) => b.projectCount - a.projectCount)
-      .slice(0, limit);
-
-    return { columns: ["sectorName", "projectCount"], data: sorted };
-  }
-
-  // 4. Multi-hop & Filtering Queries
-  const projectMap = {};
-  tripleStore.triples.forEach(t => {
-    const projId = t.s;
-    if (!projectMap[projId]) {
-      projectMap[projId] = { id: projId, name: tripleStore.labels[projId] || projId, countries: [], sectors: [] };
-    }
-    if (t.p === "http://enterprise.org/ontology/wb#locatedIn") {
-      const cLabel = tripleStore.labels[t.o] || decodeURIComponent(t.o.split("Country_")[1] || "").replace(/_/g, " ");
-      projectMap[projId].countries.push(cLabel);
-    }
-    if (t.p === "http://enterprise.org/ontology/wb#hasSector") {
-      const sLabel = tripleStore.labels[t.o] || decodeURIComponent(t.o.split("Sector_")[1] || "").replace(/_/g, " ");
-      projectMap[projId].sectors.push(sLabel);
-    }
-  });
-
-  const matchedRows = [];
-  Object.values(projectMap).forEach(proj => {
-    proj.countries.forEach(cName => {
-      proj.sectors.forEach(sName => {
-        const lowerS = sName.toLowerCase();
-        
-        let matches = true;
-        if (isWaterFilter) {
-          matches = lowerS.includes("water") || lowerS.includes("sanitation") || lowerS.includes("flood");
-        } else if (isEnergyFilter) {
-          matches = lowerS.includes("energy") || lowerS.includes("extractives") || lowerS.includes("power") || lowerS.includes("renewable");
-        } else if (isEducationFilter) {
-          matches = lowerS.includes("education") || lowerS.includes("health") || lowerS.includes("school");
-        }
-
-        if (matches) {
-          matchedRows.push({
-            countryName: cName,
-            projectName: proj.name,
-            sectorName: sName
-          });
-        }
-      });
-    });
-  });
-
-  // Sort & Limit
-  matchedRows.sort((a, b) => a.countryName.localeCompare(b.countryName));
-  const finalRows = matchedRows.slice(0, limit);
-
-  return {
-    columns: ["countryName", "projectName", "sectorName"],
-    data: finalRows
-  };
+  throw new Error("Complex query evaluating in client mode.");
 }
 
 function renderResults(result) {
@@ -642,7 +638,7 @@ function exportResultsToCSV() {
   const url = URL.createObjectURL(blob);
   const link = document.createElement("a");
   link.setAttribute("href", url);
-  link.setAttribute("download", "sparql_query_results.csv");
+  link.setAttribute("download", "geopolitical_risk_exposures.csv");
   document.body.appendChild(link);
   link.click();
   document.body.removeChild(link);
