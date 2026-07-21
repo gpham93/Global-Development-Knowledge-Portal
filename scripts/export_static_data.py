@@ -26,6 +26,12 @@ if not os.path.exists(DATA_PATH):
 print(f"Exporting master static data from {DATA_PATH}...")
 g.parse(DATA_PATH, format="turtle")
 
+# Load API Health Metadata
+health_info = {}
+if os.path.exists("data/api_health.json"):
+    with open("data/api_health.json", "r", encoding="utf-8") as f:
+        health_info = json.load(f)
+
 # 1. Stats
 projects_query = "SELECT (COUNT(DISTINCT ?p) AS ?cnt) WHERE { ?p a wb:Project }"
 countries_query = "SELECT (COUNT(DISTINCT ?c) AS ?cnt) WHERE { ?c a wb:Country }"
@@ -45,7 +51,8 @@ stats_data = {
     "countries": country_cnt,
     "sectors": sector_cnt,
     "assets": asset_cnt,
-    "threats": threat_cnt
+    "threats": threat_cnt,
+    "api_health": health_info
 }
 
 # 2. All Triples Export for In-Browser SPARQL Engine
@@ -66,7 +73,7 @@ for s, p, o in g:
         "o": o_str
     })
 
-# 3. Graph Nodes & Links for D3 Visualizer (Includes WB Projects + Risk Layer)
+# 3. Graph Nodes & Links for D3 Visualizer
 graph_query = """
 PREFIX wb: <http://enterprise.org/ontology/wb#>
 PREFIX risk: <http://enterprise.org/ontology/risk#>
@@ -184,7 +191,8 @@ def save_json(path, data):
 triples_payload = {
     "stats": stats_data,
     "labels": labels,
-    "triples": all_triples
+    "triples": all_triples,
+    "api_health": health_info
 }
 
 save_json(os.path.join(OUTPUT_DIR, "stats.json"), stats_data)
@@ -192,13 +200,15 @@ save_json(os.path.join(OUTPUT_DIR, "graph.json"), graph_data)
 save_json(os.path.join(OUTPUT_DIR, "sectors.json"), sectors_data)
 save_json(os.path.join(OUTPUT_DIR, "all_triples.json"), triples_payload)
 save_json(os.path.join(OUTPUT_DIR, "risk_exposures.json"), risk_data)
-save_json(os.path.join(OUTPUT_DIR, "water_projects.json"), risk_data) # fallback preset default
+if health_info:
+    save_json(os.path.join(OUTPUT_DIR, "api_health.json"), health_info)
 
 save_json(os.path.join(ROOT_DATA_DIR, "stats.json"), stats_data)
 save_json(os.path.join(ROOT_DATA_DIR, "graph.json"), graph_data)
 save_json(os.path.join(ROOT_DATA_DIR, "sectors.json"), sectors_data)
 save_json(os.path.join(ROOT_DATA_DIR, "all_triples.json"), triples_payload)
 save_json(os.path.join(ROOT_DATA_DIR, "risk_exposures.json"), risk_data)
-save_json(os.path.join(ROOT_DATA_DIR, "water_projects.json"), risk_data)
+if health_info:
+    save_json(os.path.join(ROOT_DATA_DIR, "api_health.json"), health_info)
 
-print(f"Exported Master Graph with {len(all_triples):,} triples and Geopolitical Risk Data!")
+print(f"Exported Master Graph with {len(all_triples):,} triples and API Health Lineage Metadata!")

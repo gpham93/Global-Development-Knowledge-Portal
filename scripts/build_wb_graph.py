@@ -1,10 +1,14 @@
+import json
 import os
+import time
 import requests
 import urllib.parse
+from datetime import datetime, timezone
 from rdflib import Graph, URIRef, Literal, Namespace, RDF, RDFS
 
 # Ensure data directory exists
 os.makedirs("data", exist_ok=True)
+os.makedirs("public/data", exist_ok=True)
 
 # 1. Initialize Graph and Namespaces
 g = Graph()
@@ -21,7 +25,7 @@ g.add((WB.locatedIn, RDF.type, RDF.Property))
 g.add((WB.hasSector, RDF.type, RDF.Property))
 g.add((WB.hasName, RDF.type, RDF.Property))
 
-# 2. Paginated Extraction from World Bank API
+# 2. Paginated Extraction & API Health Monitoring
 print("Starting paginated extraction of Active projects from World Bank API...")
 
 rows_per_batch = 500
@@ -29,17 +33,30 @@ offset = 0
 batch_num = 1
 total_projects = None
 processed_projects = 0
+failed_batches = 0
+latencies = []
+start_time_all = time.time()
+
+wb_api_status = "HEALTHY"
+http_code = 200
 
 while True:
     url = f"https://search.worldbank.org/api/v2/projects?format=json&status=Active&rows={rows_per_batch}&os={offset}"
     print(f"Fetching batch {batch_num} (rows {offset + 1} - {offset + rows_per_batch})...")
     
+    t0 = time.time()
     try:
         response = requests.get(url, timeout=30)
+        t1 = time.time()
+        latencies.append(round((t1 - t0) * 1000, 2))
+        
         response.raise_for_status()
+        http_code = response.status_code
         data = response.json()
     except Exception as e:
         print(f"Error fetching batch {batch_num} at offset {offset}: {e}")
+        failed_batches += 1
+        wb_api_status = "DEGRADED" if processed_projects > 0 else "OFFLINE"
         break
 
     if total_projects is None:
@@ -62,7 +79,6 @@ while True:
         status = str(proj_data.get("status", "")).strip()
         status_display = str(proj_data.get("projectstatusdisplay", "")).strip()
 
-        # Strict active check
         if status and status.lower() != "active" and status_display.lower() != "active":
             continue
 
@@ -82,10 +98,10 @@ while True:
         g.add((country_uri, RDFS.label, Literal(country)))
         g.add((country_uri, WB.hasName, Literal(country)))
 
-        # Link Project to Country (Hop 1)
+        # Link Project to Country
         g.add((project_uri, WB.locatedIn, country_uri))
 
-        # Extract and Link Sectors (Hop 2)
+        # Extract and Link Sectors
         sectors = proj_data.get("sector") or []
         if isinstance(sectors, dict):
             sectors = list(sectors.values())
@@ -123,7 +139,32 @@ while True:
     if total_projects and offset >= total_projects:
         break
 
-# 3. Serialize Master Graph
+# 3. Save Ingestion Health Audit Log
+end_time_all = time.time()
+avg_latency = round(sum(latencies) / len(latencies), 2) if latencies else 0.0
+sync_timestamp = datetime.now(timezone.utc).strftime("%Y-%m-%dT%H:%M:%SZ")
+
+health_payload = {
+    "status": wb_api_status,
+    "http_code": http_code,
+    "last_sync_timestamp": sync_timestamp,
+    "last_sync_formatted": datetime.now(timezone.utc).strftime("%b %d, %Y %H:%M UTC"),
+    "api_endpoint": "https://search.worldbank.org/api/v2/projects",
+    "avg_latency_ms": avg_latency,
+    "total_projects_reported": total_projects or processed_projects,
+    "total_projects_ingested": processed_projects,
+    "batches_processed": batch_num - 1,
+    "failed_batches": failed_batches,
+    "total_duration_sec": round(end_time_all - start_time_all, 2),
+    "triple_count": len(g)
+}
+
+with open("data/api_health.json", "w", encoding="utf-8") as f:
+    json.dump(health_payload, f, indent=2)
+with open("public/data/api_health.json", "w", encoding="utf-8") as f:
+    json.dump(health_payload, f, indent=2)
+
+# 4. Serialize Master Graph
 output_path = "data/world_bank_graph.ttl"
 print(f"Serializing master graph to {output_path}...")
 g.serialize(output_path, format="turtle")

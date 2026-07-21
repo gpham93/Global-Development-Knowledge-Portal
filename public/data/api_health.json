@@ -1,0 +1,14 @@
+{
+  "status": "HEALTHY",
+  "http_code": 200,
+  "last_sync_timestamp": "2026-07-21T02:56:53Z",
+  "last_sync_formatted": "Jul 21, 2026 02:56 UTC",
+  "api_endpoint": "https://search.worldbank.org/api/v2/projects",
+  "avg_latency_ms": 3597.98,
+  "total_projects_reported": 2666,
+  "total_projects_ingested": 2666,
+  "batches_processed": 6,
+  "failed_batches": 0,
+  "total_duration_sec": 21.99,
+  "triple_count": 17290
+}

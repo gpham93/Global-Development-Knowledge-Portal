@@ -30,6 +30,11 @@
       
       <!-- Metrics Bar -->
       <div class="metrics-bar">
+        <div id="btn-api-health" class="metric-badge health-pill" style="cursor:pointer;" title="Click for Live API Health & Lineage Audit">
+          <i id="health-status-icon" class="fa-solid fa-circle-check" style="color:#34d399;"></i>
+          <span class="metric-label">API Status</span>
+          <span id="metric-api-status" class="metric-value" style="color:#34d399;">ONLINE</span>
+        </div>
         <div class="metric-badge">
           <i class="fa-solid fa-cube"></i>
           <span class="metric-label">Triples</span>
@@ -184,6 +189,22 @@
         </div>
       </section>
     </main>
+  </div>
+
+  <!-- API HEALTH & LINEAGE MODAL -->
+  <div id="modal-api-health" class="modal-backdrop">
+    <div class="modal-card">
+      <div class="modal-header">
+        <h3><i class="fa-solid fa-server" style="color:var(--primary);"></i> API Health & Data Lineage Inspector</h3>
+        <button id="btn-close-modal" class="icon-btn"><i class="fa-solid fa-xmark"></i></button>
+      </div>
+      <div class="modal-body" id="health-modal-body">
+        <div style="text-align:center; padding:2rem; color:var(--text-muted);">
+          <i class="fa-solid fa-spinner fa-spin fa-2x"></i>
+          <p style="margin-top:0.5rem;">Fetching live API health logs...</p>
+        </div>
+      </div>
+    </div>
   </div>
 
   <script src="app.js"></script>
