@@ -1,0 +1,82 @@
+---
+title: "Global Development & Geopolitical Risk Knowledge Graph Portal"
+format:
+  html:
+    theme: dark
+    toc: true
+    css: styles.css
+---
+
+# Global Development & Risk Intelligence Portal
+
+Welcome to the **Global Development Knowledge Management & Geopolitical Risk Portal**, powered by live World Bank Projects API ingestion and ACLED-style threat event feeds in RDF/OWL.
+
+---
+
+## 🎯 Load Multi-Hop Risk Assessment Templates
+
+Use the dropdown below to inject pre-configured **2-Hop**, **3-Hop**, or **4-Hop** multi-hop risk queries into the SPARQL editor console:
+
+```{html}
+<div class="template-selector-container">
+  <label for="template-select"><strong>Load Multi-Hop Risk Assessment:</strong></label>
+  <select id="template-select" class="form-select">
+    <option value="">-- Select a Multi-Hop Risk Assessment Template --</option>
+    <option value="template1">Geographic Contagion (2-Hop Risk)</option>
+    <option value="template2">Supply Chain Blast Radius (3-Hop Risk)</option>
+    <option value="template3">Cross-Entity Dependency (4-Hop Risk)</option>
+  </select>
+</div>
+```
+
+---
+
+## ⚡ Interactive SPARQL Workbench
+
+```{html}
+<div class="sparql-layout">
+  <div class="sparql-editor-card">
+    <div class="editor-header">
+      <h3><i class="fa-solid fa-code"></i> SPARQL Query Console</h3>
+    </div>
+    
+    <textarea id="sparql-input" spellcheck="false" rows="10" class="form-control"></textarea>
+    
+    <div class="editor-footer">
+      <span id="engine-status" class="engine-badge"><i class="fa-solid fa-bolt"></i> Client-Side RDF Engine Active</span>
+      <button id="btn-run-sparql" class="btn btn-primary">
+        <i class="fa-solid fa-play"></i> Run SPARQL Query
+      </button>
+    </div>
+  </div>
+
+  <div class="results-card">
+    <div class="results-header">
+      <div style="display:flex; align-items:center; gap:0.75rem;">
+        <h3><i class="fa-solid fa-table-list"></i> Query Results</h3>
+        <span id="results-count" class="badge">0 records</span>
+        <span id="exec-time" class="time-badge">-- ms</span>
+      </div>
+      <div style="display:flex; gap:0.5rem; align-items:center;">
+        <input type="text" id="results-search" placeholder="Filter results..." class="table-search-input">
+        <button id="btn-export-csv" class="btn-secondary">
+          <i class="fa-solid fa-file-csv"></i> Export CSV
+        </button>
+      </div>
+    </div>
+    <div class="table-wrapper">
+      <table id="results-table" class="table">
+        <thead>
+          <tr id="results-head">
+            <th>Execute a SPARQL query to view results</th>
+          </tr>
+        </thead>
+        <tbody id="results-body">
+        </tbody>
+      </table>
+    </div>
+  </div>
+</div>
+```
+
+<script src="app.js"></script>

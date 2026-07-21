@@ -11,19 +11,14 @@
       "type": "Country"
     },
     {
-      "id": "http://enterprise.org/ontology/wb#Project_P000851",
-      "name": "INDUSTRY II CIMAO",
+      "id": "http://enterprise.org/ontology/wb#Project_P000952",
+      "name": "SAC II",
       "type": "Project"
     },
     {
       "id": "http://enterprise.org/ontology/wb#Country_Ghana",
       "name": "Ghana",
       "type": "Country"
-    },
-    {
-      "id": "http://enterprise.org/ontology/wb#Project_P000952",
-      "name": "SAC II",
-      "type": "Project"
     },
     {
       "id": "http://enterprise.org/ontology/wb#Project_P001086",
@@ -43,16 +38,6 @@
     {
       "id": "http://enterprise.org/ontology/wb#Country_Cote_d%27Ivoire",
       "name": "Cote d'Ivoire",
-      "type": "Country"
-    },
-    {
-      "id": "http://enterprise.org/ontology/wb#Project_P001269",
-      "name": "Rural Water Supply Project",
-      "type": "Project"
-    },
-    {
-      "id": "http://enterprise.org/ontology/wb#Country_Kenya",
-      "name": "Kenya",
       "type": "Country"
     },
     {
@@ -201,16 +186,6 @@
       "type": "Country"
     },
     {
-      "id": "http://enterprise.org/ontology/wb#Project_P005624",
-      "name": "POPULATION SUPL.",
-      "type": "Project"
-    },
-    {
-      "id": "http://enterprise.org/ontology/wb#Country_Tunisia",
-      "name": "Tunisia",
-      "type": "Country"
-    },
-    {
       "id": "http://enterprise.org/ontology/wb#Project_P006187",
       "name": "FIN SCTR",
       "type": "Project"
@@ -301,16 +276,6 @@
       "type": "Project"
     },
     {
-      "id": "http://enterprise.org/ontology/wb#Project_P009585",
-      "name": "ODS I",
-      "type": "Project"
-    },
-    {
-      "id": "http://enterprise.org/ontology/wb#Country_India",
-      "name": "India",
-      "type": "Country"
-    },
-    {
       "id": "http://enterprise.org/ontology/wb#Project_P010388",
       "name": "ECON. RESTRUCT. SUPPLEMENTAL",
       "type": "Project"
@@ -371,11 +336,6 @@
       "type": "Country"
     },
     {
-      "id": "http://enterprise.org/ontology/wb#Project_P051572",
-      "name": "DEBT&DEBT REDUCTION",
-      "type": "Project"
-    },
-    {
       "id": "http://enterprise.org/ontology/wb#Project_P053094",
       "name": "Debt Reduction Operation Project",
       "type": "Project"
@@ -418,11 +378,6 @@
     {
       "id": "http://enterprise.org/ontology/wb#Project_P073882",
       "name": "RF 2nd Amazon Fire Prevention and Mobilization",
-      "type": "Project"
-    },
-    {
-      "id": "http://enterprise.org/ontology/wb#Project_P074453",
-      "name": "WWB Facility for Affiliate Capitalization",
       "type": "Project"
     },
     {
@@ -536,6 +491,11 @@
       "type": "Project"
     },
     {
+      "id": "http://enterprise.org/ontology/wb#Country_India",
+      "name": "India",
+      "type": "Country"
+    },
+    {
       "id": "http://enterprise.org/ontology/wb#Project_P096469",
       "name": "Chile Santiago Composting Project",
       "type": "Project"
@@ -574,6 +534,11 @@
       "id": "http://enterprise.org/ontology/wb#Project_P099628",
       "name": "BioCF Kenya Greenbelt Movement",
       "type": "Project"
+    },
+    {
+      "id": "http://enterprise.org/ontology/wb#Country_Kenya",
+      "name": "Kenya",
+      "type": "Country"
     },
     {
       "id": "http://enterprise.org/ontology/wb#Project_P101068",
@@ -806,11 +771,6 @@
       "type": "Country"
     },
     {
-      "id": "http://enterprise.org/ontology/wb#Project_P124807",
-      "name": "Samoa Pilot Programme for Climate Resilience",
-      "type": "Project"
-    },
-    {
       "id": "http://enterprise.org/ontology/wb#Project_P125590",
       "name": "Uganda North-Eastern Road Corridor Asset Management Project (NERAMP)",
       "type": "Project"
@@ -848,6 +808,11 @@
     {
       "id": "http://enterprise.org/ontology/wb#Project_P127115",
       "name": "Mozambique Phase II: EITI Implementation",
+      "type": "Project"
+    },
+    {
+      "id": "http://enterprise.org/ontology/wb#Project_P127125",
+      "name": "MOLDOVA AGRICULTURE COMPETITIVENESS PROJECT (GEF)",
       "type": "Project"
     },
     {
@@ -954,6 +919,11 @@
       "id": "http://enterprise.org/ontology/wb#Project_P130637",
       "name": "Tunisia - Urban Development and Local Governance",
       "type": "Project"
+    },
+    {
+      "id": "http://enterprise.org/ontology/wb#Country_Tunisia",
+      "name": "Tunisia",
+      "type": "Country"
     },
     {
       "id": "http://enterprise.org/ontology/wb#Project_P131118",
@@ -1296,16 +1266,6 @@
       "type": "Project"
     },
     {
-      "id": "http://enterprise.org/ontology/wb#Project_P148737",
-      "name": "Corredor Seco Food Security Project",
-      "type": "Project"
-    },
-    {
-      "id": "http://enterprise.org/ontology/wb#Country_Honduras",
-      "name": "Honduras",
-      "type": "Country"
-    },
-    {
       "id": "http://enterprise.org/ontology/wb#Project_P148775",
       "name": "Capacity Augmentation of the National Waterway- 1 (JAL MARG VIKAS)  Project",
       "type": "Project"
@@ -1331,6 +1291,11 @@
       "type": "Project"
     },
     {
+      "id": "http://enterprise.org/ontology/wb#Project_P149239",
+      "name": "Nepal:  Private Sector-Led Mini-Grid Energy Access Project",
+      "type": "Project"
+    },
+    {
       "id": "http://enterprise.org/ontology/wb#Project_P149279",
       "name": "Southeastern Corridor Road Asset Management Project",
       "type": "Project"
@@ -1338,11 +1303,6 @@
     {
       "id": "http://enterprise.org/ontology/wb#Project_P149377",
       "name": "Water Services & Institutional Support II",
-      "type": "Project"
-    },
-    {
-      "id": "http://enterprise.org/ontology/wb#Project_P149410",
-      "name": "CASA-1000 Community Support Program (P149410)",
       "type": "Project"
     },
     {
@@ -1546,13 +1506,13 @@
       "type": "Project"
     },
     {
-      "id": "http://enterprise.org/ontology/wb#Project_P152281",
-      "name": "Santa Cruz Road Corridor Connector Project (San Ignacio - San Jose)",
-      "type": "Project"
+      "id": "http://enterprise.org/ontology/wb#Country_Honduras",
+      "name": "Honduras",
+      "type": "Country"
     },
     {
-      "id": "http://enterprise.org/ontology/wb#Project_P152285",
-      "name": "Brazil Investment Plan Coordination Project",
+      "id": "http://enterprise.org/ontology/wb#Project_P152281",
+      "name": "Santa Cruz Road Corridor Connector Project (San Ignacio - San Jose)",
       "type": "Project"
     },
     {
@@ -1561,29 +1521,9 @@
       "type": "Project"
     },
     {
-      "id": "http://enterprise.org/ontology/wb#Project_P152705",
-      "name": "DJ HRITF Health AF",
-      "type": "Project"
-    },
-    {
-      "id": "http://enterprise.org/ontology/wb#Country_Djibouti",
-      "name": "Djibouti",
-      "type": "Country"
-    },
-    {
       "id": "http://enterprise.org/ontology/wb#Project_P152755",
       "name": "Electricity Transmission and Reform Project",
       "type": "Project"
-    },
-    {
-      "id": "http://enterprise.org/ontology/wb#Project_P152806",
-      "name": "Guatemala EITI Post-Compliance I",
-      "type": "Project"
-    },
-    {
-      "id": "http://enterprise.org/ontology/wb#Country_Guatemala",
-      "name": "Guatemala",
-      "type": "Country"
     },
     {
       "id": "http://enterprise.org/ontology/wb#Project_P152892",
@@ -1603,11 +1543,6 @@
     {
       "id": "http://enterprise.org/ontology/wb#Project_P153173",
       "name": "Anhui Road Maintenance Innovation and Demonstration Project",
-      "type": "Project"
-    },
-    {
-      "id": "http://enterprise.org/ontology/wb#Project_P153425",
-      "name": "ET Clean Cooking Energy Program",
       "type": "Project"
     },
     {
@@ -1811,11 +1746,6 @@
       "type": "Project"
     },
     {
-      "id": "http://enterprise.org/ontology/wb#Project_P155827",
-      "name": "EASTERN PROVINCE JURISDICTIONAL SUSTAINABLE LANDSCAPE PROGRAM - EMISSIONS REDUCTION PROJECT",
-      "type": "Project"
-    },
-    {
       "id": "http://enterprise.org/ontology/wb#Project_P155859",
       "name": "ENREP- Carbon Finance Programme of Activities",
       "type": "Project"
@@ -1866,6 +1796,11 @@
       "type": "Project"
     },
     {
+      "id": "http://enterprise.org/ontology/wb#Project_P156334",
+      "name": "Pacific Resilience Program",
+      "type": "Project"
+    },
+    {
       "id": "http://enterprise.org/ontology/wb#Project_P156397",
       "name": "China HCFC Phaseout Project Stage II",
       "type": "Project"
@@ -1888,11 +1823,6 @@
     {
       "id": "http://enterprise.org/ontology/wb#Project_P156634",
       "name": "Water and Sanitation Development Project",
-      "type": "Project"
-    },
-    {
-      "id": "http://enterprise.org/ontology/wb#Project_P156719",
-      "name": "Haiti: Renewable Energy for All",
       "type": "Project"
     },
     {
@@ -2071,11 +2001,6 @@
       "type": "Project"
     },
     {
-      "id": "http://enterprise.org/ontology/wb#Project_P158092",
-      "name": "Rwanda Feeder Roads Development Project - Additional Finance",
-      "type": "Project"
-    },
-    {
       "id": "http://enterprise.org/ontology/wb#Project_P158099",
       "name": "PK: Punjab Tourism for Economic Growth Project",
       "type": "Project"
@@ -2141,6 +2066,11 @@
       "type": "Project"
     },
     {
+      "id": "http://enterprise.org/ontology/wb#Country_Djibouti",
+      "name": "Djibouti",
+      "type": "Country"
+    },
+    {
       "id": "http://enterprise.org/ontology/wb#Project_P158522",
       "name": "Tamil Nadu Irrigated Agriculture Modernization Project",
       "type": "Project"
@@ -2189,6 +2119,11 @@
       "id": "http://enterprise.org/ontology/wb#Project_P159213",
       "name": "Crecer Sano: Guatemala Nutrition and Health  Project",
       "type": "Project"
+    },
+    {
+      "id": "http://enterprise.org/ontology/wb#Country_Guatemala",
+      "name": "Guatemala",
+      "type": "Country"
     },
     {
       "id": "http://enterprise.org/ontology/wb#Project_P159220",
@@ -2403,11 +2338,6 @@
     {
       "id": "http://enterprise.org/ontology/wb#Project_P160339",
       "name": "Ghana Emissions Reductions Program",
-      "type": "Project"
-    },
-    {
-      "id": "http://enterprise.org/ontology/wb#Project_P160368",
-      "name": "Costa Rica REDD+ Emission Reductions Program",
       "type": "Project"
     },
     {
@@ -2804,17 +2734,97 @@
       "id": "http://enterprise.org/ontology/wb#Project_P161869",
       "name": "Bangladesh Scaling-up Renewable Energy Project",
       "type": "Project"
+    },
+    {
+      "id": "http://enterprise.org/ontology/wb#Project_P161877",
+      "name": "DRC Transport and Connectivity Support Project",
+      "type": "Project"
+    },
+    {
+      "id": "http://enterprise.org/ontology/wb#Project_P161885",
+      "name": "Nigeria Electrification Project",
+      "type": "Project"
+    },
+    {
+      "id": "http://enterprise.org/ontology/wb#Project_P161905",
+      "name": "Innovative Startups Fund Project",
+      "type": "Project"
+    },
+    {
+      "id": "http://enterprise.org/ontology/wb#Project_P161915",
+      "name": "Sustainable Cities Project 2",
+      "type": "Project"
+    },
+    {
+      "id": "http://enterprise.org/ontology/wb#Project_P161923",
+      "name": "Guinea-Bissau - Rural Transport Project",
+      "type": "Project"
+    },
+    {
+      "id": "http://enterprise.org/ontology/wb#Country_Guinea-Bissau",
+      "name": "Guinea-Bissau",
+      "type": "Country"
+    },
+    {
+      "id": "http://enterprise.org/ontology/wb#Project_P161928",
+      "name": "Operation for Supporting Rural Bridges (SupRB)",
+      "type": "Project"
+    },
+    {
+      "id": "http://enterprise.org/ontology/wb#Project_P161944",
+      "name": "Philippine Rural Development Project Additional Financing",
+      "type": "Project"
+    },
+    {
+      "id": "http://enterprise.org/ontology/wb#Project_P161969",
+      "name": "Project for Strengthening Public Financial Management",
+      "type": "Project"
+    },
+    {
+      "id": "http://enterprise.org/ontology/wb#Project_P161973",
+      "name": "Natural Resources Governance Project in CAR",
+      "type": "Project"
+    },
+    {
+      "id": "http://enterprise.org/ontology/wb#Country_Central_African_Republic",
+      "name": "Central African Republic",
+      "type": "Country"
+    },
+    {
+      "id": "http://enterprise.org/ontology/wb#Project_P161982",
+      "name": "Municipal Services and Social Resilience Project",
+      "type": "Project"
+    },
+    {
+      "id": "http://enterprise.org/ontology/wb#Project_P161996",
+      "name": "Sustainable Forests & Livelihoods (SUFAL) Project",
+      "type": "Project"
+    },
+    {
+      "id": "http://enterprise.org/ontology/wb#Project_P162022",
+      "name": "Herat Electrification Project",
+      "type": "Project"
+    },
+    {
+      "id": "http://enterprise.org/ontology/wb#Project_P162042",
+      "name": "Investing in Maternal, Child and Adolescent Health",
+      "type": "Project"
+    },
+    {
+      "id": "http://enterprise.org/ontology/wb#Project_P162043",
+      "name": "Western Balkans Trade and Transport Facilitation",
+      "type": "Project"
+    },
+    {
+      "id": "http://enterprise.org/ontology/wb#Country_Western_Balkans",
+      "name": "Western Balkans",
+      "type": "Country"
     }
   ],
   "links": [
     {
       "source": "http://enterprise.org/ontology/wb#Project_P000256",
       "target": "http://enterprise.org/ontology/wb#Country_Burkina_Faso",
-      "label": "locatedIn"
-    },
-    {
-      "source": "http://enterprise.org/ontology/wb#Project_P000851",
-      "target": "http://enterprise.org/ontology/wb#Country_Ghana",
       "label": "locatedIn"
     },
     {
@@ -2830,11 +2840,6 @@
     {
       "source": "http://enterprise.org/ontology/wb#Project_P001165",
       "target": "http://enterprise.org/ontology/wb#Country_Cote_d%27Ivoire",
-      "label": "locatedIn"
-    },
-    {
-      "source": "http://enterprise.org/ontology/wb#Project_P001269",
-      "target": "http://enterprise.org/ontology/wb#Country_Kenya",
       "label": "locatedIn"
     },
     {
@@ -2928,11 +2933,6 @@
       "label": "locatedIn"
     },
     {
-      "source": "http://enterprise.org/ontology/wb#Project_P005624",
-      "target": "http://enterprise.org/ontology/wb#Country_Tunisia",
-      "label": "locatedIn"
-    },
-    {
       "source": "http://enterprise.org/ontology/wb#Project_P006187",
       "target": "http://enterprise.org/ontology/wb#Country_Bolivia",
       "label": "locatedIn"
@@ -3003,11 +3003,6 @@
       "label": "locatedIn"
     },
     {
-      "source": "http://enterprise.org/ontology/wb#Project_P009585",
-      "target": "http://enterprise.org/ontology/wb#Country_India",
-      "label": "locatedIn"
-    },
-    {
       "source": "http://enterprise.org/ontology/wb#Project_P010388",
       "target": "http://enterprise.org/ontology/wb#Country_Sri_Lanka",
       "label": "locatedIn"
@@ -3048,11 +3043,6 @@
       "label": "locatedIn"
     },
     {
-      "source": "http://enterprise.org/ontology/wb#Project_P051572",
-      "target": "http://enterprise.org/ontology/wb#Country_Cote_d%27Ivoire",
-      "label": "locatedIn"
-    },
-    {
       "source": "http://enterprise.org/ontology/wb#Project_P053094",
       "target": "http://enterprise.org/ontology/wb#Country_Guyana",
       "label": "locatedIn"
@@ -3080,11 +3070,6 @@
     {
       "source": "http://enterprise.org/ontology/wb#Project_P073882",
       "target": "http://enterprise.org/ontology/wb#Country_Brazil",
-      "label": "locatedIn"
-    },
-    {
-      "source": "http://enterprise.org/ontology/wb#Project_P074453",
-      "target": "http://enterprise.org/ontology/wb#Country_World",
       "label": "locatedIn"
     },
     {
@@ -3333,11 +3318,6 @@
       "label": "locatedIn"
     },
     {
-      "source": "http://enterprise.org/ontology/wb#Project_P124807",
-      "target": "http://enterprise.org/ontology/wb#Country_Samoa",
-      "label": "locatedIn"
-    },
-    {
       "source": "http://enterprise.org/ontology/wb#Project_P125590",
       "target": "http://enterprise.org/ontology/wb#Country_Uganda",
       "label": "locatedIn"
@@ -3370,6 +3350,11 @@
     {
       "source": "http://enterprise.org/ontology/wb#Project_P127115",
       "target": "http://enterprise.org/ontology/wb#Country_Mozambique",
+      "label": "locatedIn"
+    },
+    {
+      "source": "http://enterprise.org/ontology/wb#Project_P127125",
+      "target": "http://enterprise.org/ontology/wb#Country_Moldova",
       "label": "locatedIn"
     },
     {
@@ -3713,11 +3698,6 @@
       "label": "locatedIn"
     },
     {
-      "source": "http://enterprise.org/ontology/wb#Project_P148737",
-      "target": "http://enterprise.org/ontology/wb#Country_Honduras",
-      "label": "locatedIn"
-    },
-    {
       "source": "http://enterprise.org/ontology/wb#Project_P148775",
       "target": "http://enterprise.org/ontology/wb#Country_India",
       "label": "locatedIn"
@@ -3743,6 +3723,11 @@
       "label": "locatedIn"
     },
     {
+      "source": "http://enterprise.org/ontology/wb#Project_P149239",
+      "target": "http://enterprise.org/ontology/wb#Country_Nepal",
+      "label": "locatedIn"
+    },
+    {
       "source": "http://enterprise.org/ontology/wb#Project_P149279",
       "target": "http://enterprise.org/ontology/wb#Country_Liberia",
       "label": "locatedIn"
@@ -3750,11 +3735,6 @@
     {
       "source": "http://enterprise.org/ontology/wb#Project_P149377",
       "target": "http://enterprise.org/ontology/wb#Country_Mozambique",
-      "label": "locatedIn"
-    },
-    {
-      "source": "http://enterprise.org/ontology/wb#Project_P149410",
-      "target": "http://enterprise.org/ontology/wb#Country_Afghanistan",
       "label": "locatedIn"
     },
     {
@@ -3923,28 +3903,13 @@
       "label": "locatedIn"
     },
     {
-      "source": "http://enterprise.org/ontology/wb#Project_P152285",
-      "target": "http://enterprise.org/ontology/wb#Country_Brazil",
-      "label": "locatedIn"
-    },
-    {
       "source": "http://enterprise.org/ontology/wb#Project_P152698",
       "target": "http://enterprise.org/ontology/wb#Country_India",
       "label": "locatedIn"
     },
     {
-      "source": "http://enterprise.org/ontology/wb#Project_P152705",
-      "target": "http://enterprise.org/ontology/wb#Country_Djibouti",
-      "label": "locatedIn"
-    },
-    {
       "source": "http://enterprise.org/ontology/wb#Project_P152755",
       "target": "http://enterprise.org/ontology/wb#Country_Cameroon",
-      "label": "locatedIn"
-    },
-    {
-      "source": "http://enterprise.org/ontology/wb#Project_P152806",
-      "target": "http://enterprise.org/ontology/wb#Country_Guatemala",
       "label": "locatedIn"
     },
     {
@@ -3965,11 +3930,6 @@
     {
       "source": "http://enterprise.org/ontology/wb#Project_P153173",
       "target": "http://enterprise.org/ontology/wb#Country_China",
-      "label": "locatedIn"
-    },
-    {
-      "source": "http://enterprise.org/ontology/wb#Project_P153425",
-      "target": "http://enterprise.org/ontology/wb#Country_Ethiopia",
       "label": "locatedIn"
     },
     {
@@ -4143,11 +4103,6 @@
       "label": "locatedIn"
     },
     {
-      "source": "http://enterprise.org/ontology/wb#Project_P155827",
-      "target": "http://enterprise.org/ontology/wb#Country_Zambia",
-      "label": "locatedIn"
-    },
-    {
       "source": "http://enterprise.org/ontology/wb#Project_P155859",
       "target": "http://enterprise.org/ontology/wb#Country_Ethiopia",
       "label": "locatedIn"
@@ -4198,6 +4153,11 @@
       "label": "locatedIn"
     },
     {
+      "source": "http://enterprise.org/ontology/wb#Project_P156334",
+      "target": "http://enterprise.org/ontology/wb#Country_Tonga",
+      "label": "locatedIn"
+    },
+    {
       "source": "http://enterprise.org/ontology/wb#Project_P156397",
       "target": "http://enterprise.org/ontology/wb#Country_China",
       "label": "locatedIn"
@@ -4220,11 +4180,6 @@
     {
       "source": "http://enterprise.org/ontology/wb#Project_P156634",
       "target": "http://enterprise.org/ontology/wb#Country_Kenya",
-      "label": "locatedIn"
-    },
-    {
-      "source": "http://enterprise.org/ontology/wb#Project_P156719",
-      "target": "http://enterprise.org/ontology/wb#Country_Haiti",
       "label": "locatedIn"
     },
     {
@@ -4375,11 +4330,6 @@
     {
       "source": "http://enterprise.org/ontology/wb#Project_P158079",
       "target": "http://enterprise.org/ontology/wb#Country_China",
-      "label": "locatedIn"
-    },
-    {
-      "source": "http://enterprise.org/ontology/wb#Project_P158092",
-      "target": "http://enterprise.org/ontology/wb#Country_Rwanda",
       "label": "locatedIn"
     },
     {
@@ -4690,11 +4640,6 @@
     {
       "source": "http://enterprise.org/ontology/wb#Project_P160339",
       "target": "http://enterprise.org/ontology/wb#Country_Ghana",
-      "label": "locatedIn"
-    },
-    {
-      "source": "http://enterprise.org/ontology/wb#Project_P160368",
-      "target": "http://enterprise.org/ontology/wb#Country_Costa_Rica",
       "label": "locatedIn"
     },
     {
@@ -5055,6 +5000,76 @@
     {
       "source": "http://enterprise.org/ontology/wb#Project_P161869",
       "target": "http://enterprise.org/ontology/wb#Country_Bangladesh",
+      "label": "locatedIn"
+    },
+    {
+      "source": "http://enterprise.org/ontology/wb#Project_P161877",
+      "target": "http://enterprise.org/ontology/wb#Country_Congo%2C_Democratic_Republic_of",
+      "label": "locatedIn"
+    },
+    {
+      "source": "http://enterprise.org/ontology/wb#Project_P161885",
+      "target": "http://enterprise.org/ontology/wb#Country_Nigeria",
+      "label": "locatedIn"
+    },
+    {
+      "source": "http://enterprise.org/ontology/wb#Project_P161905",
+      "target": "http://enterprise.org/ontology/wb#Country_Jordan",
+      "label": "locatedIn"
+    },
+    {
+      "source": "http://enterprise.org/ontology/wb#Project_P161915",
+      "target": "http://enterprise.org/ontology/wb#Country_Turkiye",
+      "label": "locatedIn"
+    },
+    {
+      "source": "http://enterprise.org/ontology/wb#Project_P161923",
+      "target": "http://enterprise.org/ontology/wb#Country_Guinea-Bissau",
+      "label": "locatedIn"
+    },
+    {
+      "source": "http://enterprise.org/ontology/wb#Project_P161928",
+      "target": "http://enterprise.org/ontology/wb#Country_Bangladesh",
+      "label": "locatedIn"
+    },
+    {
+      "source": "http://enterprise.org/ontology/wb#Project_P161944",
+      "target": "http://enterprise.org/ontology/wb#Country_Philippines",
+      "label": "locatedIn"
+    },
+    {
+      "source": "http://enterprise.org/ontology/wb#Project_P161969",
+      "target": "http://enterprise.org/ontology/wb#Country_Micronesia%2C_Federated_States_of",
+      "label": "locatedIn"
+    },
+    {
+      "source": "http://enterprise.org/ontology/wb#Project_P161973",
+      "target": "http://enterprise.org/ontology/wb#Country_Central_African_Republic",
+      "label": "locatedIn"
+    },
+    {
+      "source": "http://enterprise.org/ontology/wb#Project_P161982",
+      "target": "http://enterprise.org/ontology/wb#Country_Jordan",
+      "label": "locatedIn"
+    },
+    {
+      "source": "http://enterprise.org/ontology/wb#Project_P161996",
+      "target": "http://enterprise.org/ontology/wb#Country_Bangladesh",
+      "label": "locatedIn"
+    },
+    {
+      "source": "http://enterprise.org/ontology/wb#Project_P162022",
+      "target": "http://enterprise.org/ontology/wb#Country_Afghanistan",
+      "label": "locatedIn"
+    },
+    {
+      "source": "http://enterprise.org/ontology/wb#Project_P162042",
+      "target": "http://enterprise.org/ontology/wb#Country_Senegal",
+      "label": "locatedIn"
+    },
+    {
+      "source": "http://enterprise.org/ontology/wb#Project_P162043",
+      "target": "http://enterprise.org/ontology/wb#Country_Western_Balkans",
       "label": "locatedIn"
     }
   ]

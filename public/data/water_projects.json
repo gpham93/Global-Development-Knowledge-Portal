@@ -40,7 +40,7 @@
       "entityName": "Levant Infrastructure Group",
       "routeName": "Black Sea Maritime Route",
       "threatLabel": "Black Sea Port Blockade & Floating Mine Hazard Alert",
-      "severity": "Critical"
+      "severity": "High"
     }
   ]
 }

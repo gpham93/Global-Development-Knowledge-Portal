@@ -1,7 +1,7 @@
 import json
 import os
 import urllib.parse
-from rdflib import Graph, URIRef, Literal, Namespace, RDF, RDFS
+from rdflib import Graph, URIRef, Literal, Namespace, RDF, RDFS, XSD
 
 # Ensure data directory exists
 os.makedirs("data", exist_ok=True)
@@ -42,7 +42,9 @@ g.add((RISK.locatedIn, RDF.type, RDF.Property))
 g.add((RISK.eventDate, RDF.type, RDF.Property))
 g.add((RISK.eventType, RDF.type, RDF.Property))
 g.add((RISK.severity, RDF.type, RDF.Property))
+g.add((RISK.hasSeverity, RDF.type, RDF.Property))
 g.add((RISK.location, RDF.type, RDF.Property))
+g.add((RISK.hasName, RDF.type, RDF.Property))
 
 print("Populating Enterprise Assets, Operating Entities, and Transit Routes...")
 
@@ -106,12 +108,14 @@ for ent in CORPORATE_ENTITIES:
     ent_uri = URIRef(RISK + f"Entity_{ent['id']}")
     g.add((ent_uri, RDF.type, RISK.CorporateEntity))
     g.add((ent_uri, RDFS.label, Literal(ent["name"])))
+    g.add((ent_uri, RISK.hasName, Literal(ent["name"])))
 
 # Assert Transit Routes
 for tr in TRANSIT_ROUTES:
     tr_uri = URIRef(RISK + f"Route_{tr['id']}")
     g.add((tr_uri, RDF.type, RISK.TransitRoute))
     g.add((tr_uri, RDFS.label, Literal(tr["name"])))
+    g.add((tr_uri, RISK.hasName, Literal(tr["name"])))
 
 # Assert Enterprise Assets & Relationships
 for ast in ENTERPRISE_ASSETS:
@@ -122,9 +126,32 @@ for ast in ENTERPRISE_ASSETS:
 
     g.add((ast_uri, RDF.type, RISK.Asset))
     g.add((ast_uri, RDFS.label, Literal(ast["name"])))
+    g.add((ast_uri, RISK.hasName, Literal(ast["name"])))
     g.add((ast_uri, RISK.operatedBy, ent_uri))
     g.add((ast_uri, RISK.reliesOn, tr_uri))
     g.add((ast_uri, RISK.locatedIn, country_uri))
+
+# Also link select World Bank Projects to Corporate Operators & Transit Routes for Multi-hop Dependency Queries
+project_links = [
+    {"proj_search": "Yemen", "ent_id": "ENT_01", "tr_id": "TR_RED_SEA"},
+    {"proj_search": "Ukraine", "ent_id": "ENT_03", "tr_id": "TR_BLACK_SEA"},
+    {"proj_search": "Egypt", "ent_id": "ENT_04", "tr_id": "TR_SUEZ"},
+    {"proj_search": "India", "ent_id": "ENT_02", "tr_id": "TR_MALACCA"},
+    {"proj_search": "Pakistan", "ent_id": "ENT_05", "tr_id": "TR_HORMUZ"}
+]
+
+for pl in project_links:
+    ent_uri = URIRef(RISK + f"Entity_{pl['ent_id']}")
+    tr_uri = URIRef(RISK + f"Route_{pl['tr_id']}")
+    
+    # Find matching project nodes in graph
+    for p in g.subjects(RDF.type, WB.Project):
+        p_str = str(p)
+        for c in g.objects(p, WB.locatedIn):
+            if pl["proj_search"].lower() in str(c).lower():
+                g.add((p, RISK.operatedBy, ent_uri))
+                g.add((p, RISK.reliesOn, tr_uri))
+                break
 
 # 3. Geopolitical Threat Event Feed (ACLED Format Ingestion)
 GEOPOLITICAL_EVENTS_FEED = [
@@ -142,7 +169,7 @@ GEOPOLITICAL_EVENTS_FEED = [
         "event_id": "EVT_2026_002",
         "event_type": "Military Blockade & Naval Mining",
         "event_date": "2026-07-18",
-        "severity": "Critical",
+        "severity": "High",
         "location": "Black Sea Maritime Corridor",
         "impacted_route": "TR_BLACK_SEA",
         "impacted_country": "Ukraine",
@@ -201,9 +228,11 @@ for event_entry in GEOPOLITICAL_EVENTS_FEED:
         event_uri = URIRef(RISK + f"Threat_{event_id}")
         g.add((event_uri, RDF.type, RISK.ThreatEvent))
         g.add((event_uri, RDFS.label, Literal(label)))
+        g.add((event_uri, RISK.hasName, Literal(label)))
         g.add((event_uri, RISK.eventType, Literal(event_type)))
-        g.add((event_uri, RISK.eventDate, Literal(event_date)))
+        g.add((event_uri, RISK.eventDate, Literal(event_date, datatype=XSD.date)))
         g.add((event_uri, RISK.severity, Literal(severity)))
+        g.add((event_uri, RISK.hasSeverity, Literal(severity)))
         g.add((event_uri, RISK.location, Literal(location)))
 
         # Link ThreatEvent to impacted TransitRoute
@@ -216,6 +245,12 @@ for event_entry in GEOPOLITICAL_EVENTS_FEED:
             c_uri = URIRef(WB + f"Country_{urllib.parse.quote(impacted_country.replace(' ', '_'))}")
             g.add((event_uri, RISK.impacts, c_uri))
             g.add((event_uri, RISK.locatedIn, c_uri))
+
+        # Link ThreatEvent to Assets directly for 4-Hop risk
+        if impacted_route == "TR_RED_SEA":
+            g.add((event_uri, RISK.impacts, URIRef(RISK + "Asset_AST_001")))
+        elif impacted_route == "TR_BLACK_SEA":
+            g.add((event_uri, RISK.impacts, URIRef(RISK + "Asset_AST_002")))
 
         processed_events += 1
 

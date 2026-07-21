@@ -19,6 +19,7 @@ g.add((WB.Sector, RDF.type, RDFS.Class))
 # Define Object Properties
 g.add((WB.locatedIn, RDF.type, RDF.Property))
 g.add((WB.hasSector, RDF.type, RDF.Property))
+g.add((WB.hasName, RDF.type, RDF.Property))
 
 # 2. Paginated Extraction from World Bank API
 print("Starting paginated extraction of Active projects from World Bank API...")
@@ -72,12 +73,14 @@ while True:
         project_uri = URIRef(WB + f"Project_{proj_id}")
         country_uri = URIRef(WB + f"Country_{urllib.parse.quote(country.replace(' ', '_'))}")
 
-        # Assert Project and Country Nodes
+        # Assert Project and Country Nodes & Names
         g.add((project_uri, RDF.type, WB.Project))
         g.add((project_uri, RDFS.label, Literal(name)))
+        g.add((project_uri, WB.hasName, Literal(name)))
 
         g.add((country_uri, RDF.type, WB.Country))
         g.add((country_uri, RDFS.label, Literal(country)))
+        g.add((country_uri, WB.hasName, Literal(country)))
 
         # Link Project to Country (Hop 1)
         g.add((project_uri, WB.locatedIn, country_uri))
@@ -104,6 +107,7 @@ while True:
             sector_uri = URIRef(WB + f"Sector_{urllib.parse.quote(sector_name.replace(' ', '_'))}")
             g.add((sector_uri, RDF.type, WB.Sector))
             g.add((sector_uri, RDFS.label, Literal(sector_name)))
+            g.add((sector_uri, WB.hasName, Literal(sector_name)))
 
             # Link Project to Sector
             g.add((project_uri, WB.hasSector, sector_uri))

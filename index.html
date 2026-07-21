@@ -113,17 +113,26 @@
           <div class="sparql-editor-card">
             <div class="editor-header">
               <h3><i class="fa-solid fa-code"></i> SPARQL Query Console</h3>
-              <div class="query-presets">
-                <label>Presets:</label>
+              <div class="query-presets" style="display:flex; align-items:center; gap:0.5rem;">
+                <label for="template-select"><strong>Load Multi-Hop Risk Assessment:</strong></label>
+                <select id="template-select">
+                  <option value="">-- Select a Multi-Hop Risk Template --</option>
+                  <option value="template1">Geographic Contagion (2-Hop Risk)</option>
+                  <option value="template2">Supply Chain Blast Radius (3-Hop Risk)</option>
+                  <option value="template3">Cross-Entity Dependency (4-Hop Risk)</option>
+                </select>
+                
+                <span style="color:var(--border-color); margin:0 0.25rem;">|</span>
+                
+                <label for="preset-select">Presets:</label>
                 <select id="preset-select">
-                  <option value="risk">⚠️ Geopolitical Risk Traversal (Asset → Route → Threat Event)</option>
-                  <option value="countries">🏆 Top 10 Active Countries (Aggregation)</option>
-                  <option value="water">💧 Water, Sanitation & Flood Protection</option>
-                  <option value="energy">⚡ Energy & Infrastructure Projects</option>
-                  <option value="education">🏫 Education & Health Projects</option>
-                  <option value="sectors">📊 Top 15 Sectors Breakdown</option>
-                  <option value="multihop">🔗 Multi-Hop Explorer (Project → Country → Sector)</option>
-                  <option value="all">📜 Raw Triples Inspection (Limit 50)</option>
+                  <option value="risk">⚠️ Geopolitical Risk Traversal</option>
+                  <option value="countries">🏆 Top 10 Active Countries</option>
+                  <option value="water">💧 Water & Sanitation</option>
+                  <option value="energy">⚡ Energy & Extractives</option>
+                  <option value="education">🏫 Education & Health</option>
+                  <option value="sectors">📊 Sectors Breakdown</option>
+                  <option value="all">📜 Raw Triples (Limit 50)</option>
                 </select>
               </div>
             </div>

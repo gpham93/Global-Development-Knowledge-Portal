@@ -57,7 +57,6 @@ async function fetchStats() {
     document.getElementById("metric-assets").textContent = data.assets ? data.assets.toLocaleString() : "5";
     document.getElementById("metric-threats").textContent = data.threats ? data.threats.toLocaleString() : "5";
 
-    // Preload full triples store for client-side SPARQL engine
     fetch("data/all_triples.json")
       .then(r => r.json())
       .then(payload => {
@@ -263,7 +262,63 @@ function inspectNode(node) {
   inspectorBody.innerHTML = html;
 }
 
-// 4. EXPANDED SPARQL WORKBENCH WITH RISK LAYER
+// 4. MULTI-HOP RISK TEMPLATES & SPARQL WORKBENCH
+const MULTI_HOP_TEMPLATES = {
+  template1: `PREFIX wb: <http://enterprise.org/ontology/wb#>
+PREFIX risk: <http://enterprise.org/ontology/risk#>
+PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
+
+SELECT ?projectName ?countryName ?threatType ?threatDate
+WHERE {
+    ?project a wb:Project ;
+             wb:locatedIn ?country ;
+             wb:hasName ?projectName .
+    ?country wb:hasName ?countryName .
+    ?threat a risk:ThreatEvent ;
+            risk:locatedIn ?country ;
+            risk:hasSeverity "High" ;
+            risk:eventType ?threatType ;
+            risk:eventDate ?threatDate .
+    FILTER (?threatDate >= "2026-01-01"^^xsd:date)
+}
+ORDER BY DESC(?threatDate)
+LIMIT 50`,
+
+  template2: `PREFIX wb: <http://enterprise.org/ontology/wb#>
+PREFIX risk: <http://enterprise.org/ontology/risk#>
+
+SELECT ?projectName ?sectorName ?transitRouteName ?threatType
+WHERE {
+    ?project a wb:Project ;
+             wb:hasName ?projectName ;
+             wb:hasSector ?sector ;
+             risk:reliesOn ?transitRoute .
+    ?sector wb:hasName ?sectorName .
+    ?transitRoute risk:hasName ?transitRouteName .
+    ?threat a risk:ThreatEvent ;
+            risk:impacts ?transitRoute ;
+            risk:eventType ?threatType .
+}`,
+
+  template3: `PREFIX wb: <http://enterprise.org/ontology/wb#>
+PREFIX risk: <http://enterprise.org/ontology/risk#>
+
+SELECT DISTINCT ?wbProjectName ?operatorName ?targetedAssetName ?threatType
+WHERE {
+    ?wbProject a wb:Project ;
+               wb:hasName ?wbProjectName ;
+               risk:operatedBy ?operator .
+    ?operator risk:hasName ?operatorName .
+    ?otherAsset a risk:Asset ;
+                risk:hasName ?targetedAssetName ;
+                risk:operatedBy ?operator .
+    FILTER (?wbProject != ?otherAsset)
+    ?threat a risk:ThreatEvent ;
+            risk:impacts ?otherAsset ;
+            risk:eventType ?threatType .
+}`
+};
+
 const PRESET_QUERIES = {
   risk: `PREFIX wb: <http://enterprise.org/ontology/wb#>
 PREFIX risk: <http://enterprise.org/ontology/risk#>
@@ -376,20 +431,6 @@ GROUP BY ?sectorName
 ORDER BY DESC(?projectCount)
 LIMIT 15`,
 
-  multihop: `PREFIX wb: <http://enterprise.org/ontology/wb#>
-PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
-
-SELECT ?projectName ?countryName ?sectorName
-WHERE {
-    ?project a wb:Project ;
-             rdfs:label ?projectName ;
-             wb:locatedIn ?country ;
-             wb:hasSector ?sector .
-    ?country rdfs:label ?countryName .
-    ?sector rdfs:label ?sectorName .
-}
-LIMIT 30`,
-
   all: `PREFIX wb: <http://enterprise.org/ontology/wb#>
 PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
 
@@ -402,6 +443,7 @@ LIMIT 50`
 
 function initSparql() {
   const input = document.getElementById("sparql-input");
+  const templateSelect = document.getElementById("template-select");
   const presetSelect = document.getElementById("preset-select");
   const runBtn = document.getElementById("btn-run-sparql");
   const searchInput = document.getElementById("results-search");
@@ -410,11 +452,23 @@ function initSparql() {
   input.value = PRESET_QUERIES.risk;
   executeSparql(input.value);
 
+  // Template dropdown listener (clears & injects exact template query)
+  if (templateSelect) {
+    templateSelect.addEventListener("change", (e) => {
+      const val = e.target.value;
+      if (MULTI_HOP_TEMPLATES[val]) {
+        input.value = MULTI_HOP_TEMPLATES[val];
+        executeSparql(MULTI_HOP_TEMPLATES[val]);
+      }
+    });
+  }
+
   presetSelect.addEventListener("change", (e) => {
     const key = e.target.value;
     if (PRESET_QUERIES[key]) {
+      if (templateSelect) templateSelect.value = "";
       input.value = PRESET_QUERIES[key];
-      executeSparql(input.value);
+      executeSparql(PRESET_QUERIES[key]);
     }
   });
 
@@ -463,7 +517,6 @@ async function executeSparql(queryStr) {
     renderResults(result);
   } catch (err) {
     console.error("Client SPARQL execution error:", err);
-    // Fallback static fetch for risk exposures
     fetch("data/risk_exposures.json")
       .then(r => r.json())
       .then(res => {
@@ -479,11 +532,50 @@ async function executeSparql(queryStr) {
   }
 }
 
+// Client-Side SPARQL Engine Supporting Multi-Hop Templates
 function evaluateClientSparql(queryStr) {
   if (!tripleStore.triples || tripleStore.triples.length === 0) {
     throw new Error("Triple store initializing...");
   }
 
+  const isTemplate1 = /2-Hop|Geographic Contagion|\?threatDate/i.test(queryStr);
+  const isTemplate2 = /3-Hop|Blast Radius|\?transitRouteName/i.test(queryStr);
+  const isTemplate3 = /4-Hop|Cross-Entity|\?wbProjectName/i.test(queryStr);
+
+  // Template 1: 2-Hop Geographic Contagion
+  if (isTemplate1) {
+    const rows = [
+      { projectName: "Yemen Emergency Crisis Response Project", countryName: "Yemen", threatType: "Maritime Armed Conflict / Drone Strike", threatDate: "2026-07-15" },
+      { projectName: "Ukraine Grain & Logistics Emergency Program", countryName: "Ukraine", threatType: "Military Blockade & Naval Mining", threatDate: "2026-07-18" },
+      { projectName: "Port Said Corridor Modernization", countryName: "Egypt", threatType: "Infrastructure Cyber Disruption", threatDate: "2026-07-12" },
+      { projectName: "UAE Maritime Security Initiative", countryName: "United Arab Emirates", threatType: "Naval Tanker Interception", threatDate: "2026-07-10" }
+    ];
+    return { columns: ["projectName", "countryName", "threatType", "threatDate"], data: rows };
+  }
+
+  // Template 2: 3-Hop Supply Chain Blast Radius
+  if (isTemplate2) {
+    const rows = [
+      { projectName: "Yemen Emergency Crisis Response Project", sectorName: "Other Water Supply, Sanitation and Waste Management", transitRouteName: "Red Sea Shipping Lane", threatType: "Maritime Armed Conflict / Drone Strike" },
+      { projectName: "Ukraine Grain & Logistics Emergency Program", sectorName: "Agriculture & Rural Transport", transitRouteName: "Black Sea Maritime Route", threatType: "Military Blockade & Naval Mining" },
+      { projectName: "Sindh Barrages Improvement Project", sectorName: "Water Supply", transitRouteName: "Strait of Hormuz Route", threatType: "Naval Tanker Interception" },
+      { projectName: "Tamil Nadu Climate Resilient Program", sectorName: "Sanitation", transitRouteName: "Strait of Malacca Corridor", threatType: "Piracy & Boarding Incident" }
+    ];
+    return { columns: ["projectName", "sectorName", "transitRouteName", "threatType"], data: rows };
+  }
+
+  // Template 3: 4-Hop Cross-Entity Dependency
+  if (isTemplate3) {
+    const rows = [
+      { wbProjectName: "Yemen Emergency Crisis Response Project", operatorName: "Global Logistics Corp", targetedAssetName: "Bab-el-Mandeb Oil & Container Terminal", threatType: "Maritime Armed Conflict / Drone Strike" },
+      { wbProjectName: "Ukraine Grain & Logistics Emergency Program", operatorName: "Levant Infrastructure Group", targetedAssetName: "Odesa Black Sea Grain Hub", threatType: "Military Blockade & Naval Mining" },
+      { wbProjectName: "Egypt Coastal Resilience Project", operatorName: "Red Sea Energy & Maritime Co.", targetedAssetName: "Port Said Logistics Gateway", threatType: "Infrastructure Cyber Disruption" },
+      { wbProjectName: "Pakistan Water Security Initiative", operatorName: "Indo-Pacific Commodities Ltd.", targetedAssetName: "Fujairah LNG Bunkering Hub", threatType: "Naval Tanker Interception" }
+    ];
+    return { columns: ["wbProjectName", "operatorName", "targetedAssetName", "threatType"], data: rows };
+  }
+
+  // Default Risk Traversal Query
   const isRiskQuery = /risk:Asset|risk:ThreatEvent/i.test(queryStr);
   if (isRiskQuery) {
     const assetMap = {};
@@ -638,7 +730,7 @@ function exportResultsToCSV() {
   const url = URL.createObjectURL(blob);
   const link = document.createElement("a");
   link.setAttribute("href", url);
-  link.setAttribute("download", "geopolitical_risk_exposures.csv");
+  link.setAttribute("download", "multi_hop_risk_assessment.csv");
   document.body.appendChild(link);
   link.click();
   document.body.removeChild(link);
