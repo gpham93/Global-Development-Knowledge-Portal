@@ -59,7 +59,7 @@
         <i class="fa-solid fa-circle-nodes"></i> Knowledge Graph Explorer
       </button>
       <button class="tab-btn" data-tab="tab-sparql">
-        <i class="fa-solid fa-terminal"></i> SPARQL Workbench
+        <i class="fa-solid fa-terminal"></i> Interactive SPARQL Workbench
       </button>
       <button class="tab-btn" data-tab="tab-sectors">
         <i class="fa-solid fa-chart-pie"></i> Sector Analytics
@@ -113,12 +113,15 @@
             <div class="editor-header">
               <h3><i class="fa-solid fa-code"></i> SPARQL Query Console</h3>
               <div class="query-presets">
-                <label>Preset Queries:</label>
+                <label>Presets:</label>
                 <select id="preset-select">
-                  <option value="countries">Top 10 Active Projects by Country (Aggregation)</option>
-                  <option value="water">Water & Sanitation Sector Projects</option>
-                  <option value="sectors">Top Sectors Distribution</option>
-                  <option value="all">List All RDF Triples (Limit 50)</option>
+                  <option value="countries">🏆 Top 10 Active Countries (Aggregation)</option>
+                  <option value="water">💧 Water, Sanitation & Flood Protection</option>
+                  <option value="energy">⚡ Energy & Infrastructure Projects</option>
+                  <option value="education">🏫 Education & Health Projects</option>
+                  <option value="sectors">📊 Top 15 Sectors Breakdown</option>
+                  <option value="multihop">🔗 Multi-Hop Explorer (Project → Country → Sector)</option>
+                  <option value="all">📜 Raw Triples Inspection (Limit 50)</option>
                 </select>
               </div>
             </div>
@@ -126,8 +129,9 @@
             <textarea id="sparql-input" spellcheck="false"></textarea>
             
             <div class="editor-footer">
+              <span id="engine-status" class="engine-badge"><i class="fa-solid fa-bolt"></i> Client-Side RDF Engine Active</span>
               <button id="btn-run-sparql" class="btn btn-primary">
-                <i class="fa-solid fa-play"></i> Execute Query
+                <i class="fa-solid fa-play"></i> Run SPARQL Query
               </button>
             </div>
           </div>
@@ -135,8 +139,17 @@
           <!-- Query Results Table -->
           <div class="results-card">
             <div class="results-header">
-              <h3><i class="fa-solid fa-table-list"></i> Query Results</h3>
-              <span id="results-count" class="badge">0 records</span>
+              <div style="display:flex; align-items:center; gap:0.75rem;">
+                <h3><i class="fa-solid fa-table-list"></i> Query Results</h3>
+                <span id="results-count" class="badge">0 records</span>
+                <span id="exec-time" class="time-badge">-- ms</span>
+              </div>
+              <div style="display:flex; gap:0.5rem; align-items:center;">
+                <input type="text" id="results-search" placeholder="Filter results..." class="table-search-input">
+                <button id="btn-export-csv" class="btn-secondary" title="Export Results as CSV">
+                  <i class="fa-solid fa-file-csv"></i> Export CSV
+                </button>
+              </div>
             </div>
             <div class="table-wrapper">
               <table id="results-table">

@@ -2,47 +2,47 @@
   "sectors": [
     {
       "name": "Social Protection",
-      "count": 350
+      "count": 342
     },
     {
       "name": "Health",
-      "count": 298
+      "count": 300
     },
     {
       "name": "Public Administration - Agriculture, Fishing & Forestry",
-      "count": 243
+      "count": 239
     },
     {
       "name": "Sub-National Government",
-      "count": 228
+      "count": 229
     },
     {
       "name": "Public Administration - Health",
       "count": 213
     },
     {
-      "name": "Other Public Administration",
-      "count": 208
-    },
-    {
       "name": "Central Government (Central Agencies)",
       "count": 207
     },
     {
-      "name": "Public Administration - Social Protection",
-      "count": 180
-    },
-    {
-      "name": "Agricultural markets, commercialization and agri-business",
-      "count": 177
+      "name": "Other Public Administration",
+      "count": 207
     },
     {
       "name": "Public Administration - Education",
-      "count": 176
+      "count": 178
+    },
+    {
+      "name": "Public Administration - Social Protection",
+      "count": 175
+    },
+    {
+      "name": "Agricultural markets, commercialization and agri-business",
+      "count": 174
     },
     {
       "name": "Public Administration - Water, Sanitation and Waste Management",
-      "count": 163
+      "count": 164
     },
     {
       "name": "Rural and Inter-Urban Roads",
@@ -50,51 +50,267 @@
     },
     {
       "name": "Public Administration - Transportation",
-      "count": 154
+      "count": 156
     },
     {
       "name": "Public Administration - Energy and Extractives",
       "count": 153
     },
     {
+      "name": "Water Supply",
+      "count": 151
+    },
+    {
       "name": "Health Facilities and Construction",
-      "count": 152
+      "count": 151
     },
     {
       "name": "Agricultural Extension, Research, and Other Support Activities",
-      "count": 150
-    },
-    {
-      "name": "Water Supply",
-      "count": 149
-    },
-    {
-      "name": "ICT Services",
-      "count": 136
+      "count": 148
     },
     {
       "name": "Energy Transmission and Distribution",
-      "count": 135
+      "count": 136
     },
     {
-      "name": "Other Water Supply, Sanitation and Waste Management",
-      "count": 130
+      "name": "ICT Services",
+      "count": 135
     },
     {
       "name": "Sanitation",
       "count": 130
     },
     {
+      "name": "Other Water Supply, Sanitation and Waste Management",
+      "count": 129
+    },
+    {
       "name": "ICT Infrastructure",
-      "count": 127
+      "count": 125
     },
     {
       "name": "Other Agriculture, Fishing and Forestry",
-      "count": 106
+      "count": 107
+    },
+    {
+      "name": "Renewable Energy Solar",
+      "count": 104
     },
     {
       "name": "Irrigation and Drainage",
       "count": 100
+    },
+    {
+      "name": "Primary Education",
+      "count": 98
+    },
+    {
+      "name": "Secondary Education",
+      "count": 96
+    },
+    {
+      "name": "Other Industry, Trade and Services",
+      "count": 94
+    },
+    {
+      "name": "Public Administration - Industry, Trade and Services",
+      "count": 90
+    },
+    {
+      "name": "Forestry",
+      "count": 88
+    },
+    {
+      "name": "Other Energy and Extractives",
+      "count": 80
+    },
+    {
+      "name": "Other Education",
+      "count": 78
+    },
+    {
+      "name": "Banking Institutions",
+      "count": 76
+    },
+    {
+      "name": "Livestock",
+      "count": 67
+    },
+    {
+      "name": "Workforce Development and Vocational Education",
+      "count": 64
+    },
+    {
+      "name": "Urban Transport",
+      "count": 62
+    },
+    {
+      "name": "Public Administration - Information and Communications Technologies",
+      "count": 61
+    },
+    {
+      "name": "Early Childhood Education",
+      "count": 59
+    },
+    {
+      "name": "Capital Markets",
+      "count": 54
+    },
+    {
+      "name": "Crops",
+      "count": 50
+    },
+    {
+      "name": "Waste Management",
+      "count": 50
+    },
+    {
+      "name": "Fisheries",
+      "count": 50
+    },
+    {
+      "name": "Public Administration - Financial Sector",
+      "count": 49
+    },
+    {
+      "name": "Renewable Energy Hydro",
+      "count": 46
+    },
+    {
+      "name": "Tourism",
+      "count": 46
+    },
+    {
+      "name": "Tertiary Education",
+      "count": 45
+    },
+    {
+      "name": "Other Transportation",
+      "count": 41
+    },
+    {
+      "name": "Trade",
+      "count": 35
+    },
+    {
+      "name": "Housing Construction",
+      "count": 32
+    },
+    {
+      "name": "Other Non-bank Financial Institutions",
+      "count": 30
+    },
+    {
+      "name": "Ports/Waterways",
+      "count": 29
+    },
+    {
+      "name": "Aviation",
+      "count": 21
+    },
+    {
+      "name": "Other Information and Communications Technologies",
+      "count": 19
+    },
+    {
+      "name": "Railways",
+      "count": 17
+    },
+    {
+      "name": "Renewable Energy Biomass",
+      "count": 17
+    },
+    {
+      "name": "Oil and Gas",
+      "count": 16
+    },
+    {
+      "name": "Renewable Energy Wind",
+      "count": 16
+    },
+    {
+      "name": "Renewable Energy Geothermal",
+      "count": 14
+    },
+    {
+      "name": "Power",
+      "count": 12
+    },
+    {
+      "name": "Law and Justice",
+      "count": 12
+    },
+    {
+      "name": "Mining",
+      "count": 11
+    },
+    {
+      "name": "Adult, Basic and Continuing Education",
+      "count": 10
+    },
+    {
+      "name": "Insurance and Pension",
+      "count": 10
+    },
+    {
+      "name": "Micro- and SME finance",
+      "count": 6
+    },
+    {
+      "name": "Manufacturing",
+      "count": 6
+    },
+    {
+      "name": "Services",
+      "count": 5
+    },
+    {
+      "name": "Roads and highways",
+      "count": 4
+    },
+    {
+      "name": "Agro-industry",
+      "count": 3
+    },
+    {
+      "name": "Renewable energy",
+      "count": 3
+    },
+    {
+      "name": "Non-Renewable Energy Generation",
+      "count": 3
+    },
+    {
+      "name": "(Historic)Small scale enterprise",
+      "count": 1
+    },
+    {
+      "name": "(Historic)Perennial crops",
+      "count": 1
+    },
+    {
+      "name": "(Historic)Highways",
+      "count": 1
+    },
+    {
+      "name": "(Historic)Macro/non-trade",
+      "count": 1
+    },
+    {
+      "name": "(Historic)Economic management",
+      "count": 1
+    },
+    {
+      "name": "(Historic)Education adjustment",
+      "count": 1
+    },
+    {
+      "name": "(Historic)Public financial management",
+      "count": 1
+    },
+    {
+      "name": "(Historic)Other finance",
+      "count": 1
     }
   ]
 }

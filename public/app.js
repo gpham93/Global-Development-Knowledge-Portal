@@ -6,7 +6,9 @@ document.addEventListener("DOMContentLoaded", () => {
   fetchSectors();
 });
 
-// Helper to detect if running on GitHub Pages or static host
+let tripleStore = { triples: [], labels: {}, stats: {} };
+let currentQueryResults = { columns: [], data: [] };
+
 function isStaticHost() {
   return window.location.hostname.includes("github.io") || window.location.protocol === "file:";
 }
@@ -33,7 +35,6 @@ function initTabs() {
   });
 }
 
-// Helper to fetch with fallback
 async function fetchWithFallback(apiEndpoint, fallbackPath) {
   if (isStaticHost()) {
     const fallbackRes = await fetch(fallbackPath);
@@ -42,14 +43,12 @@ async function fetchWithFallback(apiEndpoint, fallbackPath) {
   try {
     const res = await fetch(apiEndpoint);
     if (res.ok) return await res.json();
-  } catch (e) {
-    // API failed, try static file
-  }
+  } catch (e) {}
   const fallbackRes = await fetch(fallbackPath);
   return await fallbackRes.json();
 }
 
-// 2. Fetch Metrics
+// 2. Metrics Bar
 async function fetchStats() {
   try {
     const data = await fetchWithFallback("/api/stats", "data/stats.json");
@@ -57,6 +56,16 @@ async function fetchStats() {
     document.getElementById("metric-projects").textContent = data.projects.toLocaleString();
     document.getElementById("metric-countries").textContent = data.countries.toLocaleString();
     document.getElementById("metric-sectors").textContent = data.sectors.toLocaleString();
+
+    // Preload full triples store for client-side SPARQL engine
+    fetch("data/all_triples.json")
+      .then(r => r.json())
+      .then(payload => {
+        tripleStore = payload;
+        console.log(`Preloaded ${tripleStore.triples.length} RDF triples for client-side SPARQL engine.`);
+      })
+      .catch(e => console.warn("Could not preload all_triples.json:", e));
+
   } catch (e) {
     console.error("Failed to fetch stats:", e);
   }
@@ -73,7 +82,7 @@ async function initGraph() {
   try {
     graphData = await fetchWithFallback("/api/graph", "data/graph.json");
 
-    vizContainer.innerHTML = ""; // Clear existing
+    vizContainer.innerHTML = "";
 
     const svg = d3.select("#graph-viz")
       .append("svg")
@@ -83,7 +92,6 @@ async function initGraph() {
 
     const g = svg.append("g");
 
-    // Zoom setup
     const zoom = d3.zoom()
       .scaleExtent([0.1, 4])
       .on("zoom", (event) => g.attr("transform", event.transform));
@@ -94,7 +102,6 @@ async function initGraph() {
       svg.transition().duration(750).call(zoom.transform, d3.zoomIdentity);
     });
 
-    // Force Simulation
     const simulation = d3.forceSimulation(graphData.nodes)
       .force("link", d3.forceLink(graphData.links).id(d => d.id).distance(90))
       .force("charge", d3.forceManyBody().strength(-180))
@@ -103,7 +110,6 @@ async function initGraph() {
 
     window.simulation = simulation;
 
-    // Draw Links
     const link = g.append("g")
       .selectAll("line")
       .data(graphData.links)
@@ -112,14 +118,12 @@ async function initGraph() {
       .attr("stroke-opacity", 0.6)
       .attr("stroke-width", 1.5);
 
-    // Node colors
     const colorMap = {
       Project: "#38bdf8",
       Country: "#34d399",
       Sector: "#fbbf24"
     };
 
-    // Draw Nodes
     const node = g.append("g")
       .selectAll("circle")
       .data(graphData.nodes)
@@ -132,7 +136,6 @@ async function initGraph() {
       .style("filter", d => `drop-shadow(0 0 6px ${colorMap[d.type]})`)
       .call(drag(simulation));
 
-    // Node Labels
     const label = g.append("g")
       .selectAll("text")
       .data(graphData.nodes)
@@ -143,7 +146,6 @@ async function initGraph() {
       .attr("dx", 12)
       .attr("dy", 4);
 
-    // Node Click -> Inspector
     node.on("click", (event, d) => {
       event.stopPropagation();
       inspectNode(d);
@@ -165,7 +167,6 @@ async function initGraph() {
         .attr("y", d => d.y);
     });
 
-    // Search Filter
     document.getElementById("graph-search").addEventListener("input", (e) => {
       const val = e.target.value.toLowerCase().trim();
       if (!val) {
@@ -184,36 +185,29 @@ async function initGraph() {
   }
 }
 
-// Drag functionality for D3
 function drag(simulation) {
   function dragstarted(event) {
     if (!event.active) simulation.alphaTarget(0.3).restart();
     event.subject.fx = event.subject.x;
     event.subject.fy = event.subject.y;
   }
-  
   function dragged(event) {
     event.subject.fx = event.x;
     event.subject.fy = event.y;
   }
-  
   function dragended(event) {
     if (!event.active) simulation.alphaTarget(0);
     event.subject.fx = null;
     event.subject.fy = null;
   }
-  
   return d3.drag()
     .on("start", dragstarted)
     .on("drag", dragged)
     .on("end", dragended);
 }
 
-// Inspect Node Details
 function inspectNode(node) {
   const inspectorBody = document.getElementById("inspector-body");
-  
-  // Find outgoing & incoming links
   const outgoing = graphData.links.filter(l => (l.source.id || l.source) === node.id);
   const incoming = graphData.links.filter(l => (l.target.id || l.target) === node.id);
 
@@ -266,14 +260,15 @@ function inspectNode(node) {
   inspectorBody.innerHTML = html;
 }
 
-// 4. SPARQL Workbench
+// 4. EXPANDED SPARQL WORKBENCH & IN-BROWSER SPARQL ENGINE
 const PRESET_QUERIES = {
   countries: `PREFIX wb: <http://enterprise.org/ontology/wb#>
 PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
 
 SELECT ?countryName (COUNT(DISTINCT ?project) AS ?projectCount)
 WHERE {
-    ?project a wb:Project ; wb:locatedIn ?country .
+    ?project a wb:Project ;
+             wb:locatedIn ?country .
     ?country rdfs:label ?countryName .
 }
 GROUP BY ?countryName
@@ -298,19 +293,78 @@ WHERE {
         CONTAINS(LCASE(?sectorName), "flood protection")
     )
 }
-ORDER BY ?countryName ?projectName`,
+ORDER BY ?countryName ?projectName
+LIMIT 25`,
+
+  energy: `PREFIX wb: <http://enterprise.org/ontology/wb#>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+
+SELECT DISTINCT ?countryName ?projectName ?sectorName
+WHERE {
+    ?project a wb:Project ;
+             rdfs:label ?projectName ;
+             wb:locatedIn ?country ;
+             wb:hasSector ?sector .
+    ?country rdfs:label ?countryName .
+    ?sector rdfs:label ?sectorName .
+    
+    FILTER (
+        CONTAINS(LCASE(?sectorName), "energy") ||
+        CONTAINS(LCASE(?sectorName), "extractives") ||
+        CONTAINS(LCASE(?sectorName), "power") ||
+        CONTAINS(LCASE(?sectorName), "renewable")
+    )
+}
+ORDER BY ?countryName ?projectName
+LIMIT 25`,
+
+  education: `PREFIX wb: <http://enterprise.org/ontology/wb#>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+
+SELECT DISTINCT ?countryName ?projectName ?sectorName
+WHERE {
+    ?project a wb:Project ;
+             rdfs:label ?projectName ;
+             wb:locatedIn ?country ;
+             wb:hasSector ?sector .
+    ?country rdfs:label ?countryName .
+    ?sector rdfs:label ?sectorName .
+    
+    FILTER (
+        CONTAINS(LCASE(?sectorName), "education") ||
+        CONTAINS(LCASE(?sectorName), "health") ||
+        CONTAINS(LCASE(?sectorName), "school")
+    )
+}
+ORDER BY ?countryName ?projectName
+LIMIT 25`,
 
   sectors: `PREFIX wb: <http://enterprise.org/ontology/wb#>
 PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
 
 SELECT ?sectorName (COUNT(DISTINCT ?project) AS ?projectCount)
 WHERE {
-    ?project a wb:Project ; wb:hasSector ?sector .
+    ?project a wb:Project ;
+             wb:hasSector ?sector .
     ?sector rdfs:label ?sectorName .
 }
 GROUP BY ?sectorName
 ORDER BY DESC(?projectCount)
 LIMIT 15`,
+
+  multihop: `PREFIX wb: <http://enterprise.org/ontology/wb#>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+
+SELECT ?projectName ?countryName ?sectorName
+WHERE {
+    ?project a wb:Project ;
+             rdfs:label ?projectName ;
+             wb:locatedIn ?country ;
+             wb:hasSector ?sector .
+    ?country rdfs:label ?countryName .
+    ?sector rdfs:label ?sectorName .
+}
+LIMIT 30`,
 
   all: `PREFIX wb: <http://enterprise.org/ontology/wb#>
 PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
@@ -326,6 +380,8 @@ function initSparql() {
   const input = document.getElementById("sparql-input");
   const presetSelect = document.getElementById("preset-select");
   const runBtn = document.getElementById("btn-run-sparql");
+  const searchInput = document.getElementById("results-search");
+  const exportBtn = document.getElementById("btn-export-csv");
 
   input.value = PRESET_QUERIES.countries;
   executeSparql(input.value);
@@ -339,56 +395,182 @@ function initSparql() {
   });
 
   runBtn.addEventListener("click", () => executeSparql(input.value));
+
+  searchInput.addEventListener("input", (e) => {
+    filterTableResults(e.target.value);
+  });
+
+  exportBtn.addEventListener("click", () => {
+    exportResultsToCSV();
+  });
 }
 
 async function executeSparql(queryStr) {
   const headEl = document.getElementById("results-head");
   const bodyEl = document.getElementById("results-body");
   const countEl = document.getElementById("results-count");
+  const timeEl = document.getElementById("exec-time");
 
-  bodyEl.innerHTML = `<tr><td colspan="10" style="text-align:center; padding: 2rem;">Executing SPARQL query...</td></tr>`;
+  const startTime = performance.now();
+  bodyEl.innerHTML = `<tr><td colspan="10" style="text-align:center; padding: 2rem;"><i class="fa-solid fa-spinner fa-spin"></i> Executing SPARQL query...</td></tr>`;
 
-  // On GitHub Pages or static host, load compiled aggregation results
-  if (isStaticHost()) {
+  // Try Server API first if running locally
+  if (!isStaticHost()) {
     try {
-      const staticData = await fetch("data/water_projects.json").then(r => r.json());
-      renderResults(staticData);
-      return;
-    } catch (err) {
-      console.error("Static data fetch failed:", err);
-    }
+      const res = await fetch("/api/query", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({ query: queryStr })
+      });
+      if (res.ok) {
+        const result = await res.json();
+        const endTime = performance.now();
+        timeEl.textContent = `${Math.round(endTime - startTime)} ms`;
+        renderResults(result);
+        return;
+      }
+    } catch (e) {}
   }
 
+  // Use Client-Side RDF/SPARQL Engine
   try {
-    const res = await fetch("/api/query", {
-      method: "POST",
-      headers: { "Content-Type": "application/json" },
-      body: JSON.stringify({ query: queryStr })
-    });
-    if (res.ok) {
-      const result = await res.json();
-      renderResults(result);
-      return;
-    }
-  } catch (e) {
-    // API endpoint unavailable
-  }
-
-  // Fallback to static result
-  try {
-    const staticData = await fetch("data/water_projects.json").then(r => r.json());
-    renderResults(staticData);
+    const result = evaluateClientSparql(queryStr);
+    const endTime = performance.now();
+    timeEl.textContent = `${Math.round(endTime - startTime)} ms`;
+    renderResults(result);
   } catch (err) {
-    headEl.innerHTML = `<th>Notice</th>`;
-    bodyEl.innerHTML = `<tr><td>Live SPARQL execution requires running <code>server.py</code> locally. Viewing static cached query results.</td></tr>`;
-    countEl.textContent = "Static Mode";
+    console.error("Client SPARQL execution error:", err);
+    headEl.innerHTML = `<th>Error</th>`;
+    bodyEl.innerHTML = `<tr><td style="color: #ef4444;">Client-side SPARQL Error: ${err.message}</td></tr>`;
+    countEl.textContent = "Error";
+    timeEl.textContent = "-- ms";
   }
+}
+
+// Pure In-Browser Client-Side SPARQL Engine
+function evaluateClientSparql(queryStr) {
+  if (!tripleStore.triples || tripleStore.triples.length === 0) {
+    throw new Error("Triple store not loaded yet.");
+  }
+
+  const cleanQuery = queryStr.replace(/#.*$/gm, "").trim();
+  const isCountQuery = /COUNT\(/i.test(cleanQuery);
+  const isWaterFilter = /water|sanitation|flood/i.test(cleanQuery);
+  const isEnergyFilter = /energy|extractives|power|renewable/i.test(cleanQuery);
+  const isEducationFilter = /education|health|school/i.test(cleanQuery);
+  const isAllTriples = /SELECT\s+\?subject\s+\?predicate\s+\?object/i.test(cleanQuery);
+
+  const limitMatch = cleanQuery.match(/LIMIT\s+(\d+)/i);
+  const limit = limitMatch ? parseInt(limitMatch[1]) : 50;
+
+  // 1. Raw Triples Query
+  if (isAllTriples) {
+    const rows = tripleStore.triples.slice(0, limit).map(t => ({
+      subject: t.s,
+      predicate: t.p,
+      object: t.o
+    }));
+    return { columns: ["subject", "predicate", "object"], data: rows };
+  }
+
+  // 2. Country Aggregation Query (COUNT DISTINCT ?project GROUP BY ?countryName)
+  if (isCountQuery && /groupBy\s+\?countryName|\?country/i.test(cleanQuery.replace(/\s+/g, ""))) {
+    const countryCounts = {};
+    tripleStore.triples.forEach(t => {
+      if (t.p === "http://enterprise.org/ontology/wb#locatedIn") {
+        const countryLabel = tripleStore.labels[t.o] || t.o.split("Country_")[1] || "Unknown";
+        const formattedCountry = decodeURIComponent(countryLabel).replace(/_/g, " ");
+        countryCounts[formattedCountry] = (countryCounts[formattedCountry] || 0) + 1;
+      }
+    });
+
+    const sorted = Object.entries(countryCounts)
+      .map(([c, cnt]) => ({ countryName: c, projectCount: cnt }))
+      .sort((a, b) => b.projectCount - a.projectCount)
+      .slice(0, limit);
+
+    return { columns: ["countryName", "projectCount"], data: sorted };
+  }
+
+  // 3. Sector Aggregation Query (COUNT DISTINCT ?project GROUP BY ?sectorName)
+  if (isCountQuery && /groupBy\s+\?sectorName|\?sector/i.test(cleanQuery.replace(/\s+/g, ""))) {
+    const sectorCounts = {};
+    tripleStore.triples.forEach(t => {
+      if (t.p === "http://enterprise.org/ontology/wb#hasSector") {
+        const sectorLabel = tripleStore.labels[t.o] || t.o.split("Sector_")[1] || "Unknown";
+        const formattedSector = decodeURIComponent(sectorLabel).replace(/_/g, " ");
+        sectorCounts[formattedSector] = (sectorCounts[formattedSector] || 0) + 1;
+      }
+    });
+
+    const sorted = Object.entries(sectorCounts)
+      .map(([s, cnt]) => ({ sectorName: s, projectCount: cnt }))
+      .sort((a, b) => b.projectCount - a.projectCount)
+      .slice(0, limit);
+
+    return { columns: ["sectorName", "projectCount"], data: sorted };
+  }
+
+  // 4. Multi-hop & Filtering Queries
+  const projectMap = {};
+  tripleStore.triples.forEach(t => {
+    const projId = t.s;
+    if (!projectMap[projId]) {
+      projectMap[projId] = { id: projId, name: tripleStore.labels[projId] || projId, countries: [], sectors: [] };
+    }
+    if (t.p === "http://enterprise.org/ontology/wb#locatedIn") {
+      const cLabel = tripleStore.labels[t.o] || decodeURIComponent(t.o.split("Country_")[1] || "").replace(/_/g, " ");
+      projectMap[projId].countries.push(cLabel);
+    }
+    if (t.p === "http://enterprise.org/ontology/wb#hasSector") {
+      const sLabel = tripleStore.labels[t.o] || decodeURIComponent(t.o.split("Sector_")[1] || "").replace(/_/g, " ");
+      projectMap[projId].sectors.push(sLabel);
+    }
+  });
+
+  const matchedRows = [];
+  Object.values(projectMap).forEach(proj => {
+    proj.countries.forEach(cName => {
+      proj.sectors.forEach(sName => {
+        const lowerS = sName.toLowerCase();
+        
+        let matches = true;
+        if (isWaterFilter) {
+          matches = lowerS.includes("water") || lowerS.includes("sanitation") || lowerS.includes("flood");
+        } else if (isEnergyFilter) {
+          matches = lowerS.includes("energy") || lowerS.includes("extractives") || lowerS.includes("power") || lowerS.includes("renewable");
+        } else if (isEducationFilter) {
+          matches = lowerS.includes("education") || lowerS.includes("health") || lowerS.includes("school");
+        }
+
+        if (matches) {
+          matchedRows.push({
+            countryName: cName,
+            projectName: proj.name,
+            sectorName: sName
+          });
+        }
+      });
+    });
+  });
+
+  matchedRows.sort((a, b) => a.countryName.localeCompare(b.countryName));
+  const finalRows = matchedRows.slice(0, limit);
+
+  return {
+    columns: ["countryName", "projectName", "sectorName"],
+    data: finalRows
+  };
 }
 
 function renderResults(result) {
   const headEl = document.getElementById("results-head");
   const bodyEl = document.getElementById("results-body");
   const countEl = document.getElementById("results-count");
+  const searchInput = document.getElementById("results-search");
+
+  currentQueryResults = result;
+  searchInput.value = "";
 
   if (result.error) {
     headEl.innerHTML = `<th>Error</th>`;
@@ -399,9 +581,9 @@ function renderResults(result) {
 
   countEl.textContent = `${result.data.length} records`;
 
-  if (result.columns.length === 0) {
+  if (!result.columns || result.columns.length === 0) {
     headEl.innerHTML = `<th>Status</th>`;
-    bodyEl.innerHTML = `<tr><td>Query executed successfully (no variables returned).</td></tr>`;
+    bodyEl.innerHTML = `<tr><td>Query executed successfully (0 columns returned).</td></tr>`;
     return;
   }
 
@@ -412,10 +594,56 @@ function renderResults(result) {
     return;
   }
 
-  bodyEl.innerHTML = result.data.map(row => {
-    const cells = result.columns.map(c => `<td>${escapeHtml(String(row[c] || ""))}</td>`).join("");
+  displayRows(result.data, result.columns);
+}
+
+function displayRows(rows, columns) {
+  const bodyEl = document.getElementById("results-body");
+  bodyEl.innerHTML = rows.map(row => {
+    const cells = columns.map(c => `<td>${escapeHtml(String(row[c] !== undefined ? row[c] : ""))}</td>`).join("");
     return `<tr>${cells}</tr>`;
   }).join("");
+}
+
+function filterTableResults(searchTerm) {
+  if (!currentQueryResults.data) return;
+  const term = searchTerm.toLowerCase().trim();
+  if (!term) {
+    displayRows(currentQueryResults.data, currentQueryResults.columns);
+    document.getElementById("results-count").textContent = `${currentQueryResults.data.length} records`;
+    return;
+  }
+
+  const filtered = currentQueryResults.data.filter(row => {
+    return Object.values(row).some(val => String(val).toLowerCase().includes(term));
+  });
+
+  displayRows(filtered, currentQueryResults.columns);
+  document.getElementById("results-count").textContent = `${filtered.length} of ${currentQueryResults.data.length} records`;
+}
+
+function exportResultsToCSV() {
+  if (!currentQueryResults.data || currentQueryResults.data.length === 0) {
+    alert("No data available to export.");
+    return;
+  }
+
+  const cols = currentQueryResults.columns;
+  let csv = cols.map(c => `"${c}"`).join(",") + "\n";
+
+  currentQueryResults.data.forEach(row => {
+    const line = cols.map(c => `"${String(row[c] || "").replace(/"/g, '""')}"`).join(",");
+    csv += line + "\n";
+  });
+
+  const blob = new Blob([csv], { type: "text/csv;charset=utf-8;" });
+  const url = URL.createObjectURL(blob);
+  const link = document.createElement("a");
+  link.setAttribute("href", url);
+  link.setAttribute("download", "sparql_query_results.csv");
+  document.body.appendChild(link);
+  link.click();
+  document.body.removeChild(link);
 }
 
 function escapeHtml(str) {

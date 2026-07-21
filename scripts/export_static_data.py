@@ -17,7 +17,7 @@ if not os.path.exists(DATA_PATH):
     print(f"Error: {DATA_PATH} not found.")
     exit(1)
 
-print(f"Exporting static JSON data from master graph {DATA_PATH}...")
+print(f"Exporting static data from master graph {DATA_PATH}...")
 g.parse(DATA_PATH, format="turtle")
 
 # 1. Stats
@@ -36,7 +36,25 @@ stats_data = {
     "sectors": sector_cnt
 }
 
-# 2. Graph Nodes & Links (sample subset for smooth visualizer performance)
+# 2. All Triples Export for In-Browser SPARQL Engine
+all_triples = []
+labels = {}
+
+for s, p, o in g:
+    s_str = str(s)
+    p_str = str(p)
+    o_str = str(o)
+    
+    if p == RDFS.label:
+        labels[s_str] = o_str
+        
+    all_triples.append({
+        "s": s_str,
+        "p": p_str,
+        "o": o_str
+    })
+
+# 3. Graph Nodes & Links for D3 (Sample subset of 400 for smooth layout)
 graph_query = """
 PREFIX wb: <http://enterprise.org/ontology/wb#>
 PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
@@ -50,7 +68,7 @@ WHERE {
     ?country rdfs:label ?countryName .
     ?sector rdfs:label ?sectorName .
 }
-LIMIT 300
+LIMIT 400
 """
 results = g.query(graph_query)
 nodes_dict = {}
@@ -79,27 +97,7 @@ graph_data = {
     "links": links
 }
 
-# 3. Top Countries Aggregation
-top_countries_query = """
-PREFIX wb: <http://enterprise.org/ontology/wb#>
-PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
-
-SELECT ?countryName (COUNT(DISTINCT ?project) AS ?projectCount)
-WHERE {
-    ?project a wb:Project ; wb:locatedIn ?country .
-    ?country rdfs:label ?countryName .
-}
-GROUP BY ?countryName
-ORDER BY DESC(?projectCount)
-LIMIT 10
-"""
-top_c_results = g.query(top_countries_query)
-top_countries_data = {
-    "columns": ["countryName", "projectCount"],
-    "data": [{"countryName": str(r.countryName), "projectCount": int(r.projectCount)} for r in top_c_results]
-}
-
-# 4. Sectors List
+# 4. Sector Aggregations
 sectors_query = """
 PREFIX wb: <http://enterprise.org/ontology/wb#>
 PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
@@ -111,7 +109,6 @@ WHERE {
 }
 GROUP BY ?sectorName
 ORDER BY DESC(?projectCount)
-LIMIT 24
 """
 sector_results = g.query(sectors_query)
 sectors_data = {"sectors": [{"name": str(row.sectorName), "count": int(row.projectCount)} for row in sector_results]}
@@ -121,14 +118,20 @@ def save_json(path, data):
     with open(path, "w", encoding="utf-8") as f:
         json.dump(data, f, indent=2)
 
+triples_payload = {
+    "stats": stats_data,
+    "labels": labels,
+    "triples": all_triples
+}
+
 save_json(os.path.join(OUTPUT_DIR, "stats.json"), stats_data)
 save_json(os.path.join(OUTPUT_DIR, "graph.json"), graph_data)
 save_json(os.path.join(OUTPUT_DIR, "sectors.json"), sectors_data)
-save_json(os.path.join(OUTPUT_DIR, "water_projects.json"), top_countries_data)
+save_json(os.path.join(OUTPUT_DIR, "all_triples.json"), triples_payload)
 
-save_json(os.path.join(ROOT_DATA_DIR, "graph.json"), graph_data)
 save_json(os.path.join(ROOT_DATA_DIR, "stats.json"), stats_data)
+save_json(os.path.join(ROOT_DATA_DIR, "graph.json"), graph_data)
 save_json(os.path.join(ROOT_DATA_DIR, "sectors.json"), sectors_data)
-save_json(os.path.join(ROOT_DATA_DIR, "water_projects.json"), top_countries_data)
+save_json(os.path.join(ROOT_DATA_DIR, "all_triples.json"), triples_payload)
 
-print("Master static data exported successfully!")
+print(f"Exported {len(all_triples):,} triples and labels for client-side SPARQL engine.")
